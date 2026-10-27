@@ -37,7 +37,7 @@ env:
 jobs:
   walkthrough:
     runs-on: macos-26
-    timeout-minutes: 120
+    timeout-minutes: 150
     env:
       EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
       EAS_SKIP_AUTO_FINGERPRINT: "1"
@@ -142,7 +142,7 @@ jobs:
           curl -fsS -o /tmp/clip.m4a "https://okwu.emperorduke5.workers.dev/audio/igboapi/ia_5f90c35e49f7e863e92b700a-6405ab8e32b114437a45b7d7.m4a" && ls -la /tmp/clip.m4a
           afplay -t 3 /tmp/clip.m4a; echo "host afplay exit $?"
 
-          echo "== simulators (both booted now, in the background) =="
+          echo "== simulators (the main one boots now, in the background; the small one after the main pass) =="
           xcrun simctl list runtimes available
           RUNTIME=$(xcrun simctl list runtimes available -j | python3 -c "import json,sys; r=[x for x in json.load(sys.stdin)['runtimes'] if x.get('platform')=='iOS' or x.get('name','').startswith('iOS')]; r.sort(key=lambda x: [int(p) for p in x['version'].split('.')]); print(r[-1]['identifier'])")
           make_sim() {
@@ -167,8 +167,6 @@ jobs:
           date -u +%T
           boot_sim "$UDID" > /tmp/boot-full.log 2>&1 &
           BOOT1=$!
-          BOOT2=""
-          if [ -n "$SE" ]; then boot_sim "$SE" > /tmp/boot-se.log 2>&1 & BOOT2=$!; fi
 
           echo "== WebDriverAgent =="
           WDA_PROJ=$(find "$HOME/.appium" -maxdepth 8 -name WebDriverAgent.xcodeproj | head -1)
@@ -187,7 +185,6 @@ jobs:
           appium --port 4723 --base-path / --log-timestamp > appium.log 2>&1 &
           for i in $(seq 1 30); do curl -s http://127.0.0.1:4723/status && break; sleep 2; done
           wait $BOOT1; cat /tmp/boot-full.log
-          [ -n "$BOOT2" ] && { wait $BOOT2; cat /tmp/boot-se.log; }
           touch /tmp/e2e-start
           export WDA_DERIVED="$HOME/wda-dd"
 
@@ -201,6 +198,7 @@ jobs:
           echo "== small-screen pass (iPhone SE size) =="
           SMALL=1
           if [ -n "$SE" ]; then
+            boot_sim "$SE"
             START=$(date +"%Y-%m-%d %H:%M:%S")
             (cd e2e && UDID="$SE" BUNDLE_ID="$BUNDLE_ID" MODE=small SHOTS_DIR=../shots node walkthrough.mjs)
             SMALL=$?

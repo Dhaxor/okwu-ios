@@ -9,7 +9,7 @@ import { Card, Chip, T, useToast } from "@/components/ui";
 import { colors, space } from "@/constants/theme";
 import { attempt, errorMessage, type CohortView, type ReactionId } from "@/lib/social";
 import { REACTION_LABELS, REACTION_ORDER, timeAgo, useSocial } from "@/lib/state";
-import { cohortQuestCard } from "./cohortQuest";
+import { cohortLine, cohortQuestCard } from "./cohortQuest";
 import { PersonRow } from "./PersonRow";
 import type { SafetySubject } from "./SafetySheet";
 
@@ -41,7 +41,7 @@ export function CohortSection({ cohort, onSafety, testID }: CohortSectionProps) 
 
   return (
     <View style={styles.wrap} testID={testID}>
-      <QuestCard view={quest.view} units={quest.units} subtitle={`Your cohort · ${cohort.members.length} learners who started when you did`} testID={`${testID}-quest`} />
+      <QuestCard view={quest.view} units={quest.units} subtitle={cohortLine(cohort.members.length)} testID={`${testID}-quest`} />
 
       <Card variant="flat" padding="md" testID={`${testID}-reactions`}>
         <T variant="body" strong tone="primary">

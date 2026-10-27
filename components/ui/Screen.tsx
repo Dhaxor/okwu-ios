@@ -2,14 +2,17 @@
 // gutter, a reading-width cap, and an optional pinned footer that holds the
 // screen's one primary action in the thumb zone (above the tab bar on a tab
 // screen), fading the content out beneath it.
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
+  Keyboard,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
   StyleSheet,
+  TextInput,
   View,
   useWindowDimensions,
+  type ScrollViewInstance,
   type StyleProp,
   type ViewStyle,
 } from "react-native";
@@ -19,6 +22,8 @@ import { colors, gutterFor, maxContentWidth, space } from "@/constants/theme";
 import { ArrowLeft } from "@/components/glyphs/icons";
 import { IconButton } from "./Button";
 import { T } from "./T";
+import { hiddenByKeyboard, keyboardRoom } from "./keyboardFit";
+import { statusBandOf } from "./statusBand";
 
 export interface ScreenProps {
   testID: string;
@@ -40,11 +45,30 @@ export interface ScreenProps {
 
 export function Screen({ testID, children, scroll = true, footer, tabbed = false, backdrop, keyboard = false, center = false, contentStyle }: ScreenProps) {
   const insets = useSafeAreaInsets();
+  const band = statusBandOf(insets.top, scroll);
   const { width } = useWindowDimensions();
   const gutter = gutterFor(width);
   const bottomInset = tabbed ? 0 : insets.bottom;
   // The footer floats over the content; pad the content by its measured height so nothing hides under it.
   const [footerH, setFooterH] = useState(140);
+  const scrollRef = useRef<ScrollViewInstance>(null);
+  const hasFooter = !!footer;
+
+  // iPhone: the page shrinks above the keyboard but does not scroll, so a field low on the page
+  // (Friends' code field) ends up behind the footer riding on the keyboard. Scroll it into view.
+  useEffect(() => {
+    if (!keyboard || !scroll || Platform.OS !== "ios") return;
+    const sub = Keyboard.addListener("keyboardDidShow", (e) => {
+      const input = TextInput.State.currentlyFocusedInput();
+      const view = scrollRef.current;
+      if (!input || !view) return;
+      const room = keyboardRoom(hasFooter ? footerH : null);
+      input.measureInWindow((_x, y, _w, h) => {
+        if (hiddenByKeyboard(y + h, e.endCoordinates.screenY, room)) view.scrollResponderScrollNativeHandleToKeyboard(input, room, true);
+      });
+    });
+    return () => sub.remove();
+  }, [keyboard, scroll, hasFooter, footerH]);
 
   const inner = [
     styles.content,
@@ -57,6 +81,7 @@ export function Screen({ testID, children, scroll = true, footer, tabbed = false
 
   const body = scroll ? (
     <ScrollView
+      ref={scrollRef}
       testID={`${testID}-scroll`}
       style={styles.fill}
       contentContainerStyle={inner}
@@ -77,6 +102,7 @@ export function Screen({ testID, children, scroll = true, footer, tabbed = false
         </View>
       ) : null}
       {body}
+      {band ? <StatusBand height={band.height} fade={band.fade} /> : null}
       {footer ? (
         <View
           onLayout={(e) => setFooterH(Math.round(e.nativeEvent.layout.height))}
@@ -94,6 +120,24 @@ export function Screen({ testID, children, scroll = true, footer, tabbed = false
     <KeyboardAvoidingView style={styles.root} behavior={Platform.OS === "ios" ? "padding" : undefined}>
       {page}
     </KeyboardAvoidingView>
+  );
+}
+
+/** Paper under the status bar, dissolving into the content below it. */
+function StatusBand({ height, fade }: { height: number; fade: number }) {
+  return (
+    <View pointerEvents="none" style={styles.band}>
+      <View style={[styles.bandFill, { height }]} />
+      <Svg width="100%" height={fade} preserveAspectRatio="none">
+        <Defs>
+          <LinearGradient id="okwu-status-fade" x1="0" y1="0" x2="0" y2="1">
+            <Stop offset="0" stopColor={colors.bg} stopOpacity={1} />
+            <Stop offset="1" stopColor={colors.bg} stopOpacity={0} />
+          </LinearGradient>
+        </Defs>
+        <Rect x="0" y="0" width="100%" height="100%" fill="url(#okwu-status-fade)" />
+      </Svg>
+    </View>
   );
 }
 
@@ -153,6 +197,8 @@ const styles = StyleSheet.create({
   footer: { position: "absolute", left: 0, right: 0, bottom: 0, paddingTop: space.md, backgroundColor: colors.bg },
   footerInner: { width: "100%", maxWidth: maxContentWidth, alignSelf: "center", gap: space.sm },
   fade: { position: "absolute", left: 0, right: 0, top: -space.xl, height: space.xl },
+  band: { position: "absolute", left: 0, right: 0, top: 0 },
+  bandFill: { backgroundColor: colors.bg },
   header: { gap: space.xs },
   headerBar: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginBottom: space.xs },
   trailing: { flexDirection: "row", gap: space.xs },

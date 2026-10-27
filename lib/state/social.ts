@@ -112,6 +112,18 @@ export function socialGate(profile: Pick<LocalProfile, "ageBand" | "consents">, 
 }
 
 /**
+ * Whether the provider should make the anonymous account now: the gate is
+ * open, there is no account on this phone, nothing is underway or failing, and
+ * the learner has not just deleted theirs. Right after a deletion the profile
+ * still holds the age and the accepted documents (it resets a moment later),
+ * so without that last condition the gate reads "open" and a fresh account
+ * would be made on the server the instant the old one was deleted.
+ */
+export function shouldMakeAccount(s: { gate: SocialGate; hasCreds: boolean; status: string; justDeleted: boolean }): boolean {
+  return s.gate === "open" && !s.hasCreds && !s.justDeleted && s.status !== "working" && s.status !== "offline" && s.status !== "error";
+}
+
+/**
  * May this learner use a social feature now? The tier table (lib/social/rules)
  * AND the gate: nothing social before the terms are accepted. The server
  * enforces the same; this only decides what to show.

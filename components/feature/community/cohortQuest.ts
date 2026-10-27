@@ -36,6 +36,11 @@ export interface CohortQuestCardProps {
 }
 
 /** The QuestCard's props for this week's cohort goal, whatever its kind. */
+/** The quest card's line about the cohort: "1 learner", never "1 learners". */
+export function cohortLine(members: number): string {
+  return `Your cohort · ${members} ${members === 1 ? "learner" : "learners"} who started when you did`;
+}
+
 export function cohortQuestCard(c: CohortView, now: Date): CohortQuestCardProps {
   const kind = c.quest.goal.kind;
   const copy = COHORT_GOAL_COPY[kind] ?? COHORT_GOAL_COPY.lessons;

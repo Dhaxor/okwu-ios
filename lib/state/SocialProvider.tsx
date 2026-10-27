@@ -34,7 +34,7 @@ import { useContent } from "./AppState";
 import { createMockSocialClient, isMockClient, type MockControls } from "./mockSocial";
 import { useProfile } from "./ProfileProvider";
 import { ageTierOf, withConsents, type AgeBand } from "./profile";
-import { DEFAULT_SOCIAL_CONFIG, SOCIAL_CONFIG_KEY, acceptAll, ageSignalFor, anonymousName, makeNonce, mayUse, missingConsents, parseSocialConfig, socialGate, type SocialGate } from "./social";
+import { DEFAULT_SOCIAL_CONFIG, SOCIAL_CONFIG_KEY, acceptAll, ageSignalFor, anonymousName, makeNonce, mayUse, missingConsents, parseSocialConfig, shouldMakeAccount, socialGate, type SocialGate } from "./social";
 import { cachedPushToken, forgetCachedPushToken, useCommunitySync } from "./useCommunitySync";
 
 /** Credentials: SecureStore (after first unlock) on iOS; AsyncStorage on web previews. */
@@ -289,12 +289,15 @@ export function SocialProvider({ children }: { children?: React.ReactNode }) {
     bump();
   }, [client, update, bump]);
 
+  // Set by a deletion until the profile reset closes the gate (see shouldMakeAccount).
+  const justDeleted = useRef(false);
   const deleteAccount = useCallback(async () => {
     const creds = await secureCredsStore.load();
     if (creds) {
       const r = await attempt(client.deleteAccount());
       if (!r.ok) return { ok: false, message: r.error.kind === "api" ? errorMessage(r.error) : "Couldn't reach Okwu, so nothing was deleted. Please try again when you're online." };
     }
+    justDeleted.current = true;
     await forgetCachedPushToken();
     await secureCredsStore.save(null);
     setAccount(null);
@@ -326,7 +329,9 @@ export function SocialProvider({ children }: { children?: React.ReactNode }) {
 
   // Once the learner is old enough and has accepted the terms, make the (anonymous) account in the background.
   useEffect(() => {
-    if (gate === "open" && !hasCreds && status !== "working" && status !== "offline" && status !== "error") void ensureAccount();
+    // After a deletion the profile resets and the gate closes; from then on an account may be made again.
+    if (gate !== "open") justDeleted.current = false;
+    if (shouldMakeAccount({ gate, hasCreds, status, justDeleted: justDeleted.current })) void ensureAccount();
   }, [gate, hasCreds, status, ensureAccount]);
 
   const can = useCallback((feature: SocialFeature) => mayUse(profile, config, feature), [profile, config]);

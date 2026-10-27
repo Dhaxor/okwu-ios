@@ -27,6 +27,7 @@ import {
 import { devAudioAsset } from "@/lib/content";
 import type { Item } from "@/lib/content/types";
 import { ensureOfflineAudio } from "@/lib/tools/useOffline";
+import { localCopy, wantsLocalCopy } from "./clipCache";
 import { useContent } from "./AppState";
 import { useProfile } from "./ProfileProvider";
 import { resolveClip, streamsCourseAudio, type ClipRequest } from "./audioSource";
@@ -91,7 +92,7 @@ export function useItemAudio(): ItemAudio {
     [bundle, profile.audioSpeed, env]
   );
 
-  const start = useCallback(
+  const begin = useCallback(
     (source: AudioSource, rate: number, key: string) => {
       try {
         player.replace(source);
@@ -107,6 +108,29 @@ export function useItemAudio(): ItemAudio {
       }
     },
     [player]
+  );
+
+  // The latest play (or stop) wins over a clip still downloading.
+  const ticket = useRef(0);
+  const start = useCallback(
+    (source: AudioSource, rate: number, key: string) => {
+      const mine = ++ticket.current;
+      const uri = typeof source === "string" ? source : source && typeof source === "object" ? (source.uri ?? null) : null;
+      // iPhone: a remote clip plays from a cached copy (./clipCache.ts explains why).
+      if (!uri || !wantsLocalCopy(uri)) return begin(source, rate, key);
+      currentRef.current = key;
+      setFinished(null);
+      setCurrent(key);
+      void localCopy(uri).then(
+        (file) => {
+          if (ticket.current === mine) begin({ uri: file }, rate, key);
+        },
+        () => {
+          if (ticket.current === mine) begin(source, rate, key);
+        }
+      );
+    },
+    [begin]
   );
 
   const play = useCallback<ItemAudio["play"]>(
@@ -131,6 +155,7 @@ export function useItemAudio(): ItemAudio {
   const playModule = useCallback((module: number, key: string) => start(module, 1, key), [start]);
 
   const stop = useCallback(() => {
+    ticket.current++;
     try {
       player.pause();
     } catch {

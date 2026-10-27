@@ -64,7 +64,7 @@ if (prebuilt) Object.assign(caps, { "appium:usePrebuiltWDA": true, "appium:deriv
 async function createSession(attempts = 3) {
   for (let i = 1; i <= attempts; i++) {
     try {
-      return await remote({ hostname: "127.0.0.1", port: 4723, path: "/", capabilities: caps, logLevel: "error", connectionRetryTimeout: 420000 });
+      return await remote({ hostname: "127.0.0.1", port: 4723, path: "/", capabilities: caps, logLevel: "error", connectionRetryTimeout: 900000, connectionRetryCount: 0 });
     } catch (e) {
       log(`session attempt ${i}/${attempts} failed:`, msg(e));
       if (i === attempts) throw e;
@@ -86,6 +86,28 @@ let win = { width: 430, height: 932 };
 
 // ---- primitives -------------------------------------------------------------
 let n = 1;
+// Screens whose content shows through the status bar (text running into the clock and battery).
+const statusBarOverlaps = [];
+/** Share of dark (text-like) pixels in the empty middle of the status bar, between the clock and the icons. */
+function statusBarInk(buf) {
+  try {
+    const png = PNG.sync.read(buf);
+    const s = png.width / win.width;
+    const big = win.height >= 800;
+    const [x0, x1] = (big ? [0.24, 0.68] : [0.3, 0.66]).map((f) => Math.round(f * win.width * s));
+    const [y0, y1] = (big ? [6, 50] : [2, 18]).map((v) => Math.round(v * s));
+    let dark = 0;
+    let total = 0;
+    for (let y = y0; y < y1; y += 2) for (let x = x0; x < x1; x += 2) {
+      const i = (y * png.width + x) * 4;
+      total++;
+      if (0.299 * png.data[i] + 0.587 * png.data[i + 1] + 0.114 * png.data[i + 2] < 150) dark++;
+    }
+    return total ? dark / total : 0;
+  } catch {
+    return 0;
+  }
+}
 async function shot(name) {
   try {
     const buf = Buffer.from(await driver.takeScreenshot(), "base64");
@@ -93,6 +115,10 @@ async function shot(name) {
     fs.writeFileSync(`${SHOTS}/${file}`, buf);
     lastShot = file;
     log("shot", file);
+    if (!/alert|keyboard/.test(name)) {
+      const ink = statusBarInk(buf);
+      if (ink > 0.003) statusBarOverlaps.push(`${file} (${(ink * 100).toFixed(1)}%)`);
+    }
     return buf;
   } catch (e) {
     log("shot-failed", name, msg(e));
@@ -388,8 +414,10 @@ async function hideKeyboard() {
  * the top of a small screen). Closes with Cancel; nothing is saved.
  */
 async function sheetKeyboard(tag, { open, sheet, field, save, cancel, text }) {
-  if (!(await scrollTo(open, 6))) return { ok: false, detail: `${open.slice(1)} not found` };
-  await tap(open, open.slice(1));
+  const openers = Array.isArray(open) ? open : [open];
+  const opener = await waitAny(openers, 6000);
+  if (!opener || !(await scrollTo(opener, 6))) return { ok: false, detail: `${openers.map((o) => o.slice(1)).join(" / ")} not found` };
+  await tap(opener, opener.slice(1));
   if (!(await find(field, 6000))) return { ok: false, detail: `${field.slice(1)} did not appear` };
   await sleep(900);
   await shot(`${tag}-sheet`);
@@ -794,25 +822,25 @@ try {
   // ---- onboarding: why → new learner → dialect --------------------------------------
   await section("ONBOARDING", async () => {
     await tap("~welcome-start", "Start your first lesson");
-    if (!(await find("~motive", 10000))) return { ok: false, detail: "motive screen missing" };
+    if (!(await find("~motive", 30000))) return { ok: false, detail: "motive screen missing" };
     await tap("~motive-family", "Talk with my family");
     await sleep(500);
     await shot("motive");
     await checkSafeArea("motive", ["~motive-header-back", "~motive-continue"]);
     await tap("~motive-continue", "continue");
-    if (!(await find("~familiarity", 10000))) return { ok: false, detail: "familiarity screen missing" };
+    if (!(await find("~familiarity", 30000))) return { ok: false, detail: "familiarity screen missing" };
     await tap("~familiarity-new", "I'm new to Igbo");
     await sleep(500);
     await shot("familiarity");
     await tap("~familiarity-continue", "continue");
-    if (!(await find("~dialect", 10000))) return { ok: false, detail: "dialect screen missing" };
-    const list = await exists("~dialect-list", 8000);
+    if (!(await find("~dialect", 40000))) return { ok: false, detail: "dialect screen missing" };
+    const list = await exists("~dialect-list", 30000);
     await sleep(600);
     await shot("dialect");
     await checkSafeArea("dialect", ["~dialect-header-back", "~dialect-continue"]);
     if (MODE === "small") await scanOverflow("dialect");
     await tap("~dialect-continue", "Continue with Standard Igbo");
-    const intro = await find("~lesson-intro", 20000);
+    const intro = await find("~lesson-intro", 40000);
     const missing = intro ? false : await exists("~first-lesson-missing", 2000);
     return { ok: !!intro, detail: `motive → new learner → dialect (${list ? "areas listed" : "area list MISSING"}) → ${intro ? "first lesson intro" : missing ? `NO first lesson: "${await textsUnder("~first-lesson-missing")}"` : "nothing"}` };
   });
@@ -882,7 +910,7 @@ try {
 
   // ---- save your progress (adult, documents NOT accepted here) → reminder ----------------
   await section("ACCOUNT", async () => {
-    if (!(await find("~account", 15000))) {
+    if (!(await find("~account", 30000))) {
       if (await exists("~first-lesson-continue", 1000)) await tap("~first-lesson-continue", "continue without a lesson");
       if (!(await find("~account", 10000))) return { ok: false, detail: "account screen missing" };
     }
@@ -1161,7 +1189,10 @@ try {
       await sleep(1000);
       await shot("community");
       const down = await exists("~community-down", 500);
-      return { ok: !!facts.friendCode, detail: facts.friendCode ? `anonymous account created on the live server; friend code ${facts.friendCode}` : down ? `community down: "${await textsUnder("~community-down")}"` : "friend code never appeared (45 s)" };
+      const cohort = (await scrollTo("~community-cohort", 4)) ? (await textsUnder("~community-cohort", 2000)).split(" | ").find((t) => /cohort/i.test(t)) ?? "" : "";
+      facts.cohort = cohort;
+      await scrollTop();
+      return { ok: !!facts.friendCode, detail: facts.friendCode ? `anonymous account created on the live server; friend code ${facts.friendCode}; "${cohort}"` : down ? `community down: "${await textsUnder("~community-down")}"` : "friend code never appeared (45 s)" };
     });
 
     await section("FAMILY-CIRCLE", async () => {
@@ -1267,7 +1298,7 @@ try {
         await checkSafeArea(screen, [`~${screen}-header-back`]);
         await scanOverflow(`tool-${tool}`);
         if (tool === "flashcards") {
-          const kb = await sheetKeyboard("deck-name", { open: "~flashcards-new", sheet: "~flashcards-name", field: "~flashcards-name-name", save: "~flashcards-name-save", cancel: "~flashcards-name-cancel", text: "Family words" });
+          const kb = await sheetKeyboard("deck-name", { open: ["~flashcards-new", "~flashcards-mine-new", "~flashcards-new-footer"], sheet: "~flashcards-name", field: "~flashcards-name-name", save: "~flashcards-name-save", cancel: "~flashcards-name-cancel", text: "Family words" });
           record("KEYBOARD-DECK-SHEET", kb.ok === null ? "SKIP" : kb.ok ? "PASS" : "FAIL", kb.detail);
         }
         await drag("up");
@@ -1342,7 +1373,7 @@ try {
       if (!(await find("~flashcards", 8000))) return { ok: false, detail: "Flashcards did not open" };
       await sleep(800);
       await shot("flashcards");
-      const r = await sheetKeyboard("deck-name", { open: "~flashcards-new", sheet: "~flashcards-name", field: "~flashcards-name-name", save: "~flashcards-name-save", cancel: "~flashcards-name-cancel", text: "Family words" });
+      const r = await sheetKeyboard("deck-name", { open: ["~flashcards-new", "~flashcards-mine-new", "~flashcards-new-footer"], sheet: "~flashcards-name", field: "~flashcards-name-name", save: "~flashcards-name-save", cancel: "~flashcards-name-cancel", text: "Family words" });
       await goBack("~flashcards-header-back");
       return r;
     });
@@ -1392,6 +1423,11 @@ try {
     "SAFE-AREA",
     layoutIssues.length ? "FAIL" : "PASS",
     layoutIssues.length ? layoutIssues.join(" | ") : "no control under the status bar, the island or the home indicator"
+  );
+  record(
+    "STATUS-BAR",
+    statusBarOverlaps.length ? "FAIL" : "PASS",
+    statusBarOverlaps.length ? `content runs under the status bar in ${statusBarOverlaps.length} screenshot(s): ${statusBarOverlaps.join(", ")}` : "no content under the status bar in any screenshot"
   );
   record("OVERFLOW", overflowNotes.length ? "WARN" : "PASS", overflowNotes.length ? overflowNotes.join(" | ") : "nothing runs off the side of the screen");
   const count = (s) => results.filter((r) => r.status === s).length;
