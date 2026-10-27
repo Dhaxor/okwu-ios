@@ -1,0 +1,338 @@
+{
+ "version": 1,
+ "tales": [
+  {
+   "id": "mbe-and-the-birds",
+   "title": "Mbe and the feast in the sky",
+   "outline": "The tortoise and the birds",
+   "told": "Told across Igboland, and far beyond it, in many versions.",
+   "motif": "feathers",
+   "minutes": 3,
+   "parts": [
+    {
+     "kind": "p",
+     "text": "Long ago, in a dry season that would not end, the animals of the forest grew thin. Mbe the tortoise grew thin too, though never as quickly as his wits grew sharp. Tellers like to warn you about him before they begin."
+    },
+    {
+     "kind": "line",
+     "igbo": "Mbe bụ anụ e ji aghụghọ mara n'akụkọ ifo",
+     "en": "The tortoise is known for being tricky in folktales.",
+     "audio": "ia_6481b98fb28aaa073778fda5-a127004b-8f0d-498a-b72a-4a59d8e94c8b"
+    },
+    {
+     "kind": "p",
+     "text": "One morning word came down that the people of the sky were giving a great feast, and that every bird was invited. The birds made ready at once. They smoothed their feathers, practised their greetings and argued about who would speak first, because a feast in the sky is not a small thing."
+    },
+    {
+     "kind": "line",
+     "igbo": "Nnụnụ na-efe efe.",
+     "en": "Birds fly.",
+     "audio": "ia_643e7fd537351af7785684ca"
+    },
+    {
+     "kind": "p",
+     "text": "Mbe watched them from below. He had no feathers, and his short legs had never left the ground. So he went to the birds with the softest voice he owned. He praised the sunbird's colours and the kite's long glide, and he spoke of friendship, and of how dull a feast is without a good storyteller at the table. The birds were not sure. A guest nobody invited is a guest who brings trouble, and some of them said so plainly."
+    },
+    {
+     "kind": "line",
+     "igbo": "Ha anaghị anabata ịkpọ mmadụ ọzọ bịa oriri ahụ.",
+     "en": "They don't allow bringing another person to the feast.",
+     "audio": "ia_6403bcb5bfb558b77d8d0495"
+    },
+    {
+     "kind": "p",
+     "text": "But Mbe talked until their doubt wore thin. In the end each bird pulled out a single feather and gave it to him, and with clay and a great deal of patience he fixed them along his shell until he had something like wings. When he flapped them he rose, unsteady and delighted, and the birds laughed in surprise."
+    },
+    {
+     "kind": "line",
+     "igbo": "Anụmaanụ ọbụla nwere nku na-efe efe.",
+     "en": "Any animal with wings fly.",
+     "audio": "ia_644f17c23ad3cc51b9ea0354"
+    },
+    {
+     "kind": "p",
+     "text": "On the long flight up, Mbe had another idea. \"At a great feast,\" he told them, \"every guest takes a new name for the day. It is how things are done in the sky.\" Nobody had heard of such a custom, but nobody wanted to look foolish in front of their hosts, so each bird chose a new name. Mbe chose last. \"From now until we go home,\" he said, \"you will call me All of You.\""
+    },
+    {
+     "kind": "p",
+     "text": "The people of the sky had laid out pounded yam, pots of soup thick with fish, roasted yams and gourds of palm wine. When the host rose to welcome them, Mbe stepped forward before anyone else. \"For whom is this feast prepared?\" he asked. \"For all of you,\" said the host. Mbe turned to the birds with a sorrowful face. \"You heard our host. It is for All of You, and that is my name. You may eat when I have finished.\""
+    },
+    {
+     "kind": "p",
+     "text": "And so he ate. He ate the best of the soup and the softest of the yam, and he drank until the gourds were dry. The birds, who had flown so far, were left with bones and crusts. Their anger rose slowly, the way a pot comes to the boil, and when the meal was over each bird walked up to Mbe and took back the feather it had lent him."
+    },
+    {
+     "kind": "p",
+     "text": "Feather by feather, Mbe's wings were gone. The birds flew home over the edge of the sky, and Mbe sat alone at the top of the world, full to the neck, with no way down. What happened next is another story. The elders have a saying that fits a tortoise in a hurry."
+    },
+    {
+     "kind": "line",
+     "igbo": "Ana achụ mbekwu n'ị́ké, ọ ga èfé elu?",
+     "en": "Does one pursue the tortoise with great speed? Is it going to fly?",
+     "audio": "iax_63d80e9fa33464fe680f4def"
+    }
+   ],
+   "moral": "A trick can fill your stomach for one evening. It cannot carry you home."
+  },
+  {
+   "id": "why-the-shell-is-cracked",
+   "title": "Why Mbe's shell is cracked",
+   "outline": "Why the tortoise's shell is cracked",
+   "told": "The second half of the feast in the sky, told across Igboland in many versions.",
+   "motif": "mosaic",
+   "minutes": 2,
+   "parts": [
+    {
+     "kind": "p",
+     "text": "We left Mbe at the top of the sky after the feast he ate by himself, with every borrowed feather taken back. Far below he could just see the roofs of his own compound, where his wife was waiting."
+    },
+    {
+     "kind": "line",
+     "igbo": "Aha nwunye mbe bụ Anịm.",
+     "en": "Tortoise's wife's name is Anịm.",
+     "audio": "ia_648c42bbf0422aa503d169ff-e94f5f0b-136e-4594-b244-6739b4a07921"
+    },
+    {
+     "kind": "p",
+     "text": "He called out to the last bird still in sight, the parrot, who turned back with a sour look. \"Please,\" Mbe said, \"take one message to my house. Tell my wife to bring out everything soft we own, the mats, the cushions, the old cloths and heaps of dry leaves, and to spread them in the compound so that I can jump down and land safely.\""
+    },
+    {
+     "kind": "p",
+     "text": "The parrot flew down. But the parrot had eaten bones at that feast, and it had not forgotten. \"Your husband says,\" it told Anịm, \"bring out everything hard you own. The hoes, the iron pots, the grinding stones, the firewood. Lay them out in the open.\" Anịm did exactly as the message said."
+    },
+    {
+     "kind": "p",
+     "text": "From high above, Mbe could see something being laid out for him, but not what it was. He looked down at his own small feet and took a deep breath."
+    },
+    {
+     "kind": "line",
+     "igbo": "Mbe nwere mkpụmkpụ aka.",
+     "en": "Tortoise has short limbs.",
+     "audio": "ia_642addc7ced9e539f24132a3"
+    },
+    {
+     "kind": "p",
+     "text": "He jumped. He fell for a long, long time, and he landed with a crash the whole village heard. The hoes rang, the pots cracked, and Mbe's smooth shell burst into pieces."
+    },
+    {
+     "kind": "p",
+     "text": "Anịm ran to him, and the neighbours came running behind her. An old healer known for patient hands gathered the pieces one by one and joined them back together. It took many days. Mbe lived, but his shell was never smooth again. Look closely at any tortoise you meet and you will see the joins, patch beside patch, like a map of small fields."
+    },
+    {
+     "kind": "line",
+     "igbo": "Okpokoro mbe na-echekwa mbe.",
+     "en": "The shell of the tortoise secures the tortoise.",
+     "audio": "ia_64234e8ca5ee670536c0ca16"
+    },
+    {
+     "kind": "p",
+     "text": "Even mended, the shell did its work, and Mbe went on to cause trouble in many more stories. When children ask why the tortoise's back looks the way it does, someone usually tells them this one."
+    },
+    {
+     "kind": "line",
+     "igbo": "Amụtara m ọtụtụ ihe n'akụkọ ifo ahụ ọ kọọrọ anyị.",
+     "en": "I learnt a lot of things from the folktale he told us.",
+     "audio": "ia_63f36560dedfff1715bf7075"
+    }
+   ],
+   "moral": "Friends you have cheated will not carry your messages faithfully."
+  },
+  {
+   "id": "the-great-tug-of-war",
+   "title": "Mbe and the great tug of war",
+   "outline": "The tortoise, the elephant and the hippopotamus",
+   "told": "Told widely across West Africa, Igboland included. The ending changes from teller to teller.",
+   "motif": "vine",
+   "minutes": 2,
+   "parts": [
+    {
+     "kind": "line",
+     "igbo": "Nne m kọọrọ m akụkụ enyi na mbe.",
+     "en": "My mother told me the story of the elephant and the tortoise.",
+     "audio": "ia_645b1ebfc56cc8a8b9e6b0e3"
+    },
+    {
+     "kind": "p",
+     "text": "In the forest lived the elephant, the largest of all the animals, who liked everyone to know it."
+    },
+    {
+     "kind": "line",
+     "igbo": "Enyi na-ebi n'ọhịa.",
+     "en": "Elephants live in the wild.",
+     "audio": "ia_645b1f67c56cc865ece6b1ec"
+    },
+    {
+     "kind": "p",
+     "text": "In the river lived the hippopotamus, who was very nearly as large and liked everyone to know that too. Between the forest and the river lived Mbe, who was tired of being stepped over by both of them."
+    },
+    {
+     "kind": "p",
+     "text": "One day Mbe told the elephant, \"You and I are equals. I am just as strong as you.\" The elephant laughed so hard the trees shook. \"Then prove it,\" Mbe said. \"Tomorrow we will pull a vine, you at one end and I at the other, and we will see who drags whom.\" The elephant agreed, still laughing, because a tusk like his can pull a tree out of the ground."
+    },
+    {
+     "kind": "line",
+     "igbo": "Ọdụ enyi siruru ike ịbụ osisi.",
+     "en": "The elephant tusk is strong enough to uproot trees.",
+     "audio": "ia_63d9a9705feb0e479c970adf"
+    },
+    {
+     "kind": "p",
+     "text": "Then Mbe walked down to the river and said exactly the same thing to the hippopotamus, and the hippopotamus laughed just as hard and agreed to the same contest."
+    },
+    {
+     "kind": "p",
+     "text": "The next morning Mbe cut the longest vine he could find. He gave one end to the elephant at the edge of the forest. \"When you feel me pull, pull back with everything you have.\" Then he carried the other end through the bush to the river bank. \"When you feel me pull, pull back with everything you have.\" He hid himself in the thick grass in the middle, gave the vine one sharp tug, and sat down to watch."
+    },
+    {
+     "kind": "p",
+     "text": "The elephant pulled. The hippopotamus pulled. The vine creaked and stretched and sang. All morning and all afternoon they heaved, dug in their feet and heaved again, and neither could move the other an inch. Each of them thought, \"That small tortoise is stronger than I ever imagined.\""
+    },
+    {
+     "kind": "p",
+     "text": "Some tellers say that at sunset both animals followed the vine to see how Mbe was doing it, met each other in the middle and understood at last, and never trusted Mbe again. Others say they let go, exhausted, and went home believing it, and from that day greeted Mbe with respect at the market. Either way, the people who tell this story have a phrase for anyone who outwits the strong."
+    },
+    {
+     "kind": "line",
+     "igbo": "Ọ na-aghọ aghụghọ ka mbe.",
+     "en": "He is as cunning as a tortoise",
+     "audio": "ia_648c42bbf0422afc97d169f9-54c4956f-9aa6-47ae-b6ec-a92948082ee6"
+    }
+   ],
+   "moral": "Strength is not the only kind of power. But a trick, once found out, costs you friends."
+  },
+  {
+   "id": "the-kite-and-the-hen",
+   "title": "Why the kite carries off chicks",
+   "outline": "The hen and the kite's razor",
+   "told": "Told across southern Nigeria, Igboland included, in many versions.",
+   "motif": "kite",
+   "minutes": 2,
+   "parts": [
+    {
+     "kind": "p",
+     "text": "There was a time when the kite and the hen were neighbours and good friends. The kite was proud of his sharp eyes and his long, hooked beak."
+    },
+    {
+     "kind": "line",
+     "igbo": "Egbe nwere ọnụ ogologo.",
+     "en": "Kite has a long beak.",
+     "audio": "ia_6477230e711bde71d84f905c-ba2f539f-2ea9-48e6-9172-00205e57e2d0"
+    },
+    {
+     "kind": "p",
+     "text": "The hen was proud of her chicks, and she fussed over them from morning until night."
+    },
+    {
+     "kind": "line",
+     "igbo": "Nnekwu na-enye ụmụ ya nri.",
+     "en": "The hen feeds its chicks.",
+     "audio": "ia_63829990eb86ac17566fb6c6"
+    },
+    {
+     "kind": "p",
+     "text": "A great festival was coming, and the hen wanted her children to look their best. She had no razor of her own to trim them, so she went to the kite. \"Lend me your razor,\" she said, \"and I will bring it back as soon as I'm done.\" The kite handed it over. \"It is the only one I have,\" he said. \"Keep it safe.\""
+    },
+    {
+     "kind": "p",
+     "text": "The hen trimmed and tidied her chicks, and everyone at the festival said how fine they looked. But somewhere between the trimming and the dancing, the razor slipped from under her wing and was lost in the dust of the compound."
+    },
+    {
+     "kind": "p",
+     "text": "When the kite came for his razor, the hen searched everywhere. She searched until dark and all the next day. It was gone. The kite circled above her compound, then came to rest on her roof and looked down for a long time."
+    },
+    {
+     "kind": "line",
+     "igbo": "Egbe ahụ bere n'ọnụ ụlọ.",
+     "en": "The kite perched on the tip of the roof.",
+     "audio": "iax_63756e6c72670e72a7f482cc"
+    },
+    {
+     "kind": "p",
+     "text": "\"Until you return what you borrowed,\" he said at last, \"I will take one of your chicks whenever I please.\" Then he flew away."
+    },
+    {
+     "kind": "p",
+     "text": "That is why, tellers say, hens still scratch at the ground all day long, turning over the dust in case the razor is there. And it is why, whenever the kite's shadow passes over the yard, the hen calls her chicks under her wings."
+    },
+    {
+     "kind": "line",
+     "igbo": "Mgbe egbe a rugharịsịrị, o ga-ebekwasa n'elu ebe a.",
+     "en": "When this kite finished hovering, it will perch on top of this place.",
+     "audio": "ia_646e77729045ac29e2a681b5-f2635b79-ac77-4f1d-9c8e-23ad8c91aaa1"
+    },
+    {
+     "kind": "line",
+     "igbo": "Egbe na-ebu ọkụkọ.",
+     "en": "Kite pries on chicks.",
+     "audio": "ia_6477230e711bdeb1244f905a-2506202b-13ed-4057-842b-3aa5594906d4"
+    }
+   ],
+   "moral": "Return what you borrow, and guard what you are trusted with."
+  },
+  {
+   "id": "mbe-and-the-leopard",
+   "title": "Mbe and the leopard",
+   "outline": "The tortoise and the leopard",
+   "told": "Told across Igboland. The ending changes from teller to teller.",
+   "motif": "dust",
+   "minutes": 1,
+   "parts": [
+    {
+     "kind": "p",
+     "text": "For a long time the leopard had wanted to catch Mbe, and for a long time Mbe had kept out of his way. The tortoise is not always a villain in these stories. Sometimes he is simply the clever one."
+    },
+    {
+     "kind": "line",
+     "igbo": "Mbe bụ anụ nwere akọnụche n'akụkọ ifo.",
+     "en": "Tortoise is a wise animal in folktales.",
+     "audio": "ia_648c42bbf0422a6ad5d169fd-2b58e9be-1772-40c4-8115-7c6b90aee447"
+    },
+    {
+     "kind": "p",
+     "text": "But one evening, on a narrow path between two farms, Mbe came round a bend and there was the leopard, waiting."
+    },
+    {
+     "kind": "line",
+     "igbo": "Agụ bụ anụ kara obi.",
+     "en": "The leopard is a courageous animal.",
+     "audio": "ia_6443e65eba4f9cedd06d4175"
+    },
+    {
+     "kind": "p",
+     "text": "There was nowhere to run, and a tortoise does not run anyway. \"Very well,\" said Mbe. \"You have caught me fairly. Only give me a moment before you eat me.\" The leopard, who was in no hurry, sat back and agreed."
+    },
+    {
+     "kind": "p",
+     "text": "Mbe began to scratch at the path. He dug his feet into the earth and flung the dust left and right. He threw sand into the bushes, scraped long marks across the ground and stamped until the dust hung in the air like smoke."
+    },
+    {
+     "kind": "line",
+     "igbo": "Ọ na-akpọ anyị ụzụzụ.",
+     "en": "He is puffing dust at us.",
+     "audio": "ia_63e6433ea3172a52ffddb17d"
+    },
+    {
+     "kind": "p",
+     "text": "\"What are you doing?\" asked the leopard. \"When I am gone,\" said Mbe, \"people will pass this way. I want them to look at this ground and say, here two strong ones fought.\""
+    },
+    {
+     "kind": "line",
+     "igbo": "Ka ọ gbasịrị lịghịlịghị niile ahụ, gịnị mere?",
+     "en": "After the whole struggle, what happened?",
+     "audio": "ia_648ca268e5af738ddba48dbb-0ab93dfc-84d8-4c2f-aabb-863efcaf45a9"
+    },
+    {
+     "kind": "p",
+     "text": "What happened after all that struggle? Tellers disagree. Some say the leopard laughed so long that Mbe slipped away under a root. Some say the leopard won, as leopards do. All of them agree on what the story is for, and the elders keep a proverb that says the same."
+    },
+    {
+     "kind": "line",
+     "igbo": "Onye kwụrụ ọtọ emegharịgị ahụ, ngwere arịgoro ya elu",
+     "en": "If one stands up without shaking his body, lizards will climb up his body.",
+     "audio": "iax_63d567c6895cd14ca6e05dd1"
+    }
+   ],
+   "moral": "When trouble comes, don't stand still. Leave the mark of your effort."
+  }
+ ]
+}

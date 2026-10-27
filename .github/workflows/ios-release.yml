@@ -1,0 +1,82 @@
+name: iOS release build
+
+# A signed App Store IPA via eas build --local on a free macOS runner.
+# Tests, typecheck and content lint run in the private source repo before
+# every export (scripts/release/export-ios-mirror.mjs), so this mirror only
+# builds. The IPA artifact (okwu-ios-ipa) is uploaded to App Store Connect
+# from Windows: asc builds upload --app <id> --ipa okwu.ipa.
+
+on:
+  push:
+    branches:
+      - release-build
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-26
+    timeout-minutes: 90
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+      EAS_SKIP_AUTO_FINGERPRINT: "1"
+      EAS_BUILD_NO_EXPO_GO_WARNING: "true"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify Xcode is new enough to upload
+        run: |
+          xcodebuild -version
+          MAJOR=$(xcodebuild -version | head -1 | sed -E 's/Xcode ([0-9]+).*/\1/')
+          if [ "$MAJOR" -lt 26 ]; then
+            echo "::error::Xcode $MAJOR too old; App Store uploads require the iOS 26 SDK (Xcode 26+)."
+            exit 1
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Verify the lockfile matches package.json
+        run: npm ci --include=dev
+
+      - name: Build signed IPA
+        env:
+          EAS_LOCAL_BUILD_WORKINGDIR: ${{ runner.temp }}/easbuild
+          EAS_LOCAL_BUILD_SKIP_CLEANUP: "1"
+        run: |
+          npx eas-cli@latest build \
+            --platform ios \
+            --profile production \
+            --local \
+            --non-interactive \
+            --output "$RUNNER_TEMP/okwu.ipa"
+
+      - name: Collect Xcode logs on failure
+        if: failure()
+        run: |
+          mkdir -p "$RUNNER_TEMP/xcodelogs"
+          for root in "$RUNNER_TEMP/easbuild" "${TMPDIR:-/tmp}"; do
+            [ -d "$root" ] || continue
+            find "$root" \( -name '*.log' -o -path '*/logs/*' \) -type f -size -20M \
+              -exec cp {} "$RUNNER_TEMP/xcodelogs/" \; 2>/dev/null || true
+          done
+          ls -la "$RUNNER_TEMP/xcodelogs" || true
+
+      - name: Upload Xcode logs
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcode-build-logs
+          path: ${{ runner.temp }}/xcodelogs
+          retention-days: 7
+          if-no-files-found: warn
+
+      - name: Upload IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: okwu-ios-ipa
+          path: ${{ runner.temp }}/okwu.ipa
+          retention-days: 14

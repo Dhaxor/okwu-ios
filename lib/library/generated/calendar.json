@@ -1,0 +1,97 @@
+{
+ "version": 1,
+ "days": [
+  {
+   "id": "eke",
+   "spelling": "Eke",
+   "toned": "Èke",
+   "audio": "ia_5f90c35e49f7e863e92b75a5",
+   "label": "The first market day",
+   "about": "Eke opens the izu. The dataset calls it the main Igbo market day and links it with the east and with fire.",
+   "today": {
+    "igbo": "Taa bụ ahịa Eke.",
+    "en": "Today is Eke market day.",
+    "audio": "ia_63d572a4529481d7ddaeabfc"
+   },
+   "line": {
+    "igbo": "Eke bụ isi ahịa ndị Igbo.",
+    "en": "Eke is the main Igbo market day.",
+    "audio": "ia_63d572a4529481345daeabfb"
+   },
+   "names": [
+    "okeke",
+    "mgbeke",
+    "nweeke"
+   ]
+  },
+  {
+   "id": "orie",
+   "spelling": "Orie",
+   "toned": "Orìè",
+   "audio": "ia_5f90c35f49f7e863e92b86d6",
+   "label": "The second market day",
+   "about": "Orie is the second day of the izu. Many towns hold markets, meetings and even festivals on it.",
+   "today": {
+    "igbo": "Taa bụ Orie, ahịa anyị ga-azụ n'uju.",
+    "en": "Today is Orie, our market will operate fully.",
+    "audio": "ia_643dc17feb047f0dd5a2d92a"
+   },
+   "line": {
+    "igbo": "Ndị obodo m ga-eme mmemme iri ji ọhụrụ ha n'ụbọchị ahịa Orie.",
+    "en": "My community will celebrate their new yam festival on Orie market day.",
+    "audio": "ia_643dc17feb047f586ba2d92b"
+   },
+   "names": [
+    "okorie",
+    "mgborie",
+    "nwoorie"
+   ]
+  },
+  {
+   "id": "afo",
+   "spelling": "Afọ",
+   "toned": "Àfọ̀",
+   "audio": "ia_5f90c35e49f7e863e92b6e4f",
+   "label": "The third market day",
+   "about": "Afọ is the third day of the izu. The dataset links it with the north and with earth.",
+   "today": {
+    "igbo": "Taa bụ Afọ. Ị ga-abịa?",
+    "en": "Today is Afọ. Will you come?",
+    "audio": "ia_6447db82510e7cb6a922400b"
+   },
+   "line": {
+    "igbo": "Anyị ga-ezukọ ọzọ n'ụbọchị Afọ, n'izu a.",
+    "en": "We will meet again on Afọ day, this week.",
+    "audio": "ia_6443ea3d59234f9f9bfd46a8"
+   },
+   "names": [
+    "okafo",
+    "mgbaafo",
+    "nwaafo"
+   ]
+  },
+  {
+   "id": "nkwo",
+   "spelling": "Nkwọ",
+   "toned": "Ǹkwọ",
+   "audio": "ia_5f90c35f49f7e863e92b82a9",
+   "label": "The fourth market day",
+   "about": "Nkwọ closes the izu. Some of the largest markets, Onitsha's among them, open on Nkwọ.",
+   "today": {
+    "igbo": "Taa bụ Nkwọ, ahịa Emekuuwku ga-azụ n'uju.",
+    "en": "Today is Nkwo, the Emukwu market will operate in full.",
+    "audio": "ia_63914ac2b8680c68c4c29ef2"
+   },
+   "line": {
+    "igbo": "Ahịa Ọnịcha na-azụ na Nkwọ.",
+    "en": "The Onitsha market sells on Nkwor.",
+    "audio": "ia_63914ac2b8680c762ec29ef4"
+   },
+   "names": [
+    "okonkwo",
+    "nwankwo"
+   ]
+  }
+ ],
+ "beliefNote": "In older Igbo belief each market day is also tied to a spiritual force, which the dictionary calls an arụsị. We share this as history and belief, and it is never a game piece here."
+}

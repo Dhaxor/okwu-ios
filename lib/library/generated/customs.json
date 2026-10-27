@@ -1,0 +1,752 @@
+{
+ "version": 1,
+ "customs": [
+  {
+   "id": "iri-ji",
+   "kicker": "Iri ji",
+   "title": "The New Yam Festival",
+   "summary": "A harvest thanksgiving. The first new yams of the season are blessed, cooked and shared.",
+   "motif": "yam",
+   "sections": [
+    {
+     "h": "Why yam",
+     "p": "Yam has long been the crop of honour across Igboland, the staple that carried households through the year and a measure of a farmer's hard work. A good harvest is a shared blessing, not only one family's."
+    },
+    {
+     "h": "What happens",
+     "p": "Iri ji, \"eating yam\", marks the end of the old season and the start of the new. In many towns nobody eats the new yams until the festival opens them. The first yams are blessed with thanks for the harvest, by an elder, a traditional ruler or, in many places, at a church thanksgiving. Then families cook, relatives come home, and the village square fills with music, dance and, in some towns, wrestling and displays."
+    },
+    {
+     "h": "When it happens",
+     "p": "There is no single date. Each community fixes its own day, often between August and October, and sometimes on a particular market day."
+    },
+    {
+     "h": "If you are invited",
+     "p": "Come hungry and grateful. Greet the elders first, take food with your right hand, and ask before you photograph any ceremony."
+    }
+   ],
+   "words": [
+    {
+     "text": "ji",
+     "gloss": "yam",
+     "audio": "ia_5f90c35e49f7e863e92b7bb9"
+    },
+    {
+     "text": "m̀mèm̀me",
+     "gloss": "an event, festival, ceremony or occasion",
+     "audio": "ia_634cf9eddbc4af431c69ca26"
+    },
+    {
+     "text": "òmenààlà",
+     "gloss": "custom",
+     "audio": "ia_6328724ecbf30e54b401f669"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "Iri ji ọhụrụ bụ omenaala ndị Igbo.",
+     "en": "New yam festival is an Igbo tradition.",
+     "audio": "ia_64243d26d300f12586d8f4f7"
+    },
+    {
+     "igbo": "Ji bụ eze akụmakụ.",
+     "en": "Yam is the head of crops.",
+     "audio": "ia_63fa89127fbca51fd522ca53"
+    },
+    {
+     "igbo": "Ndị obodo m ga-eme mmemme iri ji ọhụrụ ha n'ụbọchị ahịa Orie.",
+     "en": "My community will celebrate their new yam festival on Orie market day.",
+     "audio": "ia_643dc17feb047f586ba2d92b"
+    },
+    {
+     "igbo": "Kedụ mgbe a na-eri ji ọhụụ?",
+     "en": "When is new yam festival?",
+     "audio": "ia_63fa113d2f78a1ebd9fc46fd"
+    }
+   ],
+   "varies": "Dates, rites and who blesses the yams differ from town to town.",
+   "links": [],
+   "proverb": null
+  },
+  {
+   "id": "igba-nkwu",
+   "kicker": "Ịgba nkwụ",
+   "title": "Wine carrying",
+   "summary": "The traditional marriage. The bride carries palm wine through the crowd to the man she has chosen.",
+   "motif": "calabash",
+   "sections": [
+    {
+     "h": "A marriage between families",
+     "p": "In Igbo tradition a marriage joins two families, not only two people. Before the wine carrying there are visits. The groom's family comes to introduce themselves, questions are asked, and the bride's family's list and the bride price are agreed. Every family has its own pace and its own steps."
+    },
+    {
+     "h": "The wine carrying",
+     "p": "On the day, the bride's family hosts. Guests gather, music plays, and the bride is handed a cup of palm wine. She walks through the crowd looking for her groom, who sits among the guests. When she finds him she kneels or bows, sips, and hands him the cup. He drinks, and the crowd cheers, because she has chosen him in front of everyone. Then the couple dance and guests shower them with money."
+    },
+    {
+     "h": "Palm wine",
+     "p": "Palm wine, tapped from the palm tree, is a drink of welcome and agreement. It is shared among elders and the two families during the rite."
+    },
+    {
+     "h": "Today",
+     "p": "Many couples hold the wine carrying and a church or court wedding, sometimes weeks apart, and families abroad often fly home for it."
+    }
+   ],
+   "words": [
+    {
+     "text": "gba nkwụ",
+     "gloss": "wine carrying",
+     "audio": "ia_63daf095a4f3dd0ddaa7c2c6"
+    },
+    {
+     "text": "nkwụenū",
+     "gloss": "palm wine from palm oil tree",
+     "audio": "ia_5f90c35f49f7e863e92b82ab"
+    },
+    {
+     "text": "àgbàmakwụwkọ",
+     "gloss": "wedding",
+     "audio": "ia_62e5cb9842b322a6bd4d1369"
+    },
+    {
+     "text": "nwunyè",
+     "gloss": "wife",
+     "audio": "ia_6351f15ee842571bf6123f75"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "Anyị ga-eje ịgba nkwụ Ada.",
+     "en": "We shall attend Ada's wine carrying or traditional marriage.",
+     "audio": "ia_6319fc58eee52e18c93412e2"
+    },
+    {
+     "igbo": "Ha gbara nkwu afọ atọ gara aga.",
+     "en": "They got married, traditionally, three years ago.",
+     "audio": "ia_63daf039a4f3ddaf6aa7c234"
+    },
+    {
+     "igbo": "Gaa ka icheere ndị ọgọ gị ọjị.",
+     "en": "Go and present kolanut to your in-laws.",
+     "audio": "ia_637a938294d0be1a3a447156"
+    }
+   ],
+   "varies": "The steps, the lists and the order of events differ by family and community.",
+   "links": [],
+   "proverb": null
+  },
+  {
+   "id": "naming",
+   "kicker": "Aha",
+   "title": "Naming a child",
+   "summary": "A child's name is chosen with care and given before family. It can carry thanks, a prayer or a memory.",
+   "motif": "crescent",
+   "sections": [
+    {
+     "h": "A name says something",
+     "p": "Many Igbo names are whole sentences. Chukwuemeka is \"God has done so much\", Ndụka is \"life is supreme\", Ijeọma is \"a good journey\". A name can give thanks, record the day a child was born or remember someone."
+    },
+    {
+     "h": "The naming",
+     "p": "After a birth, the family gathers to name the child. Grandparents, parents and relatives may each give a name, which is why many children have several. Prayers are said, kola may be shared, and there is food and music. Many Christian families hold it together with a church dedication."
+    },
+    {
+     "h": "Ọmụgwọ",
+     "p": "In the weeks after a birth, the new mother's own mother often comes to stay and care for her and the baby. The dataset describes it as a period of about three months."
+    },
+    {
+     "h": "When",
+     "p": "The day of the naming differs from family to family and from community to community."
+    }
+   ],
+   "words": [
+    {
+     "text": "gụ̀ ahà",
+     "gloss": "give a name",
+     "audio": "ia_5f90c35e49f7e863e92b6e00"
+    },
+    {
+     "text": "ahà",
+     "gloss": "name",
+     "audio": "ia_5f90c35e49f7e863e92b6e0a"
+    },
+    {
+     "text": "ọ̀mụgwọ̀",
+     "gloss": "a three-month exclusive care period for a woman that gave birth",
+     "audio": "ia_5f90c35f49f7e863e92b814d"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "A gụrụ ya aha ozugbo a mụrụ ya.",
+     "en": "He was named immediately he was born.",
+     "audio": "ia_644103e32f352732112030fc"
+    },
+    {
+     "igbo": "Onye gụrụ nnwa a aha?",
+     "en": "Who named this child?",
+     "audio": "ia_644142aa81be6c6b3d7eb041"
+    },
+    {
+     "igbo": "Nnwa bụ onyinye Chukwu.",
+     "en": "A child is a gift from God.",
+     "audio": "ia_647d1c6c24ba7f6d8450483b-8c444225-a23a-49cf-9e75-decaf720c496"
+    },
+    {
+     "igbo": "Ọmụgwọ bụ okenọọrụ nne nwaanyị mụrụ nwa ọhụrụ.",
+     "en": "Omugwo is the responsibility of the mother of the woman that gave birth newly.",
+     "audio": "ia_644334cf7f80919145961ff8"
+    }
+   ],
+   "varies": "Who names the child, how many names are given and when differ by family.",
+   "links": [
+    "names"
+   ],
+   "proverb": null
+  },
+  {
+   "id": "oji",
+   "kicker": "Ọjị",
+   "title": "Kola nut",
+   "summary": "Kola is the first thing offered to a guest, a sign of welcome, peace and goodwill.",
+   "motif": "kola",
+   "sections": [
+    {
+     "h": "Welcome begins with kola",
+     "p": "In many Igbo homes a visitor is offered kola before anything else, often with a peanut-and-pepper paste alongside. It says you are welcome here and that you come in peace."
+    },
+    {
+     "h": "Presenting, blessing, breaking",
+     "p": "The kola is presented to the guests and passed around so that everyone sees it, then returned. A person chosen by custom blesses it with a prayer and breaks it, and the pieces are shared. Who blesses and breaks the kola is set by local custom. Often it is the eldest man present, or the host. Practices around gender and eldership differ from community to community, and many families adapt them today. If you are unsure, watch your host and follow their lead."
+    },
+    {
+     "h": "Igbo kola",
+     "p": "The kola used is the Igbo kola, which has several lobes. There is a well-known saying that kola understands only Igbo, so the blessing is said in Igbo."
+    },
+    {
+     "h": "Taught with respect",
+     "p": "Okwu teaches kola as a custom of respect. It never becomes a game piece, a reward or a collectible here."
+    }
+   ],
+   "words": [
+    {
+     "text": "ọjị",
+     "gloss": "kola nut",
+     "audio": "ia_5f90c35f49f7e863e92b878d"
+    },
+    {
+     "text": "che ọjị",
+     "gloss": "present kola nut",
+     "audio": "ia_5f90c35e49f7e863e92b7316"
+    },
+    {
+     "text": "akiilū",
+     "gloss": "bitter kola",
+     "audio": "ia_5f90c35e49f7e863e92b6df6"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "E ji iche ọjị mara ndị Igbo.",
+     "en": "The Igbos are known for presentation of kolanut.",
+     "audio": "ia_637a922594d0be3859447122"
+    },
+    {
+     "igbo": "Ifeanyị chere anyị ọjị ozugbo anyị ruru be ya.",
+     "en": "Ifeanyi presented kola nut to us immediately we got to his place.",
+     "audio": "ia_637a922594d0be280244711e"
+    },
+    {
+     "igbo": "A kpọnyitere ya ka ọ gọọ ọjị.",
+     "en": "He was called upon to pray over the kolanut.",
+     "audio": "iax_635cb6fbfc9ac19cfc23136b"
+    },
+    {
+     "igbo": "Naanị asụsụ Igbo ka ọjị na-anụ.",
+     "en": "Kola nut hears only the Igbo language.",
+     "audio": "ia_6443333f7f8091babf961dcf"
+    },
+    {
+     "igbo": "E ji ọkwa ose ata ọjị.",
+     "en": "Groundnut paste is used in eating kola nut.",
+     "audio": "ia_6443333f7f8091320a961dd0"
+    }
+   ],
+   "varies": "Who blesses and breaks kola, and who may receive it, differ by community. Follow your host.",
+   "links": [],
+   "proverb": "onye-wetara-oji-wetara"
+  },
+  {
+   "id": "market-week",
+   "kicker": "Izu",
+   "title": "The four market days",
+   "summary": "Eke, Orie, Afọ and Nkwọ. The four-day market week still shapes trade, names and meetings.",
+   "motif": "beads",
+   "sections": [
+    {
+     "h": "Four days, one izu",
+     "p": "The Igbo week, the izu, has four market days, Eke, Orie, Afọ and Nkwọ. A town's main market opens on one of them, and many markets carry the day in their name."
+    },
+    {
+     "h": "Days with meaning",
+     "p": "Meetings, weddings and festivals are often set on a market day, and some names record the day a child was born, such as Okeke and Mgbeke for Eke, Okorie and Mgborie for Orie, Okafọ for Afọ, and Okonkwọ and Nwankwọ for Nkwọ."
+    },
+    {
+     "h": "Older meanings",
+     "p": "In older Igbo belief each market day is also tied to a spiritual force, and the dictionary links Eke with the east and fire, and Afọ with the north and earth. We share this as history and belief."
+    },
+    {
+     "h": "Two izu",
+     "p": "Some reckonings also count an eight-day span of two izu, which is why the dataset describes Nwankwọ as a child born on \"the fourth or eighth\" market day."
+    },
+    {
+     "h": "Not the same everywhere",
+     "p": "Neighbouring towns share the same \"today\", but Okwu won't guess yours. Until a cultural advisor confirms a verified date, Okwu's calendar counts your own izu from the day you started."
+    }
+   ],
+   "words": [
+    {
+     "text": "ahịa",
+     "gloss": "market",
+     "audio": "ia_5f90c35e49f7e863e92b6e2b"
+    },
+    {
+     "text": "izụ̀",
+     "gloss": "week",
+     "audio": "ia_5f90c35e49f7e863e92b7b2f"
+    },
+    {
+     "text": "Èke",
+     "gloss": "the first market day",
+     "audio": "ia_5f90c35e49f7e863e92b75a5"
+    },
+    {
+     "text": "Orìè",
+     "gloss": "the second market day",
+     "audio": "ia_5f90c35f49f7e863e92b86d6"
+    },
+    {
+     "text": "Àfọ̀",
+     "gloss": "the third market day",
+     "audio": "ia_5f90c35e49f7e863e92b6e4f"
+    },
+    {
+     "text": "Ǹkwọ",
+     "gloss": "the fourth market day",
+     "audio": "ia_5f90c35f49f7e863e92b82a9"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "Eke bụ isi ahịa ndị Igbo.",
+     "en": "Eke is the main Igbo market day.",
+     "audio": "ia_63d572a4529481345daeabfb"
+    },
+    {
+     "igbo": "Ahịa Ọnịcha na-azụ na Nkwọ.",
+     "en": "The Onitsha market sells on Nkwor.",
+     "audio": "ia_63914ac2b8680c762ec29ef4"
+    },
+    {
+     "igbo": "Nweke pụtara nwoke a mụrụ ụbọchị Eke.",
+     "en": "Nweke means a man born on Eke market day.",
+     "audio": "ia_644bc1ca85c25b1bfdf5940d"
+    }
+   ],
+   "varies": "The market cycle is kept locally. Which day is \"today\" is not the same in every community.",
+   "links": [
+    "calendar",
+    "names"
+   ],
+   "proverb": "a-naghi-eji-ututu"
+  },
+  {
+   "id": "homecoming",
+   "kicker": "Disemba",
+   "title": "December homecoming",
+   "summary": "Every December, families in the cities and abroad travel home to the village, to family and to the land.",
+   "motif": "road",
+   "sections": [
+    {
+     "h": "Going home",
+     "p": "For many Igbo families, home is the town of their ancestors, even for people born in Lagos, London or Houston. December, with Christmas and the new year, is when people return. Houses are opened, roads fill, and towns grow loud with reunions."
+    },
+    {
+     "h": "What fills the season",
+     "p": "Weddings and wine carryings, town meetings and development projects, age-grade gatherings, church thanksgivings, festivals, and long evenings of visiting. It is often when children meet their relatives for the first time."
+    },
+    {
+     "h": "Speaking at home",
+     "p": "For learners, homecoming is when Igbo matters most. You greet elders, follow the jokes, and answer when someone asks your name and your father's name. A little practice now makes December easier."
+    }
+   ],
+   "words": [
+    {
+     "text": "lọta",
+     "gloss": "return",
+     "audio": "ia_63ec16ab32fa4a4b8d3febde"
+    },
+    {
+     "text": "Dìsembà",
+     "gloss": "December",
+     "audio": "ia_6360ddab0c13113f7cb544cf"
+    },
+    {
+     "text": "Ekeresìmeèsì",
+     "gloss": "Christmas",
+     "audio": "ia_6363dbd4c46b90060dfe763d"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "Ọtụtụ ndị mmadụ lọtara ụlọ na Disemba.",
+     "en": "So many people returned home in December.",
+     "audio": "ia_6462b7cbff23264ff587dc6b"
+    },
+    {
+     "igbo": "Ọnwa Disemba na-atọ ụtọ na obodo anyị.",
+     "en": "The month of December is interesting in our town.",
+     "audio": "ia_6462c101fbc13eb45ddf2bed"
+    },
+    {
+     "igbo": "Anyị ga-eje gba Ekeresimesi n'oge Disemba.",
+     "en": "We shall travel to celebrate Christmas in December.",
+     "audio": "ia_6462b7cbff23265efa87dc66"
+    },
+    {
+     "igbo": "Ị ga-alọta na Disemba?",
+     "en": "Will you return in December?",
+     "audio": "ia_6462c101fbc13e3175df2bf2"
+    }
+   ],
+   "varies": "Every town has its own December calendar of events.",
+   "links": [],
+   "proverb": null
+  },
+  {
+   "id": "title-taking",
+   "kicker": "Ọzọ",
+   "title": "Taking a title",
+   "summary": "Titles such as Ọzọ honour people who have served their community and lived with integrity.",
+   "motif": "steps",
+   "sections": [
+    {
+     "h": "An honour that is earned",
+     "p": "In many Igbo communities a person may be admitted to a title society after years of good standing. The best known is Ọzọ. A title recognises integrity, generosity and service, and it comes with duties. Titled people are expected to keep their word, settle disputes fairly and support the community. Women's titles exist in many places too, with names that differ from town to town."
+    },
+    {
+     "h": "A process, not a day",
+     "p": "Taking a title can involve fees, feasts for the members and rites that differ widely between towns. Some rites are private to members, and families decide what to share."
+    },
+    {
+     "h": "Respect",
+     "p": "Titled people are addressed by their title names and greeted in particular ways. Learn the local forms from your family. Okwu never draws title regalia or turns titles into rewards, because a title is earned in a community, not in an app."
+    },
+    {
+     "h": "Titles today",
+     "p": "Traditional rulers also confer chieftaincy titles on people who have served, including people living abroad. Churches and communities have long discussed how title rites and Christian faith fit together, and practices differ."
+    }
+   ],
+   "words": [
+    {
+     "text": "chi ọzọ̄",
+     "gloss": "take a title",
+     "audio": "ia_644d1da99bc5ed077167f7dc"
+    },
+    {
+     "text": "ọzọ̄",
+     "gloss": "a noble chieftaincy, in Igbo land, conferred on an indigene",
+     "audio": "ia_5f90c35f49f7e863e92b88c0"
+    },
+    {
+     "text": "ǹzè",
+     "gloss": "the highest chieftaincy in Igbo tradition",
+     "audio": "ia_5f90c35f49f7e863e92b8488"
+    },
+    {
+     "text": "ndị ichie",
+     "gloss": "chiefs, titled persons",
+     "audio": "ia_5f90c35f49f7e863e92b81ad"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "O chiri ọzọ na nwata.",
+     "en": "He took a chieftaincy title at a tender age.",
+     "audio": "ia_644d1d979bc5ed343567f7b2"
+    },
+    {
+     "igbo": "Mz. Ndụka chìrì ọzọ.",
+     "en": "Mr. Nduka took a chieftaincy title.",
+     "audio": "ia_644c71e40a883bb5e624dc50"
+    },
+    {
+     "igbo": "Ebuka na-echi ọzọ n'ama.",
+     "en": "Ebuka is taking chieftaincy title in the field.",
+     "audio": "ia_644c71e50a883b029c24dc54"
+    }
+   ],
+   "varies": "Which titles exist, who may take them and how differ greatly between communities.",
+   "links": [],
+   "proverb": null
+  },
+  {
+   "id": "masquerades",
+   "kicker": "Mmọnwụ",
+   "title": "Masquerades, a culture note",
+   "summary": "Masquerades belong to sacred, often restricted traditions. This note is brief, and it shows no images.",
+   "motif": "none",
+   "sections": [
+    {
+     "h": "What they are",
+     "p": "In many Igbo communities masquerades appear at festivals, at the funerals of important people and at other key moments. They are understood as spirit presences, not costumes, and the traditions around them belong to the societies that keep them."
+    },
+    {
+     "h": "Restricted knowledge",
+     "p": "Much about masquerades is sacred and restricted to initiated members, who are often men, and in many places the uninitiated keep a respectful distance. Anything restricted stays out of Okwu."
+    },
+    {
+     "h": "If you meet one",
+     "p": "Give way. Don't touch a masquerade or try to unmask it, and don't photograph it without permission from the people responsible. Follow what local people do."
+    },
+    {
+     "h": "Faith and change",
+     "p": "Views differ. Some churches discourage masquerading, while many communities keep it as heritage."
+    },
+    {
+     "h": "Why there are no pictures",
+     "p": "Out of respect, Okwu never draws masquerades and never uses them as avatars, rewards or game pieces."
+    }
+   ],
+   "words": [
+    {
+     "text": "mmọnwụ",
+     "gloss": "masquerade",
+     "audio": "ia_62f3aee240436a396402306f"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "A na-eti mmọnwụ dị iche iche n'ala Igbo.",
+     "en": "Different types of masquerades are displayed in Igboland.",
+     "audio": "ia_643ce9519ad9f2eb277e63a6"
+    },
+    {
+     "igbo": "Ndị Ụka akwadoghị iti mmọnwụ.",
+     "en": "The Church does not support masquerading.",
+     "audio": "ia_643ce9519ad9f210007e63a9"
+    }
+   ],
+   "varies": "What is open and what is restricted differs from one community to the next.",
+   "links": [],
+   "proverb": null
+  },
+  {
+   "id": "christianity",
+   "kicker": "Ụkakraịst",
+   "title": "Christianity in Igboland",
+   "summary": "Most Igbo people today are Christian, and faith runs through their names, greetings and calendar.",
+   "motif": "dawn",
+   "sections": [
+    {
+     "h": "Arrival",
+     "p": "Christian missions reached Igboland in the second half of the 1800s. Anglican missionaries arrived at Onitsha in 1857, and Catholic missionaries followed in the 1880s. Schools and churches spread across the region in the decades after."
+    },
+    {
+     "h": "Faith in daily life",
+     "p": "Sunday services, church weddings, harvest thanksgivings and Christmas at home are part of life for many families. Many names speak of God, the Chi- and Chukwu- names, and today most are given in a Christian sense."
+    },
+    {
+     "h": "The Igbo Bible",
+     "p": "The Bible was translated into Igbo early, and a union Igbo Bible published in 1913 helped shape how Igbo is written."
+    },
+    {
+     "h": "Living together",
+     "p": "Christianity sits alongside older Igbo beliefs and customs. Families and churches have long discussed which customs fit with faith, and the answers differ. Okwu describes these traditions with respect and does not take sides."
+    }
+   ],
+   "words": [
+    {
+     "text": "Ụkākraị̀st",
+     "gloss": "Christianity",
+     "audio": "ia_5f90c35f49f7e863e92b8c34"
+    },
+    {
+     "text": "ụkà",
+     "gloss": "church, The Church",
+     "audio": "ia_6343fc1c36716d22d1c3baf8"
+    },
+    {
+     "text": "Akwụkwọ Nsọ̄",
+     "gloss": "Bible",
+     "audio": "ia_6367612c49bc18bf158cea86"
+    },
+    {
+     "text": "Ekeresìmeèsì",
+     "gloss": "Christmas",
+     "audio": "ia_6363dbd4c46b90060dfe763d"
+    },
+    {
+     "text": "Istà",
+     "gloss": "Easter",
+     "audio": "ia_6361bfdd724b2b85a47dbb4f"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "Anyị ga-efe Chineke n'ụlọụka taa.",
+     "en": "We will worship God in the church today.",
+     "audio": "iax_63dafdf3a4f3dd751ba7c8cb"
+    },
+    {
+     "igbo": "Anyị na-eme mmemme Ekeresimeesi.",
+     "en": "We are celebrating Christmas.",
+     "audio": "ia_6474aab84be2b49cdb9a44cc-a713b3f1-f71f-4083-a1d0-97371d8db95b"
+    },
+    {
+     "igbo": "Akwụkwọ Nsọ na-akụziri anyị ihe.",
+     "en": "The Bible teaches us.",
+     "audio": "ia_63a2ddc18ca8bccb61224624"
+    },
+    {
+     "igbo": "Anyị jere ụka taata.",
+     "en": "We went to church today.",
+     "audio": "ia_63430e0de7317b1271211e88"
+    }
+   ],
+   "varies": "Denominations, and how they relate to local custom, differ across Igboland.",
+   "links": [],
+   "proverb": null
+  },
+  {
+   "id": "name-conventions",
+   "kicker": "Aha",
+   "title": "How Igbo names work",
+   "summary": "Sentence names, Chi names and market-day names, and why your surname may be your grandfather's first name.",
+   "motif": "spiral",
+   "sections": [
+    {
+     "h": "Names are sentences",
+     "p": "Many Igbo names are short sentences. Chibụzọ means \"God leads the way\", Ndụbiisi \"life is first\" and Ụzọdịmma \"the way is good\". Learning what a name means is learning a little Igbo."
+    },
+    {
+     "h": "Chi and Chukwu",
+     "p": "Chi-, Chukwu- and Olisa- names speak of God. Chi can also mean a person's own guardian spirit, and today most families give these names in a Christian sense."
+    },
+    {
+     "h": "Names that remember",
+     "p": "Some names record a birth, either the market day (Okeke, Okorie, Okafọ, Okonkwọ) or a family's situation, as Amaechi does. Others honour a father or a mother, like Nneka, Ikenna and Adanna. Market-day names are given less often now than they once were."
+    },
+    {
+     "h": "Surnames",
+     "p": "Many Igbo surnames began as the given name of a father or grandfather, which is why Okafọ, Okeke and Okonkwọ are such common surnames. Families keep their own spelling, so Okafor and Okafọ are the same name."
+    },
+    {
+     "h": "Short forms",
+     "p": "Long names are often shortened in daily life. Chukwuemeka becomes Emeka and Chukwuebuka becomes Ebuka."
+    }
+   ],
+   "words": [
+    {
+     "text": "ahà",
+     "gloss": "name",
+     "audio": "ia_5f90c35e49f7e863e92b6e0a"
+    },
+    {
+     "text": "gụ̀ ahà",
+     "gloss": "give a name",
+     "audio": "ia_5f90c35e49f7e863e92b6e00"
+    },
+    {
+     "text": "ahāǹjakị̀rị̀",
+     "gloss": "nickname",
+     "audio": "ia_5f90c35e49f7e863e92b6dfe"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "Aha ya pụtara 'Chukwu dị mma'.",
+     "en": "Her name means 'God is good'.",
+     "audio": "ia_6443f29859234fc412fd54ba"
+    },
+    {
+     "igbo": "Aha nna m bụ Okafọ.",
+     "en": "My father's name is Okafor.",
+     "audio": "ia_6443f29859234f4ab0fd54b6"
+    },
+    {
+     "igbo": "Ndị mmadụ anaghị agụ ụmụ Nwaàfọ̀ ugbu a.",
+     "en": "People do not name their children Nwaafor nowadays.",
+     "audio": "ia_644da0a8639e2f60d89db197"
+    },
+    {
+     "igbo": "Emeka na-agụ ụmụ ya naanị aha Igbo.",
+     "en": "Emeka names his children only Igbo names",
+     "audio": "ia_644103e32f3527107c2030f8"
+    }
+   ],
+   "varies": "Naming customs and spellings differ by family; a family's own spelling is always right.",
+   "links": [
+    "names"
+   ],
+   "proverb": null
+  },
+  {
+   "id": "age-grades",
+   "kicker": "Ọgbọ",
+   "title": "Age grades",
+   "summary": "People born around the same years form an ọgbọ, a lifelong group that works, celebrates and serves together.",
+   "motif": "circle",
+   "sections": [
+    {
+     "h": "Your ọgbọ",
+     "p": "In many Igbo towns, people born within a few years of each other belong to the same age grade. Each grade has its own name, meets regularly and looks out for its members."
+    },
+    {
+     "h": "Serving the town",
+     "p": "Age grades have long done community work, from clearing paths and building to keeping order at festivals and raising funds for schools and roads. Members stand by each other at weddings and burials."
+    },
+    {
+     "h": "Belonging from afar",
+     "p": "Many members abroad stay part of their grade, paying dues and joining the meetings when they come home in December."
+    },
+    {
+     "h": "In Okwu",
+     "p": "Okwu's weekly co-op groups borrow the word ọgbọ for this spirit of working together and never competing. The name is pending cultural sign-off."
+    }
+   ],
+   "words": [
+    {
+     "text": "ọ̀gbọ",
+     "gloss": "age mate ​",
+     "audio": "ia_5f90c35e49f7e863e92b72b9"
+    },
+    {
+     "text": "nzùkọ",
+     "gloss": "meeting",
+     "audio": "ia_5f90c35f49f7e863e92b8493"
+    }
+   ],
+   "lines": [
+    {
+     "igbo": "Kedụ aha ọgbọ unu?",
+     "en": "What is the name of your age grade?",
+     "audio": "ia_643bf86fb25eae1f0f77e3a3"
+    },
+    {
+     "igbo": "Ndị ọgbọ anyị nwere nzukọ taa.",
+     "en": "Our mates have a meeting today.",
+     "audio": "ia_64397b20e18ae3cb97a0b7dd"
+    },
+    {
+     "igbo": "Ọ bụ onye ọgbọ m.",
+     "en": "He is my age mate.",
+     "audio": "ia_643bf86fb25eae34d377e3a4"
+    }
+   ],
+   "varies": "How age grades are formed, named and run differs between towns.",
+   "links": [],
+   "proverb": null
+  }
+ ]
+}

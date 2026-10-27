@@ -1,0 +1,40 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "base": {
+      "env": {
+        "EXPO_PUBLIC_OKWU_API": "https://okwu-social.emperorduke5.workers.dev",
+        "EXPO_PUBLIC_AUDIO_BASE": "https://okwu.emperorduke5.workers.dev",
+        "EXPO_PUBLIC_OKWU_SITE": "https://okwu.emperorduke5.workers.dev"
+      }
+    },
+    "production": {
+      "extends": "base",
+      "distribution": "store",
+      "autoIncrement": false
+    },
+    "devicetest": {
+      "extends": "base",
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
+    },
+    "e2e": {
+      "extends": "devicetest",
+      "env": {
+        "EXPO_PUBLIC_E2E": "1"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleTeamId": "6RMFGXBQ82"
+      }
+    }
+  }
+}

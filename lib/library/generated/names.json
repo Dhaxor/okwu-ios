@@ -1,0 +1,3340 @@
+{
+ "version": 1,
+ "themes": [
+  {
+   "id": "chi",
+   "title": "Chi and Chukwu",
+   "blurb": "Names that speak of God, through Chi, Chukwu or Olisa. Many are whole sentences of thanks or trust."
+  },
+  {
+   "id": "market",
+   "title": "Market-day names",
+   "blurb": "Names that remember the market day a child was born on, from the four days of the izu."
+  },
+  {
+   "id": "virtue",
+   "title": "Virtue and blessing",
+   "blurb": "Names that hold a hope for the child, such as good fortune, a long life or a good path."
+  },
+  {
+   "id": "birth",
+   "title": "Family and birth",
+   "blurb": "Names about the family a child is born into and the way they arrived."
+  }
+ ],
+ "names": [
+  {
+   "id": "chukwuemeka",
+   "spelling": "Chukwuemeka",
+   "toned": "Chukwuēmēkā",
+   "datasetSpelling": null,
+   "meaning": "God has done so much",
+   "short": "God has done so much",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b7390",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Chikwuēmēkē",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7390-647ce778f8f6bb309044713d"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha di ya bụ Chukwuemeka.",
+     "en": "Her husbands name is Chukjwuemeka.",
+     "audio": "ia_647c45b4c5d159d621739ed9-85597d0b-26ea-4a8e-ba2d-6ae6faea0908"
+    },
+    {
+     "igbo": "Chukwuemēkā bụ aha ama ama.",
+     "en": "Chukwuemeka is a popular name.",
+     "audio": "ia_647ce6d3f8f6bb5129447044-86b05b8c-f823-4c5d-b94a-1705bd72c84d"
+    }
+   ],
+   "dictId": "ia.w.5f90c35e49f7e863e92b7390"
+  },
+  {
+   "id": "chukwuebuka",
+   "spelling": "Chukwuebuka",
+   "toned": "Chukwuèbùka",
+   "datasetSpelling": null,
+   "meaning": "God is so great",
+   "short": "God is so great",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_60771064b11b214a0949f2b8",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Chikwuebùke",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_60771064b11b214a0949f2b8-647ce5aff8f6bbe19e446ed6"
+    },
+    {
+     "spelling": "Chukwuevùka",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_60771064b11b214a0949f2b8-647ce5aff8f6bb2fd0446ed7"
+    },
+    {
+     "spelling": "Chiebùka",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_60771064b11b214a0949f2b8-647ce5aff8f6bb414b446ed8"
+    },
+    {
+     "spelling": "Chievùka",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_60771064b11b214a0949f2b8-647ce5aff8f6bb3283446ed9"
+    },
+    {
+     "spelling": "Òlìsàebùka",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_60771064b11b214a0949f2b8-647ce5aff8f6bb264d446eda"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Chukwuebuka bụ aha di m.",
+     "en": "My husband's name is Chukwuebuka.",
+     "audio": "ia_647ce453f8f6bb3d76446cdc-7c79ad09-e303-4ab6-ab88-75f742ed230a"
+    },
+    {
+     "igbo": "Onye bụ Chukwuebuka?",
+     "en": "Who is Chukwuebuka?",
+     "audio": "ia_647ce532f8f6bb2b37446dc2-26c84f51-5a53-4875-924e-6dde83409dd5"
+    }
+   ],
+   "dictId": "ia.w.60771064b11b214a0949f2b8"
+  },
+  {
+   "id": "chiamaka",
+   "spelling": "Chiamaka",
+   "toned": "Chiāmākā",
+   "datasetSpelling": null,
+   "meaning": "God is so pleasant; God is awesome",
+   "short": "God is so pleasant",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_607d96b300816bad03734a34",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Chịāmākā",
+     "where": [
+      "Isuama"
+     ],
+     "audio": "ia_607d96b300816bad03734a34-6438af887dc3046fa9952dc6"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Chiamaka mara mma.",
+     "en": "Chiamaka is beautiful.",
+     "audio": "ia_6438aedf003829ada46c1f7f"
+    },
+    {
+     "igbo": "Biko kpọọrọ m Chiamaka.",
+     "en": "Please call Chiamaka for me.",
+     "audio": "ia_6438ae3900382928216c1f0e"
+    }
+   ],
+   "dictId": "ia.w.607d96b300816bad03734a34"
+  },
+  {
+   "id": "chibuzo",
+   "spelling": "Chibụzọ",
+   "toned": "Chibụzọ",
+   "datasetSpelling": null,
+   "meaning": "God leads the way",
+   "short": "God leads the way",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089bac54e13fe2f676ef890",
+   "parts": [
+    {
+     "text": "chi",
+     "gloss": "God",
+     "audio": "ia_5f90c35e49f7e863e92b733c"
+    },
+    {
+     "text": "bụ",
+     "gloss": "be",
+     "audio": "ia_5f90c35e49f7e863e92b72cc"
+    },
+    {
+     "text": "ụzọ̀",
+     "gloss": "way",
+     "audio": "ia_5f90c35f49f7e863e92b8cac"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Chukwubùụzọ̀",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_6089bac54e13fe2f676ef890-63ec12f232fa4a1d6f3fe76e"
+    },
+    {
+     "spelling": "chivuụzọ̀",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_6089bac54e13fe2f676ef890-63ec12f232fa4aa4cb3fe770"
+    },
+    {
+     "spelling": "Chịbụ̀ụzọ̀",
+     "where": [
+      "Isuama",
+      "Owere"
+     ],
+     "audio": "ia_6089bac54e13fe2f676ef890-63ec12f232fa4a3cbe3fe771"
+    },
+    {
+     "spelling": "Chibụ̀ụzọ̀",
+     "where": [
+      "Owere"
+     ],
+     "audio": "ia_6089bac54e13fe2f676ef890-63ec12f232fa4a4b823fe772"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha m bụ Chibụzọ.",
+     "en": "My name is Chibụzọ.",
+     "audio": "ia_63ec0c3e32fa4a45983fe3a1"
+    },
+    {
+     "igbo": "Chibụzọ dị ndụ",
+     "en": "Chibụzọ is alive.",
+     "audio": "ia_63eb90d01aef8a20e4c7b41c"
+    }
+   ],
+   "dictId": "ia.w.6089bac54e13fe2f676ef890"
+  },
+  {
+   "id": "chidiebere",
+   "spelling": "Chidịebere",
+   "toned": "Chidị̀èberè",
+   "datasetSpelling": null,
+   "meaning": "God is merciful",
+   "short": "God is merciful",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c75d8ea2d8fc886d7403",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Chidị̀èbelè",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_6088c75d8ea2d8fc886d7403-644cfd19ed3610cec1b03d9f"
+    },
+    {
+     "spelling": "Chukwuudị̀èbelè",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_6088c75d8ea2d8fc886d7403-644cfd19ed36103147b03da1"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha nwoke a bụ Chidịebere.",
+     "en": "This man's name is Chidịebere.",
+     "audio": "ia_644bfab3aed49456a70fa90f"
+    },
+    {
+     "igbo": "Onye bụ Chidịebere?",
+     "en": "Who is Chidịebere?",
+     "audio": "ia_644cfd05ed3610ab1eb03d58"
+    }
+   ],
+   "dictId": "ia.w.6088c75d8ea2d8fc886d7403"
+  },
+  {
+   "id": "chizaram",
+   "spelling": "Chizaram",
+   "toned": "Chizàràm",
+   "datasetSpelling": null,
+   "meaning": "God answered me",
+   "short": "God answered me",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_642cef10b4710e1b20b37e5b",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Chịzə̣̀ràm",
+     "where": [
+      "Isuama"
+     ],
+     "audio": "ia_642cef10b4710e1b20b37e5b-642cef10b4710efa63b37e5e"
+    },
+    {
+     "spelling": "Chịzàràm",
+     "where": [
+      "Owere"
+     ],
+     "audio": "ia_642cef10b4710e1b20b37e5b-642cef10b4710e7ba3b37e5f"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha ya bụ Chizaram.",
+     "en": "Her name is Chizaram.",
+     "audio": "ia_642cdb056e61d21b5ec638ba"
+    },
+    {
+     "igbo": "Chizaram bụ aha mmadụ.",
+     "en": "Chizaram is a name of a person.",
+     "audio": "ia_642cdb056e61d281ddc638bb"
+    }
+   ],
+   "dictId": "ia.w.642cef10b4710e1b20b37e5b"
+  },
+  {
+   "id": "chika",
+   "spelling": "Chika",
+   "toned": "Chika",
+   "datasetSpelling": null,
+   "meaning": "God is the greatest",
+   "short": "God is the greatest",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c7058ea2d8ede06d73fd",
+   "parts": [
+    {
+     "text": "chi",
+     "gloss": "God",
+     "audio": "ia_5f90c35e49f7e863e92b733c"
+    },
+    {
+     "text": "ka",
+     "gloss": "be more than",
+     "audio": "ia_5f90c35e49f7e863e92b7c0e"
+    }
+   ],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c7058ea2d8ede06d73fd"
+  },
+  {
+   "id": "chike",
+   "spelling": "Chike",
+   "toned": "Chike",
+   "datasetSpelling": null,
+   "meaning": "God is the greatest",
+   "short": "God is the greatest",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6818ea2d85c166d73f2",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c6818ea2d85c166d73f2"
+  },
+  {
+   "id": "chima",
+   "spelling": "Chima",
+   "toned": "Chima",
+   "datasetSpelling": null,
+   "meaning": "God knows",
+   "short": "God knows",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6fe8ea2d8caed6d73fc",
+   "parts": [
+    {
+     "text": "chi",
+     "gloss": "God",
+     "audio": "ia_5f90c35e49f7e863e92b733c"
+    },
+    {
+     "text": "ma",
+     "gloss": "know",
+     "audio": "ia_5f90c35f49f7e863e92b7fc9"
+    }
+   ],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c6fe8ea2d8caed6d73fc"
+  },
+  {
+   "id": "chukwuma",
+   "spelling": "Chukwuma",
+   "toned": "Chukwumà",
+   "datasetSpelling": null,
+   "meaning": "God knows",
+   "short": "God knows",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6998ea2d81e296d73f5",
+   "parts": [
+    {
+     "text": "Chukwu",
+     "gloss": "God",
+     "audio": "ia_6088c61f8ea2d83ad06d73ed"
+    },
+    {
+     "text": "ma",
+     "gloss": "know",
+     "audio": "ia_5f90c35f49f7e863e92b7fc9"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Chimà",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_6088c6998ea2d81e296d73f5-64621a44d7e335898acb0914"
+    },
+    {
+     "spelling": "Chumà",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_6088c6998ea2d81e296d73f5-64621a44d7e335d8f9cb0915"
+    },
+    {
+     "spelling": "Chukwumàbèdè",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_6088c6998ea2d81e296d73f5-64621a44d7e3354a28cb0917"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Chukwuma bụ aha Igbo.",
+     "en": "Chukwuma is an Igbo name.",
+     "audio": "ia_646213b0eaf3a875c19491e0"
+    },
+    {
+     "igbo": "Chukwuma bụ ezigbo aha.",
+     "en": "Chukwuma is a good name.",
+     "audio": "ia_64621a25d7e335c61fcb08c7"
+    }
+   ],
+   "dictId": "ia.w.6088c6998ea2d81e296d73f5"
+  },
+  {
+   "id": "chibueze",
+   "spelling": "Chibụeze",
+   "toned": "Chibụ̀ezè",
+   "datasetSpelling": null,
+   "meaning": "God is king",
+   "short": "God is king",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089bab74e13fe029c6ef88e",
+   "parts": [
+    {
+     "text": "chi",
+     "gloss": "God",
+     "audio": "ia_5f90c35e49f7e863e92b733c"
+    },
+    {
+     "text": "bụ",
+     "gloss": "be",
+     "audio": "ia_5f90c35e49f7e863e92b72cc"
+    },
+    {
+     "text": "ezè",
+     "gloss": "king",
+     "audio": "ia_5f90c35e49f7e863e92b7646"
+    }
+   ],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6089bab74e13fe029c6ef88e"
+  },
+  {
+   "id": "chibuike",
+   "spelling": "Chibụike",
+   "toned": "Chibụīkē",
+   "datasetSpelling": null,
+   "meaning": "God is strength",
+   "short": "God is strength",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089bacc4e13fe98236ef891",
+   "parts": [
+    {
+     "text": "chi",
+     "gloss": "God",
+     "audio": "ia_5f90c35e49f7e863e92b733c"
+    },
+    {
+     "text": "bụ",
+     "gloss": "be",
+     "audio": "ia_5f90c35e49f7e863e92b72cc"
+    },
+    {
+     "text": "ike",
+     "gloss": "strength",
+     "audio": "ia_5f90c35e49f7e863e92b7a18"
+    }
+   ],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6089bacc4e13fe98236ef891"
+  },
+  {
+   "id": "chinweike",
+   "spelling": "Chinweike",
+   "toned": "Chinweike",
+   "datasetSpelling": null,
+   "meaning": "God owns power",
+   "short": "God owns power",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c7148ea2d858c66d73ff",
+   "parts": [
+    {
+     "text": "chi",
+     "gloss": "God",
+     "audio": "ia_5f90c35e49f7e863e92b733c"
+    },
+    {
+     "text": "nwe",
+     "gloss": "have",
+     "audio": "ia_5f90c35f49f7e863e92b8416"
+    },
+    {
+     "text": "ike",
+     "gloss": "strength",
+     "audio": "ia_5f90c35e49f7e863e92b7a18"
+    }
+   ],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c7148ea2d858c66d73ff"
+  },
+  {
+   "id": "chinwendu",
+   "spelling": "Chinwendu",
+   "toned": "Chinwendu",
+   "datasetSpelling": null,
+   "meaning": "God owns life",
+   "short": "God owns life",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c8028ea2d8cd5c6d7405",
+   "parts": [
+    {
+     "text": "chi",
+     "gloss": "God",
+     "audio": "ia_5f90c35e49f7e863e92b733c"
+    },
+    {
+     "text": "nwe",
+     "gloss": "have",
+     "audio": "ia_5f90c35f49f7e863e92b8416"
+    },
+    {
+     "text": "ndụ̀",
+     "gloss": "life",
+     "audio": "ia_5f90c35f49f7e863e92b81df"
+    }
+   ],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c8028ea2d8cd5c6d7405"
+  },
+  {
+   "id": "chinweuba",
+   "spelling": "Chinweuba",
+   "toned": "Chinweuba",
+   "datasetSpelling": null,
+   "meaning": "God owns wealth",
+   "short": "God owns wealth",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c70c8ea2d821836d73fe",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c70c8ea2d821836d73fe"
+  },
+  {
+   "id": "chioma",
+   "spelling": "Chiọma",
+   "toned": "Chiọma",
+   "datasetSpelling": null,
+   "meaning": "Good God; luck; arriving and meeting with luck; encountering luck at arrival (e.g. meeting a friend at table on arrival at his house); a female name [Chioma]",
+   "short": "Good God",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6a38ea2d831246d73f6",
+   "parts": [
+    {
+     "text": "chi",
+     "gloss": "God",
+     "audio": "ia_5f90c35e49f7e863e92b733c"
+    },
+    {
+     "text": "ọma",
+     "gloss": "good",
+     "audio": "ia_5f90c35f49f7e863e92b8816"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "isi ọma",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_6088c6a38ea2d831246d73f6-6442612f5df16d7073ceae56"
+    },
+    {
+     "spelling": "chi ọma",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_6088c6a38ea2d831246d73f6-6442612f5df16daf90ceae57"
+    },
+    {
+     "spelling": "ụkwụ ọma",
+     "where": [
+      "Abịrịba"
+     ],
+     "audio": "ia_6088c6a38ea2d831246d73f6-6442612f5df16d4e23ceae58"
+    },
+    {
+     "spelling": "ekè ọma",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_6088c6a38ea2d831246d73f6-6442612f5df16df330ceae59"
+    },
+    {
+     "spelling": "ihu ọma",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_6088c6a38ea2d831246d73f6-6442612f5df16d2633ceae5a"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha ya bụ Chiọma.",
+     "en": "Her name is Chiọma.",
+     "audio": "ia_644249255df16da38ece9ac5"
+    },
+    {
+     "igbo": "Enwere m chiọma.",
+     "en": "I have good luck.",
+     "audio": "ia_644249255df16dab5ace9ac6"
+    }
+   ],
+   "dictId": "ia.w.6088c6a38ea2d831246d73f6"
+  },
+  {
+   "id": "chidi",
+   "spelling": "Chidị",
+   "toned": "Chidị̀",
+   "datasetSpelling": null,
+   "meaning": "God exists",
+   "short": "God exists",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089baf24e13fe74da6ef895",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "chidə̣̀",
+     "where": [
+      "Nsụka"
+     ],
+     "audio": "ia_6089baf24e13fe74da6ef895-640ad64df6e2c55b50ea2592"
+    },
+    {
+     "spelling": "chiǹdị̀",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_6089baf24e13fe74da6ef895-640ad64df6e2c5e7daea2593"
+    },
+    {
+     "spelling": "chukwudị̀",
+     "where": [
+      "Ụmụahịa"
+     ],
+     "audio": "ia_6089baf24e13fe74da6ef895-640ad64df6e2c59492ea2594"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Chidi bụ ajọọ mmadụ.",
+     "en": "Chidi is a bad person.",
+     "audio": "ia_640ad60ff6e2c55580ea250f"
+    },
+    {
+     "igbo": "Ọ gụrụ nwa ya nwoke Chidị.",
+     "en": "He named his son Chidi.",
+     "audio": "ia_64069a0c622d7d233f359662"
+    }
+   ],
+   "dictId": "ia.w.6089baf24e13fe74da6ef895"
+  },
+  {
+   "id": "chukwudi",
+   "spelling": "Chukwudị",
+   "toned": "Chukwudị",
+   "datasetSpelling": null,
+   "meaning": "God exists",
+   "short": "God exists",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6aa8ea2d826686d73f7",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c6aa8ea2d826686d73f7"
+  },
+  {
+   "id": "chidimma",
+   "spelling": "Chidimma",
+   "toned": "Chidimma",
+   "datasetSpelling": null,
+   "meaning": "God is good",
+   "short": "God is good",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c7558ea2d826346d7402",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c7558ea2d826346d7402"
+  },
+  {
+   "id": "chidike",
+   "spelling": "Chidike",
+   "toned": "Chidike",
+   "datasetSpelling": null,
+   "meaning": "God is strong",
+   "short": "God is strong",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c7788ea2d8b36e6d7404",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c7788ea2d8b36e6d7404"
+  },
+  {
+   "id": "chidiebube",
+   "spelling": "Chidiebube",
+   "toned": "Chidiebube",
+   "datasetSpelling": null,
+   "meaning": "God is glorious",
+   "short": "God is glorious",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089babe4e13fe8b6d6ef88f",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6089babe4e13fe8b6d6ef88f"
+  },
+  {
+   "id": "chidiegwu",
+   "spelling": "Chidiegwu",
+   "toned": "Chidiegwu",
+   "datasetSpelling": null,
+   "meaning": "God is wonderful",
+   "short": "God is wonderful",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089bb494e13fe0e4a6ef896",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6089bb494e13fe0e4a6ef896"
+  },
+  {
+   "id": "chidubem",
+   "spelling": "Chidubem",
+   "toned": "Chidubem",
+   "datasetSpelling": null,
+   "meaning": "Guided by God",
+   "short": "Guided by God",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089bad44e13fe12b96ef892",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6089bad44e13fe12b96ef892"
+  },
+  {
+   "id": "chidumeebi",
+   "spelling": "Chidumeebi",
+   "toned": "Chidùmèèbī",
+   "datasetSpelling": null,
+   "meaning": "God guides or leads my living",
+   "short": "God guides or leads my living",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_627d1f978ea9f2aa94386576",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.627d1f978ea9f2aa94386576"
+  },
+  {
+   "id": "chiemeela",
+   "spelling": "Chiemeela",
+   "toned": "Chiēmēēlā",
+   "datasetSpelling": null,
+   "meaning": "God has done (well)",
+   "short": "God has done (well)",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089bb554e13fe626c6ef897",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6089bb554e13fe626c6ef897"
+  },
+  {
+   "id": "chikelu",
+   "spelling": "Chikelu",
+   "toned": "Chikelu",
+   "datasetSpelling": null,
+   "meaning": "God created",
+   "short": "God created",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6d88ea2d80f116d73fa",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c6d88ea2d80f116d73fa"
+  },
+  {
+   "id": "chimezie",
+   "spelling": "Chimezie",
+   "toned": "Chimèzie",
+   "datasetSpelling": null,
+   "meaning": "May God fix it; may God make it right",
+   "short": "May God fix it",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35f49f7e863e92b86f8",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.5f90c35f49f7e863e92b86f8"
+  },
+  {
+   "id": "chinazaekpere",
+   "spelling": "Chinazaekpere",
+   "toned": "Chinàzaēkpērē",
+   "datasetSpelling": null,
+   "meaning": "God answers prayers",
+   "short": "God answers prayers",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6f08ea2d8bebe6d73fb",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c6f08ea2d8bebe6d73fb"
+  },
+  {
+   "id": "chinedu",
+   "spelling": "Chinedu",
+   "toned": "Chinedu",
+   "datasetSpelling": null,
+   "meaning": "God leads",
+   "short": "God leads",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c71c8ea2d810ef6d7400",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c71c8ea2d810ef6d7400"
+  },
+  {
+   "id": "chineeke",
+   "spelling": "Chineeke",
+   "toned": "Chinèekè",
+   "datasetSpelling": null,
+   "meaning": "God creates; God is the creator",
+   "short": "God creates",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b7aaf",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.5f90c35e49f7e863e92b7aaf"
+  },
+  {
+   "id": "chinonso",
+   "spelling": "Chinonso",
+   "toned": "Chinonso",
+   "datasetSpelling": null,
+   "meaning": "God is nearby",
+   "short": "God is nearby",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089bae24e13fe712b6ef893",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6089bae24e13fe712b6ef893"
+  },
+  {
+   "id": "chinyere",
+   "spelling": "Chinyere",
+   "toned": "Chinyere",
+   "datasetSpelling": null,
+   "meaning": "God gave",
+   "short": "God gave",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6778ea2d8e16c6d73f1",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c6778ea2d8e16c6d73f1"
+  },
+  {
+   "id": "chijindu",
+   "spelling": "Chijindu",
+   "toned": "Chijindu",
+   "datasetSpelling": null,
+   "meaning": "God holds my life",
+   "short": "God holds my life",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6cf8ea2d802786d73f9",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c6cf8ea2d802786d73f9"
+  },
+  {
+   "id": "chizoba",
+   "spelling": "Chizoba",
+   "toned": "Chizoba",
+   "datasetSpelling": null,
+   "meaning": "God protect us",
+   "short": "God protect us",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6b28ea2d838cd6d73f8",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c6b28ea2d838cd6d73f8"
+  },
+  {
+   "id": "daberechi",
+   "spelling": "Daberechi",
+   "toned": "Dàberechī",
+   "datasetSpelling": null,
+   "meaning": "Lean on God",
+   "short": "Lean on God",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b743d",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.5f90c35e49f7e863e92b743d"
+  },
+  {
+   "id": "ekenedilichukwu",
+   "spelling": "Ekenedịlịchukwu",
+   "toned": "Èkènedị̀lịchukwu",
+   "datasetSpelling": null,
+   "meaning": "Praise be to God",
+   "short": "Praise be to God",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6088c6928ea2d8f09a6d73f4",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c6928ea2d8f09a6d73f4"
+  },
+  {
+   "id": "munachimso",
+   "spelling": "Mụnachimso",
+   "toned": "Mụnàchim̄sò",
+   "datasetSpelling": null,
+   "meaning": "I am in the company of my God",
+   "short": "I am in the company of my God",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b74f9",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Maàchim̄sò",
+     "where": [
+      "Owere"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b74f9-63e2ce2c76c5361570c93020"
+    },
+    {
+     "spelling": "Mụnàchukwum̄sò",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b74f9-63e2ce2c76c5362daec93022"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha ya bụ Mụnachimso.",
+     "en": "Her name is Munachimso.",
+     "audio": "ia_63e26b2254429b67ec891618"
+    },
+    {
+     "igbo": "Mụnachimso bụ aha nwanne ya nwaanyị.",
+     "en": "Munachimso is his sister's name.",
+     "audio": "ia_63e28768defbf8cd0b4b4f12"
+    }
+   ],
+   "dictId": "ia.w.5f90c35e49f7e863e92b74f9"
+  },
+  {
+   "id": "odinakachukwu",
+   "spelling": "Ọdịnakachukwu",
+   "toned": "Ọdị̀nakachūkwū",
+   "datasetSpelling": null,
+   "meaning": "It is in God's hands",
+   "short": "It is in God's hands",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b76bf",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.5f90c35e49f7e863e92b76bf"
+  },
+  {
+   "id": "amarachukwu",
+   "spelling": "Amarachukwu",
+   "toned": "Àmàràchukwu",
+   "datasetSpelling": null,
+   "meaning": "Grace of God; God's grace",
+   "short": "Grace of God",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089baa34e13fe33d76ef88c",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "àmàràchi",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_6089baa34e13fe33d76ef88c-6462a8f5ff2326780b87d2db"
+    },
+    {
+     "spelling": "àmàlàchukwu",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_6089baa34e13fe33d76ef88c-6462a8f5ff2326329a87d2dd"
+    },
+    {
+     "spelling": "àmàrà",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_6089baa34e13fe33d76ef88c-6462a8f5ff232629e087d2de"
+    },
+    {
+     "spelling": "àmàlà",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_6089baa34e13fe33d76ef88c-6462a8f5ff2326453187d2df"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha m bụ Amarachukwu.",
+     "en": "My name is Amarachukwu.",
+     "audio": "ia_6462773dd7e3356a53cb7eaa"
+    },
+    {
+     "igbo": "Amarachukwu na-eri nri.",
+     "en": "Amarachukwu is eating.",
+     "audio": "ia_6462a8ebff2326b6e587d2b1"
+    }
+   ],
+   "dictId": "ia.w.6089baa34e13fe33d76ef88c"
+  },
+  {
+   "id": "akuchi",
+   "spelling": "Akụchi",
+   "toned": "Àkụchī",
+   "datasetSpelling": null,
+   "meaning": "God's wealth",
+   "short": "God's wealth",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_6089bb5c4e13fee0726ef898",
+   "parts": [
+    {
+     "text": "àkụ̀",
+     "gloss": "wealth",
+     "audio": null
+    },
+    {
+     "text": "chi",
+     "gloss": "God",
+     "audio": "ia_5f90c35e49f7e863e92b733c"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Àkụ̀chukwu",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_6089bb5c4e13fee0726ef898-6467fa7077851e484d7376b2"
+    },
+    {
+     "spelling": "Àk̇ụ̀ụchì",
+     "where": [
+      "Owere"
+     ],
+     "audio": "ia_6089bb5c4e13fee0726ef898-6467fa7077851e3cb37376b4"
+    },
+    {
+     "spelling": "Àk̇ə̣̀ə̣chì",
+     "where": [
+      "Isuama"
+     ],
+     "audio": "ia_6089bb5c4e13fee0726ef898-6467fa7077851e0b877376b5"
+    },
+    {
+     "spelling": "Akụ̀chikwu",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_6089bb5c4e13fee0726ef898-6467fa7077851eb27f7376b6"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Akuchi bụ ezigbo aha.",
+     "en": "Akuchi is a goiod name.",
+     "audio": "ia_6462ccd56e47296a2e740414"
+    },
+    {
+     "igbo": "Akụchi bụ enyi m.",
+     "en": "Akuchi is my friend.",
+     "audio": "ia_6462ac56ff23266ce887d757"
+    }
+   ],
+   "dictId": "ia.w.6089bb5c4e13fee0726ef898"
+  },
+  {
+   "id": "okechukwu",
+   "spelling": "Okechukwu",
+   "toned": "Òkèchukwu",
+   "datasetSpelling": null,
+   "meaning": "God's share; God's portion",
+   "short": "God's share",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_630eb7379c814b07c8ed0b81",
+   "parts": [
+    {
+     "text": "òkè",
+     "gloss": "portion",
+     "audio": "ia_5f90c35f49f7e863e92b859a"
+    },
+    {
+     "text": "Chukwu",
+     "gloss": "God",
+     "audio": "ia_6088c61f8ea2d83ad06d73ed"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "òkèchī",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_630eb7379c814b07c8ed0b81-646322117ff457741b2fe685"
+    },
+    {
+     "spelling": "Ọ̀kẹ̀chikwu",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_630eb7379c814b07c8ed0b81-646322117ff45702ec2fe686"
+    },
+    {
+     "spelling": "Òkèchikwu",
+     "where": [
+      "Anam"
+     ],
+     "audio": "ia_630eb7379c814b07c8ed0b81-646322117ff4575a4c2fe687"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha ya bụ Okechukwu.",
+     "en": "His name is Okechukwu.",
+     "audio": "ia_6462dcc268982f668a6c3e07"
+    },
+    {
+     "igbo": "Okechukwu bụ aha nwoke.",
+     "en": "Okechukwu is a masculine name.",
+     "audio": "ia_6462dcc268982f5d0e6c3e09"
+    }
+   ],
+   "dictId": "ia.w.630eb7379c814b07c8ed0b81"
+  },
+  {
+   "id": "udochukwu",
+   "spelling": "Udochukwu",
+   "toned": "Ùdochūkwū",
+   "datasetSpelling": null,
+   "meaning": "God's peace, somebody's name",
+   "short": "God's peace",
+   "theme": "chi",
+   "wordClass": "Proper noun",
+   "audio": "ia_63fe352907c3b230259f94cb",
+   "parts": [
+    {
+     "text": "ùdo",
+     "gloss": "peace",
+     "audio": "ia_5f90c35f49f7e863e92b8b6a"
+    },
+    {
+     "text": "Chukwu",
+     "gloss": "God",
+     "audio": "ia_6088c61f8ea2d83ad06d73ed"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Ùdoochukwu",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_63fe352907c3b230259f94cb-64623802d7e33587aecb391e"
+    },
+    {
+     "spelling": "Ùdochī",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_63fe352907c3b230259f94cb-64623802d7e3355edccb3920"
+    },
+    {
+     "spelling": "Udochikwu",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_63fe352907c3b230259f94cb-64623802d7e335464ccb3921"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha nwaanyị ahụ bụ Udochukwu.",
+     "en": "That woman's name is Udochukwu.",
+     "audio": "ia_6462304cd7e3355790cb311a"
+    },
+    {
+     "igbo": "Udochukwu mara mma.",
+     "en": "Udochukwu is beautiful.",
+     "audio": "ia_64623093d7e3351086cb3216"
+    }
+   ],
+   "dictId": "ia.w.63fe352907c3b230259f94cb"
+  },
+  {
+   "id": "ugochukwu",
+   "spelling": "Ugochukwu",
+   "toned": "Ùgòchukwu",
+   "datasetSpelling": null,
+   "meaning": "Male name (literally Eagle of God)",
+   "short": "Eagle of God",
+   "theme": "chi",
+   "wordClass": "Noun",
+   "audio": "ia_62e5cb9842b322a6bd4d1463",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [
+    {
+     "igbo": "Ugochukwu bụ nwanne m.",
+     "en": "Ugochukwu is my brother.",
+     "audio": "ia_632ac10ede81f4027718a6f5"
+    }
+   ],
+   "dictId": "ia.w.62e5cb9842b322a6bd4d1463"
+  },
+  {
+   "id": "oluchukwu",
+   "spelling": "Ọlụchukwu",
+   "toned": "Ọlụchukwu",
+   "datasetSpelling": null,
+   "meaning": "God's work",
+   "short": "God's work",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_64624e11d7e335390bcb4f04",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "ọlụchi",
+     "where": [
+      "Nkanụ",
+      "Ọnịcha"
+     ],
+     "audio": "ia_64624e11d7e335390bcb4f04-64624e11d7e3353144cb4f07"
+    },
+    {
+     "spelling": "ọrụchukwu",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_64624e11d7e335390bcb4f04-64624e11d7e3357a4ccb4f08"
+    },
+    {
+     "spelling": "ọrụchi",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_64624e11d7e335390bcb4f04-64624e11d7e335654ecb4f09"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha nna m bụ Ọlụchukwu.",
+     "en": "My father's name is Ọlụchukwu.",
+     "audio": "ia_64624deed7e335b4ffcb4e5f"
+    },
+    {
+     "igbo": "Aha enyi m bụ Ọlụchukwu.",
+     "en": "My friend's name is Oluchukwu",
+     "audio": "ia_6462321ad7e3355337cb353e"
+    }
+   ],
+   "dictId": "ia.w.64624e11d7e335390bcb4f04"
+  },
+  {
+   "id": "olisaecheka",
+   "spelling": "Olisaecheka",
+   "toned": "Òlìsàechèka",
+   "datasetSpelling": null,
+   "meaning": "God has thought well",
+   "short": "God has thought well",
+   "theme": "chi",
+   "wordClass": "Name",
+   "audio": "ia_647ce88bf8f6bbf0fe447242",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Òlìsàelòka",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_647ce88bf8f6bbf0fe447242-647ce88bf8f6bb90ca447244"
+    },
+    {
+     "spelling": "Òlìsàeròka",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_647ce88bf8f6bbf0fe447242-647ce88bf8f6bb699a447245"
+    },
+    {
+     "spelling": "Òlìsàelòke",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_647ce88bf8f6bbf0fe447242-647ce88bf8f6bbebf5447246"
+    },
+    {
+     "spelling": "Òlìsàechẹ̀ka",
+     "where": [
+      "Obosi"
+     ],
+     "audio": "ia_647ce88bf8f6bbf0fe447242-647ce88bf8f6bb2857447247"
+    },
+    {
+     "spelling": "Chukwuelòka",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_647ce88bf8f6bbf0fe447242-647ce88bf8f6bb7dd4447248"
+    },
+    {
+     "spelling": "Chieloka",
+     "where": [
+      "Abịrịba"
+     ],
+     "audio": "ia_647ce88bf8f6bbf0fe447242-647ce88bf8f6bb38e1447249"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Gaa, kpọọ Olisaecheka.",
+     "en": "Go and call Olisaecheka.",
+     "audio": "ia_647c923e5b93624d6080a79f-c79685cb-1678-4e93-ae9a-89d2083d4e92"
+    },
+    {
+     "igbo": "Olisaecheka bịara taa.",
+     "en": "Olisaecheka visited today.",
+     "audio": "ia_647c923e5b93625bad80a79b-0e344d42-2303-42a3-9a3d-f4854af82674"
+    }
+   ],
+   "dictId": "ia.w.647ce88bf8f6bbf0fe447242"
+  },
+  {
+   "id": "okeke",
+   "spelling": "Okeke",
+   "toned": "Òkeēkē",
+   "datasetSpelling": "Okeeke",
+   "meaning": "Male child born on 'Eke' day",
+   "short": "Male child born on 'Eke' day",
+   "theme": "market",
+   "wordClass": "Name",
+   "audio": "ia_6447e3b4510e7ce41222467b",
+   "parts": [],
+   "day": "eke",
+   "variants": [
+    {
+     "spelling": "Okẹẹ̄kẹ̄",
+     "where": [
+      "Isuama"
+     ],
+     "audio": "ia_6447e3b4510e7ce41222467b-6447e3b4510e7c33d522467e"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Okeeke bụ aha gboo.",
+     "en": "Okeke is an ancient name.",
+     "audio": "ia_6447d7f2510e7c35f7223bdc"
+    },
+    {
+     "igbo": "Aha nna ya bụ Okeeke.",
+     "en": "Her father's name is Okeke.",
+     "audio": "ia_6447d7f2510e7c671e223bdd"
+    }
+   ],
+   "dictId": "ia.w.6447e3b4510e7ce41222467b"
+  },
+  {
+   "id": "mgbeke",
+   "spelling": "Mgbeke",
+   "toned": "M̀gbeēkē",
+   "datasetSpelling": "Mgbeeke",
+   "meaning": "(archaic) a female born on 'Èke' market day; name girl born on 'Èke' market day",
+   "short": "A female born on 'Èke' market day",
+   "theme": "market",
+   "wordClass": "Name",
+   "audio": "ia_638f33ede237e196dce36b58",
+   "parts": [],
+   "day": "eke",
+   "variants": [
+    {
+     "spelling": "agbọghọ",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_638f33ede237e196dce36b58-6441476e5efe052823b62ac0"
+    },
+    {
+     "spelling": "M̀gbẹẹ̄k̇ẹ̄",
+     "where": [
+      "Isuama"
+     ],
+     "audio": "ia_638f33ede237e196dce36b58-6441476e5efe0561efb62ac1"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha nne nna ya bụ Mgbeeke.",
+     "en": "Her father's mother's name is Mgbeke.",
+     "audio": "ia_64413d202f35278a8a2073e0"
+    },
+    {
+     "igbo": "Uju bụ mgbeeke.",
+     "en": "Uju is an unsophisticated girl.",
+     "audio": "ia_64413d202f3527be302073e2"
+    }
+   ],
+   "dictId": "ia.w.638f33ede237e196dce36b58"
+  },
+  {
+   "id": "nweeke",
+   "spelling": "Nweeke",
+   "toned": "Nweeke",
+   "datasetSpelling": null,
+   "meaning": "Child born on Èke",
+   "short": "Child born on Èke",
+   "theme": "market",
+   "wordClass": "Noun",
+   "audio": "ia_644cd194baf472529661db6d",
+   "parts": [],
+   "day": "eke",
+   "variants": [
+    {
+     "spelling": "Nwẹẹkẹ",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_644cd194baf472529661db6d-644cd194baf4721a5b61db70"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Nweke pụtara nwoke a mụrụ ụbọchị Eke.",
+     "en": "Nweke means a man born on Eke market day.",
+     "audio": "ia_644bc1ca85c25b1bfdf5940d"
+    },
+    {
+     "igbo": "Lee ụlọ Nweeke ebe a.",
+     "en": "See Nweeke's house here.",
+     "audio": "ia_644bfcd2aed49450030fabeb"
+    }
+   ],
+   "dictId": "ia.w.644cd194baf472529661db6d"
+  },
+  {
+   "id": "okorie",
+   "spelling": "Okorie",
+   "toned": "Òkoòrìè",
+   "datasetSpelling": "Okoorie",
+   "meaning": "A male child born on 'Orìè' day",
+   "short": "A male child born on 'Orìè' day",
+   "theme": "market",
+   "wordClass": "Name",
+   "audio": "ia_6447e48c510e7c942122478f",
+   "parts": [],
+   "day": "orie",
+   "variants": [
+    {
+     "spelling": "Òkoòrìẹ̀",
+     "where": [
+      "Isuama"
+     ],
+     "audio": "ia_6447e48c510e7c942122478f-6447e48c510e7c8291224792"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha a bụ Okoorie adịchaghịzi n'etiti ụmụaka ugbua.",
+     "en": "The name, Okorie, is no longer that existent among children of nowadays.",
+     "audio": "ia_6447da61510e7c170e223e92"
+    },
+    {
+     "igbo": "Okoorie ga-abịa ọzọ.",
+     "en": "Okorie will come again.",
+     "audio": "ia_6447da61510e7c511e223e90"
+    }
+   ],
+   "dictId": "ia.w.6447e48c510e7c942122478f"
+  },
+  {
+   "id": "mgborie",
+   "spelling": "Mgborie",
+   "toned": "M̀gboòrìè",
+   "datasetSpelling": "Mgboorie",
+   "meaning": "Name for a female born on 'orìè' market day (archaic); a female born on 'orìè' market day.",
+   "short": "Name for a female born on 'orìè' market day (archaic)",
+   "theme": "market",
+   "wordClass": "Name",
+   "audio": "ia_6432961cfc16d431c791536f",
+   "parts": [],
+   "day": "orie",
+   "variants": [
+    {
+     "spelling": "M̀gboòrìẹ̀",
+     "where": [
+      "Isuama"
+     ],
+     "audio": "ia_6432961cfc16d431c791536f-6432961cfc16d48c1f915372"
+    },
+    {
+     "spelling": "M̀gboòyè",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_6432961cfc16d431c791536f-6432961cfc16d4661a915373"
+    },
+    {
+     "spelling": "M̀gboòlìè",
+     "where": [
+      "Afiikpo"
+     ],
+     "audio": "ia_6432961cfc16d431c791536f-6432961cfc16d4238f915374"
+    },
+    {
+     "spelling": "M̀gbọ̀gọòriè",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_6432961cfc16d431c791536f-6432961cfc16d41eaf915375"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Mgboorie bụ aha nwaanyị.",
+     "en": "Mgborie is a female name.",
+     "audio": "ia_6319c3290885708489642180"
+    },
+    {
+     "igbo": "Mgboorie bụ enyi m.",
+     "en": "Mgborie is my friend.",
+     "audio": "ia_64320a456e5f5177e65ef253"
+    }
+   ],
+   "dictId": "ia.w.6432961cfc16d431c791536f"
+  },
+  {
+   "id": "nwoorie",
+   "spelling": "Nwoorie",
+   "toned": "Nwoorìè",
+   "datasetSpelling": null,
+   "meaning": "Child born on Orie.",
+   "short": "Child born on Orie",
+   "theme": "market",
+   "wordClass": "Noun",
+   "audio": "ia_644bfb29aed49438b60fa9eb",
+   "parts": [],
+   "day": "orie",
+   "variants": [
+    {
+     "spelling": "Nworìè",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_644bfb29aed49438b60fa9eb-644bfb29aed49455f50fa9ee"
+    },
+    {
+     "spelling": "Nwoye",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_644bfb29aed49438b60fa9eb-644bfb29aed494509f0fa9ef"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha nne m bụ Nwoorie.",
+     "en": "My mother's name is Nwoorie.",
+     "audio": "ia_644bf60eaed494ab130fa407"
+    },
+    {
+     "igbo": "Ahụrụ m Nwoorie ụnyaahụ.",
+     "en": "I saw Nwoorie yesterday.",
+     "audio": "ia_644bf60eaed49412c30fa405"
+    }
+   ],
+   "dictId": "ia.w.644bfb29aed49438b60fa9eb"
+  },
+  {
+   "id": "okafo",
+   "spelling": "Okafọ",
+   "toned": "Òkaàfọ̀",
+   "datasetSpelling": "Okaafọ",
+   "meaning": "A male child born on 'Afọ' day",
+   "short": "A male child born on 'Afọ' day",
+   "theme": "market",
+   "wordClass": "Name",
+   "audio": "ia_6447dfd5510e7c6b64224306",
+   "parts": [],
+   "day": "afo",
+   "variants": [
+    {
+     "spelling": "Òkọàkwhọ̀",
+     "where": [
+      "Ezaa"
+     ],
+     "audio": "ia_6447dfd5510e7c6b64224306-6448655a58303a1141f1cf5b"
+    },
+    {
+     "spelling": "Òkoroàkwhọ̀",
+     "where": [
+      "Ezaa"
+     ],
+     "audio": "ia_6447dfd5510e7c6b64224306-6448655a58303afe0ff1cf5c"
+    },
+    {
+     "spelling": "Òkaavọ̀",
+     "where": [
+      "Ọka"
+     ],
+     "audio": "ia_6447dfd5510e7c6b64224306-6448655a58303aad8af1cf5d"
+    },
+    {
+     "spelling": "Ọ̀̀kaavọ̀",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_6447dfd5510e7c6b64224306-6448655a58303a5cb4f1cf5e"
+    },
+    {
+     "spelling": "Okaavhọ̀",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_6447dfd5510e7c6b64224306-6448655a58303ad79cf1cf5f"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha nna m bụ Okafọ.",
+     "en": "My father's name is Okafor.",
+     "audio": "ia_6443f29859234f4ab0fd54b6"
+    }
+   ],
+   "dictId": "ia.w.6447dfd5510e7c6b64224306"
+  },
+  {
+   "id": "mgbaafo",
+   "spelling": "Mgbaafọ",
+   "toned": "M̀gbaàfọ̀",
+   "datasetSpelling": null,
+   "meaning": "(archaic) a female born on 'Àfọ̀' market day; a name given to a girl born on 'Àfọ̀' market day.",
+   "short": "A female born on 'Àfọ̀' market day",
+   "theme": "market",
+   "wordClass": "Name",
+   "audio": "ia_643293f4fc16d4ec229152ab",
+   "parts": [],
+   "day": "afo",
+   "variants": [
+    {
+     "spelling": "M̀gbọ̀gọàfọ̀",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_643293f4fc16d4ec229152ab-64429e8c3b05d029c2e03ce2"
+    },
+    {
+     "spelling": "Nwam̀gbọ̀gọàfọ̀",
+     "where": [
+      "Obosi"
+     ],
+     "audio": "ia_643293f4fc16d4ec229152ab-64429e8c3b05d05b61e03ce3"
+    },
+    {
+     "spelling": "M̀gbọàhwọ̀",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_643293f4fc16d4ec229152ab-64429e8c3b05d09575e03ce4"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha ya bụ Mgbaafọ.",
+     "en": "Her name is Mgbaafọ.",
+     "audio": "ia_643204656e5f5123d95ef186"
+    }
+   ],
+   "dictId": "ia.w.643293f4fc16d4ec229152ab"
+  },
+  {
+   "id": "nwaafo",
+   "spelling": "Nwaafọ",
+   "toned": "Nwaàfọ̀",
+   "datasetSpelling": null,
+   "meaning": "Child born on the third or seventh Igbo market day (especially male)",
+   "short": "Child born on the third or seventh Igbo market day (especially male)",
+   "theme": "market",
+   "wordClass": "Noun",
+   "audio": "ia_5f90c35f49f7e863e92b82f1",
+   "parts": [],
+   "day": "afo",
+   "variants": [
+    {
+     "spelling": "Nwaakwọ",
+     "where": [
+      "Ezaa"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b82f1-644da136639e2f95159db2cd"
+    },
+    {
+     "spelling": "Nwaàvhọ̀",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b82f1-644da136639e2f49eb9db2ce"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Ndị mmadụ anaghị agụ ụmụ Nwaàfọ̀ ugbu a.",
+     "en": "People do not name their children Nwaafor nowadays.",
+     "audio": "ia_644da0a8639e2f60d89db197"
+    },
+    {
+     "igbo": "Nwaàfọ̀ bụ onye ama ama n'obodo anyị.",
+     "en": "Nwaafor is a popular person in our village.",
+     "audio": "ia_644da0a8639e2ff8769db195"
+    }
+   ],
+   "dictId": "ia.w.5f90c35f49f7e863e92b82f1"
+  },
+  {
+   "id": "okonkwo",
+   "spelling": "Okonkwọ",
+   "toned": "Òkon̄kwọ̄",
+   "datasetSpelling": "Okonkwọ",
+   "meaning": "A male child born on 'Nkwọ' day",
+   "short": "A male child born on 'Nkwọ' day",
+   "theme": "market",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b7a35",
+   "parts": [],
+   "day": "nkwo",
+   "variants": [
+    {
+     "spelling": "Òk̇on̄kwọ̄",
+     "where": [
+      "Owere",
+      "Isuama"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7a35-647688cd816f1d08cb47cfca"
+    },
+    {
+     "spelling": "Nwaǹkwọ̀",
+     "where": [
+      "Mbaise",
+      "Ngwa"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7a35-647688cd816f1d694047cfcb"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha diọkpara ya bụ Okonkwọ.",
+     "en": "The name of his first son is Okonkwọ.",
+     "audio": "ia_645ece5dc8de2a7d077cbc40"
+    },
+    {
+     "igbo": "A bara ya Okonkwọ.",
+     "en": "He was named Okonkwọ.",
+     "audio": "ia_645ece5dc8de2a344a7cbc3e"
+    }
+   ],
+   "dictId": "ia.w.5f90c35e49f7e863e92b7a35"
+  },
+  {
+   "id": "nwankwo",
+   "spelling": "Nwankwọ",
+   "toned": "Nwankwọ",
+   "datasetSpelling": null,
+   "meaning": "Male child born on the fourth or 8th market day.",
+   "short": "Male child born on the fourth or 8th market day",
+   "theme": "market",
+   "wordClass": "Noun",
+   "audio": "ia_6446eda135ef9610b93345ba",
+   "parts": [],
+   "day": "nkwo",
+   "variants": [],
+   "examples": [
+    {
+     "igbo": "Ndị a mụrụ ụbọchị Nkwọ na-aza Nwankwọ",
+     "en": "Persons born on Nkwo day bear the name Nwankwo",
+     "audio": "ia_6446ed7935ef9639d133457f"
+    },
+    {
+     "igbo": "Nwankwọ bụ ezigbo enyi m.",
+     "en": "Nwankwọ is my good friend.",
+     "audio": "ia_64469d34c0195268b55f29fc"
+    }
+   ],
+   "dictId": "ia.w.6446eda135ef9610b93345ba"
+  },
+  {
+   "id": "awele",
+   "spelling": "Awele",
+   "toned": "Awelē",
+   "datasetSpelling": null,
+   "meaning": "Favour; favoured; good luck; good fortune",
+   "short": "Favour",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b7374",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Isiọma",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7374-640bed877edeb456e31bb256"
+    },
+    {
+     "spelling": "Chiọma",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7374-640bed877edeb479ed1bb257"
+    },
+    {
+     "spelling": "Iruọma",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7374-640bed877edeb4582f1bb258"
+    },
+    {
+     "spelling": "Ihuọma",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7374-640bed877edeb4139a1bb259"
+    },
+    {
+     "spelling": "Ishiọma",
+     "where": [
+      "Anịọcha"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7374-640bed877edeb4fd2c1bb25a"
+    },
+    {
+     "spelling": "ifuọma",
+     "where": [
+      "Abịrịba"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7374-640bed877edeb428b51bb25b"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha m bụ Awele.",
+     "en": "My name is Awele",
+     "audio": "ia_640bed607edeb435fe1bb218"
+    },
+    {
+     "igbo": "Aha nwunye ya bụ Awele.",
+     "en": "His wife's name is Awele.",
+     "audio": "ia_640a68a51e1e5bd44af2179c"
+    }
+   ],
+   "dictId": "ia.w.5f90c35e49f7e863e92b7374"
+  },
+  {
+   "id": "isioma",
+   "spelling": "Isiọma",
+   "toned": "Isiọma",
+   "datasetSpelling": null,
+   "meaning": "Good luck; good fortune; favour",
+   "short": "Good luck",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b7acd",
+   "parts": [
+    {
+     "text": "isi",
+     "gloss": "head",
+     "audio": "ia_5f90c35e49f7e863e92b7af2"
+    },
+    {
+     "text": "ọma",
+     "gloss": "good",
+     "audio": "ia_5f90c35f49f7e863e92b8816"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "ishiọma",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7acd-648251b8afaf2e731d10db13"
+    },
+    {
+     "spelling": "ụwọma",
+     "where": [
+      "Afiikpo"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7acd-648251b8afaf2e85dc10db14"
+    },
+    {
+     "spelling": "ihuọma",
+     "where": [
+      "Izii"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7acd-648251b8afaf2ef01d10db15"
+    },
+    {
+     "spelling": "iruọma",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7acd-648251b8afaf2e525610db16"
+    },
+    {
+     "spelling": "chiọma",
+     "where": [
+      "Ọkụzụ"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7acd-648251b8afaf2e728210db17"
+    },
+    {
+     "spelling": "itsiọma",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7acd-648251b8afaf2eecb510db19"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha m bụ Isiọma",
+     "en": "My name is good luck.",
+     "audio": "ia_64825197afaf2e3b4d10da60-0628001b-5151-42c2-8dfb-bd2cd206421a"
+    },
+    {
+     "igbo": "Ụmụaka a bụ ndị isiọma",
+     "en": "These children are people of good fortune",
+     "audio": "ia_638fb69b7b5705732351ed6b"
+    }
+   ],
+   "dictId": "ia.w.5f90c35e49f7e863e92b7acd"
+  },
+  {
+   "id": "ihuoma",
+   "spelling": "Ihuọma",
+   "toned": "Ihuọma",
+   "datasetSpelling": null,
+   "meaning": "Favour; a good omen",
+   "short": "Favour",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35f49f7e863e92b8815",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.5f90c35f49f7e863e92b8815"
+  },
+  {
+   "id": "ifeoma",
+   "spelling": "Ifeọma",
+   "toned": "Ifeọma",
+   "datasetSpelling": null,
+   "meaning": "Good thing; something good; name of a person, especially female",
+   "short": "Good thing",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_63ccf566d8efa785592eff47",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "iveọma",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_63ccf566d8efa785592eff47-646356f4cf3ac5637972367b"
+    },
+    {
+     "spelling": "iheọma",
+     "where": [
+      "Amaifeke",
+      "Owere",
+      "Mbaise"
+     ],
+     "audio": "ia_63ccf566d8efa785592eff47-646356f4cf3ac529d572367c"
+    },
+    {
+     "spelling": "ikwọma",
+     "where": [
+      "Afiikpo"
+     ],
+     "audio": "ia_63ccf566d8efa785592eff47-646356f4cf3ac599aa72367d"
+    },
+    {
+     "spelling": "hweọma",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_63ccf566d8efa785592eff47-646356f4cf3ac5884172367e"
+    },
+    {
+     "spelling": "heọma",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_63ccf566d8efa785592eff47-646356f4cf3ac566a172367f"
+    },
+    {
+     "spelling": "ifẹọma",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_63ccf566d8efa785592eff47-646356f4cf3ac565f3723680"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha ya bụ Ifeọma.",
+     "en": "Her name is Ifeoma.",
+     "audio": "ia_6462b9a1ff2326a09887de79"
+    },
+    {
+     "igbo": "Aha nwa m nwaanyị bụ Ifeọma.",
+     "en": "My daughter's name is Ifeoma.",
+     "audio": "ia_63cc5612953c8a17117df846"
+    }
+   ],
+   "dictId": "ia.w.63ccf566d8efa785592eff47"
+  },
+  {
+   "id": "ebere",
+   "spelling": "Ebere",
+   "toned": "Èberè",
+   "datasetSpelling": null,
+   "meaning": "Mercy; sympathy",
+   "short": "Mercy",
+   "theme": "virtue",
+   "wordClass": "Noun",
+   "audio": "ia_6088c66c8ea2d85f516d73f0",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "imèmimì",
+     "where": [
+      "Izii"
+     ],
+     "audio": "ia_6088c66c8ea2d85f516d73f0-64622bc0d7e335b935cb268e"
+    },
+    {
+     "spelling": "èbelè",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_6088c66c8ea2d85f516d73f0-64622bc0d7e3354fe5cb268f"
+    },
+    {
+     "spelling": "ọmìikō",
+     "where": [
+      "Ngwa"
+     ],
+     "audio": "ia_6088c66c8ea2d85f516d73f0-64622bc0d7e3351dd6cb2690"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha ya bụ Ebere.",
+     "en": "Her name is Mercy.",
+     "audio": "ia_64622b51d7e335c273cb2557"
+    }
+   ],
+   "dictId": "ia.w.6088c66c8ea2d85f516d73f0"
+  },
+  {
+   "id": "nduka",
+   "spelling": "Ndụka",
+   "toned": "Ndụ̀ka",
+   "datasetSpelling": null,
+   "meaning": "Life is supreme",
+   "short": "Life is supreme",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35f49f7e863e92b7ca4",
+   "parts": [
+    {
+     "text": "ndụ̀",
+     "gloss": "life",
+     "audio": "ia_5f90c35f49f7e863e92b81df"
+    },
+    {
+     "text": "ka",
+     "gloss": "be more than",
+     "audio": "ia_5f90c35e49f7e863e92b7c0e"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Ndə̣̀ka",
+     "where": [
+      "Isuama"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b7ca4-64615cca2411a609cda3c044"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Ndụka bụ ahanna m.",
+     "en": "Nduka is my surname.",
+     "audio": "ia_64600beb0d4e657c76c88294"
+    },
+    {
+     "igbo": "Ndụka bụ nwoke mara mma.",
+     "en": "Nduka is a handsome man.",
+     "audio": "ia_6460756a41af4222ab2cbfe9"
+    }
+   ],
+   "dictId": "ia.w.5f90c35f49f7e863e92b7ca4"
+  },
+  {
+   "id": "ndubueze",
+   "spelling": "Ndụbụeze",
+   "toned": "Ndụ̀bụezè",
+   "datasetSpelling": null,
+   "meaning": "Life is prime; life is the greatest; life is the most important",
+   "short": "Life is prime",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b7640",
+   "parts": [
+    {
+     "text": "ndụ̀",
+     "gloss": "life",
+     "audio": "ia_5f90c35f49f7e863e92b81df"
+    },
+    {
+     "text": "bụ",
+     "gloss": "be",
+     "audio": "ia_5f90c35e49f7e863e92b72cc"
+    },
+    {
+     "text": "ezè",
+     "gloss": "king",
+     "audio": "ia_5f90c35e49f7e863e92b7646"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Ndụ̀bụẹzẹ̀",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7640-64615c60b1a4273907725be6"
+    },
+    {
+     "spelling": "Ndə̣̀bụezè",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7640-64615c60b1a42722c0725be7"
+    },
+    {
+     "spelling": "Ndụ̀wụezè",
+     "where": [
+      "Owere"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7640-64615c60b1a427bad4725be8"
+    },
+    {
+     "spelling": "Ndə̣̀wẹẹzẹ̀",
+     "where": [
+      "Isuama"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b7640-64615c60b1a427e144725be9"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha m bụ Ndụbụ̣eze.",
+     "en": "My name is Ndubueze.",
+     "audio": "ia_64600c5e0d4e657983c88306"
+    },
+    {
+     "igbo": "Ndụbụeze bụ aha ama ama n'obodo m.",
+     "en": "Ndubueze is a popular name in my village.",
+     "audio": "ia_64601dd50d4e652971c88d98"
+    }
+   ],
+   "dictId": "ia.w.5f90c35e49f7e863e92b7640"
+  },
+  {
+   "id": "ndubiisi",
+   "spelling": "Ndụbiisi",
+   "toned": "Ndụ̀biisi",
+   "datasetSpelling": null,
+   "meaning": "Life is key; life is the most important; life first",
+   "short": "Life is key",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_62d01f6f8ad3b855a390191a",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Ndụ̀biishi",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_62d01f6f8ad3b855a390191a-64615b77b1a4279464725ae2"
+    },
+    {
+     "spelling": "Ndə̣̀biishi",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_62d01f6f8ad3b855a390191a-64615b77b1a42704e1725ae3"
+    },
+    {
+     "spelling": "Ndụ̀wiishi",
+     "where": [
+      "Owere",
+      "Mbaise"
+     ],
+     "audio": "ia_62d01f6f8ad3b855a390191a-64615b77b1a4271bd9725ae4"
+    },
+    {
+     "spelling": "Ndə̣̀wiishi",
+     "where": [
+      "Isuama"
+     ],
+     "audio": "ia_62d01f6f8ad3b855a390191a-64615b77b1a42771cd725ae5"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha nna ya bụ Ndụbiisi.",
+     "en": "His surname is Ndubiisi.",
+     "audio": "ia_646019bb0d4e650525c88b67"
+    },
+    {
+     "igbo": "Ọ bụ Ndụbiisi nwe akwa ahụ.",
+     "en": "It is Ndubiisi that has that cloth.",
+     "audio": "ia_646018c20d4e655516c88a99"
+    }
+   ],
+   "dictId": "ia.w.62d01f6f8ad3b855a390191a"
+  },
+  {
+   "id": "ndubuaku",
+   "spelling": "Ndụbụaku",
+   "toned": "Ndụ̀bụ̀akù",
+   "datasetSpelling": null,
+   "meaning": "Male name (literally life is wealth)",
+   "short": "Life is wealth",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_644564dd1e840729f703590c",
+   "parts": [
+    {
+     "text": "ndụ̀",
+     "gloss": "life",
+     "audio": "ia_5f90c35f49f7e863e92b81df"
+    },
+    {
+     "text": "bụ",
+     "gloss": "be",
+     "audio": "ia_5f90c35e49f7e863e92b72cc"
+    },
+    {
+     "text": "àkụ̀",
+     "gloss": "wealth",
+     "audio": null
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Ndụ̀bụ̀àkə̣̀",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_644564dd1e840729f703590c-64615271b1a427537e7255a1"
+    },
+    {
+     "spelling": "Ndụ̀bụ̀ẹkə̣̀",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_644564dd1e840729f703590c-64615271b1a42743aa7255a2"
+    },
+    {
+     "spelling": "Ndə̣̀bụ̀ẹkə̣̀",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_644564dd1e840729f703590c-64615271b1a4273c7d7255a3"
+    },
+    {
+     "spelling": "Ndụ̀kaàkụ̀",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_644564dd1e840729f703590c-64615271b1a427aae37255a4"
+    },
+    {
+     "spelling": "Ndụkẹẹkụ",
+     "where": [
+      "Afiikpo"
+     ],
+     "audio": "ia_644564dd1e840729f703590c-64615271b1a42753c07255a5"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha di ya bụ Ndụ̀bụ̀àkù.",
+     "en": "Her husband's name is Ndụ̀bụ̀àkù.",
+     "audio": "ia_64600f790d4e65b7a8c884ea"
+    },
+    {
+     "igbo": "Ndụ̀bụ̀àkụ̀ bịara.",
+     "en": "Ndùbụ̀àkụ̀ came.",
+     "audio": "ia_64615266b1a4274007725568"
+    }
+   ],
+   "dictId": "ia.w.644564dd1e840729f703590c"
+  },
+  {
+   "id": "uzodimma",
+   "spelling": "Ụzọdịmma",
+   "toned": "Ụzọ̀dị̀mmā",
+   "datasetSpelling": null,
+   "meaning": "The way or road or path is good",
+   "short": "The way or road or path is good",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_62711cc45ba831b5345e3e72",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.62711cc45ba831b5345e3e72"
+  },
+  {
+   "id": "ojiugo",
+   "spelling": "Ọjịugo",
+   "toned": "Ọjịùgò",
+   "datasetSpelling": null,
+   "meaning": "Outstanding; most beautiful; precious",
+   "short": "Outstanding",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35f49f7e863e92b8788",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "ọjị ùgò",
+     "where": [
+      "Nsa"
+     ],
+     "audio": null
+    }
+   ],
+   "examples": [],
+   "dictId": "ia.w.5f90c35f49f7e863e92b8788"
+  },
+  {
+   "id": "ezuugo",
+   "spelling": "Ezuugo",
+   "toned": "Ezūùgò",
+   "datasetSpelling": null,
+   "meaning": "A prestigious king; an honorable king",
+   "short": "A prestigious king",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b7638",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.5f90c35e49f7e863e92b7638"
+  },
+  {
+   "id": "ekwueme",
+   "spelling": "Ekwueme",
+   "toned": "Ekwueme",
+   "datasetSpelling": null,
+   "meaning": "He says, he does",
+   "short": "He says, he does",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_6088c65b8ea2d86a346d73ef",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c65b8ea2d86a346d73ef"
+  },
+  {
+   "id": "ekwutosi",
+   "spelling": "Ekwutọsị",
+   "toned": "Ekwūtọ̀sị̀",
+   "datasetSpelling": null,
+   "meaning": "Stop slandering; don't slander",
+   "short": "Stop slandering",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35f49f7e863e92b7e84",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Ekwūtọ̀sị̀(m̀)",
+     "where": [
+      "Owere",
+      "Isuama"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b7e84-646204a91a05ce04755994bf"
+    },
+    {
+     "spelling": "Ekwūtọ̀shị̀",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b7e84-646204a91a05cef3c65994c0"
+    },
+    {
+     "spelling": "Ekwūtọ̀nà",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b7e84-646204a91a05ce89765994c1"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Ekwutọsị bụ aha enyi m.",
+     "en": "Ekwutosi is my friend's name.",
+     "audio": "ia_64616603b1a4272b22725e43"
+    },
+    {
+     "igbo": "Onye bụ Ekwutọsị?",
+     "en": "Who is Ekwutọsị?",
+     "audio": "ia_6461f5792062d7093cfefba4"
+    }
+   ],
+   "dictId": "ia.w.5f90c35f49f7e863e92b7e84"
+  },
+  {
+   "id": "azubuike",
+   "spelling": "Azụbụike",
+   "toned": "Àzụbụ̀ike",
+   "datasetSpelling": null,
+   "meaning": "The past experience is strength; history is strength; those standing behind (supporters) are strength",
+   "short": "The past experience is strength",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_6088c621ff36e572955038ba",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c621ff36e572955038ba"
+  },
+  {
+   "id": "amadi",
+   "spelling": "Amadị",
+   "toned": "Àmadị",
+   "datasetSpelling": null,
+   "meaning": "Nobleman; aristocrat",
+   "short": "Nobleman",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_6089baaf4e13fe57b36ef88d",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6089baaf4e13fe57b36ef88d"
+  },
+  {
+   "id": "amaamaamasiamasi",
+   "spelling": "Amaamaamasịamasị",
+   "toned": "Àmààmaamāsị̄āmāsị̄",
+   "datasetSpelling": null,
+   "meaning": "One known but never fully; mysterious one",
+   "short": "One known but never fully",
+   "theme": "virtue",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35f49f7e863e92b7f9b",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.5f90c35f49f7e863e92b7f9b"
+  },
+  {
+   "id": "adaeze",
+   "spelling": "Adaeze",
+   "toned": "Àdaèzè",
+   "datasetSpelling": null,
+   "meaning": "Daughter of a king; princess",
+   "short": "Daughter of a king",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35e49f7e863e92b6de8",
+   "parts": [
+    {
+     "text": "àda",
+     "gloss": "eldest daughter",
+     "audio": "ia_62f503b0e4bfea49d2686704"
+    },
+    {
+     "text": "ezè",
+     "gloss": "king",
+     "audio": "ia_5f90c35e49f7e863e92b7646"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Àdeèzè",
+     "where": [
+      "Owere",
+      "Isuama"
+     ],
+     "audio": "ia_5f90c35e49f7e863e92b6de8-adeeze"
+    },
+    {
+     "spelling": "Àdiīgwē",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": null
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Adaeze ga-abịa echi.",
+     "en": "Adaeze will come tomorrow.",
+     "audio": "ia_63a04c65373a2f02539678b2"
+    },
+    {
+     "igbo": "Biko, nyere m Adaeze akwa a.",
+     "en": "Please, help me give Adaeze this cloth.",
+     "audio": "ia_63a04d05373a2f0bf69678d2"
+    }
+   ],
+   "dictId": "ia.w.5f90c35e49f7e863e92b6de8"
+  },
+  {
+   "id": "adanna",
+   "spelling": "Adanna",
+   "toned": "Àdannà",
+   "datasetSpelling": null,
+   "meaning": "Father's (first) daughter.",
+   "short": "Father's (first) daughter",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_607a2ddc9a3c39d5aaaba00c",
+   "parts": [
+    {
+     "text": "àda",
+     "gloss": "eldest daughter",
+     "audio": "ia_62f503b0e4bfea49d2686704"
+    },
+    {
+     "text": "nnà",
+     "gloss": "father",
+     "audio": "ia_5f90c35f49f7e863e92b82be"
+    }
+   ],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.607a2ddc9a3c39d5aaaba00c"
+  },
+  {
+   "id": "adannaya",
+   "spelling": "Adannaya",
+   "toned": "Àdannàya",
+   "datasetSpelling": null,
+   "meaning": "Her father's (first) daughter",
+   "short": "Her father's (first) daughter",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_607afa8bf6ab19106b8ee5a2",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Àdannịa",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_607afa8bf6ab19106b8ee5a2-642d770647d23871c37d31f9"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha ya bụ Adannaya.",
+     "en": "Her name is Adannaya.",
+     "audio": "ia_642cededb4710e9c6ab37dc7"
+    },
+    {
+     "igbo": "Kedụ Adannaya?",
+     "en": "Where is Adanna?",
+     "audio": "ia_642cededb4710e0e6cb37dc9"
+    }
+   ],
+   "dictId": "ia.w.607afa8bf6ab19106b8ee5a2"
+  },
+  {
+   "id": "adaora",
+   "spelling": "Adaọra",
+   "toned": "Àdaọ̀rà",
+   "datasetSpelling": null,
+   "meaning": "The people's lady; the people's daughter",
+   "short": "The people's lady",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_62f58300626615d61cd59b77",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Àdaọ̀hà",
+     "where": [
+      "Nkanụ"
+     ],
+     "audio": "ia_62f58300626615d61cd59b77-6438ac7800382911dc6c1d89"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Adaọra bụ aha nna m kpọrọ m.",
+     "en": "Adaora is the name my father called me.",
+     "audio": "ia_6438a5e20038299a4d6c156f"
+    },
+    {
+     "igbo": "Chika bụ adaọra.",
+     "en": "Chika is the people's lady.",
+     "audio": "ia_6438aa33003829517b6c1a74"
+    }
+   ],
+   "dictId": "ia.w.62f58300626615d61cd59b77"
+  },
+  {
+   "id": "nneka",
+   "spelling": "Nneka",
+   "toned": "Nnekà",
+   "datasetSpelling": null,
+   "meaning": "A name of a person, especially female, meaning 'motherhood is the best'",
+   "short": "Motherhood is the best",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_6351e1a26625f46eb5f910d1",
+   "parts": [
+    {
+     "text": "nnē",
+     "gloss": "mother",
+     "audio": "ia_5f90c35f49f7e863e92b82cb"
+    },
+    {
+     "text": "ka",
+     "gloss": "be more than",
+     "audio": "ia_5f90c35e49f7e863e92b7c0e"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Nnẹkà",
+     "where": [
+      "Ọnịcha",
+      "Isuama"
+     ],
+     "audio": "ia_6351e1a26625f46eb5f910d1-646b8becb8707755d6c30ac1"
+    },
+    {
+     "spelling": "Nẹkà",
+     "where": [
+      "Afiikpo"
+     ],
+     "audio": "ia_6351e1a26625f46eb5f910d1-646b8becb870778be3c30ac2"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha m bụ Nneka.",
+     "en": "My name is Nneka.",
+     "audio": "ia_6351e20ad093f11785657c2c"
+    },
+    {
+     "igbo": "Nnekà bụ onye nkuzi.",
+     "en": "Nnekà is a teacher.",
+     "audio": "ia_646a486e281dd660cee925ee"
+    }
+   ],
+   "dictId": "ia.w.6351e1a26625f46eb5f910d1"
+  },
+  {
+   "id": "nneamaka",
+   "spelling": "Nneamaka",
+   "toned": "Nneāmākā",
+   "datasetSpelling": null,
+   "meaning": "Motherhood is pleasant",
+   "short": "Motherhood is pleasant",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_60acb5d2b2e81f83926a8a83",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.60acb5d2b2e81f83926a8a83"
+  },
+  {
+   "id": "nneoma",
+   "spelling": "Nneọma",
+   "toned": "Nneọma",
+   "datasetSpelling": null,
+   "meaning": "Good mother",
+   "short": "Good mother",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_6462a4cbff232614b887cf75",
+   "parts": [
+    {
+     "text": "nnē",
+     "gloss": "mother",
+     "audio": "ia_5f90c35f49f7e863e92b82cb"
+    },
+    {
+     "text": "ọma",
+     "gloss": "good",
+     "audio": "ia_5f90c35f49f7e863e92b8816"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "nnẹọma",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_6462a4cbff232614b887cf75-6462a4cbff2326db0087cf78"
+    },
+    {
+     "spelling": "nnọọma",
+     "where": [
+      "Nkanụ",
+      "Ọnịcha"
+     ],
+     "audio": "ia_6462a4cbff232614b887cf75-6462a4cbff2326f89d87cf79"
+    },
+    {
+     "spelling": "neọma",
+     "where": [
+      "Nsụka"
+     ],
+     "audio": "ia_6462a4cbff232614b887cf75-6462a4cbff2326f8ac87cf7a"
+    },
+    {
+     "spelling": "ezinnē",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_6462a4cbff232614b887cf75-6462a4cbff232638b387cf7b"
+    },
+    {
+     "spelling": "ezhinnē",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_6462a4cbff232614b887cf75-6462a4cbff2326997687cf7c"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha m bụ Nneọma.",
+     "en": "My name is Nneọma.",
+     "audio": "ia_64621aa1d7e335770ecb0982"
+    },
+    {
+     "igbo": "Nneọma bịara.",
+     "en": "Nneọma came.",
+     "audio": "ia_6462a4bbff2326131687cf3d"
+    }
+   ],
+   "dictId": "ia.w.6462a4cbff232614b887cf75"
+  },
+  {
+   "id": "nnaka",
+   "spelling": "Nnaka",
+   "toned": "Nnàkā",
+   "datasetSpelling": null,
+   "meaning": "Fatherhood is supreme",
+   "short": "Fatherhood is supreme",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35f49f7e863e92b81b2",
+   "parts": [
+    {
+     "text": "nnà",
+     "gloss": "father",
+     "audio": "ia_5f90c35f49f7e863e92b82be"
+    },
+    {
+     "text": "ka",
+     "gloss": "be more than",
+     "audio": "ia_5f90c35e49f7e863e92b7c0e"
+    }
+   ],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.5f90c35f49f7e863e92b81b2"
+  },
+  {
+   "id": "nnabuihe",
+   "spelling": "Nnabụihe",
+   "toned": "Nnàbụ̀ihe",
+   "datasetSpelling": null,
+   "meaning": "Fatherhood is substantial",
+   "short": "Fatherhood is substantial",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35f49f7e863e92b854e",
+   "parts": [
+    {
+     "text": "nnà",
+     "gloss": "father",
+     "audio": "ia_5f90c35f49f7e863e92b82be"
+    },
+    {
+     "text": "bụ",
+     "gloss": "be",
+     "audio": "ia_5f90c35e49f7e863e92b72cc"
+    },
+    {
+     "text": "ihe",
+     "gloss": "thing",
+     "audio": "ia_5f90c35e49f7e863e92b79bf"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "Nnàbụ̀ivhe",
+     "where": [
+      "Anam"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b854e-646f1ef5aeb7517e02e5bea8"
+    },
+    {
+     "spelling": "Nnàbụ̀ife",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b854e-646f1ef5aeb7516672e5bea9"
+    },
+    {
+     "spelling": "Nnàbụ̀ive",
+     "where": [
+      "Achala"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b854e-646f1ef5aeb75143d7e5beaa"
+    },
+    {
+     "spelling": "Nnàbụ̀iye",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b854e-646f1ef5aeb7514c7ce5beac"
+    },
+    {
+     "spelling": "Nnawụihe",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_5f90c35f49f7e863e92b854e-646f1ef5aeb751213ee5bead"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Nnabụihe bụ aha m ji mara ya.",
+     "en": "Nnabụihe is the name I know him with.",
+     "audio": "ia_646eade6bc7fdb40bcf8f803-7341e056-cb60-4f25-86d5-35e23ac9df9b"
+    },
+    {
+     "igbo": "Nnabụihe ma akwụkwọ.",
+     "en": "Nnabụihe is intelligent.",
+     "audio": "ia_646f1ed1aeb751f2d5e5be31-d512db16-7d84-4c3c-8abf-14c90b02799a"
+    }
+   ],
+   "dictId": "ia.w.5f90c35f49f7e863e92b854e"
+  },
+  {
+   "id": "ikenna",
+   "spelling": "Ikenna",
+   "toned": "Ikennà",
+   "datasetSpelling": null,
+   "meaning": "Father's power or strength or authority",
+   "short": "Father's power or strength or authority",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_6088c68a8ea2d83f926d73f3",
+   "parts": [
+    {
+     "text": "ike",
+     "gloss": "strength",
+     "audio": "ia_5f90c35e49f7e863e92b7a18"
+    },
+    {
+     "text": "nnà",
+     "gloss": "father",
+     "audio": "ia_5f90c35f49f7e863e92b82be"
+    }
+   ],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c68a8ea2d83f926d73f3"
+  },
+  {
+   "id": "ugonna",
+   "spelling": "Ugonna",
+   "toned": "Ùgònnà",
+   "datasetSpelling": null,
+   "meaning": "Father's honor",
+   "short": "Father's honor",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_62d6132e27ccaa847009ccf4",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.62d6132e27ccaa847009ccf4"
+  },
+  {
+   "id": "enyinnaya",
+   "spelling": "Enyinnaya",
+   "toned": "Enyinnaya",
+   "datasetSpelling": null,
+   "meaning": "His father's friend",
+   "short": "His father's friend",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_6088c643ff36e578655038bb",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.6088c643ff36e578655038bb"
+  },
+  {
+   "id": "obi",
+   "spelling": "Obi",
+   "toned": "Òbi",
+   "datasetSpelling": null,
+   "meaning": "Core of one's children; first son",
+   "short": "Core of one's children",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35f49f7e863e92b84d3",
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.5f90c35f49f7e863e92b84d3"
+  },
+  {
+   "id": "nwabueze",
+   "spelling": "Nwabụeze",
+   "toned": "Nwabụ̄ēzè",
+   "datasetSpelling": null,
+   "meaning": "A child who is king",
+   "short": "A child who is king",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_5f90c35f49f7e863e92b8422",
+   "parts": [
+    {
+     "text": "nwa",
+     "gloss": "child",
+     "audio": null
+    },
+    {
+     "text": "bụ",
+     "gloss": "be",
+     "audio": "ia_5f90c35e49f7e863e92b72cc"
+    },
+    {
+     "text": "ezè",
+     "gloss": "king",
+     "audio": "ia_5f90c35e49f7e863e92b7646"
+    }
+   ],
+   "day": null,
+   "variants": [],
+   "examples": [],
+   "dictId": "ia.w.5f90c35f49f7e863e92b8422"
+  },
+  {
+   "id": "ijeoma",
+   "spelling": "Ijeọma",
+   "toned": "Ijèọma",
+   "datasetSpelling": null,
+   "meaning": "A female name meaning 'a good journey'; safe journey, safe trip",
+   "short": "A good journey",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_607b4edfa89145a4ec704834",
+   "parts": [
+    {
+     "text": "ijè",
+     "gloss": "walk",
+     "audio": "ia_5f90c35e49f7e863e92b7a02"
+    },
+    {
+     "text": "ọma",
+     "gloss": "good",
+     "audio": "ia_5f90c35f49f7e863e92b8816"
+    }
+   ],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "nàagboo",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_607b4edfa89145a4ec704834-63c16edf9bcfb54b5fb7b3ab"
+    },
+    {
+     "spelling": "ijèawelē",
+     "where": [
+      "Ọka"
+     ],
+     "audio": "ia_607b4edfa89145a4ec704834-63c16edf9bcfb50be6b7b3ad"
+    },
+    {
+     "spelling": "tọ̀kwụhụ",
+     "where": [
+      "Afiikpo"
+     ],
+     "audio": "ia_607b4edfa89145a4ec704834-63c16edf9bcfb51d06b7b3ae"
+    },
+    {
+     "spelling": "tọ̀kwehụ",
+     "where": [
+      "Izii"
+     ],
+     "audio": "ia_607b4edfa89145a4ec704834-63c16edf9bcfb5de9ab7b3af"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Ijeọma nụ!",
+     "en": "Safe journey!",
+     "audio": "ia_63b14d5563667d67fb295fb2"
+    },
+    {
+     "igbo": "Uche sịrị ha ijeọma.",
+     "en": "Uche wished them safe trip.",
+     "audio": "ia_63b14d5563667d5b89295fae"
+    }
+   ],
+   "dictId": "ia.w.607b4edfa89145a4ec704834"
+  },
+  {
+   "id": "ijemma",
+   "spelling": "Ijemma",
+   "toned": "Ijèmmā",
+   "datasetSpelling": null,
+   "meaning": "A female name that means journey mercies, pleasant journey, beautiful journey",
+   "short": "Journey mercies",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_63c16ce39bcfb584b9b7b305",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "ijè ọma",
+     "where": [
+      "Ajalị"
+     ],
+     "audio": "ia_63c16ce39bcfb584b9b7b305-63c16ce39bcfb557d6b7b307"
+    },
+    {
+     "spelling": "ije awele",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_63c16ce39bcfb584b9b7b305-63c16ce39bcfb5e1fab7b308"
+    },
+    {
+     "spelling": "tọ̀kwehụ",
+     "where": [
+      "Izii"
+     ],
+     "audio": "ia_63c16ce39bcfb584b9b7b305-63c16ce39bcfb51905b7b309"
+    },
+    {
+     "spelling": "tọ̀kwụhụ",
+     "where": [
+      "Afiikpo"
+     ],
+     "audio": "ia_63c16ce39bcfb584b9b7b305-63c16ce39bcfb5145bb7b30a"
+    },
+    {
+     "spelling": "làa ǹgwā",
+     "where": [
+      "Ezaa"
+     ],
+     "audio": "ia_63c16ce39bcfb584b9b7b305-63c16ce39bcfb53119b7b30b"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Ijemma bụ ezigbo aha.",
+     "en": "Ijemma is a beautiful name.",
+     "audio": "ia_63b151362146c651e5dd26d2"
+    },
+    {
+     "igbo": "Aha nwata a bụ Ijemma.",
+     "en": "The name of this child is Ijemma.",
+     "audio": "ia_63b151362146c67438dd26d1"
+    }
+   ],
+   "dictId": "ia.w.63c16ce39bcfb584b9b7b305"
+  },
+  {
+   "id": "tagbo",
+   "spelling": "Tagbo",
+   "toned": "Tagbo",
+   "datasetSpelling": null,
+   "meaning": "Today is early; there is still time; it is an early stage; more is yet to come",
+   "short": "Today is early",
+   "theme": "birth",
+   "wordClass": "Name",
+   "audio": "ia_64147cee9a96247778ff4447",
+   "parts": [],
+   "day": null,
+   "variants": [
+    {
+     "spelling": "kacha",
+     "where": [
+      "Ngwa",
+      "Mbaise",
+      "Ụmụahịa"
+     ],
+     "audio": "ia_64147cee9a96247778ff4447-64147cee9a96243a37ff4449"
+    },
+    {
+     "spelling": "kasị",
+     "where": [
+      "Ọnịcha"
+     ],
+     "audio": "ia_64147cee9a96247778ff4447-64147cee9a9624678aff444a"
+    },
+    {
+     "spelling": "Ǹdụàgbo",
+     "where": [
+      "Mkpọọ"
+     ],
+     "audio": "ia_64147cee9a96247778ff4447-64147cee9a9624d701ff444c"
+    }
+   ],
+   "examples": [
+    {
+     "igbo": "Aha ya bụ Tagbo.",
+     "en": "His name is Tagbo.",
+     "audio": "ia_64146fb8b619cc0b8ffc888a"
+    },
+    {
+     "igbo": "Tagbo gara ọrụ.",
+     "en": "Tagbo went to work.",
+     "audio": "ia_64146fb8b619cc70c2fc888b"
+    }
+   ],
+   "dictId": "ia.w.64147cee9a96247778ff4447"
+  },
+  {
+   "id": "amaechi",
+   "spelling": "Amaechi",
+   "toned": null,
+   "datasetSpelling": null,
+   "meaning": null,
+   "short": null,
+   "theme": "birth",
+   "wordClass": null,
+   "audio": null,
+   "parts": [],
+   "day": null,
+   "variants": [],
+   "examples": [
+    {
+     "igbo": "Nne ya bara ya Amaechi n' ihi na ndị mmadụ chere na ọ bụ nwaanyị aga.",
+     "en": "His mother named him Amaechi because people thought she was barren.",
+     "audio": "iax_63d35cd9ee923a8443dda583"
+    }
+   ],
+   "dictId": null
+  }
+ ]
+}

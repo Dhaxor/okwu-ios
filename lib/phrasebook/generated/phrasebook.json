@@ -1,0 +1,2653 @@
+{
+ "version": 1,
+ "credit": "Phrases and recordings: Nkọwa okwu (Igbo API), CC BY 4.0, used with permission",
+ "review": "pending-native-review",
+ "selection": {
+  "command": "bun scripts/phrasebook/build.ts",
+  "rules": "phrasebook-rules-2",
+  "lint": "okwu-lint-1",
+  "dataset": "sha256:174ec704deeedc80"
+ },
+ "situations": [
+  {
+   "id": "greetings",
+   "title": "Greetings and politeness",
+   "blurb": "Hello, welcome, thank you, sorry and goodbye.",
+   "phrases": [
+    [
+     "ia.x.643297aafc16d49e069153e3",
+     "Daalụ rinne.",
+     "Thank you so much.",
+     "ia_643297aafc16d49e069153e3"
+    ],
+    [
+     "ia.x.640055c2f03e1eba5584a716",
+     "Biko, gbaghara m.",
+     "Please, forgive me.",
+     "ia_640055c2f03e1eba5584a716"
+    ],
+    [
+     "ia.x.6484c4f0044c557b60d31378",
+     "Biko, nye m ohere.",
+     "Please, excuse me.",
+     "ia_6484c4f0044c557b60d31378-219ae852-5348-4e22-b700-fcf006c4fe6f"
+    ],
+    [
+     "ia.x.641ada80f9b47e74293e4419",
+     "Daalụ maka ozi ahụ.",
+     "Thank you for the information.",
+     "ia_641ada80f9b47e74293e4419"
+    ],
+    [
+     "ia.x.647223cba146058be0d5f1d4",
+     "Gaa zute ndị ọbịa anyị.",
+     "Go and welcome our visitors.",
+     "ia_647223cba146058be0d5f1d4-b57d26c6-df0e-4aa4-a63e-5b100a765e5e"
+    ],
+    [
+     "ia.x.640bed5f7edeb4f1491bb214",
+     "Ije awele ka anyị na-arịọ.",
+     "Safe trip is what we ask for.",
+     "ia_640bed5f7edeb4f1491bb214"
+    ],
+    [
+     "ia.x.646e45882e213855e8286b2a",
+     "Kedụnụ?",
+     "How are you?",
+     "ia_646e45882e213855e8286b2a-3ffe6026-156f-4cf3-b8a6-32c386a179ef"
+    ],
+    [
+     "ia.x.641ab3b64a22b8984c02cee8",
+     "Daalụ maka ego i nyere nna m.",
+     "Thank you for the money you gave my father.",
+     "ia_641ab3b64a22b8984c02cee8"
+    ],
+    [
+     "ia.x.646e45882e21386eec286b38",
+     "Nnọọnụ!",
+     "Welcome all!",
+     "ia_646e45882e21386eec286b38-9bd7cf6a-ef72-497a-89fb-62df8c315e9c"
+    ],
+    [
+     "ia.x.643dbda24f7a1ef191c3a521",
+     "Ije ọma!",
+     "Good journey!",
+     "ia_643dbda24f7a1ef191c3a521"
+    ],
+    [
+     "ia.x.6379697a2b16a8818fb3564c",
+     "Ka emesịa.",
+     "Good bye.",
+     "ia_6379697a2b16a8818fb3564c"
+    ],
+    [
+     "ia.x.63b14d5563667d67fb295fb2",
+     "Ijeọma nụ!",
+     "Safe journey!",
+     "ia_63b14d5563667d67fb295fb2"
+    ],
+    [
+     "ia.x.64819baeb28aaa00cc78be01",
+     "Hei! imeela.",
+     "Oh! thank you.",
+     "ia_64819baeb28aaa00cc78be01-0d8ea3f7-5382-4965-91e9-c026fdcb2267"
+    ],
+    [
+     "ia.x.6445092546d9854cc02c9ed1",
+     "Nnọọ, oche dịkwa.",
+     "Welcome, there is seat.",
+     "ia_6445092546d9854cc02c9ed1"
+    ],
+    [
+     "ia.x.6483276d86309693d18619ff",
+     "Ezigbo, ịsaalachi.",
+     "My dear, good morning.",
+     "ia_6483276d86309693d18619ff-1d394c6c-3be5-45bf-a946-5bd72d26f290"
+    ],
+    [
+     "ia.x.64445d9fe30e1b3ecf450a52",
+     "Bata n'ime ụlọ! Nnọọ!",
+     "Come into the house! Welcome!",
+     "ia_64445d9fe30e1b3ecf450a52"
+    ],
+    [
+     "ia.x.63c16ec62092e2e4bafed7e4",
+     "Ijeọma ka unu ga-enwe.",
+     "You will have a safe journey.",
+     "ia_63c16ec62092e2e4bafed7e4"
+    ],
+    [
+     "ia.x.63912a3781b9a555fb4c3b5c",
+     "Adị m mma.",
+     "I am well.",
+     "ia_63912a3781b9a555fb4c3b5c"
+    ],
+    [
+     "ia.x.639141144b8efbbf2c6299d6",
+     "Kedụ ka i mere?",
+     "How are you (doing)?",
+     "ia_639141144b8efbbf2c6299d6"
+    ],
+    [
+     "ia.x.64789edec55b004708715613",
+     "Anyị na-atụ anya ịhụ gị echi.",
+     "We are expecting to see you tomorrow.",
+     "ia_64789edec55b004708715613-c20adbdf-6dbf-4dc4-83af-f3f7c60e8fea"
+    ],
+    [
+     "ia.x.64445d9fe30e1b8e04450a56",
+     "Ekele dịrị Chukwu na ị lọtara n'udo!  Nnọọ.",
+     "Thank God you returned peacefully, welcome.",
+     "ia_64445d9fe30e1b8e04450a56"
+    ],
+    [
+     "ia.x.63c16ec62092e2d6f2fed7e5",
+     "Ekele dịrị Chukwu onye nyere anyị ijeọma.",
+     "Thanks be to God who granted us journey mercies.",
+     "ia_63c16ec62092e2d6f2fed7e5"
+    ],
+    [
+     "ia.x.63f8a57d0f52e1669cd3cb91",
+     "Biko ka anyị kelee onyeọhụrụ nọ ebe a.",
+     "Please let us greet the newcomer here.",
+     "ia_63f8a57d0f52e1669cd3cb91"
+    ],
+    [
+     "ia.x.63b80dddd7143662465080be",
+     "Ndo! Agaghị m eme ya ọzọ.",
+     "Sorry! I won't do it again.",
+     "ia_63b80dddd7143662465080be"
+    ],
+    [
+     "ia.x.646f8fb4890448fafef07e40",
+     "Ngwanụ lezie anya.",
+     "Okay goodbye.",
+     "ia_646f8fb4890448fafef07e40-3a68ee8b-57fe-43ce-8d62-1a18072dcef3"
+    ]
+   ]
+  },
+  {
+   "id": "family",
+   "title": "Family and introductions",
+   "blurb": "Your name, your people and where you are from.",
+   "phrases": [
+    [
+     "ia.x.647f71dcb19576554d45e063",
+     "Gịnị bụ aha gị?",
+     "What is your name?",
+     "ia_647f71dcb19576554d45e063-86767e48-1c87-4f94-b36a-796c85a18a63"
+    ],
+    [
+     "ia.x.647223cba146059eacd5f1d8",
+     "Ọ ga-amasị m izute nwunye gị.",
+     "I will like to meet your wife.",
+     "ia_647223cba146059eacd5f1d8-53d19f0d-dc93-4889-9f28-4f4cb88de96b"
+    ],
+    [
+     "ia.x.6483b56eadbd1a48c80342c2",
+     "Onye ka ị bụ?",
+     "Who are you?",
+     "ia_6483b56eadbd1a48c80342c2-8df496b1-953c-4ff3-810e-853ee8fd2cfd"
+    ],
+    [
+     "ia.x.647b652438b7720a5aee807d",
+     "Okene m mụrụ ejima.",
+     "My cousin gave birth to twins.",
+     "ia_647b652438b7720a5aee807d-17a1f252-c959-4a51-a901-c5d42c2c0f75"
+    ],
+    [
+     "ia.x.63e301c492ae8332d96bbe91",
+     "Ọgọ m nwoke mara mma.",
+     "My brother-in-law is handsome.",
+     "ia_63e301c492ae8332d96bbe91"
+    ],
+    [
+     "ia.x.647702b2711bde49244f77c2",
+     "Abụ m ụlụ n'ụlọ anyị.",
+     "I am the last child in our family.",
+     "ia_647702b2711bde49244f77c2-b0a40626-e39e-46d2-8bb0-415d18559532"
+    ],
+    [
+     "ia.x.646f30c37e9bdc96f4346127",
+     "Ọgọ m nwaanyị bi n'Aba.",
+     "My sister-in-law lives in Aba.",
+     "ia_646f30c37e9bdc96f4346127-a4da721d-9c0a-4c84-9b32-c00bcf7a6492"
+    ],
+    [
+     "ia.x.641b1b5a405e3d5200fea001",
+     "Nwa m dị afọ anọ.",
+     "My child is four years old.",
+     "ia_641b1b5a405e3d5200fea001"
+    ],
+    [
+     "ia.x.64186f040422257e28ac92be",
+     "Nwa m dị afọ isii.",
+     "My child is six years old.",
+     "ia_64186f040422257e28ac92be"
+    ],
+    [
+     "ia.x.647c5ad00a39f8a4b969300c",
+     "Echefuru m aha gị.",
+     "I forgot your name.",
+     "ia_647c5ad00a39f8a4b969300c-b7ce7cd3-8ca6-4e19-93c9-2fe553338358"
+    ],
+    [
+     "ia.x.641cec7693319855571ad7a0",
+     "Nne m mụrụ ụmụ ise.",
+     "My mother gave birth to five children.",
+     "ia_641cec7693319855571ad7a0"
+    ],
+    [
+     "ia.x.6420c3adf7abbc614a2b8b7f",
+     "Nne m mụrụ ụmụ itolu.",
+     "My mother gave birth to nine children.",
+     "ia_6420c3adf7abbc614a2b8b7f"
+    ],
+    [
+     "ia.x.6475315374faef0cbc3fd975",
+     "Deede m alụbeghi nwaanyị.",
+     "My elder brother is not married.",
+     "ia_6475315374faef0cbc3fd975-a278f963-1496-46c6-a43c-cd4c2845c897"
+    ],
+    [
+     "ia.x.646f37cb7e9bdcfb6f3468ba",
+     "Nwanne m nwaanyị alụọla di.",
+     "My sister is married.",
+     "ia_646f37cb7e9bdcfb6f3468ba-04a179ad-b7b4-4f61-9336-e45c365bde59"
+    ],
+    [
+     "ia.x.63d2252402683b4f93912271",
+     "Nwunye m abanyela otu ụmụọkpụ.",
+     "My wife has joined the married daughters group.",
+     "ia_63d2252402683b4f93912271"
+    ],
+    [
+     "ia.x.646f2e5aaeb7510aa1e5c5d2",
+     "Ọgọ m nwaanyị buteere m ji.",
+     "My sister-in-law brought yam for me.",
+     "ia_646f2e5aaeb7510aa1e5c5d2-c2723b5a-d43f-4b24-af3c-71b4d876823b"
+    ],
+    [
+     "ia.x.646f2ddc7e9bdc69cb346000",
+     "Chukwu nyere m ezigbo ọgọ nwaanyị.",
+     "God gave me a good mother-in-law.",
+     "ia_646f2ddc7e9bdc69cb346000-69a989a0-3920-480f-a111-9972ec302381"
+    ],
+    [
+     "ia.x.637b9bcd869ee2728e175b46",
+     "Anyị nwere ọtụtụ ụmụntakịrị n'ezinụlọ anyị.",
+     "We have many children in our family.",
+     "ia_637b9bcd869ee2728e175b46"
+    ],
+    [
+     "ia.s.63d57ef852948184bfaeb85d",
+     "Abụ m ọkpara nna m.",
+     "I am the first son of my father.",
+     "iax_63d57ef852948184bfaeb85d"
+    ],
+    [
+     "ia.x.6440de4fdb5e083eca2d7e17",
+     "Aha ọkpara m bụ Ikechukwu.",
+     "My first son's name is Ikechukwu.",
+     "ia_6440de4fdb5e083eca2d7e17"
+    ],
+    [
+     "ia.x.637a938294d0be1a3a447156",
+     "Gaa ka icheere ndị ọgọ gị ọjị.",
+     "Go and present kolanut to your in-laws.",
+     "ia_637a938294d0be1a3a447156"
+    ],
+    [
+     "ia.x.6443f08359234f4757fd5236",
+     "Abụ m ada ezinụlọ nne na nna m.",
+     "I am the first daughter of my parents' family.",
+     "ia_6443f08359234f4757fd5236"
+    ],
+    [
+     "ia.x.643f2dfd6e2e010b0c0add89",
+     "Ọ bụ onye obodo m.",
+     "He is from my town.",
+     "ia_643f2dfd6e2e010b0c0add89"
+    ],
+    [
+     "ia.x.639277c582919edb07be1852",
+     "Ndị be anyị, ndeewonụ.",
+     "My people, I salute you.",
+     "ia_639277c582919edb07be1852"
+    ],
+    [
+     "ia.x.6473c1767ba7010a67633b8b",
+     "Nwunye m bụ ụlụ nne ya.",
+     "My wife is her mother's second daughter.",
+     "ia_6473c1767ba7010a67633b8b-2553ad38-e681-44ef-abe9-6a5e5d22510c"
+    ],
+    [
+     "ia.x.642a88d5fa46fe78eaf9d643",
+     "Ọgọ m nwoke bụ ngọzị dịrị m.",
+     "My son-in-law is a blessing to me.",
+     "ia_642a88d5fa46fe78eaf9d643"
+    ],
+    [
+     "ia.x.6443f29859234f4ab0fd54b6",
+     "Aha nna m bụ Okafọ.",
+     "My father's name is Okafor.",
+     "ia_6443f29859234f4ab0fd54b6"
+    ],
+    [
+     "ia.x.644bf60eaed494ab130fa407",
+     "Aha nne m bụ Nwoorie.",
+     "My mother's name is Nwoorie.",
+     "ia_644bf60eaed494ab130fa407"
+    ],
+    [
+     "ia.x.64624deed7e335b4ffcb4e5f",
+     "Aha nna m bụ Ọlụchukwu.",
+     "My father's name is Ọlụchukwu.",
+     "ia_64624deed7e335b4ffcb4e5f"
+    ],
+    [
+     "ia.x.647ce453f8f6bb3d76446cdc",
+     "Chukwuebuka bụ aha di m.",
+     "My husband's name is Chukwuebuka.",
+     "ia_647ce453f8f6bb3d76446cdc-7c79ad09-e303-4ab6-ab88-75f742ed230a"
+    ],
+    [
+     "ia.x.63dd6b1b90b4e27ff46dc23a",
+     "Nnoochie m zụrụ m.",
+     "My grandmother raised me.",
+     "ia_63dd6b1b90b4e27ff46dc23a"
+    ],
+    [
+     "ia.x.642e62bfcde9769e302d083d",
+     "Ezi anyị buru ibu.",
+     "Our extended family is large.",
+     "ia_642e62bfcde9769e302d083d"
+    ],
+    [
+     "ia.x.634c652f6ee0e23f398a1183",
+     "Ha bụ ndị ọnụkụ anyị",
+     "They are our relatives.",
+     "ia_634c652f6ee0e23f398a1183"
+    ],
+    [
+     "ia.x.6447d7f2510e7c6e80223bdb",
+     "Okeeke bụ aha deede m.",
+     "Okeke is my uncle's name.",
+     "ia_6447d7f2510e7c6e80223bdb"
+    ],
+    [
+     "ia.x.647b6e2438b7727b93ee8a3b",
+     "Okene ya bụ onye nkuzi.",
+     "I am his cousin.",
+     "ia_647b6e2438b7727b93ee8a3b-171127eb-576e-4e67-9e59-d6e2f448538a"
+    ],
+    [
+     "ia.x.647b6e2438b772e8b8ee8a37",
+     "Okene m lọtara ụnyaahụ.",
+     "My cousin came back yesterday.",
+     "ia_647b6e2438b772e8b8ee8a37-942b998f-d834-4a4c-adee-0c20da878e95"
+    ],
+    [
+     "ia.x.64747e5c4b40956904190d6c",
+     "Aga m elekọta ezinụlọ gị.",
+     "I will look after your family.",
+     "ia_64747e5c4b40956904190d6c-7b770097-a6dd-4d19-8d94-8ce23653d39f"
+    ],
+    [
+     "ia.x.6475cc81ad2b363ca3bace9e",
+     "Ezinụụlọ anyị na-abawanye.",
+     "Our family is increasing in number.",
+     "ia_6475cc81ad2b363ca3bace9e-07912639-d7fb-414b-900c-dc4de79e002b"
+    ],
+    [
+     "ia.x.6486e592d6cbd39ddaf4abc8",
+     "Deede m zụtaara m ichooku.",
+     "My uncle bought me a parrot.",
+     "ia_6486e592d6cbd39ddaf4abc8-f14f8c82-9cd3-4c74-84c0-607c35dee6a7"
+    ],
+    [
+     "ia.x.6438ff88b6d578177ccd7f7f",
+     "Nna nna m na-ekpu okpuagọrọ.",
+     "My grandfather wears okpuagoro.",
+     "ia_6438ff88b6d578177ccd7f7f"
+    ],
+    [
+     "ia.x.645d65e1f4ed56bef16f461b",
+     "Ezinụụlọ anyị na-ejupụta n'ihe ọma.",
+     "Our family is getting filled with good things.",
+     "ia_645d65e1f4ed56bef16f461b"
+    ],
+    [
+     "ia.x.6375097f2337f9e129d3914d",
+     "Nwa ya nwoke bụ enyi m.",
+     "Her son is my friend.",
+     "ia_6375097f2337f9e129d3914d"
+    ],
+    [
+     "ia.x.6420c3adf7abbca2b92b8b78",
+     "E nwere ọnụmara itolu n'obodo anyị",
+     "There are nine villages in my town.",
+     "ia_6420c3adf7abbca2b92b8b78"
+    ],
+    [
+     "ia.x.6474657b8c2db53b1d59003b",
+     "Nne m ga-achụda nwanne m n' ike.",
+     "My mother will forcefully chase down my sibling",
+     "ia_6474657b8c2db53b1d59003b-957831ed-2a0d-4830-8d98-f7349203fc68"
+    ]
+   ]
+  },
+  {
+   "id": "market",
+   "title": "At the market",
+   "blurb": "Prices, bargaining and buying what you came for.",
+   "phrases": [
+    [
+     "ia.x.6422185f64b83934d051b847",
+     "Ego ole ka ị na-ere ịsha?",
+     "How much are you selling crayfish?",
+     "ia_6422185f64b83934d051b847"
+    ],
+    [
+     "ia.x.644cb7ea8cd8943fb0546e58",
+     "Zụtara m ụgụ n'ahịa.",
+     "Buy me pumpkin leaf from the market.",
+     "ia_644cb7ea8cd8943fb0546e58"
+    ],
+    [
+     "ia.x.648984ab17c9531b540dda10",
+     "Kwụsị oke ịpara gị a.",
+     "Stop this your too much haggling.",
+     "ia_648984ab17c9531b540dda10-2180a2a2-9247-4190-9b0b-d02973dde617"
+    ],
+    [
+     "ia.x.6422e7171ce7fb30194589f1",
+     "Zụtara m mgbọrọdị n'ahịa.",
+     "Buy me waterleaf from the market.",
+     "ia_6422e7171ce7fb30194589f1"
+    ],
+    [
+     "ia.x.6445eb68155683418817a5f9",
+     "Biko zụtara m anụ n'ahịa.",
+     "Please buy meat for me at the market.",
+     "ia_6445eb68155683418817a5f9"
+    ],
+    [
+     "ia.x.64878e8cbde5d28e445889f3",
+     "Biko zụtara m ihe n'ahịa.",
+     "Please buy something for me from the market.",
+     "ia_64878e8cbde5d28e445889f3-ee843382-f626-4f89-a7fd-2186f38d9cc6"
+    ],
+    [
+     "ia.x.648b01d7bc671d667fde42ae",
+     "Ego ole ka ị na-ere kootu a?",
+     "How much are you selling this coat?",
+     "ia_648b01d7bc671d667fde42ae-ac461f13-d3b2-470e-ac0d-94a9f1748302"
+    ],
+    [
+     "ia.x.63a0007fda94e2c9d159cb70",
+     "Ego ole ka ị zụtara okwuma a?",
+     "How much did you buy this shea butter?",
+     "ia_63a0007fda94e2c9d159cb70"
+    ],
+    [
+     "ia.x.648b0581bc671d993dde4634",
+     "Nye m narị naịra.",
+     "Give me hundred naira.",
+     "ia_648b0581bc671d993dde4634-e3e1dd73-0185-474d-b781-5d07ddb50cba"
+    ],
+    [
+     "ia.x.63947dbdac7f8916aa17cf57",
+     "Ego ole ka i ji?",
+     "How much do you have with you?",
+     "ia_63947dbdac7f8916aa17cf57"
+    ],
+    [
+     "ia.x.63de772df628d7649cceffe7",
+     "Ego ole ka unu na-akwụ?",
+     "How much are you paying?",
+     "ia_63de772df628d7649cceffe7"
+    ],
+    [
+     "ia.x.637fe88dd0016a4770c7a49b",
+     "Ị ga-azụtatụrụ m akwụkwọ n'ụlaahịa?",
+     "Would you buy me a book at the store?",
+     "ia_637fe88dd0016a4770c7a49b"
+    ],
+    [
+     "ia.x.648b0581bc671dcf45de462c",
+     "Naịra ole bụ ihe a?",
+     "How much naira is this?",
+     "ia_648b0581bc671dcf45de462c-ea038a21-50e6-4a0f-8beb-28a5ccb9bf37"
+    ],
+    [
+     "ia.x.645ff8190d4e6514afc8767e",
+     "Mfontu ahụ ị zụtara dị ọnụ.",
+     "That nail-puller you bought is expensive.",
+     "ia_645ff8190d4e6514afc8767e"
+    ],
+    [
+     "ia.x.6433e6168a4cfee279e53358",
+     "Zụnye m akpa.",
+     "Buy me a bag.",
+     "ia_6433e6168a4cfee279e53358"
+    ],
+    [
+     "ia.x.6404f469fcafa10a128cb7db",
+     "Zụta ọdụ ọhụrụ ma i jee ahịa.",
+     "Buy a new pestle when you go to the market.",
+     "ia_6404f469fcafa10a128cb7db"
+    ],
+    [
+     "ia.x.63aac8df50b4f94d14a77466",
+     "Zụtara m udiisi ma i jee ahịa.",
+     "Buy hair cream for me when you go to the market.",
+     "ia_63aac8df50b4f94d14a77466"
+    ],
+    [
+     "ia.x.643018919c2cf758c951e77b",
+     "Zụtara mụ ụtazị ma ị gaa ahịa.",
+     "Buy ụtazi for me when you go to market.",
+     "ia_643018919c2cf758c951e77b"
+    ],
+    [
+     "ia.x.63b51adff5bb7fc859508d07",
+     "Biko, zụtara m akwụoru ma iga ahịa.",
+     "Please, buy pineapple for me when you go to the market.",
+     "ia_63b51adff5bb7fc859508d07"
+    ],
+    [
+     "ia.x.646e8a1e05611a8f11748db9",
+     "Anyị na-ere ahịa.",
+     "We are selling goods.",
+     "ia_646e8a1e05611a8f11748db9-1182cbd9-2109-4efd-b9c2-3b0e46aff34a"
+    ],
+    [
+     "ia.x.6457b926125f421189ce404f",
+     "M na-azụcha ụdị ahịa a.",
+     "I also buy these kinds of goods.",
+     "ia_6457b926125f421189ce404f"
+    ],
+    [
+     "ia.x.648aef45bc671d0551de2992",
+     "Achịcha ahụ m zụtara dị ọnụ.",
+     "That cocoyam flakes I bought are costly.",
+     "ia_648aef45bc671d0551de2992-aacce3ea-a432-464e-bf48-d3f9e6d49545"
+    ],
+    [
+     "ia.x.647774a600f43eb20a6e498b",
+     "Ị zụtazi akwa ahụ?",
+     "Did you later buy that bag?",
+     "ia_647774a600f43eb20a6e498b-266f1809-c9a6-46c4-af0f-97319b1ed652"
+    ],
+    [
+     "ia.x.646e934705611a84d5749a0b",
+     "Bidaa ya nke ọma.",
+     "Reduce it very well.",
+     "ia_646e934705611a84d5749a0b-7899bd9a-c163-452f-be7a-1b436a7c0d1e"
+    ],
+    [
+     "ia.x.643d3742782ad563fc00ec8d",
+     "Ego m furu n'ahịa.",
+     "I lost my money at the market.",
+     "ia_643d3742782ad563fc00ec8d"
+    ],
+    [
+     "ia.x.64878f84bde5d242fe588ac6",
+     "Achọrọ m ịzụta iheahịa.",
+     "I want to buy market snacks.",
+     "ia_64878f84bde5d242fe588ac6-3ea89b48-a9b4-4db4-a320-2ac79740ca60"
+    ],
+    [
+     "ia.x.63ded8ea06cdb6e44508334f",
+     "Nne m zụtara uhie n'ahịa.",
+     "My mother bought camwood at the market.",
+     "ia_63ded8ea06cdb6e44508334f"
+    ],
+    [
+     "ia.x.64610ae2d32b0a13e0cc1358",
+     "Agara m ụlaahịa ịzụ ncha.",
+     "I went to the store to buy soap.",
+     "ia_64610ae2d32b0a13e0cc1358"
+    ],
+    [
+     "ia.x.64879c7dbde5d205a8589e1a",
+     "Ahụghị ndị na-ere iheahịa.",
+     "I did not see people that sell market snacks.",
+     "ia_64879c7dbde5d205a8589e1a-38e86d25-31a9-41f8-80ae-1563c5d90ba7"
+    ],
+    [
+     "ia.x.648af81dbc671d17b7de37d4",
+     "Azụtara m akara naịra iri.",
+     "I bought ten naira akara.",
+     "ia_648af81dbc671d17b7de37d4-827f7eed-928c-4b26-8af2-0a70ffce0824"
+    ],
+    [
+     "ia.x.6404dcc515ae631a9807edab",
+     "Nne m zụtara nshịkọ n'ahịa.",
+     "My mother bought crab at the market.",
+     "ia_6404dcc515ae631a9807edab"
+    ],
+    [
+     "ia.x.63f306d2b90eea24e7efb544",
+     "Azụtara m icheku n'ahịa taa.",
+     "I bought velvet tamarind from the market today.",
+     "ia_63f306d2b90eea24e7efb544"
+    ],
+    [
+     "ia.x.64288fc87c2fe861e1bf0bc7",
+     "Azụtara m okpuata n'ahịa taata.",
+     "I bought a straw hat in the market today.",
+     "ia_64288fc87c2fe861e1bf0bc7"
+    ],
+    [
+     "ia.x.63d607538bf766229b9c1f3c",
+     "Kedụ ahịa m nwere ike ịzụta ịgba?",
+     "In which market can I buy drum from?",
+     "ia_63d607538bf766229b9c1f3c"
+    ],
+    [
+     "ia.x.642d2f1ab8a2ac6a3efae43d",
+     "Isiji akwa a ga-eri gị nnukwu ego.",
+     "To dye this cloth will cost you so much money.",
+     "ia_642d2f1ab8a2ac6a3efae43d"
+    ],
+    [
+     "ia.x.641e1089f0833ebefa81ed30",
+     "Agaghị m azụ akwa ahụ n'ọnụahịa ahụ.",
+     "We will not buy that cloth at that price.",
+     "ia_641e1089f0833ebefa81ed30"
+    ],
+    [
+     "ia.s.63c338b8773e3e45d0fe9cba",
+     "Azụrụ m akwa dị ọnụala.",
+     "I bought cheap clothes.",
+     "iax_63c338b8773e3e45d0fe9cba"
+    ],
+    [
+     "ia.x.63dd81dd90b4e2510c6dc851",
+     "Azụọkpọọ dịzị ọnụ n'ahịa taa.",
+     "Dried fish is expensive in the market today.",
+     "ia_63dd81dd90b4e2510c6dc851"
+    ],
+    [
+     "ia.x.63f306d2b90eea88a3efb545",
+     "Icheku anaghị ada ọnụ n'ahịa.",
+     "Velvet tamarind is not expensive at the market.",
+     "ia_63f306d2b90eea88a3efb545"
+    ],
+    [
+     "ia.x.642585e2de6d7d7e0c6ec613",
+     "Ọlọọcha galara ọnụ n'ahịa ụgbua.",
+     "Silver is expensive in the market now.",
+     "ia_642585e2de6d7d7e0c6ec613"
+    ],
+    [
+     "ia.x.641cff9761dcd460f5cbcdbc",
+     "Ọ gwabe m ọnụ ya.",
+     "She has not told me it's price.",
+     "ia_641cff9761dcd460f5cbcdbc"
+    ],
+    [
+     "ia.x.6473eaad2e5de24b0c14b084",
+     "Anyị gbara mpịrịmpị.",
+     "We haggled stingily for price.",
+     "ia_6473eaad2e5de24b0c14b084-672d8e1d-cc30-4d6b-b6d4-96fa5aee3d81"
+    ],
+    [
+     "ia.x.641debd4609a987cd968e88c",
+     "Achọrọ m ịma ọnụahịa ya.",
+     "I want to know its price.",
+     "ia_641debd4609a987cd968e88c"
+    ],
+    [
+     "ia.x.644bea8d85c25bddb0f5a14f",
+     "Achọghị akwa garara ọnụ.",
+     "I do not want a costly cloth.",
+     "ia_644bea8d85c25bddb0f5a14f"
+    ]
+   ]
+  },
+  {
+   "id": "food",
+   "title": "Food and eating",
+   "blurb": "At the table, in the kitchen, and when you are hungry.",
+   "phrases": [
+    [
+     "ia.x.644f9e30c8251354f4e7a21b",
+     "Ka anyị rie nri a.",
+     "Let us eat this food.",
+     "ia_644f9e30c8251354f4e7a21b"
+    ],
+    [
+     "ia.x.643f201cf23880376f8e049c",
+     "Ṅụọ mmiri, nri ahụ ga-akpọdo gị n'akpịrị.",
+     "Drink some water, that food will choke you.",
+     "ia_643f201cf23880376f8e049c"
+    ],
+    [
+     "ia.x.64825914be22d13f74743b9e",
+     "Nkwụenu anyị ṅụrụ tọrọ ụtọ.",
+     "The palm wine we drank was sweet.",
+     "ia_64825914be22d13f74743b9e-19bfaa41-b76c-489c-913b-60cd198828af"
+    ],
+    [
+     "ia.x.638fbeb81d55780dca522cb6",
+     "Bịa ka i rie nri gị.",
+     "Come and eat your food.",
+     "ia_638fbeb81d55780dca522cb6"
+    ],
+    [
+     "ia.x.64777dc94c82e8a778c0cf8e",
+     "Biko ritụ nri tupu ị pụọ.",
+     "Please eat this food a bit before you leave.",
+     "ia_64777dc94c82e8a778c0cf8e-fbde2b3c-5a65-456b-8463-7a5203e865dd"
+    ],
+    [
+     "ia.x.63f3f2704c72a011df977789",
+     "Biko, sie nri ahụ ngwangwa ka anyị rie.",
+     "Please cook that food fast let's eat",
+     "ia_63f3f2704c72a011df977789"
+    ],
+    [
+     "ia.x.643035085b20ddbf317c61bf",
+     "Jee buru nri gị n'usekwu.",
+     "Go and carry your food in the kitchen.",
+     "ia_643035085b20ddbf317c61bf"
+    ],
+    [
+     "ia.x.6445eb6815568368ef17a5fb",
+     "Tinyere anụ abụọ na nri m.",
+     "Put two pieces of meat in my food.",
+     "ia_6445eb6815568368ef17a5fb"
+    ],
+    [
+     "ia.x.646c7589bd611184fe644816",
+     "Bịa ka anyị rikọọ nri a ọnụ.",
+     "Come let us eat this food together.",
+     "ia_646c7589bd611184fe644816"
+    ],
+    [
+     "ia.x.6398660bc92932f4b23bcce5",
+     "Erila nri ahụ m dobere na njuoyi.",
+     "Don't eat that food I kept in the refrigerator.",
+     "ia_6398660bc92932f4b23bcce5"
+    ],
+    [
+     "ia.x.64880d89ad123048e938143e",
+     "Mmanya ọtọbịrịbịrị  na-agụ m.",
+     "I crave sweet drink.",
+     "ia_64880d89ad123048e938143e-13ad1438-5bf0-4683-beaa-23ed49f72b44"
+    ],
+    [
+     "ia.x.64707da31b807e34f0e8f82b",
+     "Zụtara m abala.",
+     "Buy water yam for me.",
+     "ia_64707da31b807e34f0e8f82b-89578e50-6c82-4b9d-84d0-12fb8d6dde49"
+    ],
+    [
+     "ia.x.6412c9796ce90612967f7ce7",
+     "Zụnye m nri ehihie.",
+     "Buy lunch for me.",
+     "ia_6412c9796ce90612967f7ce7"
+    ],
+    [
+     "ia.x.639fae0e0816fdebf4d2ad33",
+     "Nye nwa gị nriụtụtụ.",
+     "Give your child breakfast.",
+     "ia_639fae0e0816fdebf4d2ad33"
+    ],
+    [
+     "ia.x.646e799305611a831f7474f2",
+     "Bịa ka anyị gbaa azị.",
+     "Come let us have breakfast.",
+     "ia_646e799305611a831f7474f2-05c9000a-181e-4242-86b4-39e22d8521c8"
+    ],
+    [
+     "ia.x.6329b6b63b0a6595ca28f086",
+     "Bịa ka anyị gbapụ ụchụ.",
+     "Come, let us take breakfast.",
+     "ia_6329b6b63b0a6595ca28f086"
+    ],
+    [
+     "ia.x.6374e36d8044cf207a9c4feb",
+     "Ofe gịrịgịrị a i siri dịkwa ụtọ.",
+     "This watery soup you cooked is actually delicious.",
+     "ia_6374e36d8044cf207a9c4feb"
+    ],
+    [
+     "ia.x.6437a186dd962e2275e03e15",
+     "Ị chọrọ ịṅụ mmiri?",
+     "Do you want to drink water?",
+     "ia_6437a186dd962e2275e03e15"
+    ],
+    [
+     "ia.x.6437a186dd962eae7fe03e17",
+     "Onye ṅụrụ mmiri m?",
+     "Who drank my water?",
+     "ia_6437a186dd962eae7fe03e17"
+    ],
+    [
+     "ia.x.6443333f7f80917920961dd4",
+     "Nye m ọjị ka m taa.",
+     "Give me kolanut let me eat.",
+     "ia_6443333f7f80917920961dd4"
+    ],
+    [
+     "ia.x.6437a186dd962eca8de03e18",
+     "Ṅụọ mmiri ahụ ka anyị pụọ.",
+     "Drink that water let's go.",
+     "ia_6437a186dd962eca8de03e18"
+    ],
+    [
+     "ia.x.6422185f64b8393d0051b849",
+     "Zụta ịsha anyị ga-eji sie ofe.",
+     "Buy crayfish that we will use to cook soup.",
+     "ia_6422185f64b8393d0051b849"
+    ],
+    [
+     "ia.x.6397a244c97a0614bfb8d56e",
+     "Mmiri na-agụ m.",
+     "I am thirsty of water.",
+     "ia_6397a244c97a0614bfb8d56e"
+    ],
+    [
+     "ia.x.643416dfd5e63a1a2d1b700b",
+     "Anyị na-esi nri.",
+     "We are cooking food.",
+     "ia_643416dfd5e63a1a2d1b700b"
+    ],
+    [
+     "ia.x.64788ed8a7ad7977354399cc",
+     "Erizila nri ahụ.",
+     "Don't eat that food anymore.",
+     "ia_64788ed8a7ad7977354399cc-e5a3a602-43fe-4f27-aecd-4ab5ec59fb2e"
+    ],
+    [
+     "ia.x.63914ca52e0a4f29aab2b2dc",
+     "Nne m na-esi nri.",
+     "My mother is cooking food.",
+     "ia_63914ca52e0a4f29aab2b2dc"
+    ],
+    [
+     "ia.x.643415f3d5e63afbe91b6ef5",
+     "Achọrọ m isi nri.",
+     "I want to cook food.",
+     "ia_643415f3d5e63afbe91b6ef5"
+    ],
+    [
+     "ia.x.639fad900816fd8fe6d2ace3",
+     "Eribeghi m nriụtụtụ.",
+     "I have not eaten breakfast.",
+     "ia_639fad900816fd8fe6d2ace3"
+    ],
+    [
+     "ia.x.63b4ae534153004422b893b5",
+     "E righi m nri abalị.",
+     "I did not eat dinner.",
+     "ia_63b4ae534153004422b893b5"
+    ],
+    [
+     "ia.x.645d0cb41eae9d421f2bc69c",
+     "Ị na-eripụ nri ọfụma.",
+     "You eat up food very well.",
+     "ia_645d0cb41eae9d421f2bc69c"
+    ],
+    [
+     "ia.x.6412c9796ce90667157f7ce4",
+     "Anyị na-eri nri ehihie.",
+     "We are eating lunch.",
+     "ia_6412c9796ce90667157f7ce4"
+    ],
+    [
+     "ia.x.643415f3d5e63a14c61b6ef6",
+     "Nne m siri nri n'ụtụtụ.",
+     "My mother cooked food in the morning.",
+     "ia_643415f3d5e63a14c61b6ef6"
+    ],
+    [
+     "ia.x.643e2291ca7d4b32f6f4c490",
+     "Atara m azụ na ekomeko.",
+     "I had fish and sweet potato.",
+     "ia_643e2291ca7d4b32f6f4c490"
+    ],
+    [
+     "ia.x.646c6964bd6111703e643e80",
+     "Unu rikọọ nri fọrọ ọnụ.",
+     "You all should eat the remaining food together.",
+     "ia_646c6964bd6111703e643e80"
+    ],
+    [
+     "ia.x.6470a365721f9f1f55f65306",
+     "Anyị riri abala n'anyasị.",
+     "we ate water yam at night.",
+     "ia_6470a365721f9f1f55f65306-3668d5c6-3f79-4fe4-8b5b-bf40ae68e255"
+    ],
+    [
+     "ia.x.63d1317d289987e58df97095",
+     "Ghee anụ a ka anyị taa.",
+     "Fry this meat let us eat.",
+     "ia_63d1317d289987e58df97095"
+    ],
+    [
+     "ia.x.63fa113d2f78a1fbf9fc46f6",
+     "Achọrọ ịta ji e ghere eghe.",
+     "I want to eat fried yam.",
+     "ia_63fa113d2f78a1fbf9fc46f6"
+    ],
+    [
+     "ia.x.645f3bdef86147a68512a09a",
+     "Onye kwafuru nri m?",
+     "Who poured away my food?",
+     "ia_645f3bdef86147a68512a09a"
+    ],
+    [
+     "ia.x.63e9315c2fdd57015c7b4e12",
+     "I nyere ụmụaka a nri?",
+     "Did you give these children food?",
+     "ia_63e9315c2fdd57015c7b4e12"
+    ],
+    [
+     "ia.x.64818903b28aaa6e1a78acc3",
+     "Onye ga-ahara m nri ahụ?",
+     "Who will knead the food for me?",
+     "ia_64818903b28aaa6e1a78acc3-690a67a8-aacd-449f-b50d-b5116e4800ae"
+    ],
+    [
+     "ia.x.643415f3d5e63a10f31b6ef7",
+     "Sie nri ka anyị rie.",
+     "Cook and let us eat.",
+     "ia_643415f3d5e63a10f31b6ef7"
+    ],
+    [
+     "ia.x.63c4b9d841c1d96bebb45e6d",
+     "Tinye nri ahụ obere mmiri",
+     "Add a little water to that food.",
+     "ia_63c4b9d841c1d96bebb45e6d"
+    ],
+    [
+     "ia.x.64341453d5e63a0a931b6c6f",
+     "Onye siri nri a?",
+     "Who cooked this food.",
+     "ia_64341453d5e63a0a931b6c6f"
+    ],
+    [
+     "ia.x.645d6e556b0c41522d0afda8",
+     "Onye ripụrụ nri ahụ?",
+     "Who ate up the food?",
+     "ia_645d6e556b0c41522d0afda8"
+    ]
+   ]
+  },
+  {
+   "id": "travel",
+   "title": "Travel and directions",
+   "blurb": "Finding the way, getting a ride and arriving safely.",
+   "phrases": [
+    [
+     "ia.x.64739ced7ba701e33e630b04",
+     "Chere m ebe ahụ.",
+     "Wait for me there.",
+     "ia_64739ced7ba701e33e630b04-44710e27-16a6-42bb-b857-946dedb30125"
+    ],
+    [
+     "ia.x.6470b3a64a726509723dc98b",
+     "Gwa m onye ga-anya ụgbọala a.",
+     "Tell me who will drive this car.",
+     "ia_6470b3a64a726509723dc98b-776fcac5-bc3a-4052-b117-2ae6eabd850a"
+    ],
+    [
+     "ia.x.63c9957be2725014862876a5",
+     "Ị chọrọ ijedebe ebe a?",
+     "Do you want to stop here?",
+     "ia_63c9957be2725014862876a5"
+    ],
+    [
+     "ia.x.647dc37fae1fe58b112d3821",
+     "Biko, chere m n'akụkụ ahịa ahụ.",
+     "Please, wait for me at the side of that market.",
+     "ia_647dc37fae1fe58b112d3821-e7fb15f2-f9af-4428-85c4-0575b0a739c6"
+    ],
+    [
+     "ia.x.646e8fc505611ab3867496fa",
+     "Bịa ka anyị mee njem azụmahịa.",
+     "Come, let us embark on a business trip.",
+     "ia_646e8fc505611ab3867496fa-6c08cb51-5439-4ca6-ba01-e496de4a03cd"
+    ],
+    [
+     "ia.x.64714d2bda2b1342fc58ed6a",
+     "Ama m anya moto.",
+     "I know how to drive a car.",
+     "ia_64714d2bda2b1342fc58ed6a-857cb2a6-0d06-4b7e-95dd-2d6286754df6"
+    ],
+    [
+     "ia.x.63c9957be2725086022876a4",
+     "Jedebee ebe a!",
+     "Stop here!",
+     "ia_63c9957be2725086022876a4"
+    ],
+    [
+     "ia.x.6424800ab70388607424aea8",
+     "Nọdụ ebe a chere m.",
+     "Stay here and wait for me.",
+     "ia_6424800ab70388607424aea8"
+    ],
+    [
+     "ia.x.64372e31290c8a9bd3da255f",
+     "Njenje gị karịrị.",
+     "You travel so much.",
+     "ia_64372e31290c8a9bd3da255f"
+    ],
+    [
+     "ia.x.632439804e85273fb2e559a6",
+     "Njem a na-atụ m uche",
+     "This journey is getting me worried",
+     "ia_632439804e85273fb2e559a6"
+    ],
+    [
+     "ia.x.6407faee2b8beb608c2d537b",
+     "Kagharịa njem gị ahụ.",
+     "Postpone that your journey.",
+     "ia_6407faee2b8beb608c2d537b"
+    ],
+    [
+     "ia.x.6420b3019edb02830d80c8dc",
+     "Anyị na-aga njem taa.",
+     "We are going on a journey today.",
+     "ia_6420b3019edb02830d80c8dc"
+    ],
+    [
+     "ia.x.6486f6e7531da10176412373",
+     "Njem anyị gara nke ọma.",
+     "Our journey went well.",
+     "ia_6486f6e7531da10176412373-fab48e66-fc85-4b11-ab03-59981d0112cd"
+    ],
+    [
+     "ia.x.642d302b35b24ee8f7531e7b",
+     "Njem anyị gara siririwerere.",
+     "Our journey went smoothly.",
+     "ia_642d302b35b24ee8f7531e7b"
+    ],
+    [
+     "ia.x.6474beda7d8e3a3d3031e81a",
+     "I nwere ike ichetụ m obere.",
+     "Can you wait for me a little.",
+     "ia_6474beda7d8e3a3d3031e81a-2f5c98ff-1f6a-45f3-b0d2-04f0158ff06b"
+    ],
+    [
+     "ia.x.643e16e4ca7d4b6084f4bccb",
+     "Ụgbọ anyị apụghị n'oge.",
+     "Our vehicle did not leave on time.",
+     "ia_643e16e4ca7d4b6084f4bccb"
+    ],
+    [
+     "ia.x.644a5026c21e74f272df1668",
+     "Ejebeghị m ọdụụgbeelụ mbụ.",
+     "I have not gone to the airport before.",
+     "ia_644a5026c21e74f272df1668"
+    ],
+    [
+     "ia.x.6471b40ec4ade6813061399f",
+     "Bupute  ihe dị n'ime ụgbọala.",
+     "Bring out the things inside the car.",
+     "ia_6471b40ec4ade6813061399f-c1eceb7f-0a10-4304-b8b2-7a92cc9889aa"
+    ],
+    [
+     "ia.x.645d652c6b0c41b64b0afc68",
+     "Dọwa moto gị n'ọdụụgbọala anyị.",
+     "Park your vehicle in our motor park.",
+     "ia_645d652c6b0c41b64b0afc68"
+    ],
+    [
+     "ia.x.647467974b4095717f18fe05",
+     "Achọrọ m ichukwute ụgbọala ahụ.",
+     "I want to catch up with that vehicle.",
+     "ia_647467974b4095717f18fe05-a2260055-b640-4181-b8a4-691d272f5b13"
+    ],
+    [
+     "ia.x.6486e866af069f0dde1f5b81",
+     "Onye ga-akwụ ụgwọ njem a?",
+     "Who will pay for this journey?",
+     "ia_6486e866af069f0dde1f5b81-3cf7eb81-2ef3-4947-b344-152553591fde"
+    ],
+    [
+     "ia.x.6486e866af069f871a1f5b79",
+     "Akagbuola m njem nke ọnwa a.",
+     "I have cancelled the trip for this month.",
+     "ia_6486e866af069f871a1f5b79-aeb3d3c2-4385-48d9-8952-cf73cf68b923"
+    ],
+    [
+     "ia.x.63f405f0ddc00677c0e8ab7f",
+     "Ejighị m akpatị ahụ mee njem.",
+     "I did not travel with that luggage.",
+     "ia_63f405f0ddc00677c0e8ab7f"
+    ],
+    [
+     "ia.x.639306c8c07b057df188e524",
+     "Anyị ga-apụ ije ahụ n'izuụka ọzọ.",
+     "We will embark on that journey nextweek.",
+     "ia_639306c8c07b057df188e524"
+    ],
+    [
+     "ia.x.6483a135adbd1af8cb03293c",
+     "Na mgbago ka ị ga-enweta ụgbaala.",
+     "It is in front that you will get a vehicle.",
+     "ia_6483a135adbd1af8cb03293c-cf6471de-0978-402c-930d-251481c6df06"
+    ],
+    [
+     "ia.x.641008e3f739805fa714acc4",
+     "Ụgbọelu anyị ga-efeli n'elekere nke atọ n'ehihie.",
+     "Our plane will fly up at 3.00 pm.",
+     "ia_641008e3f739805fa714acc4"
+    ]
+   ]
+  },
+  {
+   "id": "church",
+   "title": "At church",
+   "blurb": "Service, prayer and greeting people after Mass.",
+   "phrases": [
+    [
+     "ia.x.64354c9996de436fe861c105",
+     "Kpọọ ukwe ka anyị kwee.",
+     "Call a hymn let us sing.",
+     "ia_64354c9996de436fe861c105"
+    ],
+    [
+     "ia.x.63c556f1cea7666ef3dc8d19",
+     "Anyị ji tolotolo nye onyinye n'ụlụụka.",
+     "We used turkey for offering in church.",
+     "ia_63c556f1cea7666ef3dc8d19"
+    ],
+    [
+     "ia.x.644ef25e3ad3cc26eee9f271",
+     "Gịnị na-egbochi gị ịga ụka?",
+     "What stops you from going to church?",
+     "ia_644ef25e3ad3cc26eee9f271"
+    ],
+    [
+     "ia.x.6483757d442b09e3e07e5bc2",
+     "Ka anyị too Chineke maka okike ya.",
+     "Let us praise God for his creation.",
+     "ia_6483757d442b09e3e07e5bc2-35927136-38a5-486d-8e15-c583f093ac70"
+    ],
+    [
+     "ia.x.647251a069dd5e6013cdb454",
+     "Achọghị m ịbụ ogologo abụ.",
+     "I do not want to sing a long hymn.",
+     "ia_647251a069dd5e6013cdb454-dea8b9bd-d46f-4464-acb3-682b5170822c"
+    ],
+    [
+     "ia.s.63dafdf3a4f3dd751ba7c8cb",
+     "Anyị ga-efe Chineke n'ụlọụka taa.",
+     "We will worship God in the church today.",
+     "iax_63dafdf3a4f3dd751ba7c8cb"
+    ],
+    [
+     "ia.x.646ba6007e6d8b73ddeb63e4",
+     "Onye gọziri gị?",
+     "Who blessed you?",
+     "ia_646ba6007e6d8b73ddeb63e4-df207ccc-d6ce-40c1-92c9-20ae3875abb6"
+    ],
+    [
+     "ia.x.644bb7cc08327e51dfa1e23a",
+     "Chi gọziri m.",
+     "God blessed me.",
+     "ia_644bb7cc08327e51dfa1e23a"
+    ],
+    [
+     "ia.x.63430e0de7317b1271211e88",
+     "Anyị jere ụka taata.",
+     "We went to church today.",
+     "ia_63430e0de7317b1271211e88"
+    ],
+    [
+     "ia.x.644140bf81be6c6c617eadb7",
+     "Chukwu gozie onyaahịa m.",
+     "God bless my customer.",
+     "ia_644140bf81be6c6c617eadb7"
+    ],
+    [
+     "ia.x.646c54c4e8432bae6f9fcaaf",
+     "Enyi m kpọgara m n'ụlụụka.",
+     "My friend took me to church.",
+     "ia_646c54c4e8432bae6f9fcaaf"
+    ],
+    [
+     "ia.x.6462773dd7e335d0f8cb7eac",
+     "Amarachukwu baara anyị ụba.",
+     "The grace of God is sufficient for us.",
+     "ia_6462773dd7e335d0f8cb7eac"
+    ],
+    [
+     "ia.x.647c74b02c37964a3aac41ff",
+     "Anyị ga-ezisa oziọma Jizọs.",
+     "We shall spread the gospel of Jesus.",
+     "ia_647c74b02c37964a3aac41ff-60647dbf-bc3e-4612-8829-575139805406"
+    ],
+    [
+     "ia.x.6462a8ebff23264f3087d2b2",
+     "Adị m ndụ site n'amarachukwu",
+     "I am alive by the grace of God.",
+     "ia_6462a8ebff23264f3087d2b2"
+    ],
+    [
+     "ia.x.6402cee7138c4c73ae761d1a",
+     "Anyị na-ejikarị ụkwụ eje ụka.",
+     "We often trek to church.",
+     "ia_6402cee7138c4c73ae761d1a"
+    ],
+    [
+     "ia.x.646e7c860d2f5ddfd6019308",
+     "Amara Chineke ga-abara gị ụba.",
+     "The grace of God will be abundant for you.",
+     "ia_646e7c860d2f5ddfd6019308-2048608d-284c-4b52-9542-836729b45ffd"
+    ],
+    [
+     "ia.x.6412bf1c6054d22bbd3900f4",
+     "Anyị ga-anọ ọdụ n'ụlọụka taata.",
+     "We will stay long in church today.",
+     "ia_6412bf1c6054d22bbd3900f4"
+    ],
+    [
+     "ia.x.648c34c0f0422a291ad14c96",
+     "Anyị gbara egwu n'ụlọụka taata.",
+     "We danced at the church today.",
+     "ia_648c34c0f0422a291ad14c96-65759055-4248-47ef-ab6c-43c7438ac3ef"
+    ],
+    [
+     "ia.x.647251a069dd5efed8cdb45a",
+     "Ọ na-amasị m ịbụ abụ otito.",
+     "I like singing praise songs.",
+     "ia_647251a069dd5efed8cdb45a-9d19995a-9613-4afd-85e2-fd9446155fa5"
+    ],
+    [
+     "ia.x.635a924681c2d7c68fa8f728",
+     "Ana m efe Chineke na ebensọ.",
+     "I worship God in the sanctuary.",
+     "ia_635a924681c2d7c68fa8f728"
+    ],
+    [
+     "ia.x.643c21523563df25236c0212",
+     "Obi na-atọ m ụtọ ife Chineke.",
+     "It gladdens my heart to worship God.",
+     "ia_643c21523563df25236c0212"
+    ],
+    [
+     "ia.x.63bdc1aeb2f3de2047b71dee",
+     "Anyị ga-ekwe ukwe ahụ n'ụka echi.",
+     "We will sing that song in service tomorrow.",
+     "ia_63bdc1aeb2f3de2047b71dee"
+    ],
+    [
+     "ia.x.647cd9bef8f6bbbbfa4462ec",
+     "Bịa ka anyị zisaa ya bụ ozi.",
+     "Come, let us spread the gospel.",
+     "ia_647cd9bef8f6bbbbfa4462ec-0775e42f-6169-4abf-9a41-858c70837b2d"
+    ],
+    [
+     "ia.x.63d6fd884a4b6f5c43e59df5",
+     "Weta ihe onyinye gị.",
+     "Bring your gift/offering.",
+     "ia_63d6fd884a4b6f5c43e59df5"
+    ],
+    [
+     "ia.x.6448afebfa88cfa6398f783f",
+     "Ụka anyị na-ebị nkenke.",
+     "Our service is short.",
+     "ia_6448afebfa88cfa6398f783f"
+    ],
+    [
+     "ia.x.63f42e0883effaf0995c4d0b",
+     "Biko, kpee ekpere mgbasa.",
+     "Please say the closing prayer.",
+     "ia_63f42e0883effaf0995c4d0b"
+    ],
+    [
+     "ia.x.6475cbafad2b36f425bacd70",
+     "Jiri okwukwe kpee ekpere.",
+     "Pray with faith.",
+     "ia_6475cbafad2b36f425bacd70-ce645ae3-606a-407e-b2b9-01fd99bb4caa"
+    ],
+    [
+     "ia.x.6477840400f43e240a6e4f98",
+     "Kpee ekpere ka anyị bido.",
+     "Say a prayer let's start.",
+     "ia_6477840400f43e240a6e4f98-f7fece42-7df5-44e5-9a7a-1baa8e9ca86f"
+    ],
+    [
+     "ia.x.639e18550bb2376bbb00b8a9",
+     "Ikpe ekpere amarala m ahụ.",
+     "I am used to praying.",
+     "ia_639e18550bb2376bbb00b8a9"
+    ],
+    [
+     "ia.x.64864bfaa051630a1741b4a0",
+     "Anyị na-ekpe ekpere kwa ụbọchị.",
+     "We pray every day.",
+     "ia_64864bfaa051630a1741b4a0-0a1bc899-69cb-48ee-bc4c-939fa85750f0"
+    ],
+    [
+     "ia.x.63d3e2e513e5973a57b53c32",
+     "Chukwu gozie gị maka ọgọ a.",
+     "God bless you for this care.",
+     "ia_63d3e2e513e5973a57b53c32"
+    ],
+    [
+     "ia.x.645ecac5688d515386eebea4",
+     "Chineke, ebere gị ka anyị na-arịọ.",
+     "Lord, we are asking for your mercy.",
+     "ia_645ecac5688d515386eebea4"
+    ],
+    [
+     "ia.x.6440043a5c155d3c341db1b2",
+     "Chineke na-ezidatara m ngozi oge niile.",
+     "God sends down blessing for me all the time.",
+     "ia_6440043a5c155d3c341db1b2"
+    ],
+    [
+     "ia.x.646ba6007e6d8b5ceaeb63e1",
+     "Gọzie nwa gị!",
+     "Bless your child.",
+     "ia_646ba6007e6d8b5ceaeb63e1-d4026c8f-a88a-42c3-9d16-a4a48414413f"
+    ],
+    [
+     "ia.x.64622b51d7e3357d5acb2555",
+     "Meere ya ebere.",
+     "Have mercy on him.",
+     "ia_64622b51d7e3357d5acb2555"
+    ],
+    [
+     "ia.x.642a88d5fa46fe14fbf9d644",
+     "Ngọzị m zuru oke.",
+     "My blessing is full.",
+     "ia_642a88d5fa46fe14fbf9d644"
+    ],
+    [
+     "ia.x.646e45882e2138c209286b20",
+     "Meerenụ ya ebere.",
+     "Have mercy on her.",
+     "ia_646e45882e2138c209286b20-a7f5d2a4-ca5b-400f-a6d1-553534cb6050"
+    ],
+    [
+     "ia.x.634d62fefc81e83a9054e695",
+     "E nwere m akwụkwọnsọ",
+     "I have the Holy Bible.",
+     "ia_634d62fefc81e83a9054e695"
+    ],
+    [
+     "ia.x.642a88d5fa46fe44bcf9d641",
+     "Ngọzị nke m na-abịa.",
+     "My own blessing is coming.",
+     "ia_642a88d5fa46fe44bcf9d641"
+    ],
+    [
+     "ia.x.646ba6007e6d8b54afeb63e7",
+     "Welie aka ka agọzie gị.",
+     "Raise your hand for blessing.",
+     "ia_646ba6007e6d8b54afeb63e7-0d37a1c8-4841-47dd-9e89-5fc99baf11d3"
+    ],
+    [
+     "ia.x.63a0e842477ac0bc39a5479c",
+     "Ọ ga-adịrị gị mma, isee!",
+     "It shall be well with you, amen!",
+     "ia_63a0e842477ac0bc39a5479c"
+    ],
+    [
+     "ia.x.63bf37a263220fef573674b9",
+     "Unu bụ ndị agọziri agọzi",
+     "You all are blessed people.",
+     "ia_63bf37a263220fef573674b9"
+    ],
+    [
+     "ia.x.6481731a521b626bbf022c6c",
+     "Ụkọchukwu gwara anyị okwu.",
+     "The priest spoke to us.",
+     "ia_6481731a521b626bbf022c6c-e8dcf6b9-9951-4914-b12b-da9e60021511"
+    ],
+    [
+     "ia.x.6483a8a7adbd1acd4e03335e",
+     "Ụkọchukwu ga-agwa anyị okwu.",
+     "The priest will talk to us.",
+     "ia_6483a8a7adbd1acd4e03335e-63e1dba0-2ce3-44ab-8f4e-ca18a9392304"
+    ]
+   ]
+  },
+  {
+   "id": "feelings",
+   "title": "Feelings",
+   "blurb": "Saying how you feel, and asking how they feel.",
+   "phrases": [
+    [
+     "ia.x.6443eb5c59234f2694fd48d4",
+     "Emebikwala anụrị m.",
+     "Do not spoil my happiness.",
+     "ia_6443eb5c59234f2694fd48d4"
+    ],
+    [
+     "ia.x.63c2d6640d09db8c719a142d",
+     "Ahapụkwala ndị hụrụ gị n'anya.",
+     "Don't forsake those that love you",
+     "ia_63c2d6640d09db8c719a142d"
+    ],
+    [
+     "ia.x.643109a3962dfc34fa308daf",
+     "Onye yiri gị egwu?",
+     "Who frightened you?",
+     "ia_643109a3962dfc34fa308daf"
+    ],
+    [
+     "ia.x.6481806ce4476a4fae0ab312",
+     "Gịnị gwụrụ gị ike?",
+     "What made you tired?",
+     "ia_6481806ce4476a4fae0ab312-278a5d3f-2ff5-4070-b2ff-1b06ad8d4977"
+    ],
+    [
+     "ia.x.643fa87dde880e99575b65ff",
+     "Onye kpasuru gị iwe?",
+     "Who made you angry?",
+     "ia_643fa87dde880e99575b65ff"
+    ],
+    [
+     "ia.x.640af30df91a33e10f8c7418",
+     "Ụjọ atụla gị, agaghị m akụja gị.",
+     "Don't be afraid, I will not startle you.",
+     "ia_640af30df91a33e10f8c7418"
+    ],
+    [
+     "ia.x.641a8379da00b03babb31394",
+     "Imali elu na-agụ m.",
+     "I feel like jumping up.",
+     "ia_641a8379da00b03babb31394"
+    ],
+    [
+     "ia.x.637f4f115f8a3567f160ac51",
+     "Obi m, dere duu. Atụla ụjọ!",
+     "My heart, keep calm. Do not fear!",
+     "ia_637f4f115f8a3567f160ac51"
+    ],
+    [
+     "ia.x.643fa87dde880e5c6f5b6602",
+     "Iwe na-ewe m.",
+     "I am angry.",
+     "ia_643fa87dde880e5c6f5b6602"
+    ],
+    [
+     "ia.x.643bef507f47ff28a6280cc5",
+     "Ihere na-eme m.",
+     "I am shy.",
+     "ia_643bef507f47ff28a6280cc5"
+    ],
+    [
+     "ia.x.6443eb5b59234f3617fd48d0",
+     "Ana m enwe anụrị.",
+     "I am happy.",
+     "ia_6443eb5b59234f3617fd48d0"
+    ],
+    [
+     "ia.x.644b513a4d15352ecce14d3d",
+     "Obi adịghị m mma.",
+     "I am not happy.",
+     "ia_644b513a4d15352ecce14d3d"
+    ],
+    [
+     "ia.x.63d575fa529481f126aeb049",
+     "Egwu anaghị atụ m.",
+     "I am not afraid.",
+     "ia_63d575fa529481f126aeb049"
+    ],
+    [
+     "ia.x.642e57b2d843be4e6ad98cc1",
+     "Ana m atụ ya egwu.",
+     "I am afraid of it.",
+     "ia_642e57b2d843be4e6ad98cc1"
+    ],
+    [
+     "ia.x.6443eb5b59234fe740fd48cf",
+     "Obi bụ m sọ anụrị.",
+     "I am full of happiness.",
+     "ia_6443eb5b59234fe740fd48cf"
+    ],
+    [
+     "ia.x.643fa87dde880e5b165b65fe",
+     "Biko, ewekwala iwe.",
+     "Please, do not be angry.",
+     "ia_643fa87dde880e5b165b65fe"
+    ],
+    [
+     "ia.x.6428494488fe3545e66e9408",
+     "Ike ahụowu a agwụla m.",
+     "I am tired of this loneliness.",
+     "ia_6428494488fe3545e66e9408"
+    ],
+    [
+     "ia.x.646b907cb870773e20c312d2",
+     "Ụjọ mmadụ anaghi atụ m",
+     "I am never afraid of people",
+     "ia_646b907cb870773e20c312d2-b7a5c55d-905e-4563-b650-5df0ce91456f"
+    ],
+    [
+     "ia.x.64772375711bde484b4f9208",
+     "Ana m atụ egwu egbiigwe",
+     "I am afraid of thunder.",
+     "ia_64772375711bde484b4f9208-1c8d8198-7a27-42b8-8b73-d9a1547eb9c5"
+    ],
+    [
+     "ia.x.6351338075614507d9e83cfd",
+     "Nwanne m na-emekarị ihere",
+     "My sister is usually shy",
+     "ia_6351338075614507d9e83cfd"
+    ],
+    [
+     "ia.x.63d5a26b7662e1449e39f007",
+     "Enwere m nnukwu ịtụnaanya.",
+     "I was so surprised.",
+     "ia_63d5a26b7662e1449e39f007"
+    ],
+    [
+     "ia.x.6473bcea7ba7016af7633365",
+     "Anyị chekatara, ike agwụ anyị.",
+     "We waited for long and got tired.",
+     "ia_6473bcea7ba7016af7633365-024427cd-6b8f-473f-952f-9252b2ce0e23"
+    ],
+    [
+     "ia.x.646e8fc505611a5cf97496f6",
+     "Azụmahịa na-amasị m.",
+     "I love trading.",
+     "ia_646e8fc505611a5cf97496f6-92291165-d3a3-49da-970e-512695169397"
+    ],
+    [
+     "ia.x.6422088c8fbdc43af79f3c55",
+     "Ofe egwusi na-amasị m.",
+     "I love melon soup.",
+     "ia_6422088c8fbdc43af79f3c55"
+    ],
+    [
+     "ia.x.648662961bb117ba3e5b3a9a",
+     "Ahụrụ m onwe m n'anya.",
+     "I love myself.",
+     "ia_648662961bb117ba3e5b3a9a-091ced04-e9c5-49aa-8ddc-1666119c2c99"
+    ],
+    [
+     "ia.x.645bd7202c9edf06f138aeb2",
+     "Ahụrụ m olundị m n'anya.",
+     "I love my dialect.",
+     "ia_645bd7202c9edf06f138aeb2"
+    ],
+    [
+     "ia.x.63bbb6ee915c3464869c5640",
+     "Onyenwe anyị hụrụ anyị n'anya.",
+     "Our Lord loves us.",
+     "ia_63bbb6ee915c3464869c5640"
+    ],
+    [
+     "ia.x.6447abb804397307c76b904a",
+     "Onye were iwe?",
+     "Who got angry?",
+     "ia_6447abb804397307c76b904a"
+    ],
+    [
+     "ia.x.643bef507f47ff2fac280cc6",
+     "Onye na-eme ihere?",
+     "Who is feeling shy?",
+     "ia_643bef507f47ff2fac280cc6"
+    ],
+    [
+     "ia.x.646b907cb87077ca84c312d3",
+     "Ihe o mere tụrụ m ụjọ.",
+     "What he did scared me.",
+     "ia_646b907cb87077ca84c312d3-6fbbf2e5-9831-4028-b64a-663424912854"
+    ],
+    [
+     "ia.x.640811e3c2dbdfeace793e9e",
+     "Ihe o mere juru m anya.",
+     "What he did surprised me.",
+     "ia_640811e3c2dbdfeace793e9e"
+    ],
+    [
+     "ia.x.6447abb804397346416b904b",
+     "Achọghị m ka i wee iwe.",
+     "I do not want you to be angry.",
+     "ia_6447abb804397346416b904b"
+    ],
+    [
+     "ia.x.6473325d99b96823719e142d",
+     "Ihe m nụrụ gbara m ara.",
+     "What I heard shocked me.",
+     "ia_6473325d99b96823719e142d-b7c12033-cf72-431e-98ea-786a43b514b8"
+    ],
+    [
+     "ia.x.63de7ebaf628d704f4cf01fc",
+     "Akwa ya meturu m n' obi.",
+     "His cry touched my heart.",
+     "ia_63de7ebaf628d704f4cf01fc"
+    ],
+    [
+     "ia.x.640af4306ee5ca865e76c35d",
+     "Akụjara m oge m hụrụ ya.",
+     "I was shocked when I saw her.",
+     "ia_640af4306ee5ca865e76c35d"
+    ],
+    [
+     "ia.x.6422e68b1ce7fb2d234589be",
+     "Ike agwụla m, hei chi m.",
+     "I am tired, oh my God.",
+     "ia_6422e68b1ce7fb2d234589be"
+    ],
+    [
+     "ia.x.64817ef1436a6ab627ce69fd",
+     "Ọsọ m gbara gwụrụ m ike.",
+     "The run I had made me tired.",
+     "ia_64817ef1436a6ab627ce69fd-7d0938af-d32e-4023-bdca-25abb4cfbd7f"
+    ],
+    [
+     "ia.x.64465b3d6e6f1243409698ae",
+     "Ụjọ na-atụ m ibinye ya ego.",
+     "I am scared of lending him money",
+     "ia_64465b3d6e6f1243409698ae"
+    ],
+    [
+     "ia.x.640f667f390ecbb7a4e1369b",
+     "Mbimbiakwa na-agụcha m.",
+     "I feel like sobbing.",
+     "ia_640f667f390ecbb7a4e1369b"
+    ]
+   ]
+  },
+  {
+   "id": "health",
+   "title": "Health",
+   "blurb": "When someone is unwell, and at the clinic.",
+   "phrases": [
+    [
+     "ia.x.646320717ff45765822fe4e4",
+     "Biko, zụtara m ọgwụ na-akwụsị afọọsịsa.",
+     "Please, buy me a drug that stops diarrhea.",
+     "ia_646320717ff45765822fe4e4"
+    ],
+    [
+     "ia.x.63adba1cc8c1dd281219ace0",
+     "O nyere m ọgwụ ahụmgbu.",
+     "She gave me a drug for body ache.",
+     "ia_63adba1cc8c1dd281219ace0"
+    ],
+    [
+     "ia.x.63adba1cc8c1dd2d9b19acdf",
+     "Agara m ụlọọgwu maka ahụmgbu.",
+     "I went to the hospital because of body pain.",
+     "ia_63adba1cc8c1dd2d9b19acdf"
+    ],
+    [
+     "ia.x.63b2a8edd4f45c73da779b6d",
+     "Ha nyere m ọgwụ ịba",
+     "They gave me malaria drug",
+     "ia_63b2a8edd4f45c73da779b6d"
+    ],
+    [
+     "ia.x.6485082f4e209a298a2af1da",
+     "Ọ nyịdo gị, ṅụọ ọgwụ.",
+     "If the pain is on you, take some drugs.",
+     "ia_6485082f4e209a298a2af1da-effbad87-8f81-4087-816e-a020ae961f2e"
+    ],
+    [
+     "ia.x.644335c17f809139d59620d4",
+     "Aṅụrụ m ọgwụ isiọwụwa.",
+     "I took a medicine for headache.",
+     "ia_644335c17f809139d59620d4"
+    ],
+    [
+     "ia.x.647258aa69dd5ef537cdbb32",
+     "Azụtara m ọgwụ ahụọkụ.",
+     "I bought a drug for fever.",
+     "ia_647258aa69dd5ef537cdbb32-6b987d5a-ab17-46c9-bbb9-16dff1700d38"
+    ],
+    [
+     "ia.x.644335c17f80913c489620d5",
+     "E nyere m ọgwụ n'ụlọọgwụ.",
+     "I was given drugs at the hospital.",
+     "ia_644335c17f80913c489620d5"
+    ],
+    [
+     "ia.x.63f12f7108cecf2609db0efe",
+     "Azụtaghị m ọgwụ isi ọwụwa.",
+     "I did not buy a drug for headache.",
+     "ia_63f12f7108cecf2609db0efe"
+    ],
+    [
+     "ia.x.645f8cdb20674f090a470390",
+     "Dọkịta ga-agba m ọgwụ taa.",
+     "The doctor will give me injection today.",
+     "ia_645f8cdb20674f090a470390"
+    ],
+    [
+     "ia.x.64441a7b8f61560dec343af5",
+     "Ahụ adịghị m?",
+     "I am sick.",
+     "ia_64441a7b8f61560dec343af5"
+    ],
+    [
+     "ia.x.648043c9f238a5276e5af27c",
+     "Ṅụ godu ọgwụ gị.",
+     "Take your drugs first of all.",
+     "ia_648043c9f238a5276e5af27c-6957a22a-d56b-40e3-b184-2fa11ce9e50e"
+    ],
+    [
+     "ia.x.6482e8e13c260a2edea861b3",
+     "Zụtara m ọgwụ arụbara.",
+     "Buy measles drug for me.",
+     "ia_6482e8e13c260a2edea861b3-53180891-3042-432f-9baa-6e6bffccf19f"
+    ],
+    [
+     "ia.x.646bcd6af5043f21425e591d",
+     "Zụtara m ọgwụ agbaikpere.",
+     "Buy arthritis medicine for me.",
+     "ia_646bcd6af5043f21425e591d"
+    ],
+    [
+     "ia.x.63dc8e79e2771f44cb9b38bb",
+     "Kedụ ebe na-afụ gị ụfu?",
+     "Where are you feeling pain?",
+     "ia_63dc8e79e2771f44cb9b38bb"
+    ],
+    [
+     "ia.x.646e87a305611a553a748788",
+     "Biko, nye m mmiri jụrụ oyi.",
+     "Please, give me cold water.",
+     "ia_646e87a305611a553a748788-f37627a5-bc3d-420e-93b7-ba0ded6ad583"
+    ],
+    [
+     "ia.x.6462625bd7e3355965cb6a0b",
+     "Biko, zụtara m ọgwụ afọ ọrụrụ.",
+     "Please, buy medication for stomach ache for me.",
+     "ia_6462625bd7e3355965cb6a0b"
+    ],
+    [
+     "ia.x.6429618feead200bda2a869d",
+     "I nwere ọgwụ maka ọdịdọ?",
+     "Do you have medicine for convulsion?",
+     "ia_6429618feead200bda2a869d"
+    ],
+    [
+     "ia.x.636ad3296c2c6d21d16a3e06",
+     "Nwa m nwere ụkwara.",
+     "My baby has a cough.",
+     "ia_636ad3296c2c6d21d16a3e06"
+    ],
+    [
+     "ia.x.6443dad6ba4f9c76bb6d332c",
+     "Ọrịa abụghị maka anyị.",
+     "Sickness is not for us.",
+     "ia_6443dad6ba4f9c76bb6d332c"
+    ],
+    [
+     "ia.x.644628b433fe0620686ab3e6",
+     "Achọghị m ibute ọrịa biko.",
+     "I do not want to get a disease please.",
+     "ia_644628b433fe0620686ab3e6"
+    ],
+    [
+     "ia.x.64747e5c4b4095c82c190d78",
+     "Onye lekọtara gị mgbe ị nọ n'ọrịa.",
+     "Who looked after you when you were sick?",
+     "ia_64747e5c4b4095c82c190d78-225d0cde-e6e0-4e07-baa1-06baa874e1c3"
+    ],
+    [
+     "ia.x.644a4663c21e741abfdf0628",
+     "Biko were ego a zụtara m ọgwụ ahu mgbu.",
+     "Please take this money to buy pain relieve drug for me.",
+     "ia_644a4663c21e741abfdf0628"
+    ],
+    [
+     "ia.x.6418fb54901ced4532fa405e",
+     "Afọ juru m.",
+     "My stomach is full.",
+     "ia_6418fb54901ced4532fa405e"
+    ],
+    [
+     "ia.x.64770ca66cba62ff7c856600",
+     "Oyi na-ama m.",
+     "I have fever.",
+     "ia_64770ca66cba62ff7c856600-618b0f33-a9e4-4b67-8a9b-21e88fdecaf8"
+    ],
+    [
+     "ia.x.645a4947b917237c31b2b7d1",
+     "Ụkwụ gị zara aza.",
+     "Your leg is swollen.",
+     "ia_645a4947b917237c31b2b7d1"
+    ],
+    [
+     "ia.x.64054467599ad3d24e8b6e37",
+     "Enwere m isiọwụwa.",
+     "I have headache.",
+     "ia_64054467599ad3d24e8b6e37"
+    ],
+    [
+     "ia.x.64077401a098444773bff1e8",
+     "Agbakeela m kemgbe.",
+     "It has been some time I recovered.",
+     "ia_64077401a098444773bff1e8"
+    ],
+    [
+     "ia.x.641913a344c9f6cdc3f4ad6a",
+     "Afọ m na-afụ m ụfụ.",
+     "My stomach hurts.",
+     "ia_641913a344c9f6cdc3f4ad6a"
+    ],
+    [
+     "ia.x.64764a666c3efc728beeb1a5",
+     "Obụụkwụ m zara aza.",
+     "The sole of my feet is swollen.",
+     "ia_64764a666c3efc728beeb1a5-57fc7cc3-d268-4dda-96e4-044695e8f707"
+    ],
+    [
+     "ia.x.6484ff204e209a86302aed09",
+     "Afọ sara m ụnyaahụ.",
+     "I had running stomach yesterday.",
+     "ia_6484ff204e209a86302aed09-9b3f63cf-4ed4-43ac-a54a-860ed6ab878a"
+    ],
+    [
+     "ia.x.63ef6ec5648f181c0a1f260f",
+     "Nne m gara ụlọahụike",
+     "My mother went to health centre",
+     "ia_63ef6ec5648f181c0a1f260f"
+    ],
+    [
+     "ia.x.640759afbe3ef3cddf671cfe",
+     "Biko, gbakee ọsọọsọ.",
+     "Please, recover very fast.",
+     "ia_640759afbe3ef3cddf671cfe"
+    ],
+    [
+     "ia.x.645092f60b47ca5c31e24286",
+     "Oyi tụwa gị, gboo akwa.",
+     "If you start feeling cold, cover yourself with a clothe.",
+     "ia_645092f60b47ca5c31e24286"
+    ],
+    [
+     "ia.x.645637d0a19f361974172b45",
+     "Nwa m na-anyụ afọ otoro",
+     "My child is having diarrhoea",
+     "ia_645637d0a19f361974172b45"
+    ],
+    [
+     "ia.x.6465825b2b28153faaec76f8",
+     "Ikuku ahụ na-atụ m oyi.",
+     "The breeze makes me feels cold.",
+     "ia_6465825b2b28153faaec76f8"
+    ],
+    [
+     "ia.x.64826eb0be22d1ee86744b51",
+     "Ọnya mere m n'ikilụkwụ.",
+     "I have a wound on the heel.",
+     "ia_64826eb0be22d1ee86744b51-2d521552-05cc-4d7b-94b7-464386b9cc16"
+    ],
+    [
+     "ia.x.6483b592adbd1a5f5a034329",
+     "Ọnya mere m n'ikiliaka.",
+     "I have a wound on the elbow.",
+     "ia_6483b592adbd1a5f5a034329-b5e9ceab-52b8-4d71-8da8-bea4e06953f4"
+    ],
+    [
+     "ia.x.63dfc9b824070b5128f71659",
+     "Kpọrọ nwa a gaa ụlọọgwụ.",
+     "Take this child to the hospital.",
+     "ia_63dfc9b824070b5128f71659"
+    ],
+    [
+     "ia.x.645fa2065ab6d31531bd3327",
+     "Amara m ririri maka oyi.",
+     "I shivered because of cold.",
+     "ia_645fa2065ab6d31531bd3327"
+    ],
+    [
+     "ia.x.646348a5ee7d45792c40b9ce",
+     "Achọghị m inwe afọọsịsa.",
+     "I do not want to have diarrhea.",
+     "ia_646348a5ee7d45792c40b9ce"
+    ],
+    [
+     "ia.x.6483c242feb76356f4c346d7",
+     "Achọrọ m mmiri jụrụ oyi.",
+     "I want cold water.",
+     "ia_6483c242feb76356f4c346d7-d090b506-0159-468e-afeb-81db33614db6"
+    ],
+    [
+     "ia.x.645edc079f3b7fe32d979612",
+     "Akaekpe m na-egbu m mgbu.",
+     "My left hand hurts.",
+     "ia_645edc079f3b7fe32d979612"
+    ],
+    [
+     "ia.x.646348a5ee7d4575b640b9cc",
+     "Nri a ga-eme gị afọọsịsa.",
+     "This food will cause you diarrhea.",
+     "ia_646348a5ee7d4575b640b9cc"
+    ]
+   ]
+  },
+  {
+   "id": "time",
+   "title": "Time and plans",
+   "blurb": "Days, times, and making a plan to meet.",
+   "phrases": [
+    [
+     "ia.x.644eeae5e717a36f9a699ace",
+     "Kedụ oge unu ga-agbasa?",
+     "By what time are you  going to dismiss?",
+     "ia_644eeae5e717a36f9a699ace"
+    ],
+    [
+     "ia.x.63fa1c1109af9c3b368a5420",
+     "Ọgbakọ anyị ga-adị n'izuụka na-abịa.",
+     "Our meeting will be next week.",
+     "ia_63fa1c1109af9c3b368a5420"
+    ],
+    [
+     "ia.x.63dd657590b4e228ed6dbf2d",
+     "Anyị ga-ezube ije ahịa echi.",
+     "We will plan to go to the market tomorrow.",
+     "ia_63dd657590b4e228ed6dbf2d"
+    ],
+    [
+     "ia.x.6409f69798aa4a14577d81b9",
+     "Anyị nwere nzukọ echi.",
+     "We have a meeting tomorrow.",
+     "ia_6409f69798aa4a14577d81b9"
+    ],
+    [
+     "ia.x.63b2f51ccb714a798542d5ae",
+     "Nzụkọ anyị ga-agwụ taa.",
+     "Our meeting will end today.",
+     "ia_63b2f51ccb714a798542d5ae"
+    ],
+    [
+     "ia.x.6409f69798aa4a5ad37d81bb",
+     "Nzukọ anyị kwesịrị ịbụ echi.",
+     "Our meeting is supposed to be tomorrow.",
+     "ia_6409f69798aa4a5ad37d81bb"
+    ],
+    [
+     "ia.x.643dc98aeb047f2cb0a2e0de",
+     "Oge gịnị bụ ihe a?",
+     "What time is this?",
+     "ia_643dc98aeb047f2cb0a2e0de"
+    ],
+    [
+     "ia.x.645bbce99f56fb5bcc0d627b",
+     "Anyị ga-akọrị ma anyị zute echi.",
+     "We will chat if we meet tomorrow.",
+     "ia_645bbce99f56fb5bcc0d627b"
+    ],
+    [
+     "ia.x.647ac18aa875a82c7e0d0292",
+     "Oge mmechi anyị taata ga-abụ n'elekere ise.",
+     "Our closing time today will be at 5 O'clock.",
+     "ia_647ac18aa875a82c7e0d0292-86996b5c-118f-4451-a708-cf8b593fe486"
+    ],
+    [
+     "ia.x.644f8e244a8336800e36f7c7",
+     "Biko, ka anyị nwee agba ọzọ.",
+     "Please, let us have another appointment.",
+     "ia_644f8e244a8336800e36f7c7"
+    ],
+    [
+     "ia.x.646c8e48e8432b8fc29fd1f6",
+     "Etetaghị m n'oge taa.",
+     "I did not wake up early today.",
+     "ia_646c8e48e8432b8fc29fd1f6"
+    ],
+    [
+     "ia.x.6420c3adf7abbc20d32b8b7a",
+     "Aga m abịa n'elekere itolu.",
+     "I will come by nine o'clock.",
+     "ia_6420c3adf7abbc20d32b8b7a"
+    ],
+    [
+     "ia.x.647f365d7d7d96ea2b38a1fa",
+     "Anyị ga-amalite n'elekere ise.",
+     "We will start at 5 O'clock.",
+     "ia_647f365d7d7d96ea2b38a1fa-911552f7-d010-41ba-ae25-7f493a0a7e29"
+    ],
+    [
+     "ia.x.64397b20e18ae3cb97a0b7dd",
+     "Ndị ọgbọ anyị nwere nzukọ taa.",
+     "Our mates have a meeting today.",
+     "ia_64397b20e18ae3cb97a0b7dd"
+    ],
+    [
+     "ia.x.6488feeaf5b93375fa0c8be3",
+     "Anyị ga-azọli ije n'elekere isii nke ụtụtụ.",
+     "We will set off at six o'clock in the morning.",
+     "ia_6488feeaf5b93375fa0c8be3-e77747ee-0797-4afa-9ba6-657a0f4816b1"
+    ],
+    [
+     "ia.x.64607825af60decf83f71d2b",
+     "Ị mụrụ akwụkwọ gị taa?",
+     "Did you study your book today?",
+     "ia_64607825af60decf83f71d2b"
+    ],
+    [
+     "ia.x.648cec06dead0361d92cafbd",
+     "I nwere ike ịlọta taa?",
+     "Can you return today?",
+     "ia_648cec06dead0361d92cafbd-55dcbc59-1544-46bc-be6a-95938edf0dae"
+    ],
+    [
+     "ia.x.648456fdc44d563c1110663b",
+     "Olee klaasị i nwere taa?",
+     "Which class do you have today?",
+     "ia_648456fdc44d563c1110663b-0b54099f-3e73-4397-bcb0-2d0885cc764e"
+    ],
+    [
+     "ia.x.63dc4bf3c38adde098e7ca1b",
+     "Anyị ga-atụ okwe ọzọ echi?",
+     "Are we going to play another game tomorrow?",
+     "ia_63dc4bf3c38adde098e7ca1b"
+    ],
+    [
+     "ia.x.644ba9ad85c25b6125f58c0d",
+     "Ka anyị dobe nke a maka echi.",
+     "Let's keep this one against tomorrow.",
+     "ia_644ba9ad85c25b6125f58c0d"
+    ],
+    [
+     "ia.x.63cc0758fe8bac84f9e26bbe",
+     "Anyị ga-apụ n'ọnụụtụtụ.",
+     "We will leave early in the morning.",
+     "ia_63cc0758fe8bac84f9e26bbe"
+    ],
+    [
+     "ia.x.6391477e2e0a4fc8c5b2afd3",
+     "M ga-akwado n'isi ụtụtụ.",
+     "I will prepare early in the morning.",
+     "ia_6391477e2e0a4fc8c5b2afd3"
+    ],
+    [
+     "ia.x.640c1bf94d6f8d0a4556c1d6",
+     "Ọ ga-echekata gị ruo echi.",
+     "He will wait for you till tomorrow.",
+     "ia_640c1bf94d6f8d0a4556c1d6"
+    ],
+    [
+     "ia.x.63d3cf6c196a8549deaf1f44",
+     "Ule anyị ga-ebido n'izụụka ọzọ.",
+     "Our exams will start next week.",
+     "ia_63d3cf6c196a8549deaf1f44"
+    ],
+    [
+     "ia.x.6425095022734ce3bbba8a99",
+     "Anyị ga-akwapụ n' izuụka na abịa.",
+     "We will pack out next week.",
+     "ia_6425095022734ce3bbba8a99"
+    ],
+    [
+     "ia.x.643dc17feb047f0dd5a2d92a",
+     "Taa bụ Orie, ahịa anyị ga-azụ n'uju.",
+     "Today is Orie, our market will operate fully.",
+     "ia_643dc17feb047f0dd5a2d92a"
+    ],
+    [
+     "ia.x.6471eaf7c4ade606d461458d",
+     "Biko, gịnị na akụ n'elekere dị n'imụlọ?",
+     "What time is it on the clock in the room, please?",
+     "ia_6471eaf7c4ade606d461458d-27e0520f-9ee0-4dec-a2d7-2b9b33127341"
+    ],
+    [
+     "ia.x.63c0313cd410a8129ff7405e",
+     "Ọ bụ unu niile na-abịa echi?",
+     "Is it all of you that is coming tomorrow?",
+     "ia_63c0313cd410a8129ff7405e"
+    ],
+    [
+     "ia.x.6407faee2b8beb82382d5379",
+     "Kedụ mgbe anyị kagharịrị nzụkọ ahụ.",
+     "When did we postpone that meeting?",
+     "ia_6407faee2b8beb82382d5379"
+    ],
+    [
+     "ia.x.63d575635294815c72aeafa0",
+     "Anyị ga-ahụ echi.",
+     "We will see tomorrow.",
+     "ia_63d575635294815c72aeafa0"
+    ],
+    [
+     "ia.x.642ebf146a965bd438484179",
+     "M ga-eje ahịa echi.",
+     "I will go to the market tomorrow.",
+     "ia_642ebf146a965bd438484179"
+    ],
+    [
+     "ia.x.644334897f80916920961fb7",
+     "Ọgọ m ga-abịa echi.",
+     "My in-law will come tomorrow.",
+     "ia_644334897f80916920961fb7"
+    ],
+    [
+     "ia.x.6388a20bfbd11e427a39fe60",
+     "Aga m egote ya echi.",
+     "I will buy it tomorrow.",
+     "ia_6388a20bfbd11e427a39fe60"
+    ],
+    [
+     "ia.x.643abe50de287c8275079c0a",
+     "Aga m aga ahịa taata.",
+     "I will go to market today.",
+     "ia_643abe50de287c8275079c0a"
+    ],
+    [
+     "ia.x.648ca35de5af737a91a48eba",
+     "A chọrọ m ịlọta echi.",
+     "I will come back tomorrow.",
+     "ia_648ca35de5af737a91a48eba-2303b2b9-f468-455c-8f8f-1ebdc61e043e"
+    ],
+    [
+     "ia.x.6439ec29510994f9c321b6fe",
+     "Anyị ga-apụ ọlịlị echi.",
+     "We will go for a stroll tomorrow.",
+     "ia_6439ec29510994f9c321b6fe"
+    ],
+    [
+     "ia.x.6439f8b5510994d47f21b854",
+     "Anyị ga-eje ọlịlị echị.",
+     "We will go for outing tomorrow.",
+     "ia_6439f8b5510994d47f21b854"
+    ],
+    [
+     "ia.x.6474c7bc7d8e3a25a431eaf0",
+     "Anyị ga-ekpori ndụ taa.",
+     "We will have fun today.",
+     "ia_6474c7bc7d8e3a25a431eaf0-02328f15-e747-48f6-9877-48952c2c31de"
+    ],
+    [
+     "ia.x.6479b3ccc62896663156c99a",
+     "Anyị ga-ahụ n'anyasị a.",
+     "We will see tonight.",
+     "ia_6479b3ccc62896663156c99a-418c3c13-9abc-418d-bd49-61f93b24353a"
+    ],
+    [
+     "ia.x.6397bbb32bedf6a577e7db0d",
+     "Anyị ga-agba bọọlụ echi.",
+     "We will play soccer tomorrow.",
+     "ia_6397bbb32bedf6a577e7db0d"
+    ],
+    [
+     "ia.x.63a28d07eebb6f213da0998c",
+     "Anyị ga-ebe anụ ahụ echi.",
+     "We will cut the meat tomorrow.",
+     "ia_63a28d07eebb6f213da0998c"
+    ],
+    [
+     "ia.x.6448ffec3d3dedc7766b1e43",
+     "Ichete aka amarala m ahụ.",
+     "I am used to waiting for a long time.",
+     "ia_6448ffec3d3dedc7766b1e43"
+    ],
+    [
+     "ia.x.645cf5321eae9d5a882bb464",
+     "Anyị ga-eru ebe ahụ echi.",
+     "We will reach there tomorrow.",
+     "ia_645cf5321eae9d5a882bb464"
+    ],
+    [
+     "ia.x.646c9f8fee0ce2181a5680b5",
+     "Anyị ga-ekwupụta ya echi.",
+     "We will say it tomorrow.",
+     "ia_646c9f8fee0ce2181a5680b5"
+    ]
+   ]
+  },
+  {
+   "id": "phone",
+   "title": "Phone calls",
+   "blurb": "Calling home, hearing each other, and calling back.",
+   "phrases": [
+    [
+     "ia.x.647cbc0a8c46941fcf7312a9",
+     "Nye m akara ekwentị gị.",
+     "Give me your phone number.",
+     "ia_647cbc0a8c46941fcf7312a9-10aaa26f-c9f1-4b31-8ffc-4a906d92ee15"
+    ],
+    [
+     "ia.x.647cbc0a8c4694c30073129f",
+     "Biko, lelee onye na-akpọ m n' ekwentị.",
+     "Please, check who is calling me on phone.",
+     "ia_647cbc0a8c4694c30073129f-9d1e033f-5cba-4977-af24-be8ea723fe95"
+    ],
+    [
+     "ia.x.6449efa67993a10b5c414c46",
+     "Nye anyị akara ekwentị ọkpụisi a.",
+     "Give us the phone number of this barber.",
+     "ia_6449efa67993a10b5c414c46"
+    ],
+    [
+     "ia.x.6447f4bcdb656b54a3d4614d",
+     "Gaa kpọọ nna gị.",
+     "Go and call your father.",
+     "ia_6447f4bcdb656b54a3d4614d"
+    ],
+    [
+     "ia.x.645f391790065b1a31a7c363",
+     "Kpọọ m mgbe chi foro.",
+     "Call me when the day breaks.",
+     "ia_645f391790065b1a31a7c363"
+    ],
+    [
+     "ia.x.647cbc0a8c469465f47312a3",
+     "Akara ekwentị m toro ogologo.",
+     "My phone number is long.",
+     "ia_647cbc0a8c469465f47312a3-8ffeb229-a541-438e-af2e-73023c594df3"
+    ],
+    [
+     "ia.x.6447f4bcdb656b6608d4614e",
+     "Onye na-akpọ m?",
+     "Who is calling me?",
+     "ia_6447f4bcdb656b6608d4614e"
+    ],
+    [
+     "ia.x.640b964f208afe04984f2a62",
+     "Onye na-akpọku m?",
+     "Who is calling upon me?",
+     "ia_640b964f208afe04984f2a62"
+    ],
+    [
+     "ia.x.63f20defd418402b349f9801",
+     "Ọ ga-akpọ m n'ekwentị.",
+     "He will call me on the phone.",
+     "ia_63f20defd418402b349f9801"
+    ],
+    [
+     "ia.x.646e40e4fe7fc46721347bbf",
+     "Biko, meghee ekwentị a.",
+     "Please, open this phone.",
+     "ia_646e40e4fe7fc46721347bbf-54d1f933-66d4-44ff-9be1-8365eecf13e0"
+    ],
+    [
+     "ia.x.647710d56cba62895d856c98",
+     "Nna m ga-edozi ekwentị anyị.",
+     "My father will repair our mobile phone.",
+     "ia_647710d56cba62895d856c98-3b439cbe-7e0b-4e60-b6f9-8d0383f999d6"
+    ],
+    [
+     "ia.x.642c13041dcb1614b04cc5d1",
+     "Kpọọ ha ugbua.",
+     "Call them now.",
+     "ia_642c13041dcb1614b04cc5d1"
+    ],
+    [
+     "ia.x.640b66c2ff3517a9bed6b90f",
+     "Dọkwụnye ekwentị gị na nke m.",
+     "Link your phone to mine.",
+     "ia_640b66c2ff3517a9bed6b90f"
+    ],
+    [
+     "ia.x.6465efb034736d7a78dc574c",
+     "Ekwentị m nyụrụ kemgbe ụtụtụ.",
+     "My phone (power) went off since morning.",
+     "ia_6465efb034736d7a78dc574c"
+    ],
+    [
+     "ia.x.63cab149cfd0ed46e6078f65",
+     "Kedụ onye a na-akpọ n'ekwentị?",
+     "Who is being called on phone?",
+     "ia_63cab149cfd0ed46e6078f65"
+    ],
+    [
+     "ia.x.63a34a6a46efa7adf8d00a97",
+     "Ọ zara mgbe m kpọrọ ya.",
+     "He answered when I called him.",
+     "ia_63a34a6a46efa7adf8d00a97"
+    ],
+    [
+     "ia.x.63ed9f70bc996a8ed485035d",
+     "A chọrọ m ịkpọ ya ugbua.",
+     "I want to call him now.",
+     "ia_63ed9f70bc996a8ed485035d"
+    ],
+    [
+     "ia.x.6440ed14db5e08b7692d8bd4",
+     "Achọghị m ka ekwentị m funarị m.",
+     "I do not want to lose my phone.",
+     "ia_6440ed14db5e08b7692d8bd4"
+    ],
+    [
+     "ia.x.643dc0044f7a1e260ac3a70d",
+     "Aga m akpọ gị ma anyị ruo akwammiri ahụ.",
+     "I will call you when we get to that bridge.",
+     "ia_643dc0044f7a1e260ac3a70d"
+    ],
+    [
+     "ia.x.643aa16ede287ccadd078d8b",
+     "A ga-apụnara gị ekwentị gị, jisie ya ike.",
+     "They will snatch your mobile phone, hold it tight.",
+     "ia_643aa16ede287ccadd078d8b"
+    ],
+    [
+     "ia.x.632880ae28e91632c8886f9c",
+     "Akpọrọ m ya, mana ọ zaghị m.",
+     "I called her but she did not answer me.",
+     "ia_632880ae28e91632c8886f9c"
+    ],
+    [
+     "ia.x.64102d6f8f927ef8188bebde",
+     "Anọ m na mpochi oge ị na-akpọ m.",
+     "I was in the toilet the time you were calling me.",
+     "ia_64102d6f8f927ef8188bebde"
+    ]
+   ]
+  },
+  {
+   "id": "celebrations",
+   "title": "Celebrations",
+   "blurb": "Weddings, birthdays, Christmas and good news.",
+   "phrases": [
+    [
+     "ia.x.64819a53b28aaae05a78bc1f",
+     "Biko, hazie mmemme agbamakwụkwọ anyị.",
+     "Please, plan our wedding ceremony.",
+     "ia_64819a53b28aaae05a78bc1f-e1d329f6-f41b-4a9e-80d5-399beb4786ff"
+    ],
+    [
+     "ia.x.6474aab84be2b4ce9d9a44ca",
+     "A gara m mmemme agbamakwụkwọ ha.",
+     "I attended their wedding ceremony.",
+     "ia_6474aab84be2b4ce9d9a44ca-2f8b1bc5-b8bf-4f09-aa3a-9c986f1a0849"
+    ],
+    [
+     "ia.x.6475315374faeff5a33fd973",
+     "Ị ga-aga agbamaakwụkwọ deede m n'Aba?",
+     "Will you attend my elder brother's wedding at Aba?",
+     "ia_6475315374faeff5a33fd973-6ba24368-be96-4517-a763-312ff1b44b1a"
+    ],
+    [
+     "ia.x.63daec5541934a3a3946e110",
+     "Gbaa mbọ gbaa nkwụ nwunye gị.",
+     "Try and do your wife's traditional marriage.",
+     "ia_63daec5541934a3a3946e110"
+    ],
+    [
+     "ia.x.642585e2de6d7dcabd6ec60b",
+     "Mgbaaka agbamakwụkwọ m bụ ọlọọcha.",
+     "My wedding ring is silver.",
+     "ia_642585e2de6d7dcabd6ec60b"
+    ],
+    [
+     "ia.x.63c3520f448e441c86c9d845",
+     "Anyị riri ngwọngwọ n'agbamakwụkwọ ahụ.",
+     "We ate ngwọngwọ at the wedding.",
+     "ia_63c3520f448e441c86c9d845"
+    ],
+    [
+     "ia.x.635d8ca14026bd86b7c72317",
+     "Anyị na-agba Ekeresimeesi.",
+     "We are celebrating Christmas.",
+     "ia_635d8ca14026bd86b7c72317"
+    ],
+    [
+     "ia.x.63b3972ae03651772cf9fab3",
+     "Anyị abanyela n'afọ ọhụrụ.",
+     "We are now in the new year.",
+     "ia_63b3972ae03651772cf9fab3"
+    ],
+    [
+     "ia.x.639737519c6e44b227dee97f",
+     "Anyị ga-ala ụlọ n'ekeresimeesi a.",
+     "We will go home this Christmas.",
+     "ia_639737519c6e44b227dee97f"
+    ],
+    [
+     "ia.x.6402d12c78c7e0466273ef0c",
+     "Anyị ga-anụkọ mmanya n'ekerisimeesi a.",
+     "We will drink together this christmas.",
+     "ia_6402d12c78c7e0466273ef0c"
+    ],
+    [
+     "ia.x.647b66e638b7725222ee8216",
+     "Onye na-agba akwụkwọ?",
+     "Who is wedding?",
+     "ia_647b66e638b7725222ee8216-e25a900d-9a3f-4b06-bae1-fe68e3874cd1"
+    ],
+    [
+     "ia.x.63a38e0c30faf61153e77b18",
+     "Ibe m agụchaala.",
+     "My mates have graduated.",
+     "ia_63a38e0c30faf61153e77b18"
+    ],
+    [
+     "ia.x.645058dfddcb9955a0eb5e0b",
+     "Agara m hụ taata ọhụrụ.",
+     "I went and saw the new baby.",
+     "ia_645058dfddcb9955a0eb5e0b"
+    ],
+    [
+     "ia.x.647614ee394b0139bcdfd319",
+     "Onye na-eri oriri?",
+     "Who is having a feast?",
+     "ia_647614ee394b0139bcdfd319-795bc096-6fc3-48b3-afdf-2a5084d03d86"
+    ],
+    [
+     "ia.x.6474aab94be2b481d49a44d6",
+     "Kedụ mgbe mmemme a ga-ebido?",
+     "When will this ceremony start?",
+     "ia_6474aab94be2b481d49a44d6-8271653e-41c0-4160-b725-f31efde2e684"
+    ],
+    [
+     "ia.x.639144532e0a4f63b8b2ac7d",
+     "Anyị rijuru afọ na mmemme ahụ.",
+     "We ate to our fill at that party.",
+     "ia_639144532e0a4f63b8b2ac7d"
+    ],
+    [
+     "ia.x.6480304df238a53b645ae8ad",
+     "Anyị ga-agụ egwu na mmemme ahụ.",
+     "We will sing in that ceremony.",
+     "ia_6480304df238a53b645ae8ad-cc2ea75b-8bf3-4f51-8320-d276d12a82a4"
+    ],
+    [
+     "ia.x.640b7bb8b36b7a2a22c98734",
+     "Anyị ga-aga ikpo mmemme ahụ ọkụ.",
+     "We will go and make the ceremony lively.",
+     "ia_640b7bb8b36b7a2a22c98734"
+    ],
+    [
+     "ia.x.6474aab84be2b4cc4a9a44d0",
+     "Nna m ga-abụ onyeisi mmemme ahụ.",
+     "My father will be the chairman of that ceremony.",
+     "ia_6474aab84be2b4cc4a9a44d0-7bccbcb3-ae79-43ab-b83d-ca25131d4d4e"
+    ],
+    [
+     "ia.x.640ae0660241d621571b146e",
+     "Achọrọ m ka agbamakwụkwọ ha kpoo ọkụ.",
+     "I want their wedding to be lively.",
+     "ia_640ae0660241d621571b146e"
+    ],
+    [
+     "ia.x.63fa113d2f78a1ebd9fc46fd",
+     "Kedụ mgbe a na-eri ji ọhụụ?",
+     "When is new yam festival?",
+     "ia_63fa113d2f78a1ebd9fc46fd"
+    ],
+    [
+     "ia.x.64819a53b28aaa914378bc29",
+     "Ọ bụ onye na-ahazi mmemme a?",
+     "Who is organizing this ceremony?",
+     "ia_64819a53b28aaa914378bc29-8f35af3d-bd1f-4969-ab69-ef0fba5ea924"
+    ],
+    [
+     "ia.x.64079a84b7d6624a614683de",
+     "Ị gbalịala!",
+     "Congratulations!",
+     "ia_64079a84b7d6624a614683de"
+    ],
+    [
+     "ia.x.633f77f1b3a9f7106ed47175",
+     "Anyị na-eme mmemme ahajiọkụ.",
+     "We are celebrating the New Yam festival.",
+     "ia_633f77f1b3a9f7106ed47175"
+    ]
+   ]
+  },
+  {
+   "id": "emergencies",
+   "title": "Emergencies",
+   "blurb": "Getting help fast, and staying safe.",
+   "phrases": [
+    [
+     "ia.x.6471488fda2b13437b58ea57",
+     "Nyere m aka.",
+     "Help me.",
+     "ia_6471488fda2b13437b58ea57-ad2a335a-8e9d-4dd2-a970-fabbaec19c16"
+    ],
+    [
+     "ia.x.6483bbfffeb76349c9c34198",
+     "Unu achọrọ enyemaka?",
+     "Do you need help?",
+     "ia_6483bbfffeb76349c9c34198-9b9ff35e-5840-487e-a6ac-d18387017fb7"
+    ],
+    [
+     "ia.x.6483ab67adbd1a0a1703363c",
+     "Enyemaka ka anyị chọ ugbu a.",
+     "Help is what we need now.",
+     "ia_6483ab67adbd1a0a1703363c-ca7a0232-9b91-4d6f-853e-5254e7516f95"
+    ],
+    [
+     "ia.x.6310cdaac213bf67b2a37f63",
+     "Achọrọ m enyemaka gị.",
+     "I need your help.",
+     "ia_6310cdaac213bf67b2a37f63"
+    ],
+    [
+     "ia.x.6428032f41746599c3de2ebe",
+     "Kedụ onye zururu ọlaaka m.",
+     "Who stole my ring?",
+     "ia_6428032f41746599c3de2ebe"
+    ],
+    [
+     "ia.x.647923d40449726141f8c202",
+     "Kpachara anya gị ebe m nọ.",
+     "Be careful with me.",
+     "ia_647923d40449726141f8c202-3761d88e-c544-4b92-bd6c-ec112942e875"
+    ],
+    [
+     "ia.x.6478e6c9597768d3c88865b5",
+     "Kpachapụ anya ma i ruo ebe ahụ.",
+     "Be careful when you get there.",
+     "ia_6478e6c9597768d3c88865b5-9f8ab9d0-2224-48c7-ac97-437ff95e3938"
+    ],
+    [
+     "ia.x.63f3f2704c72a00eca977785",
+     "Bịa ebe a ngwangwa.",
+     "Come here quickly.",
+     "ia_63f3f2704c72a00eca977785"
+    ],
+    [
+     "ia.x.647b666f38b772ff73ee81da",
+     "Leruo anya!",
+     "Be careful.",
+     "ia_647b666f38b772ff73ee81da-9f500245-0298-4a1f-83fa-28053dfe02d6"
+    ],
+    [
+     "ia.x.647157226b5b8d4c7c134289",
+     "Unu kwesịrị ilezi anya.",
+     "You are supposed to be careful.",
+     "ia_647157226b5b8d4c7c134289-416578ae-380c-4027-80d9-cce423ea42ef"
+    ],
+    [
+     "ia.x.6480b85ed4bc117df09eb280",
+     "Anyị jidere onye ohi ahụ.",
+     "We caught that thief.",
+     "ia_6480b85ed4bc117df09eb280-95bd9ac4-95b2-4ccd-b0cc-09d418effb77"
+    ],
+    [
+     "ia.x.6478e20b0449727acff8b6e3",
+     "Anyị kwesịrị ịkpachara anya.",
+     "We need to be careful.",
+     "ia_6478e20b0449727acff8b6e3-6e5aa12f-19dd-4aad-b26a-b98a807d8c49"
+    ],
+    [
+     "ia.x.642ccfa06e61d206a6c634a2",
+     "Ọ nọ n'ọnọdụ gbatagbata?",
+     "Was she in an emergency situation.",
+     "ia_642ccfa06e61d206a6c634a2"
+    ],
+    [
+     "ia.x.64451c9ec955f50afb996312",
+     "Onye merụrụ ahụ?",
+     "Who got wounded?",
+     "ia_64451c9ec955f50afb996312"
+    ],
+    [
+     "ia.x.6405e072d8997d6d8895aee1",
+     "Onye ka ezuuru ibu ya?",
+     "Whose luggage was stolen?",
+     "ia_6405e072d8997d6d8895aee1"
+    ],
+    [
+     "ia.x.6461e8252a732d763fde12ec",
+     "Ana m eze ndụ nke ukwuu.",
+     "I am very careful with my life.",
+     "ia_6461e8252a732d763fde12ec"
+    ],
+    [
+     "ia.x.646ed3b951089c9923ebabbf",
+     "Ndị ohi mịpụrụ ego n'akpa m.",
+     "Some thieves stole money from my bag.",
+     "ia_646ed3b951089c9923ebabbf-17606ef0-86c9-47f5-8a92-52e1dac3cd54"
+    ],
+    [
+     "ia.x.642e6594cde9766e902d09f8",
+     "Onye ohi ahụ batara n'ezi anyị.",
+     "That thief entered our compound.",
+     "ia_642e6594cde9766e902d09f8"
+    ],
+    [
+     "ia.x.644eeb34e717a38812699bba",
+     "Mmadụ zuru akwa m gbasara n'ezi.",
+     "Somebody stole the cloth I spread outside.",
+     "ia_644eeb34e717a38812699bba"
+    ],
+    [
+     "ia.x.647cb6c28a594c949c0634a4",
+     "Lezikwaa anya, agbịsị juru ebe a.",
+     "Be careful, there are so many ants here.",
+     "ia_647cb6c28a594c949c0634a4-cede14a0-55b1-4c8d-97bb-0aab32d90df7"
+    ],
+    [
+     "ia.x.6478e6c959776851a48865b7",
+     "Ị ga-akpachapụ anya maka mgbe ọzọ.",
+     "You have to be careful incase of next time.",
+     "ia_6478e6c959776851a48865b7-57d55c27-df90-4bea-936d-0e150c96a3e4"
+    ],
+    [
+     "ia.x.644631d833fe0607896ab66b",
+     "Kpachara anya gị, nwa ga-adanarị gị",
+     "Be careful, this baby will fall off",
+     "ia_644631d833fe0607896ab66b"
+    ],
+    [
+     "ia.x.646efe98e428f4aba175308d",
+     "Anyị na-elezi anya maka ndị agboro.",
+     "We are being careful due to the touts.",
+     "ia_646efe98e428f4aba175308d-a7b9bfe4-00fb-4b51-bf96-8c0eb6045b71"
+    ],
+    [
+     "ia.x.645f4e7f9b0b053abebcd3de",
+     "Ị na-agami n'ime ogbe kpachara anya.",
+     "As you are going inside the neighbourhood, be careful.",
+     "ia_645f4e7f9b0b053abebcd3de"
+    ],
+    [
+     "ia.x.63d575fa5294819df7aeb04a",
+     "Egwu dịkwa!",
+     "There is, really, danger!",
+     "ia_63d575fa5294819df7aeb04a"
+    ],
+    [
+     "ia.x.63ff68187f8f8a6f55885f47",
+     "Enwere m mmerụ ahụ na njibi ikpere m",
+     "I sustained an injury on my knee joint",
+     "ia_63ff68187f8f8a6f55885f47"
+    ]
+   ]
+  }
+ ]
+}

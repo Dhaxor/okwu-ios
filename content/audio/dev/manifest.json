@@ -1,0 +1,610 @@
+{
+  "note": "Development audio: Igbo API clips (Nkọwa okwu, CC BY 4.0, used with permission), 64 kbps mono AAC at -16 LUFS. Written by scripts/content/fetch-igboapi.mjs; pending Okwu audio QA.",
+  "clips": {
+    "ia_5f90c35e49f7e863e92b6de8": {
+      "file": "ia_5f90c35e49f7e863e92b6de8.m4a",
+      "sha256": "e3a3e5ff4787f9e782801df123793acf84f930cabd8043a9515df5bbab2e447e",
+      "durationMs": 1752,
+      "lufs": -17.9,
+      "bytes": 15655,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b6de8.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b6e2b": {
+      "file": "ia_5f90c35e49f7e863e92b6e2b.m4a",
+      "sha256": "a768e773fd5bfd4d55bfca656748ca6e71b2cfa9135d13c3108485e49271a8ad",
+      "durationMs": 1488,
+      "lufs": -16,
+      "bytes": 13396,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b6e2b.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b6e4f": {
+      "file": "ia_5f90c35e49f7e863e92b6e4f.m4a",
+      "sha256": "29f415d468a875263a38242597303848780f2be869b9b64acd4ad80eeb11d2fc",
+      "durationMs": 1860,
+      "lufs": -16,
+      "bytes": 16607,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b6e4f.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b6f74": {
+      "file": "ia_5f90c35e49f7e863e92b6f74.m4a",
+      "sha256": "5c9868936d2cd230f57262b5e3a4272788c24c9336660501df7038a77b57b103",
+      "durationMs": 1500,
+      "lufs": -18.5,
+      "bytes": 13609,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b6f74.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b6f74-645afb0e77b037ea2c93c411": {
+      "file": "ia_5f90c35e49f7e863e92b6f74-645afb0e77b037ea2c93c411.m4a",
+      "sha256": "40bbc257b6d7f1bebbdb2192adf9eb35c1adffd55d2a18a20106732038a91d37",
+      "durationMs": 1176,
+      "lufs": -19.3,
+      "bytes": 11256,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-6/5f90c35e49f7e863e92b6f74-645afb0e77b037ea2c93c411.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b700a": {
+      "file": "ia_5f90c35e49f7e863e92b700a.m4a",
+      "sha256": "bb4dbaf9dd3d9308ae423064477ebf9dc3cb88fc3d63f7f9ff77c14e02ea6c2e",
+      "durationMs": 984,
+      "lufs": -16.6,
+      "bytes": 9542,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b700a.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b700d": {
+      "file": "ia_5f90c35e49f7e863e92b700d.m4a",
+      "sha256": "5dc871a741241ec5383ecf1c1927a5576a4f07c88bb28cb90156ec3c8c34229b",
+      "durationMs": 1740,
+      "lufs": -16,
+      "bytes": 15550,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b700d.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b700d-63df56a473fb453afc878a4a": {
+      "file": "ia_5f90c35e49f7e863e92b700d-63df56a473fb453afc878a4a.m4a",
+      "sha256": "56e51c59857439e580ca6cdde8aca06ea8e7187f1821dd821a1090621353ca9c",
+      "durationMs": 1776,
+      "lufs": -16,
+      "bytes": 15746,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-6/5f90c35e49f7e863e92b700d-63df56a473fb453afc878a4a.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b700d-63df56a473fb4541f9878a4c": {
+      "file": "ia_5f90c35e49f7e863e92b700d-63df56a473fb4541f9878a4c.m4a",
+      "sha256": "7a1d3ba148aa9ac6482e79c75e83112e9f11cca9c98c6ac2ca80ce49cbd185db",
+      "durationMs": 1332,
+      "lufs": -16,
+      "bytes": 12068,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-6/5f90c35e49f7e863e92b700d-63df56a473fb4541f9878a4c.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b7029": {
+      "file": "ia_5f90c35e49f7e863e92b7029.m4a",
+      "sha256": "371f9f016fdf1a09c8cb0707444530bf4df28ad27ac5beb6a8197a902ab600bc",
+      "durationMs": 1860,
+      "lufs": -16,
+      "bytes": 16612,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b7029.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b7033": {
+      "file": "ia_5f90c35e49f7e863e92b7033.m4a",
+      "sha256": "be0a9a93276a5bc1b017a02a004b63efcbdd06383ea3ec8eaf68180531dd8dd8",
+      "durationMs": 1500,
+      "lufs": -16,
+      "bytes": 13702,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b7033.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b70a5": {
+      "file": "ia_5f90c35e49f7e863e92b70a5.m4a",
+      "sha256": "204783029fb79250084bdc0bcd934f66e6eee3a5f9dd8da29831e3dff6bd7e76",
+      "durationMs": 1920,
+      "lufs": -16,
+      "bytes": 17034,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b70a5.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b7533": {
+      "file": "ia_5f90c35e49f7e863e92b7533.m4a",
+      "sha256": "87b71d31ecd3236369ae5052831a527ed3c84bd8e707c84f9ab21e94f7986f42",
+      "durationMs": 1740,
+      "lufs": -18.3,
+      "bytes": 15632,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b7533.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b75a5": {
+      "file": "ia_5f90c35e49f7e863e92b75a5.m4a",
+      "sha256": "3d061ff9d4d6ce500029da062d1b75006b5570d87bd50adfc0bf4965cdbc7422",
+      "durationMs": 1740,
+      "lufs": -16.4,
+      "bytes": 15631,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b75a5.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b760a": {
+      "file": "ia_5f90c35e49f7e863e92b760a.m4a",
+      "sha256": "9d9f6e1f0e6f579e75bdb2237bc71814d36c683522ed7ecd798695899579f70f",
+      "durationMs": 1152,
+      "lufs": -16,
+      "bytes": 10326,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b760a.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b760a-645b63caa3f37c0a16293cb0": {
+      "file": "ia_5f90c35e49f7e863e92b760a-645b63caa3f37c0a16293cb0.m4a",
+      "sha256": "88be1510514284142802dcb0f39adb62e1937bc0e146067aebc8dc8565048f8c",
+      "durationMs": 1368,
+      "lufs": -16,
+      "bytes": 12196,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-7/5f90c35e49f7e863e92b760a-645b63caa3f37c0a16293cb0.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b760a-645b63caa3f37c32d3293cb1": {
+      "file": "ia_5f90c35e49f7e863e92b760a-645b63caa3f37c32d3293cb1.m4a",
+      "sha256": "bfc2fdd021377e47110ee488fa9234b2839d26e0f1887b278fa4b416bba7557e",
+      "durationMs": 1536,
+      "lufs": -16,
+      "bytes": 13637,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-7/5f90c35e49f7e863e92b760a-645b63caa3f37c32d3293cb1.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b760c": {
+      "file": "ia_5f90c35e49f7e863e92b760c.m4a",
+      "sha256": "0042d0875f03ca86759886090052636cf7bdd25fc2dd57b6bcf5b7f8a4ccb49b",
+      "durationMs": 1500,
+      "lufs": -16.7,
+      "bytes": 13672,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b760c.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b760c-6459fde31b66c0acc7ed4d78": {
+      "file": "ia_5f90c35e49f7e863e92b760c-6459fde31b66c0acc7ed4d78.m4a",
+      "sha256": "97cec23cd650725a798901acf1c6dcd02677071cc2c2d590b3e0dec435344bc1",
+      "durationMs": 1488,
+      "lufs": -16.3,
+      "bytes": 13347,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-7/5f90c35e49f7e863e92b760c-6459fde31b66c0acc7ed4d78.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b79ee": {
+      "file": "ia_5f90c35e49f7e863e92b79ee.m4a",
+      "sha256": "c0731874565d0686f22de3d6c97974972303c0d4cdec983f3ab4bf89f0629245",
+      "durationMs": 1740,
+      "lufs": -16,
+      "bytes": 15543,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b79ee.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b79f3": {
+      "file": "ia_5f90c35e49f7e863e92b79f3.m4a",
+      "sha256": "0391cad371269376cf76a9be4130d57bfc9739a516cc5df7b6cbe3ac010ab0ed",
+      "durationMs": 1656,
+      "lufs": -16,
+      "bytes": 14656,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b79f3.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b79f6": {
+      "file": "ia_5f90c35e49f7e863e92b79f6.m4a",
+      "sha256": "c2e8a8edf1ced01c070fdf6b4dd41116bc73ad10ac99be7acb12a956cbfb2aa9",
+      "durationMs": 1560,
+      "lufs": -17.8,
+      "bytes": 14132,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b79f6.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b7af2": {
+      "file": "ia_5f90c35e49f7e863e92b7af2.m4a",
+      "sha256": "3a7152a36cfaf3a71b985d69221a81f4f7db149789cc0b7aef0ec244d6b95b51",
+      "durationMs": 2220,
+      "lufs": -16,
+      "bytes": 19471,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b7af2.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b7af2-6410fdf2bcf1261731b4fcbd": {
+      "file": "ia_5f90c35e49f7e863e92b7af2-6410fdf2bcf1261731b4fcbd.m4a",
+      "sha256": "235fb9993f459a3b4f671ea0e9ba2d3855a4227b34c139ef3d13618da80e42b1",
+      "durationMs": 1489,
+      "lufs": -16,
+      "bytes": 13193,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-7/5f90c35e49f7e863e92b7af2-6410fdf2bcf1261731b4fcbd.mp3"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b7af5": {
+      "file": "ia_5f90c35e49f7e863e92b7af5.m4a",
+      "sha256": "d980f717f1c9cba31e2417abf003e1479b2fc72d5394ba2985f1cc7aa160ce77",
+      "durationMs": 1800,
+      "lufs": -16,
+      "bytes": 16060,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b7af5.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b7af9": {
+      "file": "ia_5f90c35e49f7e863e92b7af9.m4a",
+      "sha256": "0e7fa56d36ad55cd4b72281b4078f599ca8ddfb1cadc5c3e0e55867453b24ce1",
+      "durationMs": 1740,
+      "lufs": -16.7,
+      "bytes": 15553,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b7af9.webm"
+      }
+    },
+    "ia_5f90c35e49f7e863e92b7bb9": {
+      "file": "ia_5f90c35e49f7e863e92b7bb9.m4a",
+      "sha256": "17a4d93efa0cfc9677c760bf13543cc528ae5d46073b8576b743a61cad59a0f0",
+      "durationMs": 1320,
+      "lufs": -16,
+      "bytes": 11843,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35e49f7e863e92b7bb9.mp3"
+      }
+    },
+    "ia_5f90c35f49f7e863e92b81a1": {
+      "file": "ia_5f90c35f49f7e863e92b81a1.m4a",
+      "sha256": "e65f9f5d163f8440f85393399a26a7ceb237d2dc393fc74a531338be9db4f520",
+      "durationMs": 2220,
+      "lufs": -16,
+      "bytes": 19504,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35f49f7e863e92b81a1.webm"
+      }
+    },
+    "ia_5f90c35f49f7e863e92b82a9": {
+      "file": "ia_5f90c35f49f7e863e92b82a9.m4a",
+      "sha256": "66a77548942a81e816dac17dc3145a58e25b0226ea61e278af78bd8deb53fd2c",
+      "durationMs": 1740,
+      "lufs": -18.2,
+      "bytes": 15633,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35f49f7e863e92b82a9.webm"
+      }
+    },
+    "ia_5f90c35f49f7e863e92b82e4": {
+      "file": "ia_5f90c35f49f7e863e92b82e4.m4a",
+      "sha256": "c65eb19e45f690e91f53959a3878f32ec227219c61618766b4481ccce25811c9",
+      "durationMs": 1560,
+      "lufs": -16,
+      "bytes": 14079,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35f49f7e863e92b82e4.webm"
+      }
+    },
+    "ia_5f90c35f49f7e863e92b8596": {
+      "file": "ia_5f90c35f49f7e863e92b8596.m4a",
+      "sha256": "1681afd19f0eec648153df4cf2e21620cc9105b27e0fb60ff25ffa2fa4f16d57",
+      "durationMs": 1440,
+      "lufs": -16,
+      "bytes": 12921,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35f49f7e863e92b8596.mp3"
+      }
+    },
+    "ia_5f90c35f49f7e863e92b86d6": {
+      "file": "ia_5f90c35f49f7e863e92b86d6.m4a",
+      "sha256": "83e25e152c695ef930d6823a993d6d8795b098625aae3fd05aba319863e2dda1",
+      "durationMs": 1500,
+      "lufs": -16,
+      "bytes": 13694,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35f49f7e863e92b86d6.webm"
+      }
+    },
+    "ia_5f90c35f49f7e863e92b86d6-644a6afd05a8da85b340b465": {
+      "file": "ia_5f90c35f49f7e863e92b86d6-644a6afd05a8da85b340b465.m4a",
+      "sha256": "1b3970980699f4725b55b8d24555c5afae6e0851b6075442e3c99625237ff676",
+      "durationMs": 1656,
+      "lufs": -16,
+      "bytes": 14770,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-7/5f90c35f49f7e863e92b86d6-644a6afd05a8da85b340b465.mp3"
+      }
+    },
+    "ia_5f90c35f49f7e863e92b86d6-644a6afd05a8daabca40b463": {
+      "file": "ia_5f90c35f49f7e863e92b86d6-644a6afd05a8daabca40b463.m4a",
+      "sha256": "efa15572ef405c90bb93d060a0a61d24158013d1139957fb9ec0f823727775b5",
+      "durationMs": 1392,
+      "lufs": -16,
+      "bytes": 12435,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-7/5f90c35f49f7e863e92b86d6-644a6afd05a8daabca40b463.mp3"
+      }
+    },
+    "ia_5f90c35f49f7e863e92b86d6-644a6afd05a8dad07240b464": {
+      "file": "ia_5f90c35f49f7e863e92b86d6-644a6afd05a8dad07240b464.m4a",
+      "sha256": "128283e3952e2c62750a58ca7eaa683999d4da688e1b4ee1a14b9371ca30372d",
+      "durationMs": 1488,
+      "lufs": -17.4,
+      "bytes": 13215,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-7/5f90c35f49f7e863e92b86d6-644a6afd05a8dad07240b464.mp3"
+      }
+    },
+    "ia_5f90c35f49f7e863e92b87d2": {
+      "file": "ia_5f90c35f49f7e863e92b87d2.m4a",
+      "sha256": "7dba7564d68dee46710d1f3ba72230e90b9080b33a981fcdea31874c5846623b",
+      "durationMs": 1440,
+      "lufs": -16,
+      "bytes": 13151,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35f49f7e863e92b87d2.webm"
+      }
+    },
+    "ia_5f90c35f49f7e863e92b8b96": {
+      "file": "ia_5f90c35f49f7e863e92b8b96.m4a",
+      "sha256": "baaa9daa1ed44b85f777977e2514832c83dfcf8618655b489215c874b3222f59",
+      "durationMs": 1536,
+      "lufs": -16.9,
+      "bytes": 13797,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/5f90c35f49f7e863e92b8b96.mp3"
+      }
+    },
+    "ia_607d96b300816bad03734a34": {
+      "file": "ia_607d96b300816bad03734a34.m4a",
+      "sha256": "9d63a3362636eee65c6290c0c7e819c1996876c152e9d01dd3fae399ab1a27d1",
+      "durationMs": 1560,
+      "lufs": -16,
+      "bytes": 14062,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/607d96b300816bad03734a34.webm"
+      }
+    },
+    "ia_6088c71c8ea2d810ef6d7400": {
+      "file": "ia_6088c71c8ea2d810ef6d7400.m4a",
+      "sha256": "0ea3f8607bd4b89092e72de731a48da73acd486c3ce233c6c09b293294878c8d",
+      "durationMs": 1140,
+      "lufs": -16,
+      "bytes": 10544,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/6088c71c8ea2d810ef6d7400.webm"
+      }
+    },
+    "ia_62e5cb9842b322a6bd4d143d": {
+      "file": "ia_62e5cb9842b322a6bd4d143d.m4a",
+      "sha256": "047d5212fb0557bc3cdfe4d7dd5b8268844f57b87d5b8c634ab794fd7f1a8a9a",
+      "durationMs": 1944,
+      "lufs": -16,
+      "bytes": 17110,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/62e5cb9842b322a6bd4d143d.mp3"
+      }
+    },
+    "ia_6302c361447140555e0a17f6": {
+      "file": "ia_6302c361447140555e0a17f6.m4a",
+      "sha256": "4307b7875ab3edf376055329ebc75b2515a6b82fb83bac38f059f4a07cbf3acd",
+      "durationMs": 1776,
+      "lufs": -16.5,
+      "bytes": 15858,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/6302c361447140555e0a17f6.mp3"
+      }
+    },
+    "ia_6336ed1a49001a3781f097a6": {
+      "file": "ia_6336ed1a49001a3781f097a6.m4a",
+      "sha256": "4907cc49309ff5df73f07f1bec1a7faa2d04e70539242625426c51e08f75986f",
+      "durationMs": 1368,
+      "lufs": -19.7,
+      "bytes": 13260,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/6336ed1a49001a3781f097a6.mp3"
+      }
+    },
+    "ia_633ef7522459c48898c4a0da": {
+      "file": "ia_633ef7522459c48898c4a0da.m4a",
+      "sha256": "dee48cecf65b0deed85895884cc3327906917b43d024adde2409f0939075d67a",
+      "durationMs": 1488,
+      "lufs": -16,
+      "bytes": 13347,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/633ef7522459c48898c4a0da.mp3"
+      }
+    },
+    "ia_6351e1a26625f46eb5f910d1": {
+      "file": "ia_6351e1a26625f46eb5f910d1.m4a",
+      "sha256": "a8fa456a39ba41a25890ea5e7778c88785ed9188927ac3685f2e68620fb55b9a",
+      "durationMs": 1488,
+      "lufs": -16,
+      "bytes": 13254,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/6351e1a26625f46eb5f910d1.mp3"
+      }
+    },
+    "ia_639141144b8efbbf2c6299d6": {
+      "file": "ia_639141144b8efbbf2c6299d6.m4a",
+      "sha256": "8ced060d70918f479a560e95cf79e27518df3e3c3ca47fa335572378667859b9",
+      "durationMs": 2256,
+      "lufs": -16.5,
+      "bytes": 20008,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-2/639141144b8efbbf2c6299d6.mp3"
+      }
+    },
+    "ia_63d572a4529481345daeabfb": {
+      "file": "ia_63d572a4529481345daeabfb.m4a",
+      "sha256": "26c37aa28ced420f8dce2bcca8c75c8d22c9fbf57c555cfb6f2932b218cec072",
+      "durationMs": 1752,
+      "lufs": -16,
+      "bytes": 15369,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-1/63d572a4529481345daeabfb.mp3"
+      }
+    },
+    "ia_63d572a4529481d7ddaeabfc": {
+      "file": "ia_63d572a4529481d7ddaeabfc.m4a",
+      "sha256": "a260bebc26929ad7a802973ea90f54063318b9abd717bb112d24a1a298b525d5",
+      "durationMs": 1488,
+      "lufs": -16,
+      "bytes": 13684,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-1/63d572a4529481d7ddaeabfc.mp3"
+      }
+    },
+    "ia_63daf095a4f3dd0ddaa7c2c6": {
+      "file": "ia_63daf095a4f3dd0ddaa7c2c6.m4a",
+      "sha256": "cd487dc4b5d56271c63d379257afee0abde5b8cd70d06dfa7231f09557b749c8",
+      "durationMs": 1752,
+      "lufs": -16,
+      "bytes": 15486,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/63daf095a4f3dd0ddaa7c2c6.mp3"
+      }
+    },
+    "ia_63e41da75fa86fe6650e7783": {
+      "file": "ia_63e41da75fa86fe6650e7783.m4a",
+      "sha256": "f3a8f2f42acf57b6598c3df991e67637e52a665438ef5334c0b37a4043f0bcb7",
+      "durationMs": 3096,
+      "lufs": -16,
+      "bytes": 27163,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-1/63e41da75fa86fe6650e7783.mp3"
+      }
+    },
+    "ia_63e43371854d4e067d1ea0de": {
+      "file": "ia_63e43371854d4e067d1ea0de.m4a",
+      "sha256": "e3f332baff8142b05491cee35b3de3cbea72ea4561bb5b703b9880a5e1f37aef",
+      "durationMs": 2784,
+      "lufs": -18.8,
+      "bytes": 24921,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-1/63e43371854d4e067d1ea0de.mp3"
+      }
+    },
+    "ia_63fa113d2f78a16495fc46f5": {
+      "file": "ia_63fa113d2f78a16495fc46f5.m4a",
+      "sha256": "727c92ab9fa73b53b24d07c7ee19dd82b82b4f8bdea10b87f4701f7f71c6b7f3",
+      "durationMs": 3800,
+      "lufs": -16.1,
+      "bytes": 32295,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-2/63fa113d2f78a16495fc46f5.mp3"
+      }
+    },
+    "ia_6401414f66a8830e51d1b699": {
+      "file": "ia_6401414f66a8830e51d1b699.m4a",
+      "sha256": "e0e9edc5cde16993f2ef076f25d0bd040154769cacd877d310fe7236d44fca50",
+      "durationMs": 2040,
+      "lufs": -18.5,
+      "bytes": 18607,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-2/6401414f66a8830e51d1b699.mp3"
+      }
+    },
+    "ia_643abf3bb4817123650e96fb": {
+      "file": "ia_643abf3bb4817123650e96fb.m4a",
+      "sha256": "6834133bcaf7b74bee0cd35c356df92d65e4b41cc36bfb46f77101854d014de9",
+      "durationMs": 2520,
+      "lufs": -17.4,
+      "bytes": 21696,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-1/643abf3bb4817123650e96fb.mp3"
+      }
+    },
+    "ia_643d3742782ad54a4d00ec8e": {
+      "file": "ia_643d3742782ad54a4d00ec8e.m4a",
+      "sha256": "21bced4f27e8ef60f824dc3d7b86ad5fc4e902ca09566086fa2e5838674fdc5f",
+      "durationMs": 1824,
+      "lufs": -17.1,
+      "bytes": 16194,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-1/643d3742782ad54a4d00ec8e.mp3"
+      }
+    },
+    "ia_644cc2a706ddd502a68d3208": {
+      "file": "ia_644cc2a706ddd502a68d3208.m4a",
+      "sha256": "de5115a53c27605753cc7893aebd2e5632f9b9ce6ed16c10b5053c912728f52e",
+      "durationMs": 1698,
+      "lufs": -16,
+      "bytes": 15104,
+      "source": {
+        "repo": "ibo-dict",
+        "path": "audio/archive-0/644cc2a706ddd502a68d3208.mp3"
+      }
+    }
+  }
+}

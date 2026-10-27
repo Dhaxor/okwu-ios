@@ -1,0 +1,595 @@
+{
+ "version": 1,
+ "themes": [
+  {
+   "id": "words",
+   "title": "Words and speech"
+  },
+  {
+   "id": "wisdom",
+   "title": "Practical wisdom"
+  },
+  {
+   "id": "patience",
+   "title": "Patience and timing"
+  },
+  {
+   "id": "together",
+   "title": "Living together"
+  },
+  {
+   "id": "character",
+   "title": "Character and consequence"
+  },
+  {
+   "id": "generations",
+   "title": "Elders and the young"
+  }
+ ],
+ "proverbs": [
+  {
+   "id": "ilu-bu-mmanu-ndi",
+   "igbo": "Ilu bụ mmanụ ndị Igbo ji eri okwu.",
+   "en": "Proverb is the oil with which Igbo words are eaten.",
+   "audio": "ia_63e6df3c7724256a9ba62bb0",
+   "theme": "words",
+   "meaning": "Proverbs make speech go down well. They give weight and grace to what is said, the way oil helps food along.",
+   "usage": "Said about proverbs themselves, to praise someone who speaks well or to open a talk that will use them.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "e-were-ilu-ilu",
+   "igbo": "E were ilu ilu bie okwu, ofeke agbara aka laa",
+   "en": "When discussions are concluded in proverbs, the good-for-nothing goes home empty handed",
+   "audio": "iax_63e127f320fb86b6762cfa73-9df0d0c9-ced0-430f-a742-b0eab30b3783",
+   "theme": "words",
+   "meaning": "When elders settle a matter in proverbs, someone who never learned the deeper language leaves with nothing.",
+   "usage": "Encouraging a young person to learn proverbs, or remarking that much was said indirectly at a meeting.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "onye-gbara-nkiti-kwere",
+   "igbo": "Onye gbara nkịtị kwere ekwe.",
+   "en": "One who kept quiet is in agreement.",
+   "audio": "ia_644bf950aed49459220fa76d",
+   "theme": "words",
+   "meaning": "Silence is taken as agreement.",
+   "usage": "At a meeting, before a decision, to invite anyone who disagrees to speak now.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "onye-uko-anaghi-atu",
+   "igbo": "Onye ụkọ anaghị atụ ilu.",
+   "en": "A messenger does not speak in proverbs.",
+   "audio": "ia_6369820431894545a8afb4b0",
+   "theme": "words",
+   "meaning": "A messenger delivers the message plainly, as it was given, without adding to it.",
+   "usage": "Reminding someone sent with a message to say it straight. Its status as a proverb is pending review.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "agwo-ofu-onye-huru",
+   "igbo": "Agwọ ofu onye hụrụ na-aghọ ya eke.",
+   "en": "A snake seen by one person alone seems like a python to him.",
+   "audio": "ia_6419064f94ab18345743eee7",
+   "theme": "words",
+   "meaning": "A story with only one witness grows in the telling.",
+   "usage": "When a single person's account sounds larger than life, or to say why witnesses matter.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "o-bu-iche-ha",
+   "igbo": "Ọ bụ íché ha ka ényí ka ana ama enyi",
+   "en": "It is a stone the size of an elephant that you throw at an elephant",
+   "audio": "iax_63d575f552948106d4aeb035",
+   "theme": "wisdom",
+   "meaning": "Match your effort to the size of the task.",
+   "usage": "Before a big undertaking, to say that small measures will not do.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "ejide-ibe-ji-na",
+   "igbo": "Ejide ibe ji na aka, asaa agụụ okwu",
+   "en": "When you have a piece of yam in your hands, you can then reply hunger",
+   "audio": "iax_63d565d6d5be564e6b35163e",
+   "theme": "wisdom",
+   "meaning": "With something in hand, you can face a difficulty calmly.",
+   "usage": "On being prepared before trouble comes.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "obu-ike-na-ume",
+   "igbo": "Ọbụ ike na ume ka eji afụ opi",
+   "en": "It takes strength to blow a flute",
+   "audio": "iax_63d810a15efbc1a55f176995",
+   "theme": "wisdom",
+   "meaning": "Every achievement takes strength and breath; nothing worthwhile is effortless.",
+   "usage": "Encouragement before hard work, or praise for work that clearly took effort.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "ejighi-ugegbe-ele-ihe",
+   "igbo": "Ejighi ugegbe ele ihe agba na aka",
+   "en": "A mirror is not used to look at what is worn on the hand",
+   "audio": "iax_654b7f34511f0b52c4b0f71d-c8b6f89b-ecc2-4a0e-a397-aae11cf094d7",
+   "theme": "wisdom",
+   "meaning": "What is plain to see needs no proof.",
+   "usage": "When someone asks for evidence of something obvious.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "awo-anaghi-agba-oso",
+   "igbo": "Awọ anaghị agba ọsọ ehihie n'efu.",
+   "en": "The toad does not run in the day time for nothing.",
+   "audio": "ia_6443efb759234f29cdfd50ca",
+   "theme": "wisdom",
+   "meaning": "Unusual behaviour has a cause. When something out of the ordinary happens, there is a reason behind it.",
+   "usage": "When someone acts out of character, to say it is worth asking why.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "nkita-anaghi-ata-okpukpu",
+   "igbo": "Nkịta anaghị ata ọkpụkpụ a nyawara ya n'olu.",
+   "en": "The dog does not eat the bone hung on its neck.",
+   "audio": "ia_6472458269dd5e8e5fcda244-02122731-16fa-4e44-8248-ec9ddc9a3824",
+   "theme": "wisdom",
+   "meaning": "What is placed in your care, in plain view, is not yours to consume.",
+   "usage": "Reminding someone that what they were trusted with is not theirs to use up.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "onye-njenje-na-aka",
+   "igbo": "Onye njenje na-aka onye isi awọ ama ihe.",
+   "en": "A traveler is more experienced than an elder.",
+   "audio": "ia_64372e31290c8af1d0da2561",
+   "theme": "wisdom",
+   "meaning": "Travel teaches. Someone who has seen the world can know more than an elder who never left home.",
+   "usage": "Encouraging a young person to travel, or respecting what a traveller brings back.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "mgbe-nne-amubeghi-ochiagha",
+   "igbo": "Mgbe nne amụbeghị ọchịagha ọkwa ndị ọgụ na agarị?",
+   "en": "When the warlord was not yet born, people still went to wars, didn't they?",
+   "audio": "iax_63d7f1b8ddd11755a36f8472",
+   "theme": "wisdom",
+   "meaning": "Life went on before you, and it can go on without you. No one is indispensable.",
+   "usage": "Gently humbling someone who acts as if nothing can happen without them.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "mgbe-utaba-aputebee-o",
+   "igbo": "Mgbe ụtaba apụtebee o nwere onye azụzụ gburu?",
+   "en": "When the snuff had not yet existed, did catarrh kill anyone?",
+   "audio": "iax_63d7f1deddd1173fc96f8482",
+   "theme": "wisdom",
+   "meaning": "People managed before this thing existed, so it is not as essential as it seems.",
+   "usage": "When someone claims they cannot do without something new.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "o-bughi-ebe-aka",
+   "igbo": "Ọ bụghị ebe aka ewu zọrọ ka ụkwụ ya na azọ",
+   "en": "A walking goat's fore and hindlimbs do not step on the same spots",
+   "audio": "iax_63d7f0c2ddd11718e06f841f",
+   "theme": "wisdom",
+   "meaning": null,
+   "usage": null,
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "agaghi-ejikwa-na-isi",
+   "igbo": "Agaghị ejikwa na ịsị ọkụkọ epeka nwere sị na ya na ewu bụ ọgbọ",
+   "en": "You can't say that because a fowl's head is small, that it is same mate with goat",
+   "audio": "iax_63d80f75a33464ae6c0f4eb4",
+   "theme": "wisdom",
+   "meaning": null,
+   "usage": null,
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "onye-buru-chi-ya",
+   "igbo": "Onye buru chi ya uzo, o gbagbue onwe ya n'oso",
+   "en": "He who goes ahead of his 'chi', would run to death",
+   "audio": "iax_63d80b86d061a10ddbd4d5a0",
+   "theme": "patience",
+   "meaning": "Don't rush ahead of your chi (your guardian spirit, your destiny). Pushing past your time ends badly.",
+   "usage": "Counselling patience to someone in too much of a hurry.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "ebe-onye-dara-ka",
+   "igbo": "Ebe onye dara ka chi ya kwaturu ya",
+   "en": "Where a person falls, is where his god pushed him down.",
+   "audio": "iax_63d813455efbc1375f176a85",
+   "theme": "patience",
+   "meaning": "Where a person falls is where their chi let them fall; a setback can be part of a larger path.",
+   "usage": "Reflecting on a misfortune without heaping blame on the one it happened to.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "a-naghi-eji-ututu",
+   "igbo": "A naghị eji ụtụtụ ama njọ ahia",
+   "en": "You don't know a bad sales day from the morning",
+   "audio": "iax_63d5726f5294812b38aeabae",
+   "theme": "patience",
+   "meaning": "Don't judge the day by its morning. A slow start says little about how things will end.",
+   "usage": "Encouraging a trader, or anyone whose day or venture has started slowly.",
+   "literalNote": null,
+   "seeAlso": [
+    {
+     "kind": "custom",
+     "id": "market-week",
+     "title": "The four market days"
+    }
+   ]
+  },
+  {
+   "id": "ana-achu-mbekwu-n",
+   "igbo": "Ana achụ mbekwu n'ị́ké, ọ ga èfé elu?",
+   "en": "Does one pursue the tortoise with great speed? Is it going to fly?",
+   "audio": "iax_63d80e9fa33464fe680f4def",
+   "theme": "patience",
+   "meaning": "There is no need to rush after something that cannot escape.",
+   "usage": "Telling someone to calm down and take their time.",
+   "literalNote": null,
+   "seeAlso": [
+    {
+     "kind": "tale",
+     "id": "mbe-and-the-birds",
+     "title": "Mbe and the feast in the sky"
+    }
+   ]
+  },
+  {
+   "id": "ebule-laa-azu-o",
+   "igbo": "Ebule laa azụ, ọ bịa ọgụ.",
+   "en": "When the ram moves backwards, it comes for a fight.",
+   "audio": "ia_644aa5c59efc71703345002d",
+   "theme": "patience",
+   "meaning": "A step back can be a gathering of strength.",
+   "usage": "When someone withdraws for a while. Don't mistake it for giving up.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "onye-wetara-oji-wetara",
+   "igbo": "Onye wetara ọjị wetara ndụ",
+   "en": "He who brings kola brings life",
+   "audio": "ia_641c9c99bdeeea23fb1b8c3a",
+   "theme": "together",
+   "meaning": "Bringing kola is bringing goodwill; the one who offers it offers life and blessing.",
+   "usage": "Said when kola is presented to guests, as part of the welcome.",
+   "literalNote": null,
+   "seeAlso": [
+    {
+     "kind": "custom",
+     "id": "oji",
+     "title": "Kola nut"
+    }
+   ]
+  },
+  {
+   "id": "akanri-kwoo-akaekpe-aka",
+   "igbo": "Akanri kwọọ akaekpe, aka ekpe akwọọ aka nri",
+   "en": "When the right hand washes the left, the left reciprocates the gesture",
+   "audio": "iax_63d80d46a3346441e70f4d36",
+   "theme": "together",
+   "meaning": "Help goes both ways. When you help others, they help you in turn.",
+   "usage": "Encouraging cooperation within a family, between neighbours or partners.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "ewu-mmadu-abuo-na",
+   "igbo": "Ewu mmadụ abụọ na enye nri na anwụ na agụụ",
+   "en": "A goat which is fed by two persons dies of hunger.",
+   "audio": "iax_63d812db5efbc1f4a9176a5f",
+   "theme": "together",
+   "meaning": "When a duty belongs to two people loosely, each assumes the other did it, and the job is left undone.",
+   "usage": "When a task has no clear owner.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "ewu-oha-nwe-na",
+   "igbo": "Ewu ọha nwe na-anwụ n'agụrụ.",
+   "en": "A goat owned by the public die of hunger.",
+   "audio": "ia_644332e77f8091d2b2961d73",
+   "theme": "together",
+   "meaning": "What belongs to everyone is looked after by no one.",
+   "usage": "About shared property or shared work that everyone neglects.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "ofu-onye-nwe-okeokpa",
+   "igbo": "Ofu onye nwe okeọkpa mana ọha nwe olu ya",
+   "en": "One person owns the cock, but the public owns its crowing",
+   "audio": "iax_63d7f43bddd117454a6f8571",
+   "theme": "together",
+   "meaning": "What one person owns can still benefit everyone.",
+   "usage": "When a private gift, talent or possession serves the whole community.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "obu-oke-igba-iche",
+   "igbo": "Ọbụ oke ịgba iche iche mere na agwọ enweghị ụmụnna",
+   "en": "Too much individualism is the reason the snake has no kins men",
+   "audio": "iax_63d810765efbc12483176985",
+   "theme": "together",
+   "meaning": "Going it alone leaves you without people to stand with you.",
+   "usage": "Calling a family or group to unity.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "o-bu-mmiri-na",
+   "igbo": "Ọ bụ mmiri na enyere ncha aka ka o nwee gbaa ụfụfụ",
+   "en": "Water assists in bring out lather from soap",
+   "audio": "iax_63d810fb5efbc1a92b1769a8",
+   "theme": "together",
+   "meaning": "Success comes with help from others.",
+   "usage": "Acknowledging the people whose help made something work.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "oyim-agwaram-gi-agwa",
+   "igbo": "Ọyịm agwaram gị agwa bụ ezigbo ọyị. Akaaram agwa gị agwa bụ ajọ ọyị",
+   "en": "\"My friend I told you\" Is a good friend. \"I would have told you\" is a bad friend.",
+   "audio": "iax_6282966aa1c587400be3d7ca",
+   "theme": "together",
+   "meaning": "A true friend warns you in time; a friend who speaks only after the fact is no friend.",
+   "usage": "About honest friendship, or after a warning that came too late.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "a-na-esi-n",
+   "igbo": "A na-esi n'ulọ mara mma pụọ ama",
+   "en": "Charity begins at home",
+   "audio": "iax_64da0c4d523784949a582b95-6d0c59ce-7803-47f1-b2b0-e0aab5f4b36c",
+   "theme": "together",
+   "meaning": "Good conduct starts at home before it is shown outside.",
+   "usage": "Reminding someone to begin with their own household.",
+   "literalNote": "The dataset gives an English equivalent (\"Charity begins at home\"); a literal rendering is pending review.",
+   "seeAlso": []
+  },
+  {
+   "id": "anu-gbaa-ajo-oso",
+   "igbo": "Anụ gbaa ajọ ọsọ, a gbaa ya ajọ egbe.",
+   "en": "An animal that runs wickedly will be shot wickedly.",
+   "audio": "ia_648736daf80a2e7f0fbb611b-e492b912-2835-4465-b4ea-f46820e35ffa",
+   "theme": "character",
+   "meaning": "Extreme behaviour invites an equally strong response.",
+   "usage": "A warning to someone acting recklessly that the reply will match.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "mbe-na-mbe-gaa",
+   "igbo": "Mbe na mbe gaa ahịa, uru anaghị adị ya",
+   "en": "When two tortoises transact a business, both of them lose",
+   "audio": "iax_63d8101b5efbc1042717695c",
+   "theme": "character",
+   "meaning": "When two tricksters deal with each other, neither gains.",
+   "usage": "About two cunning people trying to outwit each other.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "oji-enyi-nwee-kwee",
+   "igbo": "Oji enyi nwee kwee ọya kedụzị anụ ọzọ ọ chọrọ ịmata",
+   "en": "After catching an elephant, which other animal do you want to catch?",
+   "audio": "iax_63d81197a7cd728757d5225a",
+   "theme": "character",
+   "meaning": "After the greatest success, be content.",
+   "usage": "Against greed, when someone who has done very well still wants more.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "okuko-nwa-ogbenye-bu",
+   "igbo": "Ọkụkọ nwa ogbenye bụ ehi ya",
+   "en": "A poor person's chicken is his cow",
+   "audio": "iax_653409060bf9f3404fbd02df-e11877ce-87c0-452f-963a-936139d8df9a",
+   "theme": "character",
+   "meaning": "Value is relative to what a person has. Respect what others hold dear, however small.",
+   "usage": "When someone belittles another's modest gift or possession.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "onye-kwuru-oto-emegharigi",
+   "igbo": "Onye kwụrụ ọtọ emegharịgị ahụ, ngwere arịgoro ya elu",
+   "en": "If one stands up without shaking his body, lizards will climb up his body.",
+   "audio": "iax_63d567c6895cd14ca6e05dd1",
+   "theme": "character",
+   "meaning": "If you never stir to defend yourself, others will take advantage.",
+   "usage": "Encouraging someone to stand up for themselves.",
+   "literalNote": null,
+   "seeAlso": [
+    {
+     "kind": "tale",
+     "id": "mbe-and-the-leopard",
+     "title": "Mbe and the leopard"
+    }
+   ]
+  },
+  {
+   "id": "ike-adighi-okwuru-gbaa",
+   "igbo": "Ike adịghị ọkwụrụ gbaa mgbọrọgwụ, ọ sị na àlà esika ike",
+   "en": "If the okro that grew roots isn't strong, it will be like the ground is too strong.",
+   "audio": "iax_63d812115efbc152011769fb",
+   "theme": "character",
+   "meaning": "The weak blame their circumstances.",
+   "usage": "When someone blames others for their own lack of effort.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "i-kpara-akwu-kpara",
+   "igbo": "I kpara akwụ kpara akwụ onye nwe akwụ eburukwa akwụ ya",
+   "en": "When you harvest palm fruits again and again, the owner of the palm fruits will carry his palm fruits.",
+   "audio": "iax_63d813a35efbc123bf176aa0",
+   "theme": "character",
+   "meaning": "Taking what isn't yours, again and again, ends when the owner comes.",
+   "usage": "A warning to someone who keeps helping themselves to what belongs to another.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "usakuusa-rie-ogwumagana-o",
+   "igbo": "Ụsakụụsa rie ogwumagana ọ kwụsị iri anụ.",
+   "en": "When the glutton eats a chameleon, he would stop eating meat.",
+   "audio": "iax_63d56559d5be567e313515f6",
+   "theme": "character",
+   "meaning": "Greed eventually teaches its own lesson.",
+   "usage": "About someone whose excess finally caught up with them.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "okuko-mmanya-na-egbu",
+   "igbo": "Ọkụkọ mmanya na egbu hụ égbé ara na agba, isi ajụọ ya oyi",
+   "en": "When a drunk fowl meets a crazy kite, he calms down",
+   "audio": "iax_63d7f388ddd11702e86f8525",
+   "theme": "character",
+   "meaning": "A troublemaker calms down on meeting someone wilder.",
+   "usage": "When a bully meets their match.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "osisi-kwu-n-uzo",
+   "igbo": "Osisi kwu n'ụzọ na-ebu apa mma.",
+   "en": "A tree by the roadside always have machete scars.",
+   "audio": "ia_64480f945508513662a433fa",
+   "theme": "character",
+   "meaning": "Whoever stands in a public place bears the marks of it.",
+   "usage": "Comforting someone in public life who is being criticised.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "okenye-anaghi-ano-n",
+   "igbo": "Okenye anaghị anọ n'ụlọ ewu amụọ n'ọgbụ.",
+   "en": "An elder will not be at home while a goat gives birth in its tedder.",
+   "audio": "ia_643f25ac6e2e0125bd0ad58c",
+   "theme": "generations",
+   "meaning": "An elder present is expected to step in; responsibility comes with age.",
+   "usage": "Reminding an elder, or anyone in charge, to act when something goes wrong on their watch.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "agadi-nwaanyi-anaghi-aka",
+   "igbo": "Agadi nwaanyi anaghị aka nka n'egwu o ma-agba",
+   "en": "An old woman does not get too old for a music she knows how to dance",
+   "audio": "iax_63d7f04bddd11751e36f83dd",
+   "theme": "generations",
+   "meaning": "You never grow too old for what you know well.",
+   "usage": "Praising an elder who still does something with skill.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "ogologo-abughi-na-nwam",
+   "igbo": "Ogologo abụghị na nwam etola",
+   "en": "Growing tall does not mean that my child has grown up",
+   "audio": "iax_63d80db8a33464e71b0f4d73",
+   "theme": "generations",
+   "meaning": "Size is not maturity.",
+   "usage": "To a young person who acts grown because they are tall.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "akwunye-anu-n-oku",
+   "igbo": "Akwụnye anụ n'ọkụ, nwata ejee ozi ezibeghị ya ezi",
+   "en": "When they place a piece of meat on the fire, a child goes on an errand he has not yet been sent",
+   "audio": "iax_63d7f349ddd117d57e6f8511",
+   "theme": "generations",
+   "meaning": "Eagerness appears when there is something to gain.",
+   "usage": "Gentle teasing of helpfulness that comes just as the food is ready.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "onye-a-na-abara",
+   "igbo": "Onye a na-abara mba bụ onye a hụrụ n'anya.",
+   "en": "One who is scolded is one who is loved.",
+   "audio": "ia_645e0b21aaf3f28a87e953cf",
+   "theme": "generations",
+   "meaning": "Correction is a sign of love.",
+   "usage": "To a child, or anyone, who feels they are scolded too often.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "nwata-na-eyighi-nne",
+   "igbo": "Nwata na-eyighị nne na nna ya, kedụ onye ọ ga-eyi?",
+   "en": "A child that does not look like his parents, who will he look like?",
+   "audio": "ia_64015d87ad367302e8425d17",
+   "theme": "generations",
+   "meaning": "Children take after their parents.",
+   "usage": "When a child's ways mirror their parents', for good or ill.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "okeokpa-kata-ahu-o",
+   "igbo": "Okeọkpa kata ahụ, ọ kwawa akwa.",
+   "en": "When the cock matures, it begins to crow.",
+   "audio": "ia_638296db28852b47ca245f79",
+   "theme": "generations",
+   "meaning": "When one comes of age, one's voice is heard.",
+   "usage": "Of a young person stepping into responsibility.",
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "ejighi-okwute-elele-isi",
+   "igbo": "Ejighi okwute elele isi kara aka",
+   "en": "They don't use stones to check for mature heads.",
+   "audio": "iax_63d980876e4cd51da1b66e22",
+   "theme": "generations",
+   "meaning": null,
+   "usage": null,
+   "literalNote": null,
+   "seeAlso": []
+  },
+  {
+   "id": "ihe-ana-ahughi-na",
+   "igbo": "Ihe ana ahụghị na afọ nne ewi ekwesịghị ka ahụ ya na nke nwa ya",
+   "en": "Whatever wasn't seen in the stomach of a mother hare should not be seen in that of the child.",
+   "audio": "iax_63d9816d7973ef0804e01767",
+   "theme": "generations",
+   "meaning": null,
+   "usage": null,
+   "literalNote": null,
+   "seeAlso": []
+  }
+ ],
+ "heldBack": 16
+}

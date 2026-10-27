@@ -1,0 +1,1068 @@
+{
+ "version": 1,
+ "credit": "Phrases and recordings: Nkọwa okwu (Igbo API), CC BY 4.0, used with permission",
+ "review": "pending-native-review",
+ "tipsReview": "pending-cultural-review",
+ "selection": {
+  "command": "bun scripts/phrasebook/build.ts",
+  "dataset": "sha256:174ec704deeedc80"
+ },
+ "conversations": [
+  {
+   "id": "partners-family",
+   "title": "Meeting your partner's family",
+   "setting": "Your first visit to your partner's parents. They welcome you, ask who you are and where you are from, and sit you down to eat.",
+   "roles": [
+    {
+     "id": "you",
+     "name": "You",
+     "note": "On your first visit"
+    },
+    {
+     "id": "mama",
+     "name": "Their mother",
+     "note": "Your partner's mother"
+    },
+    {
+     "id": "papa",
+     "name": "Their father",
+     "note": "Your partner's father"
+    }
+   ],
+   "learnerRole": "you",
+   "lines": [
+    {
+     "role": "mama",
+     "igbo": "Nnọọ, oche dịkwa.",
+     "en": "Welcome, there is a seat.",
+     "audio": "ia_6445092546d9854cc02c9ed1",
+     "provenance": "igbo-api",
+     "source": "ia.x.6445092546d9854cc02c9ed1",
+     "glossEdited": "Welcome, there is seat."
+    },
+    {
+     "role": "you",
+     "igbo": "Daalụ nke ukwuu.",
+     "en": "Thank you so much.",
+     "audio": "ia_641ab3b64a22b84f4a02cee9",
+     "provenance": "igbo-api",
+     "source": "ia.x.641ab3b64a22b84f4a02cee9"
+    },
+    {
+     "role": "papa",
+     "igbo": "Gịnị bụ aha gị?",
+     "en": "What is your name?",
+     "audio": "ia_647f71dcb19576554d45e063-86767e48-1c87-4f94-b36a-796c85a18a63",
+     "provenance": "igbo-api",
+     "source": "ia.x.647f71dcb19576554d45e063"
+    },
+    {
+     "role": "you",
+     "igbo": "Aha m bụ Chibụzọ.",
+     "en": "My name is Chibụzọ.",
+     "audio": "ia_63ec0c3e32fa4a45983fe3a1",
+     "provenance": "igbo-api",
+     "source": "ia.x.63ec0c3e32fa4a45983fe3a1"
+    },
+    {
+     "role": "papa",
+     "igbo": "Kedụ obodo i si?",
+     "en": "Which town are you from?",
+     "audio": "ia_643dc20beb047f930aa2d9af",
+     "provenance": "igbo-api",
+     "source": "ia.x.643dc20beb047f930aa2d9af"
+    },
+    {
+     "role": "you",
+     "igbo": "Obodo anyị eteghị aka.",
+     "en": "Our town is not far.",
+     "audio": "ia_643dc20beb047f51ada2d9b1",
+     "provenance": "igbo-api",
+     "source": "ia.x.643dc20beb047f51ada2d9b1"
+    },
+    {
+     "role": "mama",
+     "igbo": "Ị chọrọ ịṅụ mmiri?",
+     "en": "Do you want to drink water?",
+     "audio": "ia_6437a186dd962e2275e03e15",
+     "provenance": "igbo-api",
+     "source": "ia.x.6437a186dd962e2275e03e15"
+    },
+    {
+     "role": "you",
+     "igbo": "Ọ dị mma.",
+     "en": "That is good.",
+     "audio": "ia_6401414f66a8830e51d1b699",
+     "provenance": "igbo-api",
+     "source": "ia.x.6401414f66a8830e51d1b699",
+     "glossEdited": "It is good."
+    },
+    {
+     "role": "mama",
+     "igbo": "Bịa ka anyị rikọọ nri a ọnụ.",
+     "en": "Come, let us eat this food together.",
+     "audio": "ia_646c7589bd611184fe644816",
+     "provenance": "igbo-api",
+     "source": "ia.x.646c7589bd611184fe644816",
+     "glossEdited": "Come let us eat this food together."
+    },
+    {
+     "role": "you",
+     "igbo": "Nri a na-atọ ụtọ.",
+     "en": "This food is delicious.",
+     "audio": "ia_643c21523563df70c26c0210",
+     "provenance": "igbo-api",
+     "source": "ia.x.643c21523563df70c26c0210"
+    },
+    {
+     "role": "papa",
+     "igbo": "Ọ ga-adịrị gị mma, isee!",
+     "en": "It shall be well with you, amen!",
+     "audio": "ia_63a0e842477ac0bc39a5479c",
+     "provenance": "igbo-api",
+     "source": "ia.x.63a0e842477ac0bc39a5479c"
+    }
+   ],
+   "tips": [
+    {
+     "title": "Greet the elders first",
+     "body": "Greet your partner's parents before anyone else, and the eldest person in the room first. Standing up when an elder comes in is a quiet sign of respect."
+    },
+    {
+     "title": "How to address your in-laws",
+     "body": "Don't call your partner's parents by their first names. Many families use Mama and Papa, or a title the family already uses. Ask your partner beforehand what their parents like to be called."
+    },
+    {
+     "title": "Accept what you are offered",
+     "body": "When you are offered a drink or food, accept it with thanks. Refusing everything can seem cold; taking a little is enough."
+    }
+   ]
+  },
+  {
+   "id": "calling-grandma",
+   "title": "Calling grandma",
+   "setting": "A phone call home to your grandmother: say who it is, ask after her, and tell her when you are coming.",
+   "roles": [
+    {
+     "id": "you",
+     "name": "You",
+     "note": "Calling from abroad"
+    },
+    {
+     "id": "grandma",
+     "name": "Grandma",
+     "note": "Your grandmother, at home"
+    }
+   ],
+   "learnerRole": "you",
+   "lines": [
+    {
+     "role": "grandma",
+     "igbo": "Onye na-akpọ m?",
+     "en": "Who is calling me?",
+     "audio": "ia_6447f4bcdb656b6608d4614e",
+     "provenance": "igbo-api",
+     "source": "ia.x.6447f4bcdb656b6608d4614e"
+    },
+    {
+     "role": "you",
+     "igbo": "Ọ bụ m, nwannwa gị.",
+     "en": "It's me, your grandchild.",
+     "audio": null,
+     "provenance": "draft-ai",
+     "source": "draft-ai:calling-grandma:2",
+     "reviewNote": "AI draft. No dataset line says this. A native speaker should write the natural way a grandchild announces themselves on the phone (word for grandchild: the dataset has nwannwa)."
+    },
+    {
+     "role": "grandma",
+     "igbo": "Kedụ ka i mere?",
+     "en": "How are you doing?",
+     "audio": "ia_639141144b8efbbf2c6299d6",
+     "provenance": "igbo-api",
+     "source": "ia.x.639141144b8efbbf2c6299d6",
+     "glossEdited": "How are you (doing)?"
+    },
+    {
+     "role": "you",
+     "igbo": "Adị m mma.",
+     "en": "I am well.",
+     "audio": "ia_63912a3781b9a555fb4c3b5c",
+     "provenance": "igbo-api",
+     "source": "ia.x.63912a3781b9a555fb4c3b5c"
+    },
+    {
+     "role": "you",
+     "igbo": "I jikwa ahụ?",
+     "en": "Are you well?",
+     "audio": "ia_64441a7b8f6156fde8343af4",
+     "provenance": "igbo-api",
+     "source": "ia.x.64441a7b8f6156fde8343af4"
+    },
+    {
+     "role": "grandma",
+     "igbo": "Otito dịrị Chineke!",
+     "en": "Praise be to God!",
+     "audio": "ia_63d016d4a15f4740b7589314",
+     "provenance": "igbo-api",
+     "source": "ia.x.63d016d4a15f4740b7589314"
+    },
+    {
+     "role": "grandma",
+     "igbo": "Kedụ mgbe ị ga-alọta?",
+     "en": "When will you come back?",
+     "audio": "ia_648ca35de5af7348a5a48eb8-20688d5e-4055-45a1-807d-7a77fff59671",
+     "provenance": "igbo-api",
+     "source": "ia.x.648ca35de5af7348a5a48eb8"
+    },
+    {
+     "role": "you",
+     "igbo": "Anyị ga-ala ụlọ n'ekeresimeesi a.",
+     "en": "We will go home this Christmas.",
+     "audio": "ia_639737519c6e44b227dee97f",
+     "provenance": "igbo-api",
+     "source": "ia.x.639737519c6e44b227dee97f"
+    },
+    {
+     "role": "grandma",
+     "igbo": "Asụsụ anyị na-asụ bụ Igbo.",
+     "en": "The language we speak is Igbo.",
+     "audio": "ia_6443f3d159234fd88ffd55c7",
+     "provenance": "igbo-api",
+     "source": "ia.x.6443f3d159234fd88ffd55c7"
+    },
+    {
+     "role": "you",
+     "igbo": "Enwere m okwukwe na asụsụ Igbo agaghị anwụ.",
+     "en": "I have faith that the Igbo language will not die.",
+     "audio": "ia_6475c69dad2b36c2fabac8c6-69d9b7cf-3521-4dc0-b381-3ed88bf34a50",
+     "provenance": "igbo-api",
+     "source": "ia.x.6475c69dad2b36c2fabac8c6"
+    },
+    {
+     "role": "grandma",
+     "igbo": "Ka emesịa.",
+     "en": "Goodbye.",
+     "audio": "ia_6379697a2b16a8818fb3564c",
+     "provenance": "igbo-api",
+     "source": "ia.x.6379697a2b16a8818fb3564c",
+     "glossEdited": "Good bye."
+    },
+    {
+     "role": "you",
+     "igbo": "Ngwanụ lezie anya.",
+     "en": "Okay, goodbye.",
+     "audio": "ia_646f8fb4890448fafef07e40-3a68ee8b-57fe-43ce-8d62-1a18072dcef3",
+     "provenance": "igbo-api",
+     "source": "ia.x.646f8fb4890448fafef07e40",
+     "glossEdited": "Okay goodbye."
+    }
+   ],
+   "tips": [
+    {
+     "title": "Ask after her first",
+     "body": "Open with a greeting and ask how she is before you share your own news. Elders notice the order."
+    },
+    {
+     "title": "A few lines go a long way",
+     "body": "A short call often, with a few lines of Igbo, is usually welcomed more warmly than a long call once a year. Mistakes are fine: she hears that you are trying."
+    }
+   ]
+  },
+  {
+   "id": "market-bargain",
+   "title": "At the market",
+   "setting": "Buying cloth from a trader. Ask the price, say it's too much, and bargain with good humour.",
+   "roles": [
+    {
+     "id": "you",
+     "name": "You",
+     "note": "Buying cloth"
+    },
+    {
+     "id": "trader",
+     "name": "The trader",
+     "note": "A cloth seller"
+    }
+   ],
+   "learnerRole": "you",
+   "lines": [
+    {
+     "role": "trader",
+     "igbo": "Kedụ ihe ị chọ?",
+     "en": "What do you want?",
+     "audio": "ia_639141144b8efb0fdc6299d4",
+     "provenance": "igbo-api",
+     "source": "ia.x.639141144b8efb0fdc6299d4"
+    },
+    {
+     "role": "you",
+     "igbo": "Naịra ole bụ ihe a?",
+     "en": "How much naira is this?",
+     "audio": "ia_648b0581bc671dcf45de462c-ea038a21-50e6-4a0f-8beb-28a5ccb9bf37",
+     "provenance": "igbo-api",
+     "source": "ia.x.648b0581bc671dcf45de462c"
+    },
+    {
+     "role": "trader",
+     "igbo": "Nye m narị naịra.",
+     "en": "Give me a hundred naira.",
+     "audio": "ia_648b0581bc671d993dde4634-e3e1dd73-0185-474d-b781-5d07ddb50cba",
+     "provenance": "igbo-api",
+     "source": "ia.x.648b0581bc671d993dde4634",
+     "glossEdited": "Give me hundred naira."
+    },
+    {
+     "role": "you",
+     "igbo": "Akwa ahụ dị ọnụ.",
+     "en": "That cloth is expensive.",
+     "audio": "ia_644031ed9a109a660cb19831",
+     "provenance": "igbo-api",
+     "source": "ia.x.644031ed9a109a660cb19831"
+    },
+    {
+     "role": "trader",
+     "igbo": "Kwụsị oke ịpara gị a.",
+     "en": "Stop this your too much haggling.",
+     "audio": "ia_648984ab17c9531b540dda10-2180a2a2-9247-4190-9b0b-d02973dde617",
+     "provenance": "igbo-api",
+     "source": "ia.x.648984ab17c9531b540dda10"
+    },
+    {
+     "role": "you",
+     "igbo": "Bidaa ya nke ọma.",
+     "en": "Reduce it very well.",
+     "audio": "ia_646e934705611a84d5749a0b-7899bd9a-c163-452f-be7a-1b436a7c0d1e",
+     "provenance": "igbo-api",
+     "source": "ia.x.646e934705611a84d5749a0b"
+    },
+    {
+     "role": "trader",
+     "igbo": "Echeghị m na ọnụahịa ga-ada n'ọnwa a.",
+     "en": "I don't think the price will come down this month.",
+     "audio": "ia_641e0e63f0833e335281ec9f",
+     "provenance": "igbo-api",
+     "source": "ia.x.641e0e63f0833e335281ec9f"
+    },
+    {
+     "role": "you",
+     "igbo": "Agaghị m azụ akwa ahụ n'ọnụahịa ahụ.",
+     "en": "I will not buy that cloth at that price.",
+     "audio": "ia_641e1089f0833ebefa81ed30",
+     "provenance": "igbo-api",
+     "source": "ia.x.641e1089f0833ebefa81ed30",
+     "glossEdited": "We will not buy that cloth at that price."
+    },
+    {
+     "role": "trader",
+     "igbo": "Ọ dị mma.",
+     "en": "All right.",
+     "audio": "ia_6401414f66a8830e51d1b699",
+     "provenance": "igbo-api",
+     "source": "ia.x.6401414f66a8830e51d1b699",
+     "glossEdited": "It is good."
+    },
+    {
+     "role": "you",
+     "igbo": "Daalụ nke ukwuu.",
+     "en": "Thank you so much.",
+     "audio": "ia_64429b6298e7260272380174",
+     "provenance": "igbo-api",
+     "source": "ia.x.64429b6298e7260272380174"
+    },
+    {
+     "role": "trader",
+     "igbo": "Chukwu gozie onyaahịa m.",
+     "en": "God bless my customer.",
+     "audio": "ia_644140bf81be6c6c617eadb7",
+     "provenance": "igbo-api",
+     "source": "ia.x.644140bf81be6c6c617eadb7"
+    }
+   ],
+   "tips": [
+    {
+     "title": "Bargaining is expected",
+     "body": "In open markets the first price usually leaves room to bargain. Keep it light and friendly; walking away politely is part of the game."
+    },
+    {
+     "title": "Greet before you price",
+     "body": "Greet the trader before you ask the price. It sets a warm tone, and it is simply good manners."
+    },
+    {
+     "title": "Become a regular",
+     "body": "Traders often look after their regular customers with a better price or a little extra."
+    }
+   ]
+  },
+  {
+   "id": "christmas-home",
+   "title": "Home for Christmas",
+   "setting": "You arrive in your hometown for Christmas. Your uncle welcomes you and your cousin pulls you in to eat.",
+   "roles": [
+    {
+     "id": "you",
+     "name": "You",
+     "note": "Home for the holidays"
+    },
+    {
+     "id": "uncle",
+     "name": "Your uncle",
+     "note": "An elder of the family"
+    },
+    {
+     "id": "cousin",
+     "name": "Your cousin",
+     "note": "Already celebrating"
+    }
+   ],
+   "learnerRole": "you",
+   "lines": [
+    {
+     "role": "uncle",
+     "igbo": "Ekele dịrị Chukwu na ị lọtara n'udo! Nnọọ.",
+     "en": "Thank God you returned peacefully, welcome.",
+     "audio": "ia_64445d9fe30e1b8e04450a56",
+     "provenance": "igbo-api",
+     "source": "ia.x.64445d9fe30e1b8e04450a56"
+    },
+    {
+     "role": "you",
+     "igbo": "Daalụ nke ukwuu.",
+     "en": "Thank you so much.",
+     "audio": "ia_6450c8c963a561467a7ed4d7",
+     "provenance": "igbo-api",
+     "source": "ia.x.6450c8c963a561467a7ed4d7"
+    },
+    {
+     "role": "uncle",
+     "igbo": "I jikwa ahụ?",
+     "en": "Are you well?",
+     "audio": "ia_64441a7b8f6156fde8343af4",
+     "provenance": "igbo-api",
+     "source": "ia.x.64441a7b8f6156fde8343af4"
+    },
+    {
+     "role": "you",
+     "igbo": "Adị m mma.",
+     "en": "I am well.",
+     "audio": "ia_63912a3781b9a555fb4c3b5c",
+     "provenance": "igbo-api",
+     "source": "ia.x.63912a3781b9a555fb4c3b5c"
+    },
+    {
+     "role": "cousin",
+     "igbo": "Anyị na-agba Ekeresimeesi.",
+     "en": "We are celebrating Christmas.",
+     "audio": "ia_635d8ca14026bd86b7c72317",
+     "provenance": "igbo-api",
+     "source": "ia.x.635d8ca14026bd86b7c72317"
+    },
+    {
+     "role": "cousin",
+     "igbo": "Bịa ka anyị rikọọ nri a ọnụ.",
+     "en": "Come, let us eat this food together.",
+     "audio": "ia_646c7589bd611184fe644816",
+     "provenance": "igbo-api",
+     "source": "ia.x.646c7589bd611184fe644816",
+     "glossEdited": "Come let us eat this food together."
+    },
+    {
+     "role": "you",
+     "igbo": "Akpụ na ofe onugbu na-atọ ụtọ.",
+     "en": "Cassava fufu and bitterleaf soup are delicious.",
+     "audio": "ia_643e966337351ad34556a438",
+     "provenance": "igbo-api",
+     "source": "ia.x.643e966337351ad34556a438"
+    },
+    {
+     "role": "uncle",
+     "igbo": "Afọ a ga-ewetara anyị ihe ọma.",
+     "en": "This year will bring good things for us.",
+     "audio": "ia_641c982bbdeeeaca0f1b882a",
+     "provenance": "igbo-api",
+     "source": "ia.x.641c982bbdeeeaca0f1b882a",
+     "glossEdited": "This year will  bring good things for us."
+    },
+    {
+     "role": "uncle",
+     "igbo": "Unu ga-adị ogologo ndụ, isee!",
+     "en": "You will live long, amen!",
+     "audio": "ia_63a0e842477ac0730ca5479b",
+     "provenance": "igbo-api",
+     "source": "ia.x.63a0e842477ac0730ca5479b"
+    }
+   ],
+   "tips": [
+    {
+     "title": "December is homecoming",
+     "body": "Many families travel home in December. Expect to greet a lot of relatives, and greet the eldest first."
+    },
+    {
+     "title": "Visit the elders",
+     "body": "Soon after you arrive, it is customary to visit senior relatives and elders nearby. A small gift is appreciated."
+    }
+   ]
+  },
+  {
+   "id": "wedding",
+   "title": "At a traditional wedding",
+   "setting": "Your aunt takes you to Ada's _igba nkwụ_, her traditional wedding. The bride's father welcomes the guests.",
+   "roles": [
+    {
+     "id": "you",
+     "name": "You",
+     "note": "A guest"
+    },
+    {
+     "id": "aunt",
+     "name": "Your aunt",
+     "note": "Taking you along"
+    },
+    {
+     "id": "host",
+     "name": "The bride's father",
+     "note": "Welcoming the guests"
+    }
+   ],
+   "learnerRole": "you",
+   "lines": [
+    {
+     "role": "aunt",
+     "igbo": "Anyị ga-eje ịgba nkwụ Ada.",
+     "en": "We are going to Ada's wine carrying, her traditional wedding.",
+     "audio": "ia_6319fc58eee52e18c93412e2",
+     "provenance": "igbo-api",
+     "source": "ia.x.6319fc58eee52e18c93412e2",
+     "glossEdited": "We shall attend Ada's wine carrying or traditional marriage."
+    },
+    {
+     "role": "you",
+     "igbo": "Kedụ mgbe mmemme a ga-ebido?",
+     "en": "When will this ceremony start?",
+     "audio": "ia_6474aab94be2b481d49a44d6-8271653e-41c0-4160-b725-f31efde2e684",
+     "provenance": "igbo-api",
+     "source": "ia.x.6474aab94be2b481d49a44d6"
+    },
+    {
+     "role": "aunt",
+     "igbo": "Anyị ga-amalite n'elekere ise.",
+     "en": "We will start at five o'clock.",
+     "audio": "ia_647f365d7d7d96ea2b38a1fa-911552f7-d010-41ba-ae25-7f493a0a7e29",
+     "provenance": "igbo-api",
+     "source": "ia.x.647f365d7d7d96ea2b38a1fa",
+     "glossEdited": "We will start at 5 O'clock."
+    },
+    {
+     "role": "you",
+     "igbo": "Anyị ga-aga ikpo mmemme ahụ ọkụ.",
+     "en": "We will go and make the ceremony lively.",
+     "audio": "ia_640b7bb8b36b7a2a22c98734",
+     "provenance": "igbo-api",
+     "source": "ia.x.640b7bb8b36b7a2a22c98734"
+    },
+    {
+     "role": "host",
+     "igbo": "Nnọọnụ!",
+     "en": "Welcome all!",
+     "audio": "ia_646e45882e21386eec286b38-9bd7cf6a-ef72-497a-89fb-62df8c315e9c",
+     "provenance": "igbo-api",
+     "source": "ia.x.646e45882e21386eec286b38"
+    },
+    {
+     "role": "you",
+     "igbo": "Daalụnụ!",
+     "en": "Greetings to you all!",
+     "audio": "ia_646e45882e2138d062286b2e-3f3abf7a-c08a-47df-aa09-3ab4d114e127",
+     "provenance": "igbo-api",
+     "source": "ia.x.646e45882e2138d062286b2e"
+    },
+    {
+     "role": "you",
+     "igbo": "Nkwụenu anyị ṅụrụ tọrọ ụtọ.",
+     "en": "The palm wine we drank was sweet.",
+     "audio": "ia_64825914be22d13f74743b9e-19bfaa41-b76c-489c-913b-60cd198828af",
+     "provenance": "igbo-api",
+     "source": "ia.x.64825914be22d13f74743b9e"
+    },
+    {
+     "role": "host",
+     "igbo": "Biko, gbaa egwu.",
+     "en": "Please, dance.",
+     "audio": "ia_644beefaaed49425030fa000",
+     "provenance": "igbo-api",
+     "source": "ia.x.644beefaaed49425030fa000"
+    },
+    {
+     "role": "you",
+     "igbo": "Ị gbalịala!",
+     "en": "Congratulations!",
+     "audio": "ia_64079a84b7d6624a614683de",
+     "provenance": "igbo-api",
+     "source": "ia.x.64079a84b7d6624a614683de"
+    },
+    {
+     "role": "host",
+     "igbo": "Unu ga-adị ogologo ndụ, isee!",
+     "en": "You will live long, amen!",
+     "audio": "ia_63a0e842477ac0730ca5479b",
+     "provenance": "igbo-api",
+     "source": "ia.x.63a0e842477ac0730ca5479b"
+    }
+   ],
+   "tips": [
+    {
+     "title": "What _igba nkwụ_ is",
+     "body": "_Igba nkwụ_ (wine carrying) is the traditional marriage ceremony, usually held at the bride's family home. Customs differ from town to town."
+    },
+    {
+     "title": "The cup of palm wine",
+     "body": "A well-loved moment: the bride carries a cup of palm wine through the guests to find her groom, and offers it to him."
+    },
+    {
+     "title": "Dancing and spraying",
+     "body": "Guests dance and often spray money on the couple. If you are unsure, follow what the people around you do."
+    }
+   ]
+  },
+  {
+   "id": "church",
+   "title": "At church",
+   "setting": "The sign of peace and a chat after the service, with an elder who has missed you.",
+   "roles": [
+    {
+     "id": "you",
+     "name": "You",
+     "note": "Back at church"
+    },
+    {
+     "id": "elder",
+     "name": "A church elder",
+     "note": "Who has missed you"
+    },
+    {
+     "id": "priest",
+     "name": "The priest",
+     "note": "Leading the service"
+    }
+   ],
+   "learnerRole": "you",
+   "lines": [
+    {
+     "role": "priest",
+     "igbo": "Nyerịta nụ onwe unu ekele nke udo.",
+     "en": "Offer one another greetings of peace.",
+     "audio": "ia_6481e3a8b28aaa2b7d792ec8-2305b1a3-f108-4cf0-b277-5723f5b44cbb",
+     "provenance": "igbo-api",
+     "source": "ia.x.6481e3a8b28aaa2b7d792ec8"
+    },
+    {
+     "role": "you",
+     "igbo": "Ka Chineke gọzie ụbọchị taa.",
+     "en": "May God bless this day.",
+     "audio": "ia_643ac2f6de287c0c1c079d08",
+     "provenance": "igbo-api",
+     "source": "ia.x.643ac2f6de287c0c1c079d08"
+    },
+    {
+     "role": "elder",
+     "igbo": "Ọ ga-adịrị gị mma, isee!",
+     "en": "It shall be well with you, amen!",
+     "audio": "ia_63a0e842477ac0bc39a5479c",
+     "provenance": "igbo-api",
+     "source": "ia.x.63a0e842477ac0bc39a5479c"
+    },
+    {
+     "role": "elder",
+     "igbo": "Gịnị na-egbochi gị ịga ụka?",
+     "en": "What stops you from going to church?",
+     "audio": "ia_644ef25e3ad3cc26eee9f271",
+     "provenance": "igbo-api",
+     "source": "ia.x.644ef25e3ad3cc26eee9f271"
+    },
+    {
+     "role": "you",
+     "igbo": "Ndo! Agaghị m eme ya ọzọ.",
+     "en": "Sorry! I won't do it again.",
+     "audio": "ia_63b80dddd7143662465080be",
+     "provenance": "igbo-api",
+     "source": "ia.x.63b80dddd7143662465080be"
+    },
+    {
+     "role": "elder",
+     "igbo": "Ụka anyị na-ebị nkenke.",
+     "en": "Our service is short.",
+     "audio": "ia_6448afebfa88cfa6398f783f",
+     "provenance": "igbo-api",
+     "source": "ia.x.6448afebfa88cfa6398f783f"
+    },
+    {
+     "role": "you",
+     "igbo": "Ọ na-amasị m ịbụ abụ otito.",
+     "en": "I like singing praise songs.",
+     "audio": "ia_647251a069dd5efed8cdb45a-9d19995a-9613-4afd-85e2-fd9446155fa5",
+     "provenance": "igbo-api",
+     "source": "ia.x.647251a069dd5efed8cdb45a"
+    },
+    {
+     "role": "elder",
+     "igbo": "Anyị ga-ekwe ukwe ahụ n'ụka echi.",
+     "en": "We will sing that song in service tomorrow.",
+     "audio": "ia_63bdc1aeb2f3de2047b71dee",
+     "provenance": "igbo-api",
+     "source": "ia.x.63bdc1aeb2f3de2047b71dee"
+    },
+    {
+     "role": "priest",
+     "igbo": "Ka Chukwu nye anyị akonauche.",
+     "en": "May God give us wisdom.",
+     "audio": "ia_64746c894b40957d21190053-98a320f4-6f67-467c-9da7-4b25c70c1705",
+     "provenance": "igbo-api",
+     "source": "ia.x.64746c894b40957d21190053"
+    }
+   ],
+   "tips": [
+    {
+     "title": "Greet before you leave",
+     "body": "After the service, greet the priest or pastor and the elders before you go."
+    },
+    {
+     "title": "Answering a blessing",
+     "body": "When someone blesses you, you may hear the answer _isee_, said like amen. Listen for how people around you answer."
+    }
+   ]
+  },
+  {
+   "id": "naming",
+   "title": "A naming ceremony",
+   "setting": "You visit a new mother and her baby. Her own mother is staying to help.",
+   "roles": [
+    {
+     "id": "you",
+     "name": "You",
+     "note": "A visitor"
+    },
+    {
+     "id": "mother",
+     "name": "The new mother",
+     "note": "Proud and tired"
+    },
+    {
+     "id": "grandma",
+     "name": "Her mother",
+     "note": "Here to help with the baby"
+    }
+   ],
+   "learnerRole": "you",
+   "lines": [
+    {
+     "role": "you",
+     "igbo": "Ị gbalịala!",
+     "en": "Congratulations!",
+     "audio": "ia_64079a84b7d6624a614683de",
+     "provenance": "igbo-api",
+     "source": "ia.x.64079a84b7d6624a614683de"
+    },
+    {
+     "role": "mother",
+     "igbo": "Daalụ nke ukwuu.",
+     "en": "Thank you so much.",
+     "audio": "ia_641ab3b64a22b84f4a02cee9",
+     "provenance": "igbo-api",
+     "source": "ia.x.641ab3b64a22b84f4a02cee9"
+    },
+    {
+     "role": "you",
+     "igbo": "Taata gị kwanụ?",
+     "en": "How about your baby?",
+     "audio": "ia_645058dfddcb99459feb5e0a",
+     "provenance": "igbo-api",
+     "source": "ia.x.645058dfddcb99459feb5e0a"
+    },
+    {
+     "role": "grandma",
+     "igbo": "Nwa ọhụrụ ahụ wetara anyị aṅụrị.",
+     "en": "The baby brought happiness to us.",
+     "audio": "ia_6443eb5c59234f51e1fd48d2",
+     "provenance": "igbo-api",
+     "source": "ia.x.6443eb5c59234f51e1fd48d2"
+    },
+    {
+     "role": "you",
+     "igbo": "Onye gụrụ nnwa a aha?",
+     "en": "Who named this child?",
+     "audio": "ia_644142aa81be6c6b3d7eb041",
+     "provenance": "igbo-api",
+     "source": "ia.x.644142aa81be6c6b3d7eb041"
+    },
+    {
+     "role": "mother",
+     "igbo": "Ọ bara nwa ya nwoke Chukwuma.",
+     "en": "He named his son Chukwuma.",
+     "audio": "ia_646214b20a59b896b270f1d3",
+     "provenance": "igbo-api",
+     "source": "ia.x.646214b20a59b896b270f1d3"
+    },
+    {
+     "role": "you",
+     "igbo": "Achọrọ m iku nwa taa",
+     "en": "I want to carry the baby today.",
+     "audio": "ia_648b6f507a514282f3ec9d82-26271828-2295-46c9-8f4f-f4647de78a7b",
+     "provenance": "igbo-api",
+     "source": "ia.x.648b6f507a514282f3ec9d82",
+     "glossEdited": "I want to carry a child today"
+    },
+    {
+     "role": "grandma",
+     "igbo": "Kpachara anya gị, nwa ga-adanarị gị",
+     "en": "Be careful, the baby will fall from you.",
+     "audio": "ia_644631d833fe0607896ab66b",
+     "provenance": "igbo-api",
+     "source": "ia.x.644631d833fe0607896ab66b",
+     "glossEdited": "Be careful, this baby will fall off"
+    },
+    {
+     "role": "grandma",
+     "igbo": "Unu ga-adị ogologo ndụ, isee!",
+     "en": "You will live long, amen!",
+     "audio": "ia_63a0e842477ac0730ca5479b",
+     "provenance": "igbo-api",
+     "source": "ia.x.63a0e842477ac0730ca5479b"
+    }
+   ],
+   "tips": [
+    {
+     "title": "Ask what the name means",
+     "body": "Igbo names usually carry a meaning: a prayer, a thanksgiving or a message. Parents are often glad to tell you why they chose it."
+    },
+    {
+     "title": "_Ọmụgwọ_",
+     "body": "After a birth, the new mother's mother often comes to stay and care for mother and baby. This time is called _ọmụgwọ_."
+    },
+    {
+     "title": "Bring a little something",
+     "body": "A small gift for the baby or the mother is common. The timing of the naming itself varies by family and community."
+    }
+   ]
+  },
+  {
+   "id": "directions",
+   "title": "Asking for directions",
+   "setting": "You have lost your way on the road to Nnewi and stop a passer-by.",
+   "roles": [
+    {
+     "id": "you",
+     "name": "You",
+     "note": "A little lost"
+    },
+    {
+     "id": "passerby",
+     "name": "A passer-by",
+     "note": "Happy to help"
+    }
+   ],
+   "learnerRole": "you",
+   "lines": [
+    {
+     "role": "you",
+     "igbo": "Biko, nye m ohere.",
+     "en": "Please, excuse me.",
+     "audio": "ia_6484c4f0044c557b60d31378-219ae852-5348-4e22-b700-fcf006c4fe6f",
+     "provenance": "igbo-api",
+     "source": "ia.x.6484c4f0044c557b60d31378"
+    },
+    {
+     "role": "passerby",
+     "igbo": "Kedụ ihe ị chọ?",
+     "en": "What do you want?",
+     "audio": "ia_639141144b8efb0fdc6299d4",
+     "provenance": "igbo-api",
+     "source": "ia.x.639141144b8efb0fdc6299d4"
+    },
+    {
+     "role": "you",
+     "igbo": "A gahiere m ụzọ mgbe m na-abịa.",
+     "en": "I missed my way when I was coming.",
+     "audio": "ia_64747f83b72e61ee97a8c6ee-a41d095a-479e-473c-accd-d9d89f1e07b6",
+     "provenance": "igbo-api",
+     "source": "ia.x.64747f83b72e61ee97a8c6ee"
+    },
+    {
+     "role": "passerby",
+     "igbo": "Ebee ka ị na-eje?",
+     "en": "Where are you going?",
+     "audio": "ia_643e22e8ca7d4bc497f4c514",
+     "provenance": "igbo-api",
+     "source": "ia.x.643e22e8ca7d4bc497f4c514"
+    },
+    {
+     "role": "you",
+     "igbo": "Ana m eje Nneewi.",
+     "en": "I am going to Nnewi.",
+     "audio": null,
+     "provenance": "draft-ai",
+     "source": "draft-ai:directions:5",
+     "reviewNote": "AI draft. No dataset line says this. A native speaker should write how to say where you are going (the passer-by's question uses na-eje; the next line spells the town Nneewi)."
+    },
+    {
+     "role": "passerby",
+     "igbo": "Ihe a bụ ụzọ e si eje Nneewi",
+     "en": "This is the way to Nnewi.",
+     "audio": "ia_63913f8d4b8efb819c629711",
+     "provenance": "igbo-api",
+     "source": "ia.x.63913f8d4b8efb819c629711",
+     "glossEdited": "This is the way to Nneewi."
+    },
+    {
+     "role": "passerby",
+     "igbo": "Jiri ụkwụ gaa, ebe ọ dị nso.",
+     "en": "Go by foot since it is near.",
+     "audio": "ia_64896febacacfb6d7aa719e4-8d518ce4-c577-4416-8999-43197b258625",
+     "provenance": "igbo-api",
+     "source": "ia.x.64896febacacfb6d7aa719e4"
+    },
+    {
+     "role": "you",
+     "igbo": "Daalụ maka ozi ahụ.",
+     "en": "Thank you for the information.",
+     "audio": "ia_641ada80f9b47e74293e4419",
+     "provenance": "igbo-api",
+     "source": "ia.x.641ada80f9b47e74293e4419"
+    },
+    {
+     "role": "passerby",
+     "igbo": "Ije ọma!",
+     "en": "Good journey!",
+     "audio": "ia_643dbda24f7a1ef191c3a521",
+     "provenance": "igbo-api",
+     "source": "ia.x.643dbda24f7a1ef191c3a521"
+    }
+   ],
+   "tips": [
+    {
+     "title": "Greet before you ask",
+     "body": "Start with a greeting or an excuse me before you ask the way. Rushing straight to the question can seem rude."
+    },
+    {
+     "title": "Landmarks, not street names",
+     "body": "Directions are often given by landmarks such as a church, a junction or a market, rather than by street names."
+    }
+   ]
+  },
+  {
+   "id": "welcoming-guests",
+   "title": "Welcoming guests",
+   "setting": "A family friend arrives at your door. Welcome them in, offer kola and food, and don't take the first no.",
+   "roles": [
+    {
+     "id": "you",
+     "name": "You",
+     "note": "The host"
+    },
+    {
+     "id": "guest",
+     "name": "Your guest",
+     "note": "A family friend"
+    }
+   ],
+   "learnerRole": "you",
+   "lines": [
+    {
+     "role": "guest",
+     "igbo": "Ị ga-agbaghe ya ka m bata?",
+     "en": "Will you unlock it for me to come in?",
+     "audio": "ia_647a001102523031122c0e86-729686c5-b92f-43b4-9c1a-484c775a473c",
+     "provenance": "igbo-api",
+     "source": "ia.x.647a001102523031122c0e86"
+    },
+    {
+     "role": "you",
+     "igbo": "Bata n'ime ụlọ! Nnọọ!",
+     "en": "Come into the house! Welcome!",
+     "audio": "ia_64445d9fe30e1b3ecf450a52",
+     "provenance": "igbo-api",
+     "source": "ia.x.64445d9fe30e1b3ecf450a52"
+    },
+    {
+     "role": "guest",
+     "igbo": "Daalụ nke ukwuu.",
+     "en": "Thank you so much.",
+     "audio": "ia_641ab3b64a22b84f4a02cee9",
+     "provenance": "igbo-api",
+     "source": "ia.x.641ab3b64a22b84f4a02cee9"
+    },
+    {
+     "role": "you",
+     "igbo": "Kedụ ka i mere?",
+     "en": "How are you doing?",
+     "audio": "ia_639141144b8efbbf2c6299d6",
+     "provenance": "igbo-api",
+     "source": "ia.x.639141144b8efbbf2c6299d6",
+     "glossEdited": "How are you (doing)?"
+    },
+    {
+     "role": "guest",
+     "igbo": "Adị m mma.",
+     "en": "I am well.",
+     "audio": "ia_63912a3781b9a555fb4c3b5c",
+     "provenance": "igbo-api",
+     "source": "ia.x.63912a3781b9a555fb4c3b5c"
+    },
+    {
+     "role": "you",
+     "igbo": "Biko, were oche ka m bute ọjị",
+     "en": "Please have a seat while I get kola.",
+     "audio": "ia_644785206c37884e4768dd1e",
+     "provenance": "igbo-api",
+     "source": "ia.x.644785206c37884e4768dd1e",
+     "glossEdited": "Please, have seat while I get kola"
+    },
+    {
+     "role": "you",
+     "igbo": "Bịa ka anyị rikọọ nri a ọnụ.",
+     "en": "Come, let us eat this food together.",
+     "audio": "ia_646c7589bd611184fe644816",
+     "provenance": "igbo-api",
+     "source": "ia.x.646c7589bd611184fe644816",
+     "glossEdited": "Come let us eat this food together."
+    },
+    {
+     "role": "guest",
+     "igbo": "Mba, agaghị m eri nri ugbu a.",
+     "en": "No, I will not eat now.",
+     "audio": "ia_6461d7780cbc7a1d6c4caa38",
+     "provenance": "igbo-api",
+     "source": "ia.x.6461d7780cbc7a1d6c4caa38"
+    },
+    {
+     "role": "you",
+     "igbo": "Biko ritụ nri tupu ị pụọ.",
+     "en": "Please eat this food a bit before you leave.",
+     "audio": "ia_64777dc94c82e8a778c0cf8e-fbde2b3c-5a65-456b-8463-7a5203e865dd",
+     "provenance": "igbo-api",
+     "source": "ia.x.64777dc94c82e8a778c0cf8e"
+    },
+    {
+     "role": "guest",
+     "igbo": "Nri a na-atọ ụtọ.",
+     "en": "This food is delicious.",
+     "audio": "ia_643c21523563df70c26c0210",
+     "provenance": "igbo-api",
+     "source": "ia.x.643c21523563df70c26c0210"
+    }
+   ],
+   "tips": [
+    {
+     "title": "Offer something at once",
+     "body": "Offer a seat and something to drink or eat straight away. In many homes kola (_ọjị_) is presented to guests as a sign of welcome."
+    },
+    {
+     "title": "Ask again, kindly",
+     "body": "A guest may decline at first out of politeness. Offering again, warmly, is part of good hospitality."
+    },
+    {
+     "title": "Kola customs vary",
+     "body": "Who presents and who breaks the kola follows local custom. When unsure, follow the lead of the host or the eldest person present."
+    }
+   ]
+  }
+ ]
+}
