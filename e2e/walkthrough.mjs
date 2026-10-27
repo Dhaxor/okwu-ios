@@ -54,6 +54,10 @@ const caps = {
   "appium:wdaLaunchTimeout": 300000,
   "appium:wdaConnectionTimeout": 300000,
 };
+// The workflow builds WebDriverAgent once (and caches it); a cold build on the runner takes ~15 minutes.
+const WDA = process.env.WDA_DERIVED;
+const prebuilt = !!WDA && fs.existsSync(`${WDA}/Build/Products`);
+if (prebuilt) Object.assign(caps, { "appium:usePrebuiltWDA": true, "appium:derivedDataPath": WDA });
 
 // WebDriverAgent's first build on a cold simulator can outlast the HTTP
 // client's header timeout; the second attempt usually finds it built.
@@ -64,12 +68,20 @@ async function createSession(attempts = 3) {
     } catch (e) {
       log(`session attempt ${i}/${attempts} failed:`, msg(e));
       if (i === attempts) throw e;
+      if (caps["appium:usePrebuiltWDA"]) {
+        // Fall back to letting Appium build WebDriverAgent itself.
+        log("dropping the prebuilt WebDriverAgent");
+        delete caps["appium:usePrebuiltWDA"];
+        delete caps["appium:derivedDataPath"];
+      }
       await sleep(8000);
     }
   }
 }
 
+const t0 = Date.now();
 const driver = await createSession();
+log(`session ready in ${((Date.now() - t0) / 1000).toFixed(0)}s (prebuilt WebDriverAgent: ${prebuilt})`);
 let win = { width: 430, height: 932 };
 
 // ---- primitives -------------------------------------------------------------
@@ -209,18 +221,33 @@ async function drag(dir, dist = win.height * 0.38) {
   await sleep(600);
 }
 
-/** Scroll the screen until the element sits inside the readable band (above any footer or tab bar). */
+/**
+ * Scroll the screen until the element's top sits inside the readable band
+ * (below the status bar, above any footer or tab bar). A tall element (a whole
+ * section) counts once its first 80pt are in the band.
+ */
 async function scrollTo(selector, max = 8) {
   const top = MODE === "small" ? 40 : 70;
+  const limit = win.height * 0.7;
   for (let i = 0; i <= max; i++) {
     const r = await rectOf(selector, i === 0 ? 5000 : 1200);
-    const limit = win.height * 0.7;
-    if (r && r.y >= top && r.y + r.height <= limit) return true;
-    if (!r || r.y + r.height > limit) await drag("up", r ? Math.min(Math.max(r.y + r.height - limit + 60, 80), win.height * 0.42) : undefined);
-    else await drag("down", Math.min(top - r.y + 60, win.height * 0.42));
+    const head = r ? Math.min(r.height, 80) : 0;
+    if (r && r.y >= top && r.y + head <= limit) return true;
+    if (!r || r.y + head > limit) await drag("up", r ? Math.min(Math.max(r.y + head - limit + 60, 80), win.height * 0.42) : undefined);
+    else await drag("down", Math.min(Math.max(top - r.y + 60, 80), win.height * 0.42));
   }
   const r = await rectOf(selector, 800);
-  return !!r && r.y >= 0 && r.y + r.height <= win.height;
+  return !!r && r.y >= 0 && r.y < win.height;
+}
+
+/** Wait for the first of several elements; returns its selector or null. */
+async function waitAny(selectors, timeout = 10000) {
+  const end = Date.now() + timeout;
+  do {
+    for (const s of selectors) if (await exists(s, 250)) return s;
+    await sleep(300);
+  } while (Date.now() < end);
+  return null;
 }
 
 async function scrollTop() {
@@ -354,6 +381,31 @@ async function hideKeyboard() {
   await sleep(500);
 }
 
+/**
+ * A bottom sheet with a text field: open it, type, and check that the field
+ * and the sheet's save button sit above the keyboard and the sheet's top edge
+ * stays below the status bar (a tall sheet lifted by the keyboard can run off
+ * the top of a small screen). Closes with Cancel; nothing is saved.
+ */
+async function sheetKeyboard(tag, { open, sheet, field, save, cancel, text }) {
+  if (!(await scrollTo(open, 6))) return { ok: false, detail: `${open.slice(1)} not found` };
+  await tap(open, open.slice(1));
+  if (!(await find(field, 6000))) return { ok: false, detail: `${field.slice(1)} did not appear` };
+  await sleep(900);
+  await shot(`${tag}-sheet`);
+  await typeInto(field, text);
+  await sleep(1200);
+  const kb = await keyboardCheck(tag, field, save);
+  const top = await rectOf(sheet, 1500);
+  const issues = kb.ok === false ? [kb.detail] : [];
+  if (top && top.y < insets().top - 1) issues.push(`the sheet's top edge (y ${top.y}) is under the status bar`);
+  if (kb.ok === null) issues.push(kb.detail);
+  await hideKeyboard();
+  if (!(await tap(cancel, "cancel", 3000))) await goBack();
+  await sleep(900);
+  return { ok: kb.ok === null ? null : issues.length === 0, detail: issues.length ? issues.join("; ") : `${kb.detail}; sheet top at ${top?.y ?? "?"}` };
+}
+
 /** A uniform screenshot (all one colour) means a blank or crashed screen. */
 function blank(buf) {
   if (!buf) return true;
@@ -372,33 +424,77 @@ function blank(buf) {
 }
 
 // ---- navigation --------------------------------------------------------------
-/** Tap whatever back / close control sits at the top of the screen. */
+/**
+ * Leave the screen: its own back/close control (scrolling back up first when
+ * the header has scrolled away), else the iOS edge-swipe back gesture.
+ */
 async function goBack(preferred) {
-  if (preferred && (await tap(preferred, `back (${preferred.slice(1)})`, 2500))) {
-    await sleep(900);
-    return true;
-  }
-  try {
-    const els = await driver.$$(pred('name ENDSWITH "-back" OR name ENDSWITH "-close"'));
-    for (const el of els) {
-      const r = await driver.getElementRect(el.elementId).catch(() => null);
-      if (!r || r.width === 0 || r.y > 220 || r.y < 0) continue;
-      const name = await el.getAttribute("name");
-      await el.click();
-      log("tapped", `back (${name})`);
-      await sleep(900);
-      return true;
+  for (let pass = 0; pass < 2; pass++) {
+    if (preferred) {
+      const r = await rectOf(preferred, pass ? 800 : 2000);
+      if (r && r.y >= 0 && r.y < 260) {
+        await tap(preferred, `back (${preferred.slice(1)})`, 1500);
+        await sleep(900);
+        return true;
+      }
     }
-  } catch (e) {
-    log("goBack failed:", msg(e));
+    let offscreen = false;
+    try {
+      const els = await driver.$$(pred('name ENDSWITH "-back" OR name ENDSWITH "-close"'));
+      for (const el of els) {
+        const r = await driver.getElementRect(el.elementId).catch(() => null);
+        if (!r || r.width === 0 || r.y > 260) continue;
+        if (r.y < 0) {
+          offscreen = true;
+          continue;
+        }
+        const name = await el.getAttribute("name");
+        await el.click();
+        log("tapped", `back (${name})`);
+        await sleep(900);
+        return true;
+      }
+    } catch (e) {
+      log("goBack failed:", msg(e));
+    }
+    if (!offscreen && !(preferred && (await exists(preferred, 300)))) break;
+    await scrollTop();
   }
-  return false;
+  // No control on screen: swipe in from the left edge (native stack back gesture).
+  try {
+    const y = Math.round(win.height * 0.5);
+    await driver.performActions([
+      {
+        type: "pointer",
+        id: "edge",
+        parameters: { pointerType: "touch" },
+        actions: [
+          { type: "pointerMove", duration: 0, x: 3, y },
+          { type: "pointerDown", button: 0 },
+          { type: "pointerMove", duration: 350, x: Math.round(win.width * 0.8), y },
+          { type: "pointerUp", button: 0 },
+        ],
+      },
+    ]);
+    await driver.releaseActions().catch(() => {});
+    log("edge-swipe back");
+    await sleep(1200);
+    return true;
+  } catch (e) {
+    log("edge swipe failed:", msg(e));
+    return false;
+  }
 }
 
 async function toTab(name) {
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 7; i++) {
     const r = await rectOf(`~tab-${name}`, 1000);
     if (r && r.y > win.height * 0.75) break;
+    if (await exists("~paywall-close", 300)) {
+      await tap("~paywall-close", "close the paywall", 1500);
+      await sleep(1000);
+      continue;
+    }
     // A sheet left open (a lesson's "Leave this lesson?", a report) covers the back button.
     if (await exists("~confirm-ok", 300)) {
       await tap("~confirm-ok", "confirm", 1500);
@@ -810,8 +906,8 @@ try {
       await shot("reminder");
       await checkSafeArea("reminder", ["~reminder-start", "~reminder-none"]);
       await tap("~reminder-none", "No reminders");
-      const learn = await exists("~learn", 15000);
-      return { ok: learn, detail: `no reminders → ${learn ? "Learn" : "Learn NOT reached"}` };
+      const next = await waitAny(["~learn", "~paywall"], 15000);
+      return { ok: !!next, detail: `no reminders → ${next ? next.slice(1) : "Learn NOT reached"}` };
     }
     await tap("~reminder-evening", "Evening");
     await sleep(500);
@@ -819,8 +915,9 @@ try {
     await checkSafeArea("reminder", ["~reminder-start", "~reminder-none"]);
     await tap("~reminder-start", "Start learning");
     const alert = await systemAlert("notifications", 8000);
-    const learn = await exists("~learn", 15000);
-    return { ok: learn, detail: `${alert ? `notification prompt "${alert.text}" accepted with "${alert.accepted}"` : "no notification prompt"}; ${learn ? "→ Learn" : "Learn NOT reached"}` };
+    // Learn opens, and the soft paywall may already sit on top of it.
+    const next = await waitAny(["~learn", "~paywall"], 15000);
+    return { ok: !!next, detail: `${alert ? `notification prompt "${alert.text}" accepted with "${alert.accepted}"` : "no notification prompt"}; ${next ? `→ ${next.slice(1)}` : "Learn NOT reached"}` };
   });
 
   // ---- the soft paywall (once, after the first lesson) ------------------------------------
@@ -1101,6 +1198,14 @@ try {
       await shot("friends");
       await checkSafeArea("friends", ["~friends-header-back", "~friends-share"]);
       await scanOverflow("friends");
+      let kb = { ok: null, detail: "add-a-friend field not found" };
+      if (await scrollTo("~friends-add-code", 6)) {
+        await typeInto("~friends-add-code", "ABC");
+        await sleep(1000);
+        kb = await keyboardCheck("friends-add", "~friends-add-code", "~friends-add-send");
+        await hideKeyboard();
+      }
+      record("KEYBOARD-FRIEND-CODE", kb.ok === null ? "SKIP" : kb.ok ? "PASS" : "FAIL", kb.detail);
       await goBack("~friends-header-back");
       return { ok: !!ok, detail: ok ? `friends screen opened; code "${code}"` : "friends screen did not open" };
     });
@@ -1140,6 +1245,13 @@ try {
       return { ok: !!ok, detail: ok ? "Me shown" : "Me missing" };
     });
 
+    await section("KEYBOARD-NAME-SHEET", async () => {
+      await toTab("me");
+      await scrollTop();
+      if (!(await exists("~me-edit-name", 3000))) return { ok: null, detail: "no account, so no name to edit" };
+      return sheetKeyboard("me-name", { open: "~me-edit-name", sheet: "~me-name", field: "~me-name-field", save: "~me-name-save", cancel: "~me-name-cancel", text: "Ada" });
+    });
+
     for (const [tool, screen, label] of [
       ["flashcards", "flashcards", "Flashcards"],
       ["offline", "offline", "Offline packs"],
@@ -1154,6 +1266,10 @@ try {
         await shot(`tool-${tool}`);
         await checkSafeArea(screen, [`~${screen}-header-back`]);
         await scanOverflow(`tool-${tool}`);
+        if (tool === "flashcards") {
+          const kb = await sheetKeyboard("deck-name", { open: "~flashcards-new", sheet: "~flashcards-name", field: "~flashcards-name-name", save: "~flashcards-name-save", cancel: "~flashcards-name-cancel", text: "Family words" });
+          record("KEYBOARD-DECK-SHEET", kb.ok === null ? "SKIP" : kb.ok ? "PASS" : "FAIL", kb.detail);
+        }
         await drag("up");
         await shot(`tool-${tool}-scrolled`);
         await goBack(`~${screen}-header-back`);
@@ -1219,6 +1335,17 @@ try {
         return { ok: !!ok, detail: ok ? `${tab} shown` : `${tab} missing` };
       });
     }
+    await section("SE-KEYBOARD-DECK-SHEET", async () => {
+      await toTab("me");
+      if (!(await scrollTo("~me-tools-flashcards", 6))) return { ok: false, detail: "Flashcards row missing" };
+      await tap("~me-tools-flashcards", "Flashcards");
+      if (!(await find("~flashcards", 8000))) return { ok: false, detail: "Flashcards did not open" };
+      await sleep(800);
+      await shot("flashcards");
+      const r = await sheetKeyboard("deck-name", { open: "~flashcards-new", sheet: "~flashcards-name", field: "~flashcards-name-name", save: "~flashcards-name-save", cancel: "~flashcards-name-cancel", text: "Family words" });
+      await goBack("~flashcards-header-back");
+      return r;
+    });
     await section("SE-PAYWALL", async () => {
       if (paywallSeen) return { ok: true, detail: "soft paywall already captured" };
       await toTab("me");

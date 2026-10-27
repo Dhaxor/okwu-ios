@@ -92,6 +92,24 @@ jobs:
           path: build/sim.tar.gz
           key: okwu-sim-v1-${{ hashFiles('app/**', 'components/**', 'lib/**', 'constants/**', 'assets/**', 'content/**', 'package.json', 'package-lock.json', 'app.json', 'eas.json', 'tsconfig.json') }}
 
+      - name: Install Appium and the XCUITest driver
+        id: appium
+        run: |
+          npm install -g appium@latest
+          appium driver install xcuitest
+          appium driver list --installed
+          DRIVER=$(node -p "require(process.env.HOME + '/.appium/node_modules/appium-xcuitest-driver/package.json').version")
+          XCODE=$(xcodebuild -version | head -1 | tr -cd '[:alnum:].')
+          echo "wda_key=wda-v1-$XCODE-xcuitest-$DRIVER" >> "$GITHUB_OUTPUT"
+
+      # WebDriverAgent takes ~15 minutes to build on the runner: build it once per Xcode/driver and reuse it.
+      - name: Restore the prebuilt WebDriverAgent
+        id: wdacache
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/wda-dd
+          key: ${{ steps.appium.outputs.wda_key }}
+
       - name: E2E run (fully traced)
         run: |
           set +e
@@ -112,7 +130,19 @@ jobs:
           # A connected hardware keyboard hides the software one; the keyboard checks need it shown.
           defaults write com.apple.iphonesimulator ConnectHardwareKeyboard -bool false || true
 
-          echo "== simulators =="
+          echo "== host audio (the simulator plays through the host's output device) =="
+          system_profiler SPAudioDataType 2>/dev/null | grep -E "^ {8}[^ ].*:$|Output Channels|Default Output" || echo "(no audio devices listed)"
+          if ! system_profiler SPAudioDataType 2>/dev/null | grep -q "Default Output Device: Yes"; then
+            echo "no default output device: installing the BlackHole virtual device"
+            brew install --cask blackhole-2ch > /tmp/blackhole.log 2>&1; echo "brew exit $?"; tail -5 /tmp/blackhole.log
+            sudo killall coreaudiod || true
+            sleep 5
+            system_profiler SPAudioDataType 2>/dev/null | grep -E "^ {8}[^ ].*:$|Output Channels|Default Output" || echo "(still none)"
+          fi
+          curl -fsS -o /tmp/clip.m4a "https://okwu.emperorduke5.workers.dev/audio/igboapi/ia_5f90c35e49f7e863e92b700a-6405ab8e32b114437a45b7d7.m4a" && ls -la /tmp/clip.m4a
+          afplay -t 3 /tmp/clip.m4a; echo "host afplay exit $?"
+
+          echo "== simulators (both booted now, in the background) =="
           xcrun simctl list runtimes available
           RUNTIME=$(xcrun simctl list runtimes available -j | python3 -c "import json,sys; r=[x for x in json.load(sys.stdin)['runtimes'] if x.get('platform')=='iOS' or x.get('name','').startswith('iOS')]; r.sort(key=lambda x: [int(p) for p in x['version'].split('.')]); print(r[-1]['identifier'])")
           make_sim() {
@@ -125,30 +155,43 @@ jobs:
           }
           boot_sim() {
             xcrun simctl boot "$1" || true
-            xcrun simctl bootstatus "$1" -b
-            xcrun simctl status_bar "$1" override \
-              --time "9:41" \
-              --dataNetwork wifi --wifiMode active --wifiBars 3 \
-              --cellularMode active --cellularBars 4 \
-              --batteryState charged --batteryLevel 100 || true
+            xcrun simctl bootstatus "$1" -b > /dev/null
+            xcrun simctl status_bar "$1" override               --time "9:41"               --dataNetwork wifi --wifiMode active --wifiBars 3               --cellularMode active --cellularBars 4               --batteryState charged --batteryLevel 100 || true
             xcrun simctl install "$1" "$APP"
+            echo "booted and installed on $1 at $(date -u +%T)"
           }
+          UDID=$(make_sim "iPhone 16 Pro Max" "iPhone 17 Pro Max" "iPhone 15 Pro Max")
+          SE=$(make_sim "iPhone SE (3rd generation)" "iPhone 13 mini" "iPhone 16e")
+          echo "UDID=$UDID SE=$SE RUNTIME=$RUNTIME"
+          [ -n "$UDID" ] || { echo "could not create a simulator"; exit 1; }
+          date -u +%T
+          boot_sim "$UDID" > /tmp/boot-full.log 2>&1 &
+          BOOT1=$!
+          BOOT2=""
+          if [ -n "$SE" ]; then boot_sim "$SE" > /tmp/boot-se.log 2>&1 & BOOT2=$!; fi
 
-          echo "== appium =="
-          npm install -g appium@latest
-          appium --version
-          appium driver install xcuitest
-          appium driver list --installed
+          echo "== WebDriverAgent =="
+          WDA_PROJ=$(find "$HOME/.appium" -maxdepth 8 -name WebDriverAgent.xcodeproj | head -1)
+          echo "WDA_PROJ=$WDA_PROJ"
+          if [ ! -d "$HOME/wda-dd/Build/Products" ]; then
+            date -u +%T
+            xcodebuild build-for-testing -project "$WDA_PROJ" -scheme WebDriverAgentRunner               -destination 'generic/platform=iOS Simulator' -derivedDataPath "$HOME/wda-dd"               CODE_SIGNING_ALLOWED=NO -quiet > /tmp/wda-build.log 2>&1
+            WDA_STATUS=$?
+            echo "WDA build exit $WDA_STATUS at $(date -u +%T)"; tail -20 /tmp/wda-build.log
+            # Never cache a broken build.
+            [ "$WDA_STATUS" -eq 0 ] || rm -rf "$HOME/wda-dd"
+          fi
+          ls "$HOME/wda-dd/Build/Products" || true
+
           (cd e2e && npm ci --no-audit --no-fund)
           appium --port 4723 --base-path / --log-timestamp > appium.log 2>&1 &
           for i in $(seq 1 30); do curl -s http://127.0.0.1:4723/status && break; sleep 2; done
+          wait $BOOT1; cat /tmp/boot-full.log
+          [ -n "$BOOT2" ] && { wait $BOOT2; cat /tmp/boot-se.log; }
           touch /tmp/e2e-start
+          export WDA_DERIVED="$HOME/wda-dd"
 
           echo "== full walkthrough (iPhone 16 Pro Max) =="
-          UDID=$(make_sim "iPhone 16 Pro Max" "iPhone 17 Pro Max" "iPhone 15 Pro Max")
-          echo "UDID=$UDID RUNTIME=$RUNTIME"
-          [ -n "$UDID" ] || { echo "could not create a simulator"; exit 1; }
-          boot_sim "$UDID"
           START=$(date +"%Y-%m-%d %H:%M:%S")
           (cd e2e && UDID="$UDID" BUNDLE_ID="$BUNDLE_ID" MODE=full SHOTS_DIR=../shots node walkthrough.mjs)
           FULL=$?
@@ -156,11 +199,8 @@ jobs:
           xcrun simctl shutdown "$UDID" || true
 
           echo "== small-screen pass (iPhone SE size) =="
-          SE=$(make_sim "iPhone SE (3rd generation)" "iPhone 13 mini" "iPhone 16e")
-          echo "SE=$SE"
           SMALL=1
           if [ -n "$SE" ]; then
-            boot_sim "$SE"
             START=$(date +"%Y-%m-%d %H:%M:%S")
             (cd e2e && UDID="$SE" BUNDLE_ID="$BUNDLE_ID" MODE=small SHOTS_DIR=../shots node walkthrough.mjs)
             SMALL=$?
@@ -177,6 +217,13 @@ jobs:
           echo "FULL=$FULL SMALL=$SMALL"
           echo "== END =="
           [ "$FULL" -eq 0 ] && [ "$SMALL" -eq 0 ]
+
+      - name: Save the prebuilt WebDriverAgent
+        if: always() && steps.wdacache.outputs.cache-hit != 'true' && steps.appium.outputs.wda_key != ''
+        uses: actions/cache/save@v4
+        with:
+          path: ~/wda-dd
+          key: ${{ steps.appium.outputs.wda_key }}
 
       - name: Publish results to the e2e-results branch
         if: always()
