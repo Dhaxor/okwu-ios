@@ -73,9 +73,23 @@ export function prepareBundle(raw: ContentBundle, opts: { production: boolean })
   return opts.production ? releaseView(raw) : raw;
 }
 
+/**
+ * EXPO_PUBLIC_SHOW_DRAFTS=1 keeps draft content in a release-mode build. Only
+ * the eas.json "e2e" simulator profile sets it, so the iPhone walkthrough can
+ * play lessons (and stream their recordings) before any lesson is approved;
+ * store builds never set it (lib/content/release.test.ts checks eas.json).
+ * Read as a plain process.env property so Metro inlines it.
+ */
+const SHOW_DRAFTS = process.env.EXPO_PUBLIC_SHOW_DRAFTS === "1";
+
+/** Whether this build shows only approved content: production builds, unless drafts were asked for. */
+export function approvedOnly(production: boolean, showDrafts: boolean = SHOW_DRAFTS): boolean {
+  return production && !showDrafts;
+}
+
 /** Load the compiled bundle shipped with the app (and later, a newer one from R2). */
 export async function loadBundle(): Promise<ContentBundle> {
-  return prepareBundle(generated as unknown as ContentBundle, { production: isProductionBuild() });
+  return prepareBundle(generated as unknown as ContentBundle, { production: approvedOnly(isProductionBuild()) });
 }
 
 /**

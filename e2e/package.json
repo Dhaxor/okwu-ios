@@ -1,0 +1,10 @@
+{
+  "name": "okwu-ios-e2e",
+  "private": true,
+  "type": "module",
+  "description": "Appium/XCUITest walkthrough of the Okwu iPhone app (run by .github/workflows/ios-e2e.yml)",
+  "dependencies": {
+    "pngjs": "7.0.0",
+    "webdriverio": "9.32.0"
+  }
+}

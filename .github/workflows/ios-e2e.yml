@@ -1,0 +1,197 @@
+name: iOS E2E walkthrough
+
+# Builds the app for the iOS simulator (eas.json profile "e2e", no signing),
+# installs it on a fresh iPhone 16 Pro Max and drives the first-user journey
+# with Appium/XCUITest (e2e/walkthrough.mjs, MODE=full): onboarding as a new
+# learner → the whole first lesson → Learn → Practice → Library → Community
+# (as an adult, against the live server) → Me → paywall → Settings → Credits,
+# and last, Settings → Delete account, so no test account is left behind.
+# A second pass (MODE=small) on an iPhone SE-size simulator screenshots the
+# key screens for small-screen clipping. Screenshots, results.json, device
+# logs and crash reports publish to the orphan e2e-results branch.
+#
+# Trigger: push to `e2e-run` (git push origin main:e2e-run), or Run workflow.
+# The simulator build is cached by a hash of the app sources, so a run that
+# only changes the walkthrough skips the 15-20 minute build.
+
+on:
+  push:
+    branches: [e2e-run]
+  workflow_dispatch:
+    inputs:
+      rebuild:
+        description: Ignore the cached simulator build (1/0)
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ios-e2e
+  cancel-in-progress: false
+
+env:
+  BUNDLE_ID: app.okwu.learn
+
+jobs:
+  walkthrough:
+    runs-on: macos-26
+    timeout-minutes: 120
+    env:
+      EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+      EAS_SKIP_AUTO_FINGERPRINT: "1"
+      EAS_BUILD_NO_EXPO_GO_WARNING: "true"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Restore the simulator build
+        id: appcache
+        if: inputs.rebuild != '1'
+        uses: actions/cache/restore@v4
+        with:
+          path: build/sim.tar.gz
+          key: okwu-sim-v1-${{ hashFiles('app/**', 'components/**', 'lib/**', 'constants/**', 'assets/**', 'content/**', 'package.json', 'package-lock.json', 'app.json', 'eas.json', 'tsconfig.json') }}
+
+      - name: Build for the simulator (eas build --local, profile e2e)
+        if: steps.appcache.outputs.cache-hit != 'true'
+        env:
+          EAS_LOCAL_BUILD_WORKINGDIR: ${{ runner.temp }}/easbuild
+          EAS_LOCAL_BUILD_SKIP_CLEANUP: "1"
+        run: |
+          set +e
+          mkdir -p build shots
+          npm ci --include=dev || exit 1
+          npx eas-cli@latest build \
+            --platform ios \
+            --profile e2e \
+            --local \
+            --non-interactive \
+            --output build/sim.tar.gz 2>&1 | tee build.log
+          status=${PIPESTATUS[0]}
+          if [ "$status" -ne 0 ] || [ ! -s build/sim.tar.gz ]; then
+            echo "::error::simulator build failed ($status)"
+            find "$RUNNER_TEMP/easbuild" \( -name '*.log' -o -path '*/logs/*' \) -type f -size -20M 2>/dev/null | while read -r f; do
+              tail -n 300 "$f" > "shots/xcode-$(basename "$f").log"
+            done
+            exit 1
+          fi
+          ls -la build
+
+      - name: Save the simulator build
+        if: steps.appcache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: build/sim.tar.gz
+          key: okwu-sim-v1-${{ hashFiles('app/**', 'components/**', 'lib/**', 'constants/**', 'assets/**', 'content/**', 'package.json', 'package-lock.json', 'app.json', 'eas.json', 'tsconfig.json') }}
+
+      - name: E2E run (fully traced)
+        run: |
+          set +e
+          mkdir -p app shots
+          exec > >(tee shots/debug.log) 2>&1
+          set -x
+          xcodebuild -version
+          tar -xzf build/sim.tar.gz -C app
+          APP=$(find app -maxdepth 3 -name "*.app" -type d | head -1)
+          echo "APP=$APP"
+          [ -n "$APP" ] || { echo "no .app in the build"; exit 1; }
+          EXE=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleExecutable' "$APP/Info.plist")
+          /usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$APP/Info.plist"
+          /usr/libexec/PlistBuddy -c 'Print :MinimumOSVersion' "$APP/Info.plist"
+          echo "== privacy usage strings =="
+          /usr/libexec/PlistBuddy -c 'Print' "$APP/Info.plist" | grep -i "UsageDescription" || echo "(none)"
+
+          # A connected hardware keyboard hides the software one; the keyboard checks need it shown.
+          defaults write com.apple.iphonesimulator ConnectHardwareKeyboard -bool false || true
+
+          echo "== simulators =="
+          xcrun simctl list runtimes available
+          RUNTIME=$(xcrun simctl list runtimes available -j | python3 -c "import json,sys; r=[x for x in json.load(sys.stdin)['runtimes'] if x.get('platform')=='iOS' or x.get('name','').startswith('iOS')]; r.sort(key=lambda x: [int(p) for p in x['version'].split('.')]); print(r[-1]['identifier'])")
+          make_sim() {
+            for want in "$@"; do
+              TYPE_ID=$(xcrun simctl list devicetypes -j | python3 -c "import json,sys; want=sys.argv[1]; t=[d['identifier'] for d in json.load(sys.stdin)['devicetypes'] if d['name']==want]; print(t[0] if t else '')" "$want")
+              [ -n "$TYPE_ID" ] || continue
+              U=$(xcrun simctl create "E2E $want" "$TYPE_ID" "$RUNTIME") && [ -n "$U" ] && { echo "$U"; return 0; }
+            done
+            return 1
+          }
+          boot_sim() {
+            xcrun simctl boot "$1" || true
+            xcrun simctl bootstatus "$1" -b
+            xcrun simctl status_bar "$1" override \
+              --time "9:41" \
+              --dataNetwork wifi --wifiMode active --wifiBars 3 \
+              --cellularMode active --cellularBars 4 \
+              --batteryState charged --batteryLevel 100 || true
+            xcrun simctl install "$1" "$APP"
+          }
+
+          echo "== appium =="
+          npm install -g appium@latest
+          appium --version
+          appium driver install xcuitest
+          appium driver list --installed
+          (cd e2e && npm ci --no-audit --no-fund)
+          appium --port 4723 --base-path / --log-timestamp > appium.log 2>&1 &
+          for i in $(seq 1 30); do curl -s http://127.0.0.1:4723/status && break; sleep 2; done
+          touch /tmp/e2e-start
+
+          echo "== full walkthrough (iPhone 16 Pro Max) =="
+          UDID=$(make_sim "iPhone 16 Pro Max" "iPhone 17 Pro Max" "iPhone 15 Pro Max")
+          echo "UDID=$UDID RUNTIME=$RUNTIME"
+          [ -n "$UDID" ] || { echo "could not create a simulator"; exit 1; }
+          boot_sim "$UDID"
+          START=$(date +"%Y-%m-%d %H:%M:%S")
+          (cd e2e && UDID="$UDID" BUNDLE_ID="$BUNDLE_ID" MODE=full SHOTS_DIR=../shots node walkthrough.mjs)
+          FULL=$?
+          xcrun simctl spawn "$UDID" log show --style compact --info --start "$START" --predicate "process == \"$EXE\"" > shots/device-full.log 2>&1 || true
+          xcrun simctl shutdown "$UDID" || true
+
+          echo "== small-screen pass (iPhone SE size) =="
+          SE=$(make_sim "iPhone SE (3rd generation)" "iPhone 13 mini" "iPhone 16e")
+          echo "SE=$SE"
+          SMALL=1
+          if [ -n "$SE" ]; then
+            boot_sim "$SE"
+            START=$(date +"%Y-%m-%d %H:%M:%S")
+            (cd e2e && UDID="$SE" BUNDLE_ID="$BUNDLE_ID" MODE=small SHOTS_DIR=../shots node walkthrough.mjs)
+            SMALL=$?
+            xcrun simctl spawn "$SE" log show --style compact --info --start "$START" --predicate "process == \"$EXE\"" > shots/device-small.log 2>&1 || true
+          fi
+
+          echo "== crash reports =="
+          find ~/Library/Logs/DiagnosticReports -newer /tmp/e2e-start -name "*$EXE*" -exec cp {} shots/ \; 2>/dev/null || true
+          ls -la shots
+          echo "== appium.log tail =="
+          tail -n 60 appium.log || true
+          echo "== RESULTS =="
+          grep -hE "RESULT:|SUMMARY" shots/debug.log || true
+          echo "FULL=$FULL SMALL=$SMALL"
+          echo "== END =="
+          [ "$FULL" -eq 0 ] && [ "$SMALL" -eq 0 ]
+
+      - name: Publish results to the e2e-results branch
+        if: always()
+        run: |
+          mkdir -p /tmp/results
+          cp shots/*.png shots/*.json shots/*.log shots/*.xml shots/*.ips /tmp/results/ 2>/dev/null || true
+          [ -f build.log ] && tail -n 400 build.log > /tmp/results/build-tail.log
+          [ -f appium.log ] && tail -n 4000 appium.log > /tmp/results/appium-tail.log
+          printf 'iOS E2E run %s\nrun %s\ncommit %s\nbuild cached %s\n' "$(date -u)" "$GITHUB_RUN_ID" "$GITHUB_SHA" "${{ steps.appcache.outputs.cache-hit }}" > /tmp/results/RUN.txt
+          git config user.email "ci@okwu.app"; git config user.name "ios-e2e"
+          # Orphan branch, then wipe every working file (node_modules, the app) so only results are committed.
+          git checkout --orphan e2e-results
+          git rm -rf --cached . >/dev/null 2>&1 || true
+          git clean -fdx >/dev/null 2>&1 || true
+          cp /tmp/results/* .
+          git add -A
+          git commit -q -m "iOS e2e results, run $GITHUB_RUN_ID [skip ci]" || echo "nothing to commit"
+          git push -f origin e2e-results

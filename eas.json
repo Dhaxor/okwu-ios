@@ -26,7 +26,8 @@
     "e2e": {
       "extends": "devicetest",
       "env": {
-        "EXPO_PUBLIC_E2E": "1"
+        "EXPO_PUBLIC_E2E": "1",
+        "EXPO_PUBLIC_SHOW_DRAFTS": "1"
       }
     }
   },
