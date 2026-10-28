@@ -97,20 +97,28 @@ let win = { width: 430, height: 932 };
 let n = 1;
 // Screens whose content shows through the status bar (text running into the clock and battery).
 const statusBarOverlaps = [];
-/** Share of dark (text-like) pixels in the empty middle of the status bar, between the clock and the icons. */
+/**
+ * Share of dark (text-like) pixels in the empty parts of the status bar: on a
+ * Dynamic Island phone between the clock (left) and the icons (right); on an
+ * SE-size phone, whose clock sits in the middle, either side of the clock.
+ */
 function statusBarInk(buf) {
   try {
     const png = PNG.sync.read(buf);
     const s = png.width / win.width;
     const big = win.height >= 800;
-    const [x0, x1] = (big ? [0.24, 0.68] : [0.3, 0.66]).map((f) => Math.round(f * win.width * s));
+    const spans = big ? [[0.24, 0.68]] : [[0.27, 0.37], [0.63, 0.82]];
     const [y0, y1] = (big ? [6, 50] : [2, 18]).map((v) => Math.round(v * s));
     let dark = 0;
     let total = 0;
-    for (let y = y0; y < y1; y += 2) for (let x = x0; x < x1; x += 2) {
-      const i = (y * png.width + x) * 4;
-      total++;
-      if (0.299 * png.data[i] + 0.587 * png.data[i + 1] + 0.114 * png.data[i + 2] < 150) dark++;
+    for (const [a, b] of spans) {
+      const x0 = Math.round(a * win.width * s);
+      const x1 = Math.round(b * win.width * s);
+      for (let y = y0; y < y1; y += 2) for (let x = x0; x < x1; x += 2) {
+        const i = (y * png.width + x) * 4;
+        total++;
+        if (0.299 * png.data[i] + 0.587 * png.data[i + 1] + 0.114 * png.data[i + 2] < 150) dark++;
+      }
     }
     return total ? dark / total : 0;
   } catch {
@@ -124,7 +132,8 @@ async function shot(name) {
     fs.writeFileSync(`${SHOTS}/${file}`, buf);
     lastShot = file;
     log("shot", file);
-    if (!/alert|keyboard/.test(name)) {
+    // Shots with a dimmed backdrop (system alerts, sheets, the keyboard) are left out.
+    if (!/alert|keyboard|sheet|confirm/.test(name)) {
       const ink = statusBarInk(buf);
       if (ink > 0.003) statusBarOverlaps.push(`${file} (${(ink * 100).toFixed(1)}%)`);
     }
@@ -383,8 +392,12 @@ async function scanOverflow(screen) {
   } else overflowNotes.push(`${screen}: ${hits.slice(0, 6).join("; ")}${hits.length > 6 ? ` (+${hits.length - 6})` : ""}`);
 }
 
-/** Software keyboard: does it cover the field being typed in, or the button that acts on it? */
-async function keyboardCheck(tag, inputSel, actionSel) {
+/**
+ * Software keyboard: does it cover the field being typed in, or the button that
+ * acts on it? `underSel` (the Igbo letter keys under a field) must also show,
+ * above the keyboard and clear of a footer button (`actionSel`) riding on it.
+ */
+async function keyboardCheck(tag, inputSel, actionSel, underSel = null) {
   const kb = await find("-ios class chain:**/XCUIElementTypeKeyboard", 5000);
   if (!kb) return { ok: null, detail: "no software keyboard appeared (hardware keyboard connected?)" };
   let k;
@@ -396,10 +409,17 @@ async function keyboardCheck(tag, inputSel, actionSel) {
   const issues = [];
   const inp = await rectOf(inputSel, 1500);
   if (inp && inp.y + inp.height > k.y + 1) issues.push(`field (bottom ${inp.y + inp.height}) under the keyboard (top ${k.y})`);
+  let act = null;
   if (actionSel) {
-    const act = await rectOf(actionSel, 1500);
+    act = await rectOf(actionSel, 1500);
     if (!act) issues.push(`${actionSel.slice(1)} not found with the keyboard up`);
     else if (act.y + act.height > k.y + 1) issues.push(`${actionSel.slice(1)} (bottom ${act.y + act.height}) under the keyboard (top ${k.y})`);
+  }
+  if (underSel) {
+    const u = await rectOf(underSel, 1500);
+    // A footer button rides on the keyboard; its footer starts 16pt above the button.
+    const limit = act && act.y > (inp?.y ?? 0) ? Math.min(k.y, act.y - 16) : k.y;
+    if (u && u.y + u.height > limit + 1) issues.push(`${underSel.slice(1)} (bottom ${u.y + u.height}) hidden behind ${act ? "the footer" : "the keyboard"} (from ${limit})`);
   }
   await shot(`${tag}-keyboard`);
   return { ok: issues.length === 0, detail: issues.length ? issues.join("; ") : `field${actionSel ? " and its button" : ""} stay above the keyboard (top ${k.y})` };
@@ -708,7 +728,7 @@ async function playLesson(tag, { prefix = "lesson", micCheck = false, audioCheck
       case "type-it": {
         await typeInto(`~${p}-input`, "a");
         await sleep(800);
-        if (!out.keyboard) out.keyboard = await keyboardCheck(`${tag}-type-it`, `~${p}-input`, `~${prefix}-check`);
+        if (!out.keyboard) out.keyboard = await keyboardCheck(`${tag}-type-it`, `~${p}-input`, `~${prefix}-check`, `~${p}-keys`);
         if (out.keyboard && out.keyboard.ok === false) await hideKeyboard();
         await tap(`~${prefix}-check`, "check", 3000);
         await sleep(400);
@@ -911,11 +931,11 @@ try {
       if (!lessonRun?.mic) return { ok: null, detail: "no Say it exercise in the first lesson (tried again in Practice)" };
       return lessonRun.mic;
     });
-    await section("TYPE-IT-KEYBOARD", async () => {
-      if (!lessonRun?.keyboard) return { ok: null, detail: "no Type it exercise in the first lesson" };
-      return lessonRun.keyboard;
-    });
   }
+  await section("TYPE-IT-KEYBOARD", async () => {
+    if (!lessonRun?.keyboard) return { ok: null, detail: "no Type it exercise in the first lesson" };
+    return lessonRun.keyboard;
+  });
 
   // ---- save your progress (adult, documents NOT accepted here) → reminder ----------------
   await section("ACCOUNT", async () => {

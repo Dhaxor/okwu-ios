@@ -226,6 +226,7 @@ jobs:
           fi
 
           pkill -f "xcodebuild.*WebDriverAgent" || true
+          for f in /tmp/wda-*.log; do [ -f "$f" ] && tail -n 200 "$f" > "shots/$(basename "$f")"; done
           echo "== crash reports =="
           find ~/Library/Logs/DiagnosticReports -newer /tmp/e2e-start -name "*$EXE*" -exec cp {} shots/ \; 2>/dev/null || true
           ls -la shots
