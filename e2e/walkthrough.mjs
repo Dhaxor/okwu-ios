@@ -51,37 +51,46 @@ const caps = {
   "appium:bundleId": BUNDLE,
   "appium:noReset": true,
   "appium:newCommandTimeout": 600,
-  "appium:wdaLaunchTimeout": 300000,
-  "appium:wdaConnectionTimeout": 300000,
+  "appium:wdaLaunchTimeout": 480000,
+  "appium:wdaConnectionTimeout": 480000,
+  "appium:wdaStartupRetries": 3,
+  "appium:wdaStartupRetryInterval": 15000,
+  // A freshly booted simulator on the runner can take minutes to settle.
+  "appium:simulatorStartupTimeout": 600000,
 };
-// The workflow builds WebDriverAgent once (and caches it); a cold build on the runner takes ~15 minutes.
+// The workflow starts WebDriverAgent itself (xcodebuild test-without-building from a cached build)
+// and waits for its /status, so the session only attaches to it. Otherwise Appium launches the
+// prebuilt one, or builds it (~15 minutes on the runner).
+const WDA_URL = process.env.WDA_URL;
 const WDA = process.env.WDA_DERIVED;
 const prebuilt = !!WDA && fs.existsSync(`${WDA}/Build/Products`);
-if (prebuilt) Object.assign(caps, { "appium:usePrebuiltWDA": true, "appium:derivedDataPath": WDA });
+if (WDA_URL) caps["appium:webDriverAgentUrl"] = WDA_URL;
+else if (prebuilt) Object.assign(caps, { "appium:usePrebuiltWDA": true, "appium:derivedDataPath": WDA });
 
 // WebDriverAgent's first build on a cold simulator can outlast the HTTP
 // client's header timeout; the second attempt usually finds it built.
-async function createSession(attempts = 3) {
+// One request at a time: a client retry while Appium is still creating the last session starts a
+// second WebDriverAgent launch that kills the first (run 40604863541 lost 50 minutes that way).
+async function createSession(attempts = 2) {
   for (let i = 1; i <= attempts; i++) {
     try {
-      return await remote({ hostname: "127.0.0.1", port: 4723, path: "/", capabilities: caps, logLevel: "error", connectionRetryTimeout: 900000, connectionRetryCount: 0 });
+      return await remote({ hostname: "127.0.0.1", port: 4723, path: "/", capabilities: caps, logLevel: "error", connectionRetryTimeout: 2400000, connectionRetryCount: 0 });
     } catch (e) {
       log(`session attempt ${i}/${attempts} failed:`, msg(e));
       if (i === attempts) throw e;
-      if (caps["appium:usePrebuiltWDA"]) {
-        // Fall back to letting Appium build WebDriverAgent itself.
-        log("dropping the prebuilt WebDriverAgent");
-        delete caps["appium:usePrebuiltWDA"];
-        delete caps["appium:derivedDataPath"];
+      if (caps["appium:webDriverAgentUrl"]) {
+        log("dropping the external WebDriverAgent; Appium launches its own");
+        delete caps["appium:webDriverAgentUrl"];
+        if (prebuilt) Object.assign(caps, { "appium:usePrebuiltWDA": true, "appium:derivedDataPath": WDA });
       }
-      await sleep(8000);
+      await sleep(15000);
     }
   }
 }
 
 const t0 = Date.now();
 const driver = await createSession();
-log(`session ready in ${((Date.now() - t0) / 1000).toFixed(0)}s (prebuilt WebDriverAgent: ${prebuilt})`);
+log(`session ready in ${((Date.now() - t0) / 1000).toFixed(0)}s (WebDriverAgent: ${caps["appium:webDriverAgentUrl"] ? "started by the workflow" : prebuilt ? "prebuilt" : "built by Appium"})`);
 let win = { width: 430, height: 932 };
 
 // ---- primitives -------------------------------------------------------------

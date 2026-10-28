@@ -180,31 +180,52 @@ jobs:
             [ "$WDA_STATUS" -eq 0 ] || rm -rf "$HOME/wda-dd"
           fi
           ls "$HOME/wda-dd/Build/Products" || true
+          # Start WebDriverAgent on a simulator ourselves and wait for it to answer; the walkthrough attaches to it.
+          start_wda() {
+            pkill -f "xcodebuild.*WebDriverAgent" || true
+            sleep 3
+            xcodebuild test-without-building -project "$WDA_PROJ" -scheme WebDriverAgentRunner               -destination "id=$1" -derivedDataPath "$HOME/wda-dd" > "/tmp/wda-$1.log" 2>&1 &
+            for i in $(seq 1 120); do
+              if curl -sf -m 5 http://127.0.0.1:8100/status > /dev/null; then echo "WebDriverAgent up on $1 after $((i * 5))s"; return 0; fi
+              sleep 5
+            done
+            echo "WebDriverAgent did not start on $1"; tail -40 "/tmp/wda-$1.log"
+            return 1
+          }
 
           (cd e2e && npm ci --no-audit --no-fund)
-          appium --port 4723 --base-path / --log-timestamp > appium.log 2>&1 &
+          appium --port 4723 --base-path / --log-timestamp --keep-alive-timeout 3600 > appium.log 2>&1 &
           for i in $(seq 1 30); do curl -s http://127.0.0.1:4723/status && break; sleep 2; done
           wait $BOOT1; cat /tmp/boot-full.log
           touch /tmp/e2e-start
           export WDA_DERIVED="$HOME/wda-dd"
 
           echo "== full walkthrough (iPhone 16 Pro Max) =="
+          # Let the freshly booted simulator settle before WebDriverAgent starts.
+          sleep 45
+          WDA_URL=""
+          start_wda "$UDID" && WDA_URL="http://127.0.0.1:8100"
           START=$(date +"%Y-%m-%d %H:%M:%S")
-          (cd e2e && UDID="$UDID" BUNDLE_ID="$BUNDLE_ID" MODE=full SHOTS_DIR=../shots node walkthrough.mjs)
+          (cd e2e && UDID="$UDID" BUNDLE_ID="$BUNDLE_ID" MODE=full SHOTS_DIR=../shots WDA_URL="$WDA_URL" node walkthrough.mjs)
           FULL=$?
           xcrun simctl spawn "$UDID" log show --style compact --info --start "$START" --predicate "process == \"$EXE\"" > shots/device-full.log 2>&1 || true
+          pkill -f "xcodebuild.*WebDriverAgent" || true
           xcrun simctl shutdown "$UDID" || true
 
           echo "== small-screen pass (iPhone SE size) =="
           SMALL=1
           if [ -n "$SE" ]; then
             boot_sim "$SE"
+            sleep 45
+            WDA_URL=""
+            start_wda "$SE" && WDA_URL="http://127.0.0.1:8100"
             START=$(date +"%Y-%m-%d %H:%M:%S")
-            (cd e2e && UDID="$SE" BUNDLE_ID="$BUNDLE_ID" MODE=small SHOTS_DIR=../shots node walkthrough.mjs)
+            (cd e2e && UDID="$SE" BUNDLE_ID="$BUNDLE_ID" MODE=small SHOTS_DIR=../shots WDA_URL="$WDA_URL" node walkthrough.mjs)
             SMALL=$?
             xcrun simctl spawn "$SE" log show --style compact --info --start "$START" --predicate "process == \"$EXE\"" > shots/device-small.log 2>&1 || true
           fi
 
+          pkill -f "xcodebuild.*WebDriverAgent" || true
           echo "== crash reports =="
           find ~/Library/Logs/DiagnosticReports -newer /tmp/e2e-start -name "*$EXE*" -exec cp {} shots/ \; 2>/dev/null || true
           ls -la shots
