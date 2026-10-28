@@ -1,0 +1,249 @@
+{
+  "facts": {
+    "mode": "full",
+    "friendCode": "VRG KDSZ",
+    "accountCreated": true,
+    "accountDeleted": true,
+    "cohort": ""
+  },
+  "window": {
+    "width": 440,
+    "height": 956
+  },
+  "results": [
+    {
+      "name": "BOOT",
+      "status": "PASS",
+      "detail": "fresh install opened the welcome screen",
+      "shot": "001-welcome.png"
+    },
+    {
+      "name": "ONBOARDING",
+      "status": "PASS",
+      "detail": "motive → new learner → dialect (areas listed) → first lesson intro",
+      "shot": "004-dialect.png"
+    },
+    {
+      "name": "LESSON-INTRO",
+      "status": "PASS",
+      "detail": "pattern card shown; 4 example(s) with a play button, 0 \"Recording coming soon\"; example 0 played, no toast",
+      "shot": "006-lesson-intro-scrolled.png"
+    },
+    {
+      "name": "FIRST-LESSON",
+      "status": "PASS",
+      "detail": "20 exercise screens (listen-choose ×8, tone-pair ×4, type-it ×8); reached the end moment; → account screen",
+      "shot": "033-lesson-complete.png"
+    },
+    {
+      "name": "LESSON-RECORDINGS",
+      "status": "PASS",
+      "detail": "12/20 exercise screens had a play button; \"Recording coming soon\" on 0",
+      "shot": "033-lesson-complete.png"
+    },
+    {
+      "name": "LESSON-AUDIO",
+      "status": "PASS",
+      "detail": "listen-choose: \"Play\" → \"Playing\" on the second tap; no error toast | tone-pair: \"Play\" → \"Playing\"; no error toast",
+      "shot": "033-lesson-complete.png"
+    },
+    {
+      "name": "MIC-PROMPT",
+      "status": "SKIP",
+      "detail": "no Say it exercise in the first lesson (tried again in Practice)",
+      "shot": "033-lesson-complete.png"
+    },
+    {
+      "name": "TYPE-IT-KEYBOARD",
+      "status": "PASS",
+      "detail": "field and its button stay above the keyboard (top 655)",
+      "shot": "033-lesson-complete.png"
+    },
+    {
+      "name": "ACCOUNT",
+      "status": "PASS",
+      "detail": "age 18+ chosen; documents left for Community; Sign in with Apple button shown; agree switch \"I agree to the Terms of Use, Privacy Policy and Community Rules\"; → reminder",
+      "shot": "035-account-adult.png"
+    },
+    {
+      "name": "REMINDER",
+      "status": "PASS",
+      "detail": "notification prompt \"“Okwu” Would Like to Send You Notifications Notifications may include alerts, sounds, and icon badges. These can be configured in Settings.\" accepted with \"Allow\"; → paywall",
+      "shot": "037-notifications-system-alert.png"
+    },
+    {
+      "name": "SOFT-PAYWALL",
+      "status": "PASS",
+      "detail": "4/4 plans: yearly: \"Yearly. $59.99 a year. 7 days free, then $59.99 a year · about $5.00 a\"; monthly: \"Monthly. $9.99 a month. Billed every month\"; family: \"Family. $89.99 a year. Billed once a year · about $7.50 a month · Up t\"; lifetime: \"Lifetime. $149.99 once. One payment, yours for good\"; note \"Prices come from the App Store, in your currency.\"; buy \"Start 7-day free trial\"; Not now → Learn",
+      "shot": "040-paywall-soft-legal.png"
+    },
+    {
+      "name": "LEARN",
+      "status": "PASS",
+      "detail": "next-lesson card shown; path shown; unit 1 listed; lesson 2 intro opened from the path",
+      "shot": "044-learn-unit-3.png"
+    },
+    {
+      "name": "KEYBOARD-DICTIONARY",
+      "status": "PASS",
+      "detail": "field stay above the keyboard (top 655)",
+      "shot": "049-dictionary-word.png"
+    },
+    {
+      "name": "DICTIONARY",
+      "status": "PASS",
+      "detail": "\"nne\" → first hit \"nne: mother\" → word page opened; recording available",
+      "shot": "049-dictionary-word.png"
+    },
+    {
+      "name": "WORD-AUDIO",
+      "status": "PASS",
+      "detail": "\"Hear it\" → \"Playing…\"; no error toast",
+      "shot": "050-word-playing.png"
+    },
+    {
+      "name": "PHRASEBOOK",
+      "status": "PASS",
+      "detail": "greetings → \"Daalụ rinne.\"; recording available",
+      "shot": "053-phrase.png"
+    },
+    {
+      "name": "PHRASE-AUDIO",
+      "status": "PASS",
+      "detail": "\"Hear it\" → \"Playing…\"; no error toast",
+      "shot": "054-phrase-playing.png"
+    },
+    {
+      "name": "MIC-PROMPT-PRACTICE",
+      "status": "PASS",
+      "detail": "\"Record yourself\" tapped; system prompt \"“Okwu” would like to access the Microphone. Okwu records your voice only so you can hear yourself next to a native speaker. Recordings stay on your phone unless you send one to your Family Circle.\" [Don’t Allow / Allow] accepted with \"Allow\"; recorder recording; stopped → Play mine shown; app alive",
+      "shot": "058-speak-say-it-recorded.png"
+    },
+    {
+      "name": "LIBRARY",
+      "status": "PASS",
+      "detail": "shelves: names, proverbs, tales, customs",
+      "shot": "060-library-scrolled.png"
+    },
+    {
+      "name": "PROVERB",
+      "status": "PASS",
+      "detail": "proverb page shown; played, no toast",
+      "shot": "064-proverb-meaning.png"
+    },
+    {
+      "name": "TALE",
+      "status": "PASS",
+      "detail": "tale page shown; Igbo lines shown",
+      "shot": "068-tale-igbo.png"
+    },
+    {
+      "name": "COMMUNITY-TERMS",
+      "status": "PASS",
+      "detail": "anonymous account created on the live server; friend code VRG KDSZ; \"\"",
+      "shot": "071-community.png"
+    },
+    {
+      "name": "FAMILY-CIRCLE",
+      "status": "PASS",
+      "detail": "Start your Family Circle screen opened (nothing created)",
+      "shot": "073-circle-new.png"
+    },
+    {
+      "name": "KEYBOARD-FRIEND-CODE",
+      "status": "PASS",
+      "detail": "field and its button stay above the keyboard (top 655)",
+      "shot": "076-friends-add-keyboard.png"
+    },
+    {
+      "name": "FRIENDS",
+      "status": "PASS",
+      "detail": "friends screen opened; code \"VRG KDSZ\"",
+      "shot": "076-friends-add-keyboard.png"
+    },
+    {
+      "name": "CLUBS",
+      "status": "PASS",
+      "detail": "clubs browser opened (no clubs yet)",
+      "shot": "078-clubs.png"
+    },
+    {
+      "name": "ME",
+      "status": "PASS",
+      "detail": "Me shown",
+      "shot": "080-me-scrolled.png"
+    },
+    {
+      "name": "KEYBOARD-NAME-SHEET",
+      "status": "PASS",
+      "detail": "field and its button stay above the keyboard (top 655); sheet top at 211",
+      "shot": "082-me-name-keyboard.png"
+    },
+    {
+      "name": "KEYBOARD-DECK-SHEET",
+      "status": "PASS",
+      "detail": "field and its button stay above the keyboard (top 655); sheet top at 211",
+      "shot": "085-deck-name-keyboard.png"
+    },
+    {
+      "name": "TOOL-FLASHCARDS",
+      "status": "PASS",
+      "detail": "Flashcards opened",
+      "shot": "086-tool-flashcards-scrolled.png"
+    },
+    {
+      "name": "TOOL-OFFLINE",
+      "status": "PASS",
+      "detail": "Offline packs opened",
+      "shot": "088-tool-offline-scrolled.png"
+    },
+    {
+      "name": "TOOL-REPORT",
+      "status": "PASS",
+      "detail": "Progress report opened",
+      "shot": "090-tool-report-scrolled.png"
+    },
+    {
+      "name": "PAYWALL",
+      "status": "PASS",
+      "detail": "(soft offer also seen) 4/4 plans: yearly: \"Yearly. $59.99 a year. 7 days free, then $59.99 a year · about $5.00 a\"; monthly: \"Monthly. $9.99 a month. Billed every month\"; family: \"Family. $89.99 a year. Billed once a year · about $7.50 a month · Up t\"; lifetime: \"Lifetime. $149.99 once. One payment, yours for good\"; note \"Prices come from the App Store, in your currency.\"; buy \"Start 7-day free trial\"; close → Me",
+      "shot": "093-paywall-me-legal.png"
+    },
+    {
+      "name": "CREDITS",
+      "status": "PASS",
+      "detail": "Credits opened from Settings",
+      "shot": "098-credits-2.png"
+    },
+    {
+      "name": "DELETE-ACCOUNT",
+      "status": "PASS",
+      "detail": "back on the welcome screen; toast \"(none seen)\"; friend code VRG KDSZ",
+      "shot": "102-delete-after-delete.png"
+    },
+    {
+      "name": "APP-ALIVE-END",
+      "status": "PASS",
+      "detail": "app still in the foreground at the end",
+      "shot": "102-delete-after-delete.png"
+    },
+    {
+      "name": "SAFE-AREA",
+      "status": "PASS",
+      "detail": "no control under the status bar, the island or the home indicator",
+      "shot": "102-delete-after-delete.png"
+    },
+    {
+      "name": "STATUS-BAR",
+      "status": "PASS",
+      "detail": "no content under the status bar in any screenshot",
+      "shot": "102-delete-after-delete.png"
+    },
+    {
+      "name": "OVERFLOW",
+      "status": "PASS",
+      "detail": "nothing runs off the side of the screen",
+      "shot": "102-delete-after-delete.png"
+    }
+  ]
+}

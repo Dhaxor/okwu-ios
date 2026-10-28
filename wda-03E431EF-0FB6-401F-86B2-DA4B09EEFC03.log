@@ -1,0 +1,200 @@
+    t =   405.81s     Find: Identity Binding
+    t =   405.82s Find the "me-open-settings" Button
+    t =   405.83s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   405.89s     Find: Descendants matching type Any
+    t =   405.89s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   405.90s     Find: Identity Binding
+    t =   405.91s Find the "me-open-settings" Button
+    t =   405.92s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   405.97s     Find: Descendants matching type Any
+    t =   405.98s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   405.98s     Find: Identity Binding
+    t =   406.06s Find the Application 'app.okwu.learn'
+    t =   406.06s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   406.14s Find the Application 'app.okwu.learn'
+    t =   406.14s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   406.20s Find the Application 'app.okwu.learn'
+    t =   406.20s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   406.28s Find the Application 'app.okwu.learn'
+    t =   406.32s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+2026-10-28 04:40:21.349261+0000 WebDriverAgentRunner-Runner[67009:188075] Waiting up to 2s until app.okwu.learn is in idle state (including animations)
+    t =   407.39s Wait for app.okwu.learn to idle
+    t =   409.46s Get all elements bound by accessibility element for: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   409.47s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   409.52s     Find: Descendants matching type Any
+    t =   409.52s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   409.53s Find the "me-open-settings" Button
+    t =   409.54s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   409.59s     Find: Descendants matching type Any
+    t =   409.59s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   409.59s     Find: Identity Binding
+    t =   409.62s Get all elements bound by accessibility element for: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   409.62s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   409.67s     Find: Descendants matching type Any
+    t =   409.68s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   409.69s Find the "me-open-settings" Button
+    t =   409.69s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   409.74s     Find: Descendants matching type Any
+    t =   409.74s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   409.75s     Find: Identity Binding
+    t =   409.76s Find the "me-open-settings" Button
+    t =   409.76s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   409.82s     Find: Descendants matching type Any
+    t =   409.82s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   409.82s     Find: Identity Binding
+    t =   409.84s Find the "me-open-settings" Button
+    t =   409.84s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   409.89s     Find: Descendants matching type Any
+    t =   409.89s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   409.90s     Find: Identity Binding
+    t =   409.91s Find the Application 'app.okwu.learn'
+    t =   409.91s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   409.97s Find the Application 'app.okwu.learn'
+    t =   409.97s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   410.03s Find the Application 'app.okwu.learn'
+    t =   410.03s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   410.08s Find the Application 'app.okwu.learn'
+    t =   410.08s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+2026-10-28 04:40:25.050848+0000 WebDriverAgentRunner-Runner[67009:188075] Waiting up to 2s until app.okwu.learn is in idle state (including animations)
+    t =   411.09s Wait for app.okwu.learn to idle
+    t =   411.72s Get all elements bound by accessibility element for: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   411.72s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   411.78s     Find: Descendants matching type Any
+    t =   411.78s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   411.79s Find the "me-open-settings" Button
+    t =   411.79s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   411.84s     Find: Descendants matching type Any
+    t =   411.84s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   411.85s     Find: Identity Binding
+    t =   411.86s Get all elements bound by accessibility element for: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   411.87s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   411.92s     Find: Descendants matching type Any
+    t =   411.92s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   411.93s Find the "me-open-settings" Button
+    t =   411.93s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   411.98s     Find: Descendants matching type Any
+    t =   411.98s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   411.99s     Find: Identity Binding
+    t =   412.00s Find the "me-open-settings" Button
+    t =   412.01s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   412.06s     Find: Descendants matching type Any
+    t =   412.06s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.07s     Find: Identity Binding
+    t =   412.08s Find the "me-open-settings" Button
+    t =   412.08s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   412.13s     Find: Descendants matching type Any
+    t =   412.13s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.14s     Find: Identity Binding
+    t =   412.16s Get all elements bound by accessibility element for: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.16s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   412.21s     Find: Descendants matching type Any
+    t =   412.21s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.23s Find the "me-open-settings" Button
+    t =   412.23s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   412.28s     Find: Descendants matching type Any
+    t =   412.28s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.28s     Find: Identity Binding
+    t =   412.30s Get all elements bound by accessibility element for: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.30s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   412.35s     Find: Descendants matching type Any
+    t =   412.35s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.37s Find the "me-open-settings" Button
+    t =   412.37s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   412.42s     Find: Descendants matching type Any
+    t =   412.42s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.43s     Find: Identity Binding
+    t =   412.44s Find the "me-open-settings" Button
+    t =   412.44s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   412.49s     Find: Descendants matching type Any
+    t =   412.49s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.50s     Find: Identity Binding
+    t =   412.51s Find the "me-open-settings" Button
+    t =   412.51s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   412.56s     Find: Descendants matching type Any
+    t =   412.56s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.57s     Find: Identity Binding
+    t =   412.57s Tap "me-open-settings" Button
+2026-10-28 04:40:26.538267+0000 WebDriverAgentRunner-Runner[67009:188075] Waiting up to 1s until app.okwu.learn is in idle state (including animations)
+    t =   412.57s     Wait for app.okwu.learn to idle
+    t =   412.58s     Find the "me-open-settings" Button
+    t =   412.58s         Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   412.63s         Find: Descendants matching type Any
+    t =   412.63s         Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "me-open-settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "me-open-settings")'
+    t =   412.64s         Find: Identity Binding
+    t =   412.64s Application is configured to skip UI interruption handling
+    t =   412.69s     Synthesize event
+2026-10-28 04:40:26.965740+0000 WebDriverAgentRunner-Runner[67009:188075] Waiting up to 1s until app.okwu.learn is in idle state (including animations)
+    t =   413.00s     Wait for app.okwu.learn to idle
+    t =   413.46s Get all elements bound by accessibility element for: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings")'
+    t =   413.46s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   413.52s     Find: Descendants matching type Any
+    t =   413.52s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings")'
+    t =   413.53s Find the "settings" Other
+    t =   413.54s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   413.58s     Find: Descendants matching type Any
+    t =   413.58s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings")'
+    t =   413.59s     Find: Identity Binding
+    t =   413.60s Get all elements bound by accessibility element for: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings")'
+    t =   413.60s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   413.64s     Find: Descendants matching type Any
+    t =   413.64s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings")'
+    t =   413.66s Find the "settings" Other
+    t =   413.66s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   413.71s     Find: Descendants matching type Any
+    t =   413.71s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings")'
+    t =   413.72s     Find: Identity Binding
+    t =   413.77s Find the "settings" Other
+    t =   413.77s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   413.81s     Find: Descendants matching type Any
+    t =   413.81s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings")'
+    t =   413.82s     Find: Identity Binding
+2026-10-28 04:40:28.615733+0000 WebDriverAgentRunner-Runner[67009:189850] The device under test does not support HEIC image encoding. Falling back to PNG
+    t =   414.75s Get all elements bound by accessibility element for: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings-header-back") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings-header-back")'
+    t =   414.75s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   414.79s     Find: Descendants matching type Any
+    t =   414.80s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings-header-back") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings-header-back")'
+    t =   414.81s Find the "settings-header-back" Button
+    t =   414.81s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   414.86s     Find: Descendants matching type Any
+    t =   414.86s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings-header-back") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings-header-back")'
+    t =   414.86s     Find: Identity Binding
+    t =   414.87s Get all elements bound by accessibility element for: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings-header-back") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings-header-back")'
+    t =   414.87s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   414.92s     Find: Descendants matching type Any
+    t =   414.92s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings-header-back") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings-header-back")'
+    t =   414.93s Find the "settings-header-back" Button
+    t =   414.93s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   414.98s     Find: Descendants matching type Any
+    t =   414.98s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings-header-back") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings-header-back")'
+    t =   414.99s     Find: Identity Binding
+    t =   415.00s Find the "settings-header-back" Button
+    t =   415.00s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   415.04s     Find: Descendants matching type Any
+    t =   415.05s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings-header-back") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings-header-back")'
+    t =   415.05s     Find: Identity Binding
+    t =   415.06s Find the "settings-header-back" Button
+    t =   415.06s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+    t =   415.11s     Find: Descendants matching type Any
+    t =   415.11s     Find: Elements matching predicate '(identifier != nil AND identifier != "" AND identifier == "settings-header-back") OR ((identifier == nil OR identifier == "") AND label != nil AND label != "" AND label == "settings-header-back")'
+    t =   415.11s     Find: Identity Binding
+2026-10-28 04:40:29.094867+0000 WebDriverAgentRunner-Runner[67009:188075] Waiting up to 2s until app.okwu.learn is in idle state (including animations)
+    t =   415.13s Wait for app.okwu.learn to idle
+    t =   415.13s Find the Application 'app.okwu.learn'
+    t =   415.14s     Requesting snapshot of accessibility hierarchy for app with pid 67667
+2026-10-28 04:40:29.201105+0000 WebDriverAgentRunner-Runner[67009:188075] The following attributes were requested to be included into the XML: {(
+    FBTraitsAttribute,
+    FBHeightAttribute,
+    FBWidthAttribute,
+    FBYAttribute,
+    FBXAttribute,
+    FBAccessibleAttribute,
+    FBVisibleAttribute,
+    FBEnabledAttribute,
+    FBLabelAttribute,
+    FBNameAttribute,
+    FBValueAttribute,
+    FBTypeAttribute,
+    FBIndexAttribute,
+    FBPlaceholderValueAttribute
+)}
+** BUILD INTERRUPTED **

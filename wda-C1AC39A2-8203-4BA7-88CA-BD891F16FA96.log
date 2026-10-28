@@ -1,0 +1,51 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild test-without-building -project /Users/runner/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=C1AC39A2-8203-4BA7-88CA-BD891F16FA96 -derivedDataPath /Users/runner/wda-dd
+
+--- xcodebuild: WARNING: Using the first of multiple matching destinations:
+{ platform:iOS Simulator, arch:arm64, id:C1AC39A2-8203-4BA7-88CA-BD891F16FA96, OS:26.5, name:E2E iPhone 16 Pro Max }
+{ platform:iOS Simulator, arch:x86_64, id:C1AC39A2-8203-4BA7-88CA-BD891F16FA96, OS:26.5, name:E2E iPhone 16 Pro Max }
+2026-10-28 04:03:40.868644+0000 WebDriverAgentRunner-Runner[14267:47358] [Default] Running tests...
+objc[14267]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x109be8310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x108f6c398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'All tests' started at 2026-10-28 04:03:50.922.
+Test Suite 'WebDriverAgentRunner.xctest' started at 2026-10-28 04:03:50.926.
+Test Suite 'UITestingUITests' started at 2026-10-28 04:03:50.926.
+    t =      nans Suite Set Up
+Test Case '-[UITestingUITests testRunner]' started.
+    t =     0.01s Start Test at 2026-10-28 04:03:54.928
+    t =     0.02s Set Up
+2026-10-28 04:03:54.946027+0000 WebDriverAgentRunner-Runner[14267:47358] Built at Oct 27 2026 22:13:25
+2026-10-28 04:03:55.141348+0000 WebDriverAgentRunner-Runner[14267:49148] [] nw_listener_socket_inbox_create_socket setsockopt SO_NECP_LISTENUUID failed [2: No such file or directory]
+2026-10-28 04:03:55.142584+0000 WebDriverAgentRunner-Runner[14267:47358] ServerURLHere->http://192.168.64.2:8100<-ServerURLHere
+2026-10-28 04:03:55.143438+0000 WebDriverAgentRunner-Runner[14267:49148] [] nw_listener_socket_inbox_create_socket setsockopt SO_NECP_LISTENUUID failed [2: No such file or directory]
+2026-10-28 04:03:57.025835+0000 WebDriverAgentRunner-Runner[14267:49148] Using singleton test manager
+2026-10-28 04:03:57.045199+0000 WebDriverAgentRunner-Runner[14267:49148] [connection] [C1 127.0.0.1:50899 tcp, local: 127.0.0.1:8100, definite, attribution: developer, server, prohibit joining protocols] is already cancelled, ignoring cancel
+2026-10-28 04:07:00.885010+0000 WebDriverAgentRunner-Runner[18141:59771] [Default] Running tests...
+objc[18141]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x1036cc310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x103700398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+
+Restarting after unexpected exit, crash, or test timeout; summary will include totals from previous launches.
+
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-28 04:07:04.090.
+Test Suite 'WebDriverAgentRunner.xctest' started at 2026-10-28 04:07:04.091.
+Test Suite 'UITestingUITests' started at 2026-10-28 04:07:04.091.
+    t =      nans Suite Set Up
+Test Suite 'UITestingUITests' passed at 2026-10-28 04:07:04.214.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.123) seconds
+Test Suite 'WebDriverAgentRunner.xctest' passed at 2026-10-28 04:07:04.214.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.123) seconds
+Test Suite 'Selected tests' passed at 2026-10-28 04:07:04.214.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.124) seconds
+2026-10-28 04:09:05.055 xcodebuild[12880:42600] [MT] IDETestOperationsObserverDebug: 409.762 elapsed -- Testing started completed.
+2026-10-28 04:09:05.056 xcodebuild[12880:42600] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-28 04:09:05.056 xcodebuild[12880:42600] [MT] IDETestOperationsObserverDebug: 409.764 sec, +409.764 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/runner/wda-dd/Logs/Test/Test-WebDriverAgentRunner-2026.10.28_04-02-08-+0000.xcresult
+
+Failing tests:
+	-[UITestingUITests testRunner]
+
+** TEST EXECUTE FAILED **
+
+Testing started

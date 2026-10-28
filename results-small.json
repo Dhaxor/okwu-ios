@@ -1,0 +1,128 @@
+{
+  "facts": {
+    "mode": "small",
+    "friendCode": null,
+    "accountCreated": false,
+    "accountDeleted": false
+  },
+  "window": {
+    "width": 375,
+    "height": 667
+  },
+  "results": [
+    {
+      "name": "BOOT",
+      "status": "PASS",
+      "detail": "fresh install opened the welcome screen",
+      "shot": "se-001-welcome.png"
+    },
+    {
+      "name": "ONBOARDING",
+      "status": "PASS",
+      "detail": "motive → new learner → dialect (areas listed) → first lesson intro",
+      "shot": "se-004-dialect.png"
+    },
+    {
+      "name": "LESSON-INTRO",
+      "status": "PASS",
+      "detail": "pattern card shown; 4 example(s) with a play button, 0 \"Recording coming soon\"; example 0 played, no toast",
+      "shot": "se-006-lesson-intro-scrolled.png"
+    },
+    {
+      "name": "FIRST-LESSON",
+      "status": "PASS",
+      "detail": "19 exercise screens (listen-choose ×8, tone-pair ×3, type-it ×8); reached the end moment; → account screen",
+      "shot": "se-030-lesson-complete.png"
+    },
+    {
+      "name": "TYPE-IT-KEYBOARD",
+      "status": "PASS",
+      "detail": "field and its button stay above the keyboard (top 451)",
+      "shot": "se-030-lesson-complete.png"
+    },
+    {
+      "name": "ACCOUNT",
+      "status": "PASS",
+      "detail": "age 18+ chosen; documents left for Community; Sign in with Apple button shown; agree switch \"I agree to the Terms of Use, Privacy Policy and Community Rules\"; → reminder",
+      "shot": "se-032-account-adult.png"
+    },
+    {
+      "name": "REMINDER",
+      "status": "PASS",
+      "detail": "no reminders → learn",
+      "shot": "se-033-reminder.png"
+    },
+    {
+      "name": "SOFT-PAYWALL",
+      "status": "PASS",
+      "detail": "4/4 plans: yearly: \"Yearly. $59.99 a year. 7 days free, then $59.99 a year · about $5.00 a\"; monthly: \"Monthly. $9.99 a month. Billed every month\"; family: \"Family. $89.99 a year. Billed once a year · about $7.50 a month · Up t\"; lifetime: \"Lifetime. $149.99 once. One payment, yours for good\"; note \"Prices come from the App Store, in your currency.\"; buy \"Start 7-day free trial\"; Not now → Learn",
+      "shot": "se-036-paywall-soft-legal.png"
+    },
+    {
+      "name": "LEARN",
+      "status": "PASS",
+      "detail": "next-lesson card shown; path shown; unit 1 listed; lesson 2 not opened",
+      "shot": "se-038-learn-path.png"
+    },
+    {
+      "name": "SE-PRACTICE",
+      "status": "PASS",
+      "detail": "practice shown",
+      "shot": "se-040-practice-scrolled.png"
+    },
+    {
+      "name": "SE-COMMUNITY",
+      "status": "PASS",
+      "detail": "community shown",
+      "shot": "se-042-community-scrolled.png"
+    },
+    {
+      "name": "SE-ME",
+      "status": "PASS",
+      "detail": "me shown",
+      "shot": "se-044-me-scrolled.png"
+    },
+    {
+      "name": "SE-KEYBOARD-DECK-SHEET",
+      "status": "PASS",
+      "detail": "field and its button stay above the keyboard (top 451); sheet top at 40",
+      "shot": "se-047-deck-name-keyboard.png"
+    },
+    {
+      "name": "SE-PAYWALL",
+      "status": "PASS",
+      "detail": "soft paywall already captured",
+      "shot": "se-047-deck-name-keyboard.png"
+    },
+    {
+      "name": "SE-SETTINGS",
+      "status": "PASS",
+      "detail": "Settings shown",
+      "shot": "se-048-settings.png"
+    },
+    {
+      "name": "APP-ALIVE-END",
+      "status": "PASS",
+      "detail": "app still in the foreground at the end",
+      "shot": "se-048-settings.png"
+    },
+    {
+      "name": "SAFE-AREA",
+      "status": "PASS",
+      "detail": "no control under the status bar, the island or the home indicator",
+      "shot": "se-048-settings.png"
+    },
+    {
+      "name": "STATUS-BAR",
+      "status": "PASS",
+      "detail": "no content under the status bar in any screenshot",
+      "shot": "se-048-settings.png"
+    },
+    {
+      "name": "OVERFLOW",
+      "status": "PASS",
+      "detail": "nothing runs off the side of the screen",
+      "shot": "se-048-settings.png"
+    }
+  ]
+}

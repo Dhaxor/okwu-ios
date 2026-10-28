@@ -1,0 +1,1054 @@
++ xcodebuild -version
+Xcode 26.6
+Build version 17F113
++ tar -xzf build/sim.tar.gz -C app
+++ find app -maxdepth 3 -name '*.app' -type d
+++ head -1
++ APP=app/Okwu.app
++ echo APP=app/Okwu.app
+APP=app/Okwu.app
++ '[' -n app/Okwu.app ']'
+++ /usr/libexec/PlistBuddy -c 'Print :CFBundleExecutable' app/Okwu.app/Info.plist
++ EXE=Okwu
++ /usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' app/Okwu.app/Info.plist
+app.okwu.learn
++ /usr/libexec/PlistBuddy -c 'Print :MinimumOSVersion' app/Okwu.app/Info.plist
+16.4
++ echo '== privacy usage strings =='
+== privacy usage strings ==
++ /usr/libexec/PlistBuddy -c Print app/Okwu.app/Info.plist
++ grep -i UsageDescription
+    NSMicrophoneUsageDescription = Okwu records your voice only so you can hear yourself next to a native speaker. Recordings stay on your phone unless you send one to your Family Circle.
+    NSFaceIDUsageDescription = Allow Okwu to access your Face ID biometric data.
++ defaults write com.apple.iphonesimulator ConnectHardwareKeyboard -bool false
++ echo '== host audio (the simulator plays through the host'\''s output device) =='
+== host audio (the simulator plays through the host's output device) ==
++ system_profiler SPAudioDataType
++ grep -E '^ {8}[^ ].*:$|Output Channels|Default Output'
+        Apple Virtual Sound Device:
+          Default Output Device: Yes
+          Output Channels: 2
+        Apple Virtual Sound Device:
+        Null Audio Device:
+          Output Channels: 2
++ system_profiler SPAudioDataType
++ grep -q 'Default Output Device: Yes'
++ curl -fsS -o /tmp/clip.m4a https://okwu.emperorduke5.workers.dev/audio/igboapi/ia_5f90c35e49f7e863e92b700a-6405ab8e32b114437a45b7d7.m4a
++ ls -la /tmp/clip.m4a
+-rw-r--r--  1 runner  wheel  10669 Oct 28 03:58 /tmp/clip.m4a
++ afplay -t 3 /tmp/clip.m4a
++ echo 'host afplay exit 0'
+host afplay exit 0
++ echo '== simulators (the main one boots now, in the background; the small one after the main pass) =='
+== simulators (the main one boots now, in the background; the small one after the main pass) ==
++ xcrun simctl list runtimes available
+== Runtimes ==
+iOS 26.2 (26.2 - 23C54) - com.apple.CoreSimulator.SimRuntime.iOS-26-2
+iOS 26.4 (26.4.1 - 23E254a) - com.apple.CoreSimulator.SimRuntime.iOS-26-4
+iOS 26.5 (26.5 - 23F77) - com.apple.CoreSimulator.SimRuntime.iOS-26-5
+tvOS 26.2 (26.2 - 23K51) - com.apple.CoreSimulator.SimRuntime.tvOS-26-2
+tvOS 26.4 (26.4 - 23L243a) - com.apple.CoreSimulator.SimRuntime.tvOS-26-4
+tvOS 26.5 (26.5 - 23L470) - com.apple.CoreSimulator.SimRuntime.tvOS-26-5
+watchOS 26.2 (26.2 - 23S303) - com.apple.CoreSimulator.SimRuntime.watchOS-26-2
+watchOS 26.4 (26.4 - 23T240b) - com.apple.CoreSimulator.SimRuntime.watchOS-26-4
+watchOS 26.5 (26.5 - 23T570) - com.apple.CoreSimulator.SimRuntime.watchOS-26-5
+visionOS 26.2 (26.2 - 23N301) - com.apple.CoreSimulator.SimRuntime.xrOS-26-2
+visionOS 26.4 (26.4.1 - 23O249a) - com.apple.CoreSimulator.SimRuntime.xrOS-26-4
+visionOS 26.5 (26.5 - 23O470) - com.apple.CoreSimulator.SimRuntime.xrOS-26-5
+++ xcrun simctl list runtimes available -j
+++ python3 -c 'import json,sys; r=[x for x in json.load(sys.stdin)['\''runtimes'\''] if x.get('\''platform'\'')=='\''iOS'\'' or x.get('\''name'\'','\'''\'').startswith('\''iOS'\'')]; r.sort(key=lambda x: [int(p) for p in x['\''version'\''].split('\''.'\'')]); print(r[-1]['\''identifier'\''])'
++ RUNTIME=com.apple.CoreSimulator.SimRuntime.iOS-26-5
+++ make_sim 'iPhone 16 Pro Max' 'iPhone 17 Pro Max' 'iPhone 15 Pro Max'
+++ for want in '"$@"'
++++ xcrun simctl list devicetypes -j
++++ python3 -c 'import json,sys; want=sys.argv[1]; t=[d['\''identifier'\''] for d in json.load(sys.stdin)['\''devicetypes'\''] if d['\''name'\'']==want]; print(t[0] if t else '\'''\'')' 'iPhone 16 Pro Max'
+++ TYPE_ID=com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro-Max
+++ '[' -n com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro-Max ']'
++++ xcrun simctl create 'E2E iPhone 16 Pro Max' com.apple.CoreSimulator.SimDeviceType.iPhone-16-Pro-Max com.apple.CoreSimulator.SimRuntime.iOS-26-5
+++ U=C1AC39A2-8203-4BA7-88CA-BD891F16FA96
+++ '[' -n C1AC39A2-8203-4BA7-88CA-BD891F16FA96 ']'
+++ echo C1AC39A2-8203-4BA7-88CA-BD891F16FA96
+++ return 0
++ UDID=C1AC39A2-8203-4BA7-88CA-BD891F16FA96
+++ make_sim 'iPhone SE (3rd generation)' 'iPhone 13 mini' 'iPhone 16e'
+++ for want in '"$@"'
++++ xcrun simctl list devicetypes -j
++++ python3 -c 'import json,sys; want=sys.argv[1]; t=[d['\''identifier'\''] for d in json.load(sys.stdin)['\''devicetypes'\''] if d['\''name'\'']==want]; print(t[0] if t else '\'''\'')' 'iPhone SE (3rd generation)'
+++ TYPE_ID=com.apple.CoreSimulator.SimDeviceType.iPhone-SE-3rd-generation
+++ '[' -n com.apple.CoreSimulator.SimDeviceType.iPhone-SE-3rd-generation ']'
++++ xcrun simctl create 'E2E iPhone SE (3rd generation)' com.apple.CoreSimulator.SimDeviceType.iPhone-SE-3rd-generation com.apple.CoreSimulator.SimRuntime.iOS-26-5
+++ U=03E431EF-0FB6-401F-86B2-DA4B09EEFC03
+++ '[' -n 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 ']'
+++ echo 03E431EF-0FB6-401F-86B2-DA4B09EEFC03
+++ return 0
++ SE=03E431EF-0FB6-401F-86B2-DA4B09EEFC03
++ echo 'UDID=C1AC39A2-8203-4BA7-88CA-BD891F16FA96 SE=03E431EF-0FB6-401F-86B2-DA4B09EEFC03 RUNTIME=com.apple.CoreSimulator.SimRuntime.iOS-26-5'
+UDID=C1AC39A2-8203-4BA7-88CA-BD891F16FA96 SE=03E431EF-0FB6-401F-86B2-DA4B09EEFC03 RUNTIME=com.apple.CoreSimulator.SimRuntime.iOS-26-5
++ '[' -n C1AC39A2-8203-4BA7-88CA-BD891F16FA96 ']'
++ date -u +%T
+03:59:03
++ BOOT1=8908
++ echo '== WebDriverAgent =='
+== WebDriverAgent ==
++ boot_sim C1AC39A2-8203-4BA7-88CA-BD891F16FA96
+++ find /Users/runner/.appium -maxdepth 8 -name WebDriverAgent.xcodeproj
+++ head -1
++ WDA_PROJ=/Users/runner/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj
++ echo WDA_PROJ=/Users/runner/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj
+WDA_PROJ=/Users/runner/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj
++ '[' '!' -d /Users/runner/wda-dd/Build/Products ']'
++ ls /Users/runner/wda-dd/Build/Products
+Debug-iphonesimulator
+WebDriverAgentRunner_iphonesimulator26.5-arm64-x86_64.xctestrun
++ cd e2e
++ npm ci --no-audit --no-fund
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 239 packages in 1m
++ appium --port 4723 --base-path / --log-timestamp --keep-alive-timeout 3600
+++ seq 1 30
++ for i in '$(seq 1 30)'
++ curl -s http://127.0.0.1:4723/status
++ sleep 2
++ for i in '$(seq 1 30)'
++ curl -s http://127.0.0.1:4723/status
++ sleep 2
++ for i in '$(seq 1 30)'
++ curl -s http://127.0.0.1:4723/status
++ sleep 2
++ for i in '$(seq 1 30)'
++ curl -s http://127.0.0.1:4723/status
++ sleep 2
++ for i in '$(seq 1 30)'
++ curl -s http://127.0.0.1:4723/status
++ sleep 2
++ for i in '$(seq 1 30)'
++ curl -s http://127.0.0.1:4723/status
++ sleep 2
++ for i in '$(seq 1 30)'
++ curl -s http://127.0.0.1:4723/status
++ sleep 2
++ for i in '$(seq 1 30)'
++ curl -s http://127.0.0.1:4723/status
+{"value":{"ready":true,"message":"The server is ready to accept new connections","build":{"version":"3.9.0"}}}+ break
++ wait 8908
++ cat /tmp/boot-full.log
++ xcrun simctl boot C1AC39A2-8203-4BA7-88CA-BD891F16FA96
++ xcrun simctl bootstatus C1AC39A2-8203-4BA7-88CA-BD891F16FA96 -b
++ xcrun simctl status_bar C1AC39A2-8203-4BA7-88CA-BD891F16FA96 override --time 9:41 --dataNetwork wifi --wifiMode active --wifiBars 3 --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
++ xcrun simctl install C1AC39A2-8203-4BA7-88CA-BD891F16FA96 app/Okwu.app
+++ date -u +%T
++ echo 'booted and installed on C1AC39A2-8203-4BA7-88CA-BD891F16FA96 at 04:00:52'
+booted and installed on C1AC39A2-8203-4BA7-88CA-BD891F16FA96 at 04:00:52
++ touch /tmp/e2e-start
++ export WDA_DERIVED=/Users/runner/wda-dd
++ WDA_DERIVED=/Users/runner/wda-dd
++ echo '== full walkthrough (iPhone 16 Pro Max) =='
+== full walkthrough (iPhone 16 Pro Max) ==
++ sleep 45
++ WDA_URL=
++ start_wda C1AC39A2-8203-4BA7-88CA-BD891F16FA96
++ pkill -f 'xcodebuild.*WebDriverAgent'
++ true
++ sleep 3
++ xcodebuild test-without-building -project /Users/runner/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=C1AC39A2-8203-4BA7-88CA-BD891F16FA96 -derivedDataPath /Users/runner/wda-dd
+++ seq 1 120
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ echo 'WebDriverAgent up on C1AC39A2-8203-4BA7-88CA-BD891F16FA96 after 100s'
+WebDriverAgent up on C1AC39A2-8203-4BA7-88CA-BD891F16FA96 after 100s
++ return 0
++ WDA_URL=http://127.0.0.1:8100
+++ date '+%Y-%m-%d %H:%M:%S'
++ START='2026-10-28 04:03:57'
++ cd e2e
++ UDID=C1AC39A2-8203-4BA7-88CA-BD891F16FA96
++ BUNDLE_ID=app.okwu.learn
++ MODE=full
++ SHOTS_DIR=../shots
++ WDA_URL=http://127.0.0.1:8100
++ node walkthrough.mjs
+2026-10-28T04:06:20.721Z ERROR webdriver: WebDriverError: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100 when running "http://127.0.0.1:4723/session" with method "POST"
+2026-10-28T04:06:25.747Z ERROR webdriver: unknown error: WebDriverError: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100 when running "http://127.0.0.1:4723/session" with method "POST"
+    at FetchRequest._request (file:///Users/runner/work/okwu-ios/okwu-ios/e2e/node_modules/webdriver/build/node.js:2316:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async startWebDriverSession (file:///Users/runner/work/okwu-ios/okwu-ios/e2e/node_modules/webdriver/build/node.js:1376:16)
+    at async _WebDriver.newSession (file:///Users/runner/work/okwu-ios/okwu-ios/e2e/node_modules/webdriver/build/node.js:1805:41)
+    at async remote (file:///Users/runner/work/okwu-ios/okwu-ios/e2e/node_modules/webdriverio/build/node.js:10947:20)
+    at async createSession (file:///Users/runner/work/okwu-ios/okwu-ios/e2e/walkthrough.mjs:77:14)
+    at async file:///Users/runner/work/okwu-ios/okwu-ios/e2e/walkthrough.mjs:92:16
+[e2e:full] +146.8s session attempt 1/2 failed: WebDriverError: Unable to start WebDriverAgent session. Original error: Could not proxy command to the remote server. Original error: connect ECONNREFUSED 127.0.0.1:8100 when running "http://127.0.0.1:4723/session" with method "POST"
+[e2e:full] +146.8s dropping the external WebDriverAgent; Appium launches its own
+[e2e:full] +264.3s session ready in 264s (WebDriverAgent: prebuilt)
+[e2e:full] +266.3s window {"width":440,"height":956}
+[e2e:full] +270.8s shot 001-welcome.png
+[e2e:full] +276.0s BOOT RESULT: PASS — fresh install opened the welcome screen
+[e2e:full] +283.1s tapped Start your first lesson
+[e2e:full] +292.6s tapped Talk with my family
+[e2e:full] +293.9s shot 002-motive.png
+[e2e:full] +298.9s tapped continue
+[e2e:full] +301.4s tapped I'm new to Igbo
+[e2e:full] +302.2s shot 003-familiarity.png
+[e2e:full] +304.0s tapped continue
+[e2e:full] +306.7s shot 004-dialect.png
+[e2e:full] +312.2s tapped Continue with Standard Igbo
+[e2e:full] +313.8s ONBOARDING RESULT: PASS — motive → new learner → dialect (areas listed) → first lesson intro
+[e2e:full] +316.3s shot 005-lesson-intro.png
+[e2e:full] +322.3s tapped play the first example
+[e2e:full] +327.7s shot 006-lesson-intro-scrolled.png
+[e2e:full] +328.0s LESSON-INTRO RESULT: PASS — pattern card shown; 4 example(s) with a play button, 0 "Recording coming soon"; example 0 played, no toast
+[e2e:full] +329.4s tapped Start lesson
+[e2e:full] +332.4s shot 007-lesson-01-listen-choose.png
+[e2e:full] +342.9s shot 008-lesson-listen-choose-playing.png
+[e2e:full] +347.9s tapped option 0
+[e2e:full] +350.2s tapped check
+[e2e:full] +352.0s shot 009-lesson-listen-choose-feedback.png
+[e2e:full] +354.9s tapped continue
+[e2e:full] +359.6s shot 010-lesson-02-listen-choose.png
+[e2e:full] +361.3s tapped option 0
+[e2e:full] +363.0s tapped check
+[e2e:full] +365.7s tapped continue
+[e2e:full] +369.8s shot 011-lesson-03-listen-choose.png
+[e2e:full] +371.1s tapped option 0
+[e2e:full] +372.5s tapped check
+[e2e:full] +375.7s tapped continue
+[e2e:full] +380.2s shot 012-lesson-04-tone-pair.png
+[e2e:full] +381.7s shot 013-lesson-tone-pair-playing.png
+[e2e:full] +385.2s tapped option 0
+[e2e:full] +386.6s tapped check
+[e2e:full] +388.1s shot 014-lesson-tone-pair-feedback.png
+[e2e:full] +390.2s tapped continue
+[e2e:full] +397.1s shot 015-lesson-05-type-it.png
+[e2e:full] +403.5s shot 016-lesson-type-it-keyboard.png
+[e2e:full] +404.6s tapped check
+[e2e:full] +406.8s shot 017-lesson-type-it-feedback.png
+[e2e:full] +408.9s tapped continue
+[e2e:full] +412.8s shot 018-lesson-06-listen-choose.png
+[e2e:full] +414.8s tapped option 0
+[e2e:full] +418.8s tapped check
+[e2e:full] +424.0s tapped continue
+[e2e:full] +427.7s shot 019-lesson-07-type-it.png
+[e2e:full] +434.3s tapped check
+[e2e:full] +437.6s tapped continue
+[e2e:full] +441.6s shot 020-lesson-08-type-it.png
+[e2e:full] +446.4s tapped check
+[e2e:full] +449.4s tapped continue
+[e2e:full] +452.8s shot 021-lesson-09-tone-pair.png
+[e2e:full] +454.3s tapped option 0
+[e2e:full] +455.8s tapped check
+[e2e:full] +458.1s tapped continue
+[e2e:full] +461.8s shot 022-lesson-10-type-it.png
+[e2e:full] +467.1s tapped check
+[e2e:full] +470.7s tapped continue
+[e2e:full] +474.5s shot 023-lesson-11-listen-choose.png
+[e2e:full] +475.7s tapped option 0
+[e2e:full] +477.5s tapped check
+[e2e:full] +480.4s tapped continue
+[e2e:full] +484.0s shot 024-lesson-12-listen-choose.png
+[e2e:full] +485.4s tapped option 0
+[e2e:full] +486.6s tapped check
+[e2e:full] +488.9s tapped continue
+[e2e:full] +492.7s shot 025-lesson-13-listen-choose.png
+[e2e:full] +494.0s tapped option 0
+[e2e:full] +495.2s tapped check
+[e2e:full] +498.2s tapped continue
+[e2e:full] +503.2s shot 026-lesson-14-tone-pair.png
+[e2e:full] +505.3s tapped option 0
+[e2e:full] +507.0s tapped check
+[e2e:full] +509.5s tapped continue
+[e2e:full] +514.0s shot 027-lesson-15-type-it.png
+[e2e:full] +518.7s tapped check
+[e2e:full] +521.4s tapped continue
+[e2e:full] +524.5s shot 028-lesson-16-listen-choose.png
+[e2e:full] +525.8s tapped option 0
+[e2e:full] +527.1s tapped check
+[e2e:full] +529.3s tapped continue
+[e2e:full] +532.8s shot 029-lesson-17-type-it.png
+[e2e:full] +537.0s tapped check
+[e2e:full] +539.6s tapped continue
+[e2e:full] +542.7s shot 030-lesson-18-type-it.png
+[e2e:full] +546.9s tapped check
+[e2e:full] +549.7s tapped continue
+[e2e:full] +552.6s shot 031-lesson-19-tone-pair.png
+[e2e:full] +554.0s tapped option 0
+[e2e:full] +555.2s tapped check
+[e2e:full] +557.4s tapped continue
+[e2e:full] +560.3s shot 032-lesson-20-type-it.png
+[e2e:full] +564.6s tapped check
+[e2e:full] +567.2s tapped continue
+[e2e:full] +570.3s shot 033-lesson-complete.png
+[e2e:full] +573.2s tapped end continue
+[e2e:full] +576.1s FIRST-LESSON RESULT: PASS — 20 exercise screens (listen-choose ×8, tone-pair ×4, type-it ×8); reached the end moment; → account screen
+[e2e:full] +576.1s LESSON-RECORDINGS RESULT: PASS — 12/20 exercise screens had a play button; "Recording coming soon" on 0
+[e2e:full] +576.1s LESSON-AUDIO RESULT: PASS — listen-choose: "Play" → "Playing" on the second tap; no error toast | tone-pair: "Play" → "Playing"; no error toast
+[e2e:full] +576.1s MIC-PROMPT RESULT: SKIP — no Say it exercise in the first lesson (tried again in Practice)
+[e2e:full] +576.1s TYPE-IT-KEYBOARD RESULT: PASS — field and its button stay above the keyboard (top 655)
+[e2e:full] +577.6s shot 034-account.png
+[e2e:full] +578.8s tapped 18 or over
+[e2e:full] +579.6s shot 035-account-adult.png
+[e2e:full] +584.2s tapped continue
+[e2e:full] +585.1s ACCOUNT RESULT: PASS — age 18+ chosen; documents left for Community; Sign in with Apple button shown; agree switch "I agree to the Terms of Use, Privacy Policy and Community Rules"; → reminder
+[e2e:full] +586.9s tapped Evening
+[e2e:full] +588.0s shot 036-reminder.png
+[e2e:full] +592.9s tapped Start learning
+[e2e:full] +597.4s shot 037-notifications-system-alert.png
+[e2e:full] +603.3s REMINDER RESULT: PASS — notification prompt "“Okwu” Would Like to Send You Notifications Notifications may include alerts, sounds, and icon badges. These can be configured in Settings." accepted with "Allow"; → paywall
+[e2e:full] +606.8s shot 038-paywall-soft.png
+[e2e:full] +632.2s shot 039-paywall-soft-plans.png
+[e2e:full] +638.2s shot 040-paywall-soft-legal.png
+[e2e:full] +642.5s tapped Not now
+[e2e:full] +644.0s SOFT-PAYWALL RESULT: PASS — 4/4 plans: yearly: "Yearly. $59.99 a year. 7 days free, then $59.99 a year · about $5.00 a"; monthly: "Monthly. $9.99 a month. Billed every month"; family: "Family. $89.99 a year. Billed once a year · about $7.50 a month · Up t"; lifetime: "Lifetime. $149.99 once. One payment, yours for good"; note "Prices come from the App Store, in your currency."; buy "Start 7-day free trial"; Not now → Learn
+[e2e:full] +647.1s tapped learn tab
+[e2e:full] +650.5s shot 041-learn.png
+[e2e:full] +665.4s shot 042-learn-path.png
+[e2e:full] +672.5s tapped Unit 1 lesson 2
+[e2e:full] +674.6s shot 043-learn-lesson-2-intro.png
+[e2e:full] +676.0s tapped close
+[e2e:full] +687.9s shot 044-learn-unit-3.png
+[e2e:full] +688.1s LEARN RESULT: PASS — next-lesson card shown; path shown; unit 1 listed; lesson 2 intro opened from the path
+[e2e:full] +691.1s tapped practice tab
+[e2e:full] +693.7s shot 045-practice.png
+[e2e:full] +701.9s tapped Search the dictionary
+[e2e:full] +703.4s shot 046-dictionary.png
+[e2e:full] +709.2s shot 047-dictionary-keyboard.png
+[e2e:full] +710.6s shot 048-dictionary-nne.png
+[e2e:full] +716.6s tapped first result
+[e2e:full] +718.3s shot 049-dictionary-word.png
+[e2e:full] +723.1s KEYBOARD-DICTIONARY RESULT: PASS — field stay above the keyboard (top 655)
+[e2e:full] +723.1s DICTIONARY RESULT: PASS — "nne" → first hit "nne: mother" → word page opened; recording available
+[e2e:full] +726.5s shot 050-word-playing.png
+[e2e:full] +728.9s WORD-AUDIO RESULT: PASS — "Hear it" → "Playing…"; no error toast
+[e2e:full] +731.0s tapped back (word-back)
+[e2e:full] +733.5s tapped back (dictionary-header-back)
+[e2e:full] +735.6s tapped practice tab
+[e2e:full] +738.3s tapped Phrasebook
+[e2e:full] +740.5s shot 051-phrasebook.png
+[e2e:full] +745.7s tapped phrasebook-situation-greetings
+[e2e:full] +747.6s shot 052-phrasebook-situation.png
+[e2e:full] +750.0s tapped first phrase
+[e2e:full] +752.1s shot 053-phrase.png
+[e2e:full] +755.3s PHRASEBOOK RESULT: PASS — greetings → "Daalụ rinne."; recording available
+[e2e:full] +757.5s shot 054-phrase-playing.png
+[e2e:full] +759.4s PHRASE-AUDIO RESULT: PASS — "Hear it" → "Playing…"; no error toast
+[e2e:full] +762.7s tapped back (phrase-back)
+[e2e:full] +767.6s tapped back (situation-back)
+[e2e:full] +771.7s tapped back (phrasebook-header-back)
+[e2e:full] +774.2s tapped practice tab
+[e2e:full] +777.0s tapped Say it
+[e2e:full] +778.1s shot 055-speak.png
+[e2e:full] +779.4s tapped start
+[e2e:full] +792.5s tapped record yourself
+2026-10-28T04:17:13.499Z ERROR webdriver: WebDriverError: An attempt was made to operate on a modal dialog when one was not open when running "execute/sync" with method "POST"
+2026-10-28T04:17:14.362Z ERROR webdriver: WebDriverError: An attempt was made to operate on a modal dialog when one was not open when running "execute/sync" with method "POST"
+[e2e:full] +797.2s shot 056-speak-mic-system-alert.png
+[e2e:full] +800.5s shot 057-speak-say-it-recorder.png
+[e2e:full] +803.3s tapped stop
+[e2e:full] +805.2s shot 058-speak-say-it-recorded.png
+[e2e:full] +807.3s tapped back (speak-session-close)
+[e2e:full] +809.8s MIC-PROMPT-PRACTICE RESULT: PASS — "Record yourself" tapped; system prompt "“Okwu” would like to access the Microphone. Okwu records your voice only so you can hear yourself next to a native speaker. Recordings stay on your phone unless you send one to your Family Circle." [Don’t Allow / Allow] accepted with "Allow"; recorder recording; stopped → Play mine shown; app alive
+[e2e:full] +811.3s tapped learn tab
+[e2e:full] +824.8s tapped Library
+[e2e:full] +826.8s shot 059-library.png
+[e2e:full] +832.2s shot 060-library-scrolled.png
+[e2e:full] +833.9s LIBRARY RESULT: PASS — shelves: names, proverbs, tales, customs
+[e2e:full] +835.7s tapped Proverbs
+[e2e:full] +838.3s shot 061-proverbs.png
+[e2e:full] +846.6s tapped first proverb
+[e2e:full] +848.1s shot 062-proverb.png
+[e2e:full] +852.0s tapped play the proverb
+[e2e:full] +855.4s shot 063-proverb-played.png
+[e2e:full] +858.4s shot 064-proverb-meaning.png
+[e2e:full] +871.4s tapped back (proverb-back)
+[e2e:full] +890.4s tapped back (proverbs-header-back)
+[e2e:full] +891.3s PROVERB RESULT: PASS — proverb page shown; played, no toast
+[e2e:full] +895.2s tapped Tales
+[e2e:full] +896.7s shot 065-tales.png
+[e2e:full] +898.3s tapped first tale
+[e2e:full] +900.5s shot 066-tale.png
+[e2e:full] +910.1s shot 067-tale-reading.png
+[e2e:full] +915.6s tapped Igbo lines
+[e2e:full] +917.7s shot 068-tale-igbo.png
+[e2e:full] +930.5s tapped back (tale-back)
+[e2e:full] +932.8s tapped back (tales-header-back)
+[e2e:full] +944.9s tapped back (library-header-back)
+[e2e:full] +945.8s TALE RESULT: PASS — tale page shown; Igbo lines shown
+[e2e:full] +949.5s tapped community tab
+[e2e:full] +952.6s shot 069-community-terms.png
+[e2e:full] +981.5s tapped I agree
+[e2e:full] +982.3s shot 070-community-terms-agreed.png
+[e2e:full] +984.0s tapped Agree and continue
+[e2e:full] +987.0s shot 071-community.png
+[e2e:full] +999.6s COMMUNITY-TERMS RESULT: PASS — anonymous account created on the live server; friend code VRG KDSZ; ""
+[e2e:full] +1001.5s tapped community tab
+[e2e:full] +1003.5s shot 072-community-family.png
+[e2e:full] +1006.2s tapped Start a circle
+[e2e:full] +1008.1s shot 073-circle-new.png
+[e2e:full] +1012.7s tapped back (circle-new-header-back)
+[e2e:full] +1013.6s FAMILY-CIRCLE RESULT: PASS — Start your Family Circle screen opened (nothing created)
+[e2e:full] +1016.3s tapped community tab
+[e2e:full] +1022.7s shot 074-community-friends.png
+[e2e:full] +1024.8s tapped See all friends
+[e2e:full] +1027.4s shot 075-friends.png
+[e2e:full] +1037.2s shot 076-friends-add-keyboard.png
+[e2e:full] +1039.1s KEYBOARD-FRIEND-CODE RESULT: PASS — field and its button stay above the keyboard (top 655)
+[e2e:full] +1050.6s tapped back (friends-header-back)
+[e2e:full] +1051.5s FRIENDS RESULT: PASS — friends screen opened; code "VRG KDSZ"
+[e2e:full] +1053.5s tapped community tab
+[e2e:full] +1060.2s shot 077-community-clubs.png
+[e2e:full] +1063.2s tapped Browse clubs
+[e2e:full] +1065.6s shot 078-clubs.png
+[e2e:full] +1069.0s tapped back (clubs-header-back)
+[e2e:full] +1070.0s CLUBS RESULT: PASS — clubs browser opened (no clubs yet)
+[e2e:full] +1072.1s tapped me tab
+[e2e:full] +1075.1s shot 079-me.png
+[e2e:full] +1082.3s shot 080-me-scrolled.png
+[e2e:full] +1082.7s ME RESULT: PASS — Me shown
+[e2e:full] +1085.2s tapped me tab
+[e2e:full] +1101.0s tapped me-edit-name
+[e2e:full] +1103.3s shot 081-me-name-sheet.png
+[e2e:full] +1113.1s shot 082-me-name-keyboard.png
+[e2e:full] +1118.8s tapped cancel
+[e2e:full] +1119.7s KEYBOARD-NAME-SHEET RESULT: PASS — field and its button stay above the keyboard (top 655); sheet top at 211
+[e2e:full] +1122.2s tapped me tab
+[e2e:full] +1130.2s tapped Flashcards
+[e2e:full] +1133.5s shot 083-tool-flashcards.png
+[e2e:full] +1146.9s tapped flashcards-mine-new
+[e2e:full] +1150.1s shot 084-deck-name-sheet.png
+[e2e:full] +1158.7s shot 085-deck-name-keyboard.png
+[e2e:full] +1166.2s tap-failed cancel (not found)
+[e2e:full] +1167.5s tapped back (deck-header-back)
+[e2e:full] +1169.3s KEYBOARD-DECK-SHEET RESULT: PASS — field and its button stay above the keyboard (top 655); sheet top at 211
+[e2e:full] +1173.0s shot 086-tool-flashcards-scrolled.png
+[e2e:full] +1187.3s tapped back (flashcards-header-back)
+[e2e:full] +1188.2s TOOL-FLASHCARDS RESULT: PASS — Flashcards opened
+[e2e:full] +1190.8s tapped me tab
+[e2e:full] +1194.8s tapped Offline packs
+[e2e:full] +1198.7s shot 087-tool-offline.png
+[e2e:full] +1211.0s shot 088-tool-offline-scrolled.png
+[e2e:full] +1229.0s tapped back (offline-header-back)
+[e2e:full] +1229.9s TOOL-OFFLINE RESULT: PASS — Offline packs opened
+[e2e:full] +1232.4s tapped me tab
+[e2e:full] +1235.8s tapped Progress report
+[e2e:full] +1238.9s shot 089-tool-report.png
+[e2e:full] +1247.6s shot 090-tool-report-scrolled.png
+[e2e:full] +1262.8s tapped back (report-header-back)
+[e2e:full] +1263.7s TOOL-REPORT RESULT: PASS — Progress report opened
+[e2e:full] +1265.8s tapped me tab
+[e2e:full] +1279.3s tapped Okwu Plus card
+[e2e:full] +1281.8s shot 091-paywall-me.png
+[e2e:full] +1301.8s shot 092-paywall-me-plans.png
+[e2e:full] +1307.3s shot 093-paywall-me-legal.png
+[e2e:full] +1312.3s tapped close
+[e2e:full] +1313.0s PAYWALL RESULT: PASS — (soft offer also seen) 4/4 plans: yearly: "Yearly. $59.99 a year. 7 days free, then $59.99 a year · about $5.00 a"; monthly: "Monthly. $9.99 a month. Billed every month"; family: "Family. $89.99 a year. Billed once a year · about $7.50 a month · Up t"; lifetime: "Lifetime. $149.99 once. One payment, yours for good"; note "Prices come from the App Store, in your currency."; buy "Start 7-day free trial"; close → Me
+[e2e:full] +1314.8s tapped me tab
+[e2e:full] +1325.2s tapped Settings
+[e2e:full] +1327.1s shot 094-settings.png
+[e2e:full] +1332.9s shot 095-settings-2.png
+[e2e:full] +1372.5s shot 096-settings-about.png
+[e2e:full] +1374.3s tapped Credits
+[e2e:full] +1375.6s shot 097-credits.png
+[e2e:full] +1380.5s shot 098-credits-2.png
+[e2e:full] +1391.8s tapped back (credits-header-back)
+[e2e:full] +1392.7s CREDITS RESULT: PASS — Credits opened from Settings
+[e2e:full] +1407.9s tapped back (settings-header-back)
+[e2e:full] +1410.3s tapped me tab
+[e2e:full] +1413.7s tapped Settings
+[e2e:full] +1424.8s shot 099-delete-settings-account.png
+[e2e:full] +1426.2s tapped Delete account
+[e2e:full] +1427.4s shot 100-delete-delete.png
+[e2e:full] +1428.9s tapped Delete my account
+[e2e:full] +1430.1s shot 101-delete-confirm.png
+[e2e:full] +1430.9s tapped Delete everything
+[e2e:full] +1433.5s shot 102-delete-after-delete.png
+[e2e:full] +1433.6s DELETE-ACCOUNT RESULT: PASS — back on the welcome screen; toast "(none seen)"; friend code VRG KDSZ
+[e2e:full] +1433.7s APP-ALIVE-END RESULT: PASS — app still in the foreground at the end
+[e2e:full] +1433.7s SAFE-AREA RESULT: PASS — no control under the status bar, the island or the home indicator
+[e2e:full] +1433.7s STATUS-BAR RESULT: PASS — no content under the status bar in any screenshot
+[e2e:full] +1433.7s OVERFLOW RESULT: PASS — nothing runs off the side of the screen
+[e2e:full] +1433.7s SUMMARY: 38 pass, 0 fail, 0 warn, 1 skip
++ FULL=0
++ xcrun simctl spawn C1AC39A2-8203-4BA7-88CA-BD891F16FA96 log show --style compact --info --start '2026-10-28 04:03:57' --predicate 'process == "Okwu"'
++ pkill -f 'xcodebuild.*WebDriverAgent'
++ xcrun simctl shutdown C1AC39A2-8203-4BA7-88CA-BD891F16FA96
++ echo '== small-screen pass (iPhone SE size) =='
+== small-screen pass (iPhone SE size) ==
++ SMALL=1
++ '[' -n 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 ']'
++ boot_sim 03E431EF-0FB6-401F-86B2-DA4B09EEFC03
++ xcrun simctl boot 03E431EF-0FB6-401F-86B2-DA4B09EEFC03
++ xcrun simctl bootstatus 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 -b
++ xcrun simctl status_bar 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 override --time 9:41 --dataNetwork wifi --wifiMode active --wifiBars 3 --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
++ xcrun simctl install 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 app/Okwu.app
+++ date -u +%T
++ echo 'booted and installed on 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 at 04:31:24'
+booted and installed on 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 at 04:31:24
++ sleep 45
++ WDA_URL=
++ start_wda 03E431EF-0FB6-401F-86B2-DA4B09EEFC03
++ pkill -f 'xcodebuild.*WebDriverAgent'
++ true
++ sleep 3
++ xcodebuild test-without-building -project /Users/runner/.appium/node_modules/appium-xcuitest-driver/node_modules/appium-webdriveragent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=03E431EF-0FB6-401F-86B2-DA4B09EEFC03 -derivedDataPath /Users/runner/wda-dd
+++ seq 1 120
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ sleep 5
++ for i in '$(seq 1 120)'
++ curl -sf -m 5 http://127.0.0.1:8100/status
++ echo 'WebDriverAgent up on 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 after 65s'
+WebDriverAgent up on 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 after 65s
++ return 0
++ WDA_URL=http://127.0.0.1:8100
+++ date '+%Y-%m-%d %H:%M:%S'
++ START='2026-10-28 04:33:34'
++ cd e2e
++ UDID=03E431EF-0FB6-401F-86B2-DA4B09EEFC03
++ BUNDLE_ID=app.okwu.learn
++ MODE=small
++ SHOTS_DIR=../shots
++ WDA_URL=http://127.0.0.1:8100
++ node walkthrough.mjs
+[e2e:small] +14.4s session ready in 14s (WebDriverAgent: started by the workflow)
+[e2e:small] +14.9s window {"width":375,"height":667}
+[e2e:small] +19.6s shot se-001-welcome.png
+[e2e:small] +20.7s BOOT RESULT: PASS — fresh install opened the welcome screen
+[e2e:small] +22.2s tapped Start your first lesson
+[e2e:small] +23.3s tapped Talk with my family
+[e2e:small] +24.0s shot se-002-motive.png
+[e2e:small] +26.5s tapped continue
+[e2e:small] +27.7s tapped I'm new to Igbo
+[e2e:small] +28.4s shot se-003-familiarity.png
+[e2e:small] +30.5s tapped continue
+[e2e:small] +32.3s shot se-004-dialect.png
+[e2e:small] +35.4s tapped Continue with Standard Igbo
+[e2e:small] +36.3s ONBOARDING RESULT: PASS — motive → new learner → dialect (areas listed) → first lesson intro
+[e2e:small] +38.2s shot se-005-lesson-intro.png
+[e2e:small] +44.3s tapped play the first example
+[e2e:small] +48.3s shot se-006-lesson-intro-scrolled.png
+[e2e:small] +49.9s LESSON-INTRO RESULT: PASS — pattern card shown; 4 example(s) with a play button, 0 "Recording coming soon"; example 0 played, no toast
+[e2e:small] +51.0s tapped Start lesson
+[e2e:small] +53.7s shot se-007-lesson-01-listen-choose.png
+[e2e:small] +54.9s tapped option 0
+[e2e:small] +56.5s tapped check
+[e2e:small] +57.7s shot se-008-lesson-listen-choose-feedback.png
+[e2e:small] +59.4s tapped continue
+[e2e:small] +63.2s shot se-009-lesson-02-listen-choose.png
+[e2e:small] +64.5s tapped option 0
+[e2e:small] +65.7s tapped check
+[e2e:small] +68.0s tapped continue
+[e2e:small] +71.4s shot se-010-lesson-03-tone-pair.png
+[e2e:small] +72.5s tapped option 0
+[e2e:small] +73.7s tapped check
+[e2e:small] +75.1s shot se-011-lesson-tone-pair-feedback.png
+[e2e:small] +76.9s tapped continue
+[e2e:small] +80.4s shot se-012-lesson-04-listen-choose.png
+[e2e:small] +81.9s tapped option 0
+[e2e:small] +83.3s tapped check
+[e2e:small] +86.3s tapped continue
+[e2e:small] +90.0s shot se-013-lesson-05-tone-pair.png
+[e2e:small] +91.3s tapped option 0
+[e2e:small] +93.0s tapped check
+[e2e:small] +95.3s tapped continue
+[e2e:small] +98.4s shot se-014-lesson-06-type-it.png
+[e2e:small] +104.9s shot se-015-lesson-type-it-keyboard.png
+[e2e:small] +106.0s tapped check
+[e2e:small] +107.9s shot se-016-lesson-type-it-feedback.png
+[e2e:small] +109.1s tapped continue
+[e2e:small] +112.8s shot se-017-lesson-07-type-it.png
+[e2e:small] +117.3s tapped check
+[e2e:small] +120.5s tapped continue
+[e2e:small] +124.3s shot se-018-lesson-08-type-it.png
+[e2e:small] +128.9s tapped check
+[e2e:small] +132.0s tapped continue
+[e2e:small] +135.3s shot se-019-lesson-09-listen-choose.png
+[e2e:small] +136.4s tapped option 0
+[e2e:small] +137.9s tapped check
+[e2e:small] +140.5s tapped continue
+[e2e:small] +143.7s shot se-020-lesson-10-type-it.png
+[e2e:small] +148.7s tapped check
+[e2e:small] +151.5s tapped continue
+[e2e:small] +154.7s shot se-021-lesson-11-listen-choose.png
+[e2e:small] +155.8s tapped option 0
+[e2e:small] +157.4s tapped check
+[e2e:small] +160.3s tapped continue
+[e2e:small] +164.1s shot se-022-lesson-12-listen-choose.png
+[e2e:small] +165.6s tapped option 0
+[e2e:small] +167.1s tapped check
+[e2e:small] +169.6s tapped continue
+[e2e:small] +173.6s shot se-023-lesson-13-tone-pair.png
+[e2e:small] +174.9s tapped option 0
+[e2e:small] +176.3s tapped check
+[e2e:small] +179.3s tapped continue
+[e2e:small] +182.9s shot se-024-lesson-14-listen-choose.png
+[e2e:small] +184.3s tapped option 0
+[e2e:small] +185.5s tapped check
+[e2e:small] +187.7s tapped continue
+[e2e:small] +191.1s shot se-025-lesson-15-type-it.png
+[e2e:small] +196.5s tapped check
+[e2e:small] +199.7s tapped continue
+[e2e:small] +203.2s shot se-026-lesson-16-type-it.png
+[e2e:small] +207.8s tapped check
+[e2e:small] +210.7s tapped continue
+[e2e:small] +214.4s shot se-027-lesson-17-type-it.png
+[e2e:small] +218.5s tapped check
+[e2e:small] +221.7s tapped continue
+[e2e:small] +224.8s shot se-028-lesson-18-listen-choose.png
+[e2e:small] +226.2s tapped option 0
+[e2e:small] +227.8s tapped check
+[e2e:small] +230.3s tapped continue
+[e2e:small] +234.4s shot se-029-lesson-19-type-it.png
+[e2e:small] +240.6s tapped check
+[e2e:small] +244.2s tapped continue
+[e2e:small] +247.3s shot se-030-lesson-complete.png
+[e2e:small] +250.2s tapped end continue
+[e2e:small] +253.2s FIRST-LESSON RESULT: PASS — 19 exercise screens (listen-choose ×8, tone-pair ×3, type-it ×8); reached the end moment; → account screen
+[e2e:small] +253.2s TYPE-IT-KEYBOARD RESULT: PASS — field and its button stay above the keyboard (top 451)
+[e2e:small] +254.4s shot se-031-account.png
+[e2e:small] +255.2s tapped 18 or over
+[e2e:small] +255.8s shot se-032-account-adult.png
+[e2e:small] +258.8s tapped continue
+[e2e:small] +259.2s ACCOUNT RESULT: PASS — age 18+ chosen; documents left for Community; Sign in with Apple button shown; agree switch "I agree to the Terms of Use, Privacy Policy and Community Rules"; → reminder
+[e2e:small] +259.9s shot se-033-reminder.png
+[e2e:small] +261.7s tapped No reminders
+[e2e:small] +263.1s REMINDER RESULT: PASS — no reminders → learn
+[e2e:small] +265.5s shot se-034-paywall-soft.png
+[e2e:small] +288.8s shot se-035-paywall-soft-plans.png
+[e2e:small] +293.2s shot se-036-paywall-soft-legal.png
+[e2e:small] +296.5s tapped Not now
+[e2e:small] +297.3s SOFT-PAYWALL RESULT: PASS — 4/4 plans: yearly: "Yearly. $59.99 a year. 7 days free, then $59.99 a year · about $5.00 a"; monthly: "Monthly. $9.99 a month. Billed every month"; family: "Family. $89.99 a year. Billed once a year · about $7.50 a month · Up t"; lifetime: "Lifetime. $149.99 once. One payment, yours for good"; note "Prices come from the App Store, in your currency."; buy "Start 7-day free trial"; Not now → Learn
+[e2e:small] +299.6s tapped learn tab
+[e2e:small] +302.3s shot se-037-learn.png
+[e2e:small] +320.0s shot se-038-learn-path.png
+[e2e:small] +321.2s LEARN RESULT: PASS — next-lesson card shown; path shown; unit 1 listed; lesson 2 not opened
+[e2e:small] +324.5s tapped practice tab
+[e2e:small] +327.5s shot se-039-practice.png
+[e2e:small] +331.8s shot se-040-practice-scrolled.png
+[e2e:small] +331.9s SE-PRACTICE RESULT: PASS — practice shown
+[e2e:small] +333.5s tapped community tab
+[e2e:small] +336.3s shot se-041-community.png
+[e2e:small] +340.5s shot se-042-community-scrolled.png
+[e2e:small] +340.6s SE-COMMUNITY RESULT: PASS — community shown
+[e2e:small] +342.2s tapped me tab
+[e2e:small] +345.3s shot se-043-me.png
+[e2e:small] +350.8s shot se-044-me-scrolled.png
+[e2e:small] +350.9s SE-ME RESULT: PASS — me shown
+[e2e:small] +352.5s tapped me tab
+[e2e:small] +359.4s tapped Flashcards
+[e2e:small] +361.2s shot se-045-flashcards.png
+[e2e:small] +368.0s tapped flashcards-mine-new
+[e2e:small] +370.7s shot se-046-deck-name-sheet.png
+[e2e:small] +377.7s shot se-047-deck-name-keyboard.png
+[e2e:small] +384.1s tap-failed cancel (not found)
+[e2e:small] +385.1s tapped back (deck-header-back)
+[e2e:small] +398.0s tapped back (flashcards-header-back)
+[e2e:small] +398.9s SE-KEYBOARD-DECK-SHEET RESULT: PASS — field and its button stay above the keyboard (top 451); sheet top at 40
+[e2e:small] +398.9s SE-PAYWALL RESULT: PASS — soft paywall already captured
+[e2e:small] +400.5s tapped me tab
+[e2e:small] +409.7s tapped Settings
+[e2e:small] +411.0s shot se-048-settings.png
+[e2e:small] +412.6s SE-SETTINGS RESULT: PASS — Settings shown
+[e2e:small] +412.6s APP-ALIVE-END RESULT: PASS — app still in the foreground at the end
+[e2e:small] +412.6s SAFE-AREA RESULT: PASS — no control under the status bar, the island or the home indicator
+[e2e:small] +412.6s STATUS-BAR RESULT: PASS — no content under the status bar in any screenshot
+[e2e:small] +412.6s OVERFLOW RESULT: PASS — nothing runs off the side of the screen
+[e2e:small] +412.6s SUMMARY: 19 pass, 0 fail, 0 warn, 0 skip
++ SMALL=0
++ xcrun simctl spawn 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 log show --style compact --info --start '2026-10-28 04:33:34' --predicate 'process == "Okwu"'
++ pkill -f 'xcodebuild.*WebDriverAgent'
++ for f in '/tmp/wda-*.log'
++ '[' -f /tmp/wda-03E431EF-0FB6-401F-86B2-DA4B09EEFC03.log ']'
++ tail -n 200 /tmp/wda-03E431EF-0FB6-401F-86B2-DA4B09EEFC03.log
+++ basename /tmp/wda-03E431EF-0FB6-401F-86B2-DA4B09EEFC03.log
+/Users/runner/work/_temp/15133489-5b37-41d3-b98f-daaf075bfaa1.sh: line 115: 65788 Terminated: 15          xcodebuild test-without-building -project "$WDA_PROJ" -scheme WebDriverAgentRunner -destination "id=$1" -derivedDataPath "$HOME/wda-dd" > "/tmp/wda-$1.log" 2>&1
++ for f in '/tmp/wda-*.log'
++ '[' -f /tmp/wda-C1AC39A2-8203-4BA7-88CA-BD891F16FA96.log ']'
++ tail -n 200 /tmp/wda-C1AC39A2-8203-4BA7-88CA-BD891F16FA96.log
+++ basename /tmp/wda-C1AC39A2-8203-4BA7-88CA-BD891F16FA96.log
++ echo '== crash reports =='
+== crash reports ==
++ find /Users/runner/Library/Logs/DiagnosticReports -newer /tmp/e2e-start -name '*Okwu*' -exec cp '{}' shots/ ';'
++ ls -la shots
+total 158792
+drwxr-xr-x  159 runner  staff      5088 Oct 28 04:41 .
+drwxr-xr-x   23 runner  staff       736 Oct 28 04:00 ..
+-rw-r--r--    1 runner  staff    289687 Oct 28 04:08 001-welcome.png
+-rw-r--r--    1 runner  staff    519965 Oct 28 04:08 002-motive.png
+-rw-r--r--    1 runner  staff    430636 Oct 28 04:09 003-familiarity.png
+-rw-r--r--    1 runner  staff    367969 Oct 28 04:09 004-dialect.png
+-rw-r--r--    1 runner  staff    529295 Oct 28 04:09 005-lesson-intro.png
+-rw-r--r--    1 runner  staff    585967 Oct 28 04:09 006-lesson-intro-scrolled.png
+-rw-r--r--    1 runner  staff    439036 Oct 28 04:09 007-lesson-01-listen-choose.png
+-rw-r--r--    1 runner  staff    440125 Oct 28 04:09 008-lesson-listen-choose-playing.png
+-rw-r--r--    1 runner  staff    481409 Oct 28 04:09 009-lesson-listen-choose-feedback.png
+-rw-r--r--    1 runner  staff    439347 Oct 28 04:09 010-lesson-02-listen-choose.png
+-rw-r--r--    1 runner  staff    439314 Oct 28 04:10 011-lesson-03-listen-choose.png
+-rw-r--r--    1 runner  staff    496138 Oct 28 04:10 012-lesson-04-tone-pair.png
+-rw-r--r--    1 runner  staff    492412 Oct 28 04:10 013-lesson-tone-pair-playing.png
+-rw-r--r--    1 runner  staff    570119 Oct 28 04:10 014-lesson-tone-pair-feedback.png
+-rw-r--r--    1 runner  staff    183128 Oct 28 04:10 015-lesson-05-type-it.png
+-rw-r--r--    1 runner  staff    263392 Oct 28 04:10 016-lesson-type-it-keyboard.png
+-rw-r--r--    1 runner  staff    205225 Oct 28 04:10 017-lesson-type-it-feedback.png
+-rw-r--r--    1 runner  staff    439333 Oct 28 04:10 018-lesson-06-listen-choose.png
+-rw-r--r--    1 runner  staff    183930 Oct 28 04:11 019-lesson-07-type-it.png
+-rw-r--r--    1 runner  staff    184689 Oct 28 04:11 020-lesson-08-type-it.png
+-rw-r--r--    1 runner  staff    495732 Oct 28 04:11 021-lesson-09-tone-pair.png
+-rw-r--r--    1 runner  staff    184440 Oct 28 04:11 022-lesson-10-type-it.png
+-rw-r--r--    1 runner  staff    439328 Oct 28 04:11 023-lesson-11-listen-choose.png
+-rw-r--r--    1 runner  staff    439335 Oct 28 04:12 024-lesson-12-listen-choose.png
+-rw-r--r--    1 runner  staff    439376 Oct 28 04:12 025-lesson-13-listen-choose.png
+-rw-r--r--    1 runner  staff    495700 Oct 28 04:12 026-lesson-14-tone-pair.png
+-rw-r--r--    1 runner  staff    183098 Oct 28 04:12 027-lesson-15-type-it.png
+-rw-r--r--    1 runner  staff    439320 Oct 28 04:12 028-lesson-16-listen-choose.png
+-rw-r--r--    1 runner  staff    183928 Oct 28 04:12 029-lesson-17-type-it.png
+-rw-r--r--    1 runner  staff    184665 Oct 28 04:13 030-lesson-18-type-it.png
+-rw-r--r--    1 runner  staff    495663 Oct 28 04:13 031-lesson-19-tone-pair.png
+-rw-r--r--    1 runner  staff    184392 Oct 28 04:13 032-lesson-20-type-it.png
+-rw-r--r--    1 runner  staff    264665 Oct 28 04:13 033-lesson-complete.png
+-rw-r--r--    1 runner  staff    298110 Oct 28 04:13 034-account.png
+-rw-r--r--    1 runner  staff    399333 Oct 28 04:13 035-account-adult.png
+-rw-r--r--    1 runner  staff    423418 Oct 28 04:13 036-reminder.png
+-rw-r--r--    1 runner  staff    560533 Oct 28 04:13 037-notifications-system-alert.png
+-rw-r--r--    1 runner  staff    445017 Oct 28 04:14 038-paywall-soft.png
+-rw-r--r--    1 runner  staff    436806 Oct 28 04:14 039-paywall-soft-plans.png
+-rw-r--r--    1 runner  staff    377378 Oct 28 04:14 040-paywall-soft-legal.png
+-rw-r--r--    1 runner  staff    519397 Oct 28 04:14 041-learn.png
+-rw-r--r--    1 runner  staff    476428 Oct 28 04:15 042-learn-path.png
+-rw-r--r--    1 runner  staff    516358 Oct 28 04:15 043-learn-lesson-2-intro.png
+-rw-r--r--    1 runner  staff    322338 Oct 28 04:15 044-learn-unit-3.png
+-rw-r--r--    1 runner  staff    541379 Oct 28 04:15 045-practice.png
+-rw-r--r--    1 runner  staff    330417 Oct 28 04:15 046-dictionary.png
+-rw-r--r--    1 runner  staff    213698 Oct 28 04:15 047-dictionary-keyboard.png
+-rw-r--r--    1 runner  staff    213558 Oct 28 04:15 048-dictionary-nne.png
+-rw-r--r--    1 runner  staff    410678 Oct 28 04:15 049-dictionary-word.png
+-rw-r--r--    1 runner  staff    414090 Oct 28 04:16 050-word-playing.png
+-rw-r--r--    1 runner  staff    245231 Oct 28 04:16 051-phrasebook.png
+-rw-r--r--    1 runner  staff    487395 Oct 28 04:16 052-phrasebook-situation.png
+-rw-r--r--    1 runner  staff    548968 Oct 28 04:16 053-phrase.png
+-rw-r--r--    1 runner  staff    554242 Oct 28 04:16 054-phrase-playing.png
+-rw-r--r--    1 runner  staff    425609 Oct 28 04:16 055-speak.png
+-rw-r--r--    1 runner  staff    623756 Oct 28 04:17 056-speak-mic-system-alert.png
+-rw-r--r--    1 runner  staff    432929 Oct 28 04:17 057-speak-say-it-recorder.png
+-rw-r--r--    1 runner  staff    444545 Oct 28 04:17 058-speak-say-it-recorded.png
+-rw-r--r--    1 runner  staff    619945 Oct 28 04:17 059-library.png
+-rw-r--r--    1 runner  staff    762655 Oct 28 04:17 060-library-scrolled.png
+-rw-r--r--    1 runner  staff    499212 Oct 28 04:17 061-proverbs.png
+-rw-r--r--    1 runner  staff    455121 Oct 28 04:18 062-proverb.png
+-rw-r--r--    1 runner  staff    455121 Oct 28 04:18 063-proverb-played.png
+-rw-r--r--    1 runner  staff    330592 Oct 28 04:18 064-proverb-meaning.png
+-rw-r--r--    1 runner  staff    569375 Oct 28 04:18 065-tales.png
+-rw-r--r--    1 runner  staff    552133 Oct 28 04:18 066-tale.png
+-rw-r--r--    1 runner  staff    433554 Oct 28 04:19 067-tale-reading.png
+-rw-r--r--    1 runner  staff    406182 Oct 28 04:19 068-tale-igbo.png
+-rw-r--r--    1 runner  staff    464610 Oct 28 04:19 069-community-terms.png
+-rw-r--r--    1 runner  staff    493658 Oct 28 04:20 070-community-terms-agreed.png
+-rw-r--r--    1 runner  staff    522852 Oct 28 04:20 071-community.png
+-rw-r--r--    1 runner  staff    416792 Oct 28 04:20 072-community-family.png
+-rw-r--r--    1 runner  staff    309962 Oct 28 04:20 073-circle-new.png
+-rw-r--r--    1 runner  staff    464541 Oct 28 04:21 074-community-friends.png
+-rw-r--r--    1 runner  staff    385719 Oct 28 04:21 075-friends.png
+-rw-r--r--    1 runner  staff    361181 Oct 28 04:21 076-friends-add-keyboard.png
+-rw-r--r--    1 runner  staff    320954 Oct 28 04:21 077-community-clubs.png
+-rw-r--r--    1 runner  staff    226675 Oct 28 04:21 078-clubs.png
+-rw-r--r--    1 runner  staff    354546 Oct 28 04:21 079-me.png
+-rw-r--r--    1 runner  staff    277827 Oct 28 04:22 080-me-scrolled.png
+-rw-r--r--    1 runner  staff    402175 Oct 28 04:22 081-me-name-sheet.png
+-rw-r--r--    1 runner  staff    415035 Oct 28 04:22 082-me-name-keyboard.png
+-rw-r--r--    1 runner  staff    475120 Oct 28 04:22 083-tool-flashcards.png
+-rw-r--r--    1 runner  staff    430333 Oct 28 04:23 084-deck-name-sheet.png
+-rw-r--r--    1 runner  staff    444212 Oct 28 04:23 085-deck-name-keyboard.png
+-rw-r--r--    1 runner  staff    308051 Oct 28 04:23 086-tool-flashcards-scrolled.png
+-rw-r--r--    1 runner  staff    466131 Oct 28 04:23 087-tool-offline.png
+-rw-r--r--    1 runner  staff    446263 Oct 28 04:24 088-tool-offline-scrolled.png
+-rw-r--r--    1 runner  staff    414667 Oct 28 04:24 089-tool-report.png
+-rw-r--r--    1 runner  staff    324451 Oct 28 04:24 090-tool-report-scrolled.png
+-rw-r--r--    1 runner  staff    417570 Oct 28 04:25 091-paywall-me.png
+-rw-r--r--    1 runner  staff    431709 Oct 28 04:25 092-paywall-me-plans.png
+-rw-r--r--    1 runner  staff    377497 Oct 28 04:25 093-paywall-me-legal.png
+-rw-r--r--    1 runner  staff    551452 Oct 28 04:26 094-settings.png
+-rw-r--r--    1 runner  staff    548057 Oct 28 04:26 095-settings-2.png
+-rw-r--r--    1 runner  staff    234633 Oct 28 04:26 096-settings-about.png
+-rw-r--r--    1 runner  staff    362110 Oct 28 04:26 097-credits.png
+-rw-r--r--    1 runner  staff    343653 Oct 28 04:26 098-credits-2.png
+-rw-r--r--    1 runner  staff    300996 Oct 28 04:27 099-delete-settings-account.png
+-rw-r--r--    1 runner  staff    295680 Oct 28 04:27 100-delete-delete.png
+-rw-r--r--    1 runner  staff    305246 Oct 28 04:27 101-delete-confirm.png
+-rw-r--r--    1 runner  staff    397545 Oct 28 04:27 102-delete-after-delete.png
+-rw-r--r--    1 runner  staff     40410 Oct 28 04:41 debug.log
+-rw-r--r--    1 runner  staff  21699228 Oct 28 04:28 device-full.log
+-rw-r--r--    1 runner  staff   9301029 Oct 28 04:41 device-small.log
+-rw-r--r--    1 runner  staff      8584 Oct 28 04:27 results-full.json
+-rw-r--r--    1 runner  staff      3992 Oct 28 04:40 results-small.json
+-rw-r--r--    1 runner  staff    149158 Oct 28 04:33 se-001-welcome.png
+-rw-r--r--    1 runner  staff    197345 Oct 28 04:34 se-002-motive.png
+-rw-r--r--    1 runner  staff    190822 Oct 28 04:34 se-003-familiarity.png
+-rw-r--r--    1 runner  staff    160906 Oct 28 04:34 se-004-dialect.png
+-rw-r--r--    1 runner  staff    211720 Oct 28 04:34 se-005-lesson-intro.png
+-rw-r--r--    1 runner  staff    219938 Oct 28 04:34 se-006-lesson-intro-scrolled.png
+-rw-r--r--    1 runner  staff    173847 Oct 28 04:34 se-007-lesson-01-listen-choose.png
+-rw-r--r--    1 runner  staff    160756 Oct 28 04:34 se-008-lesson-listen-choose-feedback.png
+-rw-r--r--    1 runner  staff    174238 Oct 28 04:34 se-009-lesson-02-listen-choose.png
+-rw-r--r--    1 runner  staff    208655 Oct 28 04:34 se-010-lesson-03-tone-pair.png
+-rw-r--r--    1 runner  staff    184385 Oct 28 04:34 se-011-lesson-tone-pair-feedback.png
+-rw-r--r--    1 runner  staff    174570 Oct 28 04:34 se-012-lesson-04-listen-choose.png
+-rw-r--r--    1 runner  staff    208684 Oct 28 04:35 se-013-lesson-05-tone-pair.png
+-rw-r--r--    1 runner  staff     91048 Oct 28 04:35 se-014-lesson-06-type-it.png
+-rw-r--r--    1 runner  staff    130407 Oct 28 04:35 se-015-lesson-type-it-keyboard.png
+-rw-r--r--    1 runner  staff    101961 Oct 28 04:35 se-016-lesson-type-it-feedback.png
+-rw-r--r--    1 runner  staff     90538 Oct 28 04:35 se-017-lesson-07-type-it.png
+-rw-r--r--    1 runner  staff     91233 Oct 28 04:35 se-018-lesson-08-type-it.png
+-rw-r--r--    1 runner  staff    174864 Oct 28 04:35 se-019-lesson-09-listen-choose.png
+-rw-r--r--    1 runner  staff     91427 Oct 28 04:36 se-020-lesson-10-type-it.png
+-rw-r--r--    1 runner  staff    174073 Oct 28 04:36 se-021-lesson-11-listen-choose.png
+-rw-r--r--    1 runner  staff    174858 Oct 28 04:36 se-022-lesson-12-listen-choose.png
+-rw-r--r--    1 runner  staff    208374 Oct 28 04:36 se-023-lesson-13-tone-pair.png
+-rw-r--r--    1 runner  staff    174827 Oct 28 04:36 se-024-lesson-14-listen-choose.png
+-rw-r--r--    1 runner  staff     91022 Oct 28 04:36 se-025-lesson-15-type-it.png
+-rw-r--r--    1 runner  staff     90546 Oct 28 04:37 se-026-lesson-16-type-it.png
+-rw-r--r--    1 runner  staff     91261 Oct 28 04:37 se-027-lesson-17-type-it.png
+-rw-r--r--    1 runner  staff    174078 Oct 28 04:37 se-028-lesson-18-listen-choose.png
+-rw-r--r--    1 runner  staff     91373 Oct 28 04:37 se-029-lesson-19-type-it.png
+-rw-r--r--    1 runner  staff    139859 Oct 28 04:37 se-030-lesson-complete.png
+-rw-r--r--    1 runner  staff    145649 Oct 28 04:37 se-031-account.png
+-rw-r--r--    1 runner  staff    192580 Oct 28 04:37 se-032-account-adult.png
+-rw-r--r--    1 runner  staff    183915 Oct 28 04:37 se-033-reminder.png
+-rw-r--r--    1 runner  staff    195048 Oct 28 04:38 se-034-paywall-soft.png
+-rw-r--r--    1 runner  staff    152420 Oct 28 04:38 se-035-paywall-soft-plans.png
+-rw-r--r--    1 runner  staff    182888 Oct 28 04:38 se-036-paywall-soft-legal.png
+-rw-r--r--    1 runner  staff    197742 Oct 28 04:38 se-037-learn.png
+-rw-r--r--    1 runner  staff    201174 Oct 28 04:38 se-038-learn-path.png
+-rw-r--r--    1 runner  staff    205462 Oct 28 04:39 se-039-practice.png
+-rw-r--r--    1 runner  staff    246258 Oct 28 04:39 se-040-practice-scrolled.png
+-rw-r--r--    1 runner  staff    209059 Oct 28 04:39 se-041-community.png
+-rw-r--r--    1 runner  staff    204694 Oct 28 04:39 se-042-community-scrolled.png
+-rw-r--r--    1 runner  staff    162192 Oct 28 04:39 se-043-me.png
+-rw-r--r--    1 runner  staff    140757 Oct 28 04:39 se-044-me-scrolled.png
+-rw-r--r--    1 runner  staff    197964 Oct 28 04:39 se-045-flashcards.png
+-rw-r--r--    1 runner  staff    171485 Oct 28 04:39 se-046-deck-name-sheet.png
+-rw-r--r--    1 runner  staff    178537 Oct 28 04:39 se-047-deck-name-keyboard.png
+-rw-r--r--    1 runner  staff    188362 Oct 28 04:40 se-048-settings.png
+-rw-r--r--    1 runner  staff     20884 Oct 28 04:41 wda-03E431EF-0FB6-401F-86B2-DA4B09EEFC03.log
+-rw-r--r--    1 runner  staff      4974 Oct 28 04:41 wda-C1AC39A2-8203-4BA7-88CA-BD891F16FA96.log
++ echo '== appium.log tail =='
+== appium.log tail ==
++ tail -n 60 appium.log
+2026-10-28 04:40:28:832 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"72050000-0000-0000-5308-010000000000","ELEMENT":"72050000-0000-0000-5308-010000000000"}
+2026-10-28 04:40:28:832 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m <-- POST /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/element 200 125 ms - 137
+2026-10-28 04:40:28:835 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m --> POST /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/elements {"using":"accessibility id","value":"settings-header-back"}
+2026-10-28 04:40:28:835 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Calling AppiumDriver.findElements() with args: ["accessibility id","settings-header-back","8f4a0542-a1fd-4fdf-829d-5d199102e727"]
+2026-10-28 04:40:28:835 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Executing command 'findElements'
+2026-10-28 04:40:28:835 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+2026-10-28 04:40:28:835 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Waiting up to 0 ms for condition
+2026-10-28 04:40:28:835 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Matched '/elements' to command name 'findElements'
+2026-10-28 04:40:28:835 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Proxying [POST /elements] to [POST http://127.0.0.1:8100/session/714A0B54-1D88-4982-8C9D-FEC6B23B9F66/elements] with body: {"using":"accessibility id","value":"settings-header-back"}
+2026-10-28 04:40:28:957 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Got response with status 200: {"value":[{"ELEMENT":"72050000-0000-0000-5308-010000000000","element-6066-11e4-a52e-4f735466cecf":"72050000-0000-0000-5308-010000000000"}],"sessionId":"714A0B54-1D88-4982-8C9D-FEC6B23B9F66"}
+2026-10-28 04:40:28:957 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Responding to client with driver.findElements() result: [{"element-6066-11e4-a52e-4f735466cecf":"72050000-0000-0000-5308-010000000000","ELEMENT":"72050000-0000-0000-5308-010000000000"}]
+2026-10-28 04:40:28:958 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m <-- POST /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/elements 200 123 ms - 139
+2026-10-28 04:40:28:960 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m --> GET /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/element/72050000-0000-0000-5308-010000000000/name 
+2026-10-28 04:40:28:960 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Driver proxy active, passing request on via HTTP proxy
+2026-10-28 04:40:28:960 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Executing command 'proxyReqRes'
+2026-10-28 04:40:28:960 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Matched '/session/8f4a0542-a1fd-4fdf-829d-5d199102e727/element/72050000-0000-0000-5308-010000000000/name' to command name 'getName'
+2026-10-28 04:40:28:960 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Proxying [GET /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/element/72050000-0000-0000-5308-010000000000/name] to [GET http://127.0.0.1:8100/session/714A0B54-1D88-4982-8C9D-FEC6B23B9F66/element/72050000-0000-0000-5308-010000000000/name] with no body
+2026-10-28 04:40:29:020 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Got response with status 200: {"value":"XCUIElementTypeButton","sessionId":"714A0B54-1D88-4982-8C9D-FEC6B23B9F66"}
+2026-10-28 04:40:29:020 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Replacing sessionId 714A0B54-1D88-4982-8C9D-FEC6B23B9F66 with 8f4a0542-a1fd-4fdf-829d-5d199102e727
+2026-10-28 04:40:29:020 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m <-- GET /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/element/72050000-0000-0000-5308-010000000000/name 200 61 ms - 33
+2026-10-28 04:40:29:022 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m --> GET /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/element/72050000-0000-0000-5308-010000000000/rect 
+2026-10-28 04:40:29:022 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Driver proxy active, passing request on via HTTP proxy
+2026-10-28 04:40:29:022 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Executing command 'proxyReqRes'
+2026-10-28 04:40:29:022 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Matched '/session/8f4a0542-a1fd-4fdf-829d-5d199102e727/element/72050000-0000-0000-5308-010000000000/rect' to command name 'getElementRect'
+2026-10-28 04:40:29:022 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Proxying [GET /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/element/72050000-0000-0000-5308-010000000000/rect] to [GET http://127.0.0.1:8100/session/714A0B54-1D88-4982-8C9D-FEC6B23B9F66/element/72050000-0000-0000-5308-010000000000/rect] with no body
+2026-10-28 04:40:29:089 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Got response with status 200: {"value":{"y":36,"x":20,"width":44,"height":44},"sessionId":"714A0B54-1D88-4982-8C9D-FEC6B23B9F66"}
+2026-10-28 04:40:29:090 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Replacing sessionId 714A0B54-1D88-4982-8C9D-FEC6B23B9F66 with 8f4a0542-a1fd-4fdf-829d-5d199102e727
+2026-10-28 04:40:29:090 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m <-- GET /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/element/72050000-0000-0000-5308-010000000000/rect 200 69 ms - 48
+2026-10-28 04:40:29:092 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m --> GET /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/source 
+2026-10-28 04:40:29:093 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Calling AppiumDriver.getPageSource() with args: ["8f4a0542-a1fd-4fdf-829d-5d199102e727"]
+2026-10-28 04:40:29:093 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Executing command 'getPageSource'
+2026-10-28 04:40:29:093 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Matched '/source?format=xml&scope=AppiumAUT' to command name 'getPageSource'
+2026-10-28 04:40:29:093 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Proxying [GET /source?format=xml&scope=AppiumAUT] to [GET http://127.0.0.1:8100/session/714A0B54-1D88-4982-8C9D-FEC6B23B9F66/source?format=xml&scope=AppiumAUT] with no body
+2026-10-28 04:40:30:304 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Got response with status 200: {"value":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<AppiumAUT>\n  <XCUIElementTypeApplication type=\"XCUIElementTypeApplication\" name=\"Okwu\" label=\"Okwu\" enabled=\"true\" visible=\"true\" accessible=\"false\" x=\"0\" y=\"0\" width=\"375\" height=\"667\" index=\"0\" traits=\"\" processId=\"67667\" bundleId=\"app.okwu.learn\">\n    <XCUIElementTypeWindow type=\"XCUIElementTypeWindow\" enabled=\"true\" visible=\"true\" accessible=\"false\" x=\"0\" y=\"0\" width=\"375\" height=\"667\" index=\"0\" traits=\"\">\n      <XCUIElementTypeOther type=\"XCUIElementTypeOther\" enabled=\"true\" visible=\"true\" accessible=\"false\" x=\"0\" y=\"0\" width=\"375\" height=\"667\" index=\"0\" traits=\"\">\n        <XCUIElementTypeOther type=\"XCUIElementTypeOther\" enabled=\"true\" visible=\"true\" accessible=\"false\" x=\"0\" y=\"0\" width=\"375\" height=\"667\" index=\"0\" traits=\"\">\n          <XCUIElementTypeOther type=\"XCUIElementTypeOther\" enabled=\"true\" visible=\"true\" accessible=\"false\" x=\"0\" y=\"0\" …
+2026-10-28 04:40:30:304 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Responding to client with driver.getPageSource() result: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<AppiumAUT>\n  <XCUIElementTypeApplication type=\"XCUIElementTypeApplication\" name=\"Okwu\" label=\"Okwu\" enabled=\"true\" visible=\"true\" accessible=\"false\" x=\"0\" y=\"0\" width=\"375\" height=\"667\" index=\"0\" traits=\"\" processId=\"67667\" bundleId=\"app.okwu.learn\">\n    <XCUIElementTypeWindow type=\"XCUIElementTypeWindow\" enabled=\"true\" visible=\"true\" accessible=\"false\" x=\"0\" y=\"0\" width=\"375\" height=\"667\" index=\"0\" traits=\"\">\n      <XCUIElementTypeOther type=\"XCUIElementTypeOther\" enabled=\"true\" visible=\"true\" accessible=\"false\" x=\"0\" y=\"0\" width=\"375\" height=\"667\" index=\"0\" traits=\"\">\n        <XCUIElementTypeOther type=\"XCUIElementTypeOther\" enabled=\"true\" visible=\"true\" accessible=\"false\" x=\"0\" y=\"0\" width=\"375\" height=\"667\" index=\"0\" traits=\"\">\n          <XCUIElementTypeOther type=\"XCUIElementTypeOther\" enabled=\"true\" visible=\"true\" accessible=\"false\" x=\"0\" y=\"0\" width=\"3…
+2026-10-28 04:40:30:305 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m <-- GET /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/source 200 1212 ms - 44633
+2026-10-28 04:40:30:309 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m --> POST /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/execute/sync {"script":"mobile: queryAppState","args":[{"bundleId":"app.okwu.learn"}]}
+2026-10-28 04:40:30:309 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Calling AppiumDriver.execute() with args: ["mobile: queryAppState",[{"bundleId":"app.okwu.learn"}],"8f4a0542-a1fd-4fdf-829d-5d199102e727"]
+2026-10-28 04:40:30:309 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Executing command 'execute'
+2026-10-28 04:40:30:309 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Proxying [POST /wda/apps/state] to [POST http://127.0.0.1:8100/session/714A0B54-1D88-4982-8C9D-FEC6B23B9F66/wda/apps/state] with body: {"bundleId":"app.okwu.learn"}
+2026-10-28 04:40:30:311 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Got response with status 200: {"value":4,"sessionId":"714A0B54-1D88-4982-8C9D-FEC6B23B9F66"}
+2026-10-28 04:40:30:311 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Responding to client with driver.execute() result: 4
+2026-10-28 04:40:30:312 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m <-- POST /session/8f4a0542-a1fd-4fdf-829d-5d199102e727/execute/sync 200 3 ms - 11
+2026-10-28 04:40:30:341 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m --> DELETE /session/8f4a0542-a1fd-4fdf-829d-5d199102e727 
+2026-10-28 04:40:30:342 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Calling AppiumDriver.deleteSession() with args: ["8f4a0542-a1fd-4fdf-829d-5d199102e727"]
+2026-10-28 04:40:30:342 - [38;5;28m[8f4a0542][0m[38;5;175m[AppiumDriver@fca5][0m Event 'quitSessionRequested' logged at 1793162430342 (04:40:30 GMT+0000 (Coordinated Universal Time))
+2026-10-28 04:40:30:342 - [38;5;28m[8f4a0542][0m[38;5;123m[BaseDriver][0m Unsubscribing 794521af-1265-4628-ba27-dc9532ca992e from topic 'xcuitest:sessionUdidClaimed'
+2026-10-28 04:40:30:343 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Proxying [DELETE /session/8f4a0542-a1fd-4fdf-829d-5d199102e727] to [DELETE http://127.0.0.1:8100/session/714A0B54-1D88-4982-8C9D-FEC6B23B9F66] with no body
+2026-10-28 04:40:30:365 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Got response with status 200: {"value":null,"sessionId":null}
+2026-10-28 04:40:30:365 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Stopping neither xcodebuild nor XCTest session since WDA lifecycle is not managed by this driver
+2026-10-28 04:40:30:365 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Releasing connections for 03E431EF-0FB6-401F-86B2-DA4B09EEFC03 device on any port number
+2026-10-28 04:40:30:365 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Found cached connections to release: ["03E431EF-0FB6-401F-86B2-DA4B09EEFC03:8100","03E431EF-0FB6-401F-86B2-DA4B09EEFC03:9100"]
+2026-10-28 04:40:30:365 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Cached connections count: 0
+2026-10-28 04:40:30:365 - [38;5;28m[8f4a0542][0m[38;5;196m[XCUITestDriver@7945][0m Stopping iOS log capture
+2026-10-28 04:40:30:414 - [38;5;28m[8f4a0542][0m[38;5;175m[AppiumDriver@fca5][0m Removing session 8f4a0542-a1fd-4fdf-829d-5d199102e727 from our master session list
+2026-10-28 04:40:30:414 - [38;5;28m[8f4a0542][0m[38;5;175m[AppiumDriver@fca5][0m Event 'quitSessionFinished' logged at 1793162430414 (04:40:30 GMT+0000 (Coordinated Universal Time))
+2026-10-28 04:40:30:415 - [38;5;28m[8f4a0542][0m[38;5;175m[AppiumDriver@fca5][0m Received response: null
+2026-10-28 04:40:30:415 - [38;5;28m[8f4a0542][0m[38;5;175m[AppiumDriver@fca5][0m But deleting session, so not returning
+2026-10-28 04:40:30:415 - [38;5;28m[8f4a0542][0m[38;5;175m[AppiumDriver@fca5][0m Responding to client with driver.deleteSession() result: null
+2026-10-28 04:40:30:415 - [38;5;28m[8f4a0542][0m[38;5;86m[HTTP][0m <-- DELETE /session/8f4a0542-a1fd-4fdf-829d-5d199102e727 200 73 ms - 14
++ echo '== RESULTS =='
+== RESULTS ==
++ grep -hE 'RESULT:|SUMMARY' shots/debug.log
+[e2e:full] +276.0s BOOT RESULT: PASS — fresh install opened the welcome screen
+[e2e:full] +313.8s ONBOARDING RESULT: PASS — motive → new learner → dialect (areas listed) → first lesson intro
+[e2e:full] +328.0s LESSON-INTRO RESULT: PASS — pattern card shown; 4 example(s) with a play button, 0 "Recording coming soon"; example 0 played, no toast
+[e2e:full] +576.1s FIRST-LESSON RESULT: PASS — 20 exercise screens (listen-choose ×8, tone-pair ×4, type-it ×8); reached the end moment; → account screen
+[e2e:full] +576.1s LESSON-RECORDINGS RESULT: PASS — 12/20 exercise screens had a play button; "Recording coming soon" on 0
+[e2e:full] +576.1s LESSON-AUDIO RESULT: PASS — listen-choose: "Play" → "Playing" on the second tap; no error toast | tone-pair: "Play" → "Playing"; no error toast
+[e2e:full] +576.1s MIC-PROMPT RESULT: SKIP — no Say it exercise in the first lesson (tried again in Practice)
+[e2e:full] +576.1s TYPE-IT-KEYBOARD RESULT: PASS — field and its button stay above the keyboard (top 655)
+[e2e:full] +585.1s ACCOUNT RESULT: PASS — age 18+ chosen; documents left for Community; Sign in with Apple button shown; agree switch "I agree to the Terms of Use, Privacy Policy and Community Rules"; → reminder
+[e2e:full] +603.3s REMINDER RESULT: PASS — notification prompt "“Okwu” Would Like to Send You Notifications Notifications may include alerts, sounds, and icon badges. These can be configured in Settings." accepted with "Allow"; → paywall
+[e2e:full] +644.0s SOFT-PAYWALL RESULT: PASS — 4/4 plans: yearly: "Yearly. $59.99 a year. 7 days free, then $59.99 a year · about $5.00 a"; monthly: "Monthly. $9.99 a month. Billed every month"; family: "Family. $89.99 a year. Billed once a year · about $7.50 a month · Up t"; lifetime: "Lifetime. $149.99 once. One payment, yours for good"; note "Prices come from the App Store, in your currency."; buy "Start 7-day free trial"; Not now → Learn
+[e2e:full] +688.1s LEARN RESULT: PASS — next-lesson card shown; path shown; unit 1 listed; lesson 2 intro opened from the path
+[e2e:full] +723.1s KEYBOARD-DICTIONARY RESULT: PASS — field stay above the keyboard (top 655)
+[e2e:full] +723.1s DICTIONARY RESULT: PASS — "nne" → first hit "nne: mother" → word page opened; recording available
+[e2e:full] +728.9s WORD-AUDIO RESULT: PASS — "Hear it" → "Playing…"; no error toast
+[e2e:full] +755.3s PHRASEBOOK RESULT: PASS — greetings → "Daalụ rinne."; recording available
+[e2e:full] +759.4s PHRASE-AUDIO RESULT: PASS — "Hear it" → "Playing…"; no error toast
+[e2e:full] +809.8s MIC-PROMPT-PRACTICE RESULT: PASS — "Record yourself" tapped; system prompt "“Okwu” would like to access the Microphone. Okwu records your voice only so you can hear yourself next to a native speaker. Recordings stay on your phone unless you send one to your Family Circle." [Don’t Allow / Allow] accepted with "Allow"; recorder recording; stopped → Play mine shown; app alive
+[e2e:full] +833.9s LIBRARY RESULT: PASS — shelves: names, proverbs, tales, customs
+[e2e:full] +891.3s PROVERB RESULT: PASS — proverb page shown; played, no toast
+[e2e:full] +945.8s TALE RESULT: PASS — tale page shown; Igbo lines shown
+[e2e:full] +999.6s COMMUNITY-TERMS RESULT: PASS — anonymous account created on the live server; friend code VRG KDSZ; ""
+[e2e:full] +1013.6s FAMILY-CIRCLE RESULT: PASS — Start your Family Circle screen opened (nothing created)
+[e2e:full] +1039.1s KEYBOARD-FRIEND-CODE RESULT: PASS — field and its button stay above the keyboard (top 655)
+[e2e:full] +1051.5s FRIENDS RESULT: PASS — friends screen opened; code "VRG KDSZ"
+[e2e:full] +1070.0s CLUBS RESULT: PASS — clubs browser opened (no clubs yet)
+[e2e:full] +1082.7s ME RESULT: PASS — Me shown
+[e2e:full] +1119.7s KEYBOARD-NAME-SHEET RESULT: PASS — field and its button stay above the keyboard (top 655); sheet top at 211
+[e2e:full] +1169.3s KEYBOARD-DECK-SHEET RESULT: PASS — field and its button stay above the keyboard (top 655); sheet top at 211
+[e2e:full] +1188.2s TOOL-FLASHCARDS RESULT: PASS — Flashcards opened
+[e2e:full] +1229.9s TOOL-OFFLINE RESULT: PASS — Offline packs opened
+[e2e:full] +1263.7s TOOL-REPORT RESULT: PASS — Progress report opened
+[e2e:full] +1313.0s PAYWALL RESULT: PASS — (soft offer also seen) 4/4 plans: yearly: "Yearly. $59.99 a year. 7 days free, then $59.99 a year · about $5.00 a"; monthly: "Monthly. $9.99 a month. Billed every month"; family: "Family. $89.99 a year. Billed once a year · about $7.50 a month · Up t"; lifetime: "Lifetime. $149.99 once. One payment, yours for good"; note "Prices come from the App Store, in your currency."; buy "Start 7-day free trial"; close → Me
+[e2e:full] +1392.7s CREDITS RESULT: PASS — Credits opened from Settings
+[e2e:full] +1433.6s DELETE-ACCOUNT RESULT: PASS — back on the welcome screen; toast "(none seen)"; friend code VRG KDSZ
+[e2e:full] +1433.7s APP-ALIVE-END RESULT: PASS — app still in the foreground at the end
+[e2e:full] +1433.7s SAFE-AREA RESULT: PASS — no control under the status bar, the island or the home indicator
+[e2e:full] +1433.7s STATUS-BAR RESULT: PASS — no content under the status bar in any screenshot
+[e2e:full] +1433.7s OVERFLOW RESULT: PASS — nothing runs off the side of the screen
+[e2e:full] +1433.7s SUMMARY: 38 pass, 0 fail, 0 warn, 1 skip
+[e2e:small] +20.7s BOOT RESULT: PASS — fresh install opened the welcome screen
+[e2e:small] +36.3s ONBOARDING RESULT: PASS — motive → new learner → dialect (areas listed) → first lesson intro
+[e2e:small] +49.9s LESSON-INTRO RESULT: PASS — pattern card shown; 4 example(s) with a play button, 0 "Recording coming soon"; example 0 played, no toast
+[e2e:small] +253.2s FIRST-LESSON RESULT: PASS — 19 exercise screens (listen-choose ×8, tone-pair ×3, type-it ×8); reached the end moment; → account screen
+[e2e:small] +253.2s TYPE-IT-KEYBOARD RESULT: PASS — field and its button stay above the keyboard (top 451)
+[e2e:small] +259.2s ACCOUNT RESULT: PASS — age 18+ chosen; documents left for Community; Sign in with Apple button shown; agree switch "I agree to the Terms of Use, Privacy Policy and Community Rules"; → reminder
+[e2e:small] +263.1s REMINDER RESULT: PASS — no reminders → learn
+[e2e:small] +297.3s SOFT-PAYWALL RESULT: PASS — 4/4 plans: yearly: "Yearly. $59.99 a year. 7 days free, then $59.99 a year · about $5.00 a"; monthly: "Monthly. $9.99 a month. Billed every month"; family: "Family. $89.99 a year. Billed once a year · about $7.50 a month · Up t"; lifetime: "Lifetime. $149.99 once. One payment, yours for good"; note "Prices come from the App Store, in your currency."; buy "Start 7-day free trial"; Not now → Learn
+[e2e:small] +321.2s LEARN RESULT: PASS — next-lesson card shown; path shown; unit 1 listed; lesson 2 not opened
+[e2e:small] +331.9s SE-PRACTICE RESULT: PASS — practice shown
+[e2e:small] +340.6s SE-COMMUNITY RESULT: PASS — community shown
+[e2e:small] +350.9s SE-ME RESULT: PASS — me shown
+[e2e:small] +398.9s SE-KEYBOARD-DECK-SHEET RESULT: PASS — field and its button stay above the keyboard (top 451); sheet top at 40
+[e2e:small] +398.9s SE-PAYWALL RESULT: PASS — soft paywall already captured
+[e2e:small] +412.6s SE-SETTINGS RESULT: PASS — Settings shown
+[e2e:small] +412.6s APP-ALIVE-END RESULT: PASS — app still in the foreground at the end
+[e2e:small] +412.6s SAFE-AREA RESULT: PASS — no control under the status bar, the island or the home indicator
+[e2e:small] +412.6s STATUS-BAR RESULT: PASS — no content under the status bar in any screenshot
+[e2e:small] +412.6s OVERFLOW RESULT: PASS — nothing runs off the side of the screen
+[e2e:small] +412.6s SUMMARY: 19 pass, 0 fail, 0 warn, 0 skip
++ grep -hE 'RESULT:|SUMMARY' shots/debug.log
++ echo 'FULL=0 SMALL=0'
+FULL=0 SMALL=0
++ echo '== END =='
+== END ==
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
