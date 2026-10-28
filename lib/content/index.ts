@@ -75,9 +75,10 @@ export function prepareBundle(raw: ContentBundle, opts: { production: boolean })
 
 /**
  * EXPO_PUBLIC_SHOW_DRAFTS=1 keeps draft content in a release-mode build. Only
- * the eas.json "e2e" simulator profile sets it, so the iPhone walkthrough can
- * play lessons (and stream their recordings) before any lesson is approved;
- * store builds never set it (lib/content/release.test.ts checks eas.json).
+ * the eas.json "e2e" simulator profile and the "preview" profile (internal
+ * TestFlight builds, never sent to App Review) set it, so lessons can be
+ * played before any is approved; the production profile never does
+ * (lib/content/release.test.ts checks eas.json).
  * Read as a plain process.env property so Metro inlines it.
  */
 const SHOW_DRAFTS = process.env.EXPO_PUBLIC_SHOW_DRAFTS === "1";

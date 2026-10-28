@@ -11,5 +11,6 @@ Dictionary data and recordings: Nkọwa okwu (Igbo API),
 permission. Recordings trimmed, made mono and loudness-normalised by Okwu.
 See `ATTRIBUTION.md`.
 
-Builds: push to `release-build` for a signed App Store IPA, or to `e2e-run`
-for a simulator build plus the automated iPhone walkthrough.
+Builds: push to `release-build` for a signed App Store IPA, to `preview-build`
+for a TestFlight-only IPA that includes draft lessons, or to `e2e-run` for a
+simulator build plus the automated iPhone walkthrough.

@@ -12,7 +12,7 @@
       "supportsTablet": false,
       "bundleIdentifier": "app.okwu.learn",
       "usesAppleSignIn": true,
-      "buildNumber": "1",
+      "buildNumber": "2",
       "config": {
         "usesNonExemptEncryption": false
       }

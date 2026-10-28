@@ -16,6 +16,12 @@
       "distribution": "store",
       "autoIncrement": false
     },
+    "preview": {
+      "extends": "production",
+      "env": {
+        "EXPO_PUBLIC_SHOW_DRAFTS": "1"
+      }
+    },
     "devicetest": {
       "extends": "base",
       "distribution": "internal",
