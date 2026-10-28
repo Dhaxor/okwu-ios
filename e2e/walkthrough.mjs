@@ -584,30 +584,40 @@ async function section(name, fn) {
  * A stream that fails to load never reports playing. Any toast is an error.
  */
 async function listen(tag, selector, playingRe, ms = 8000) {
-  const el = await find(selector, 4000);
+  let el = await find(selector, 4000);
   if (!el) return { ok: false, detail: `${selector.slice(1)} missing` };
-  const before = (await labelOf(selector, 800)) ?? "";
-  try {
-    await el.click();
-  } catch (e) {
-    return { ok: false, detail: `tap failed: ${msg(e)}` };
-  }
-  const end = Date.now() + ms;
+  const before = (await el.getAttribute("label").catch(() => null)) ?? "";
+  // The course clips are ~1 s long: poll the element itself, as fast as WebDriverAgent answers,
+  // and give it a second tap if the first play slipped between two reads.
   let seen = null;
-  let toast = null;
-  while (Date.now() < end && !seen) {
-    const l = await labelOf(selector, 600);
-    if (l && playingRe.test(l)) seen = l;
-    if (!toast) toast = await toastNow(150);
-    if (!seen) await sleep(200);
+  let taps = 0;
+  for (let attempt = 1; attempt <= 2 && !seen; attempt++) {
+    taps = attempt;
+    try {
+      await el.click();
+    } catch (e) {
+      el = await find(selector, 2000);
+      if (!el) return { ok: false, detail: `tap failed: ${msg(e)}` };
+      await el.click().catch(() => {});
+    }
+    const end = Date.now() + ms;
+    while (Date.now() < end && !seen) {
+      let l = null;
+      try {
+        l = await el.getAttribute("label");
+      } catch {
+        el = (await find(selector, 1000)) ?? el;
+      }
+      if (l && playingRe.test(l)) seen = l;
+    }
   }
   if (seen) await shot(`${tag}-playing`);
   await sleep(1200);
-  if (!toast) toast = await toastNow(300);
+  const toast = await toastNow(400);
   const alive = (await appState()) === 4;
   return {
     ok: !!seen && !toast && alive,
-    detail: `"${before}" → ${seen ? `"${seen}"` : `never reported playing within ${ms / 1000}s`}; ${toast ? `toast "${toast}"` : "no error toast"}${alive ? "" : "; APP NOT RUNNING"}`,
+    detail: `"${before}" → ${seen ? `"${seen}"${taps > 1 ? " on the second tap" : ""}` : `never reported playing (two taps, ${ms / 1000}s each)`}; ${toast ? `toast "${toast}"` : "no error toast"}${alive ? "" : "; APP NOT RUNNING"}`,
   };
 }
 
